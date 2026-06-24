@@ -1,0 +1,438 @@
+import { motion } from "framer-motion";
+import {
+  Calendar,
+  Clock3,
+  Users,
+  CheckCircle2,
+} from "lucide-react";
+
+import Button from "./Button";
+
+export default function ReservationSection() {
+  return (
+    <section className="relative py-36 bg-[#fafafa] overflow-hidden">
+
+      {/* Background Glow */}
+      <div className="absolute top-0 left-[-200px] w-[600px] h-[600px] bg-red-100/50 blur-[180px] rounded-full" />
+      <div className="absolute bottom-0 right-[-200px] w-[600px] h-[600px] bg-orange-100/40 blur-[180px] rounded-full" />
+
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <span className="uppercase tracking-[0.35em] text-red-500 text-xs font-semibold">
+              Reservations
+            </span>
+
+            <h2 className="text-5xl md:text-6xl font-black text-gray-900 mt-5 leading-[1.05]">
+              Fill More Tables.
+              <span className="block text-red-600">
+                Without More Calls.
+              </span>
+            </h2>
+
+            <p className="text-gray-600 text-lg leading-relaxed mt-6 max-w-xl">
+              Give guests a seamless reservation experience
+              with real-time availability, automated reminders,
+              Google Reserve integration and intelligent waitlist
+              management.
+            </p>
+
+            {/* Benefits */}
+            <div className="mt-10 space-y-4">
+
+              {[
+                "Real-time table availability",
+                "Google Reserve integration",
+                "SMS & Email confirmations",
+                "Reduce no-shows automatically",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3"
+                >
+                  <CheckCircle2
+                    size={18}
+                    className="text-red-500"
+                  />
+
+                  <span className="text-gray-700">
+                    {item}
+                  </span>
+                </div>
+              ))}
+
+            </div>
+
+            {/* Stats */}
+            <div className="flex gap-10 mt-12">
+
+              <div>
+                <h3 className="text-4xl font-black text-red-600">
+                  42%
+                </h3>
+                <p className="text-sm text-gray-500">
+                  Fewer No-Shows
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-black text-red-600">
+                  3x
+                </h3>
+                <p className="text-sm text-gray-500">
+                  Faster Booking
+                </p>
+              </div>
+
+            </div>
+
+            <Button
+              className="
+                mt-10
+                bg-red-600
+                text-white
+                px-8
+                py-4
+                rounded-full
+                font-semibold
+              "
+            >
+              Explore Reservations
+            </Button>
+          </motion.div>
+
+          {/* RIGHT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative flex justify-center"
+          >
+
+            {/* Glow */}
+            <div className="absolute w-[550px] h-[550px] bg-red-200/40 blur-[140px] rounded-full" />
+
+            {/* Main Card */}
+            <div className="relative w-[560px] rounded-[40px] bg-white border border-gray-200 shadow-[0_50px_120px_rgba(0,0,0,0.12)] overflow-hidden">
+
+              {/* Header */}
+              <div className="bg-gradient-to-r from-red-600 to-red-500 p-6 text-white">
+
+                <div className="flex justify-between items-center">
+                  <h3 className="font-bold text-xl">
+                    Live Reservations
+                  </h3>
+
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-xs">
+                    Live Availability
+                  </span>
+                </div>
+
+              </div>
+
+              <div className="p-8">
+
+                {/* Floor Layout */}
+           {/* Floor Plan */}
+
+<div className="bg-[#fafafa] border border-gray-200 rounded-[30px] p-8">
+
+  <div className="flex items-center justify-between mb-6">
+
+    <h4 className="font-bold text-gray-900">
+      Restaurant Floor Plan
+    </h4>
+
+    <div className="flex items-center gap-4 text-xs">
+
+      <div className="flex items-center gap-2">
+        <div className="w-3 h-3 rounded-full bg-red-600" />
+        Selected
+      </div>
+
+      <div className="flex items-center gap-2">
+        <div className="w-3 h-3 rounded-full bg-white border border-red-300" />
+        Available
+      </div>
+
+      <div className="flex items-center gap-2">
+        <div className="w-3 h-3 rounded-full bg-gray-300" />
+        Reserved
+      </div>
+
+    </div>
+
+  </div>
+
+<div className="grid grid-cols-3 gap-6">
+
+  {/* Row 1 */}
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 1
+  </motion.div>
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 2
+  </motion.div>
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-gray-200
+      flex items-center justify-center
+      text-gray-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 3
+  </motion.div>
+
+  {/* Row 2 */}
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[110px]
+      rounded-[30px]
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 4
+  </motion.div>
+
+  {/* Selected Table */}
+
+  <motion.div
+    animate={{
+      boxShadow: [
+        "0 0 0 rgba(239,68,68,0.2)",
+        "0 0 35px rgba(239,68,68,0.35)",
+        "0 0 0 rgba(239,68,68,0.2)",
+      ],
+    }}
+    transition={{
+      duration: 2,
+      repeat: Infinity,
+    }}
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[110px]
+      rounded-[30px]
+      bg-red-600
+      text-white
+      flex flex-col
+      items-center
+      justify-center
+      font-bold
+      cursor-pointer
+    "
+  >
+    <span className="text-xs opacity-80">
+      Selected
+    </span>
+
+    <span className="text-xl">
+      Table 5
+    </span>
+  </motion.div>
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[110px]
+      rounded-[30px]
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 6
+  </motion.div>
+
+  {/* Row 3 */}
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 7
+  </motion.div>
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-gray-200
+      flex items-center justify-center
+      text-gray-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 8
+  </motion.div>
+
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="
+      h-[90px]
+      rounded-3xl
+      bg-white
+      border border-red-200
+      flex items-center justify-center
+      text-red-600 font-bold
+      shadow-sm
+      cursor-pointer
+    "
+  >
+    Table 9
+  </motion.div>
+
+</div>
+
+</div>
+
+<div className="bg-gradient-to-r from-red-50 to-white border border-red-100 rounded-3xl p-5">
+
+  <div className="flex justify-between items-center">
+
+    <div>
+      <p className="text-gray-500 text-sm">
+        Selected Reservation
+      </p>
+
+      <h3 className="text-2xl font-black text-gray-900 mt-1">
+        Table 5
+      </h3>
+    </div>
+
+    <div className="text-right">
+      <p className="text-green-500 text-sm font-medium">
+        Available
+      </p>
+
+      <p className="text-gray-500 text-xs">
+        Instant Confirmation
+      </p>
+    </div>
+
+  </div>
+
+</div>
+                {/* Booking Details */}
+                <div className="grid grid-cols-3 gap-4 mt-8">
+
+                  <div className="border border-gray-200 rounded-2xl p-4">
+                    <Calendar
+                      size={18}
+                      className="text-red-500 mb-2"
+                    />
+
+                    <p className="text-xs text-gray-500">
+                      Date
+                    </p>
+
+                    <h4 className="font-bold">
+                      Jun 24
+                    </h4>
+                  </div>
+
+                  <div className="border border-gray-200 rounded-2xl p-4">
+                    <Users
+                      size={18}
+                      className="text-red-500 mb-2"
+                    />
+
+                    <p className="text-xs text-gray-500">
+                      Guests
+                    </p>
+
+                    <h4 className="font-bold">
+                      4 People
+                    </h4>
+                  </div>
+
+                  <div className="border border-gray-200 rounded-2xl p-4">
+                    <Clock3
+                      size={18}
+                      className="text-red-500 mb-2"
+                    />
+
+                    <p className="text-xs text-gray-500">
+                      Time
+                    </p>
+
+                    <h4 className="font-bold">
+                      7:30 PM
+                    </h4>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+         
+
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
