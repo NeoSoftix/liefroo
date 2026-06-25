@@ -5,6 +5,7 @@ import OrderingExperience from "../components/OrderingExperience";
 import PoSSection from "../components/POSSection";
 import ReservationSection from "../components/ReservationSection";
 import Footer from "../components/Footer";
+import QRSection from "../components/QRSection";
 
 export default function Products() {
   return (
@@ -15,6 +16,7 @@ export default function Products() {
       <OrderingExperience />
       <PoSSection />
       <ReservationSection />
+      <QRSection />
       <Footer />
     </>
   );
