@@ -6,6 +6,7 @@ import PoSSection from "../components/POSSection";
 import ReservationSection from "../components/ReservationSection";
 import Footer from "../components/Footer";
 import QRSection from "../components/QRSection";
+import FAQ from "../components/FAQ";
 
 export default function Products() {
   return (
@@ -17,6 +18,7 @@ export default function Products() {
       <PoSSection />
       <ReservationSection />
       <QRSection />
+      <FAQ />
       <Footer />
     </>
   );
