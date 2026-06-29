@@ -4,10 +4,13 @@ import { Menu, ShoppingBag } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
-      <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-full px-8 py-4 shadow-[0_15px_50px_rgba(0,0,0,0.08)]">
-
-        <div className="flex items-center justify-between">
+    // Header ko full width kiya aur top par stick kiya
+    <header className="fixed top-0 left-0 z-50 w-full">
+      {/* Backdrop blur aur border bottom apply kiya */}
+      <div className="backdrop-blur-xl bg-white/70 border-b border-white/40 px-8 py-4 shadow-[0_15px_50px_rgba(0,0,0,0.08)]">
+        
+        {/* max-w-7xl aur mx-auto lagaya taaki andar ka content center me rahe aur baki sab same hai */}
+        <div className="flex items-center justify-between max-w-7xl mx-auto">
 
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">

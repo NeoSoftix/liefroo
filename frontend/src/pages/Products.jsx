@@ -7,6 +7,8 @@ import ReservationSection from "../components/ReservationSection";
 import Footer from "../components/Footer";
 import QRSection from "../components/QRSection";
 import FAQ from "../components/FAQ";
+import WebsiteMarketingSection from "../components/WebsiteMarketingSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Products() {
   return (
@@ -15,10 +17,14 @@ export default function Products() {
       <HeroSlider />
       <RestaurantEcosystem />
       <OrderingExperience />
+      <WebsiteMarketingSection />
+
       <PoSSection />
       <ReservationSection />
       <QRSection />
+
       <FAQ />
+      <ContactSection />
       <Footer />
     </>
   );
