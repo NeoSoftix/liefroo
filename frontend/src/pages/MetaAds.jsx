@@ -1,4 +1,6 @@
-import { Facebook, Target, PenLine, BarChart3, Lightbulb, Megaphone, Users, ShoppingCart, TrendingUp } from "lucide-react";
+import {  Target, PenLine, BarChart3, Lightbulb, Megaphone, Users, ShoppingCart, TrendingUp } from "lucide-react";
+import { FaFacebook } from "react-icons/fa";
+
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
@@ -10,14 +12,14 @@ export default function MetaAds() {
   const { t } = useTranslation();
 
   const heroFeatures = [
-    { Icon: Facebook, key: "campaigns" },
+    { Icon: FaFacebook, key: "campaigns" },
     { Icon: Target, key: "targeting" },
     { Icon: PenLine, key: "creative" },
     { Icon: BarChart3, key: "tracking" },
   ].map(({ Icon, key }) => ({ Icon, label: t(`metaAds.hero.features.${key}`) }));
 
   const featureItems = [
-    { key: "campaigns", Icon: Facebook },
+    { key: "campaigns", Icon: FaFacebook },
     { key: "targeting", Icon: Target },
     { key: "creative", Icon: PenLine },
     { key: "tracking", Icon: BarChart3 },
