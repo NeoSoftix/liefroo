@@ -6,12 +6,14 @@ import {
   ShoppingBag,
   ArrowRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import dashboardImage from "../assets/sqpanel.png";
 import FeatureCard from "./FeatureCard";
 import Button from "./Button";
 
 export default function OrderingExperience() {
+  const { t } = useTranslation();
   return (
     <section className="relative py-32 bg-[#FCFCFC] overflow-hidden">
 
@@ -35,19 +37,18 @@ export default function OrderingExperience() {
     font-medium
   "
 >
-  Online Ordering
+  {t("ordering.badge")}
 </Button>
 
           <h2 className="text-5xl lg:text-6xl font-black text-[#111827] mt-6">
-            Ordering Customers
+            {t("ordering.headingLine1")}
             <span className="block text-red-600">
-              Actually Enjoy Using
+              {t("ordering.headingLine2")}
             </span>
           </h2>
 
           <p className="max-w-2xl mx-auto text-gray-600 mt-5 text-lg">
-            Branded ordering website, direct online orders,
-            pickup & delivery, and zero commission fees.
+            {t("ordering.description")}
           </p>
 
         </div>
@@ -58,16 +59,16 @@ export default function OrderingExperience() {
           {/* Card 1 */}
           <FeatureCard
             Icon={Globe}
-            title="Branded Website"
-            subtitle="Create a beautiful online ordering experience."
+            title={t("ordering.cards.brandedWebsite.title")}
+            subtitle={t("ordering.cards.brandedWebsite.subtitle")}
             cardClassName="h-full flex flex-col justify-between"
           />
 
           {/* Card 2 */}
           <FeatureCard
             Icon={Percent}
-            title="0% Commission"
-            subtitle="Keep more revenue from every order."
+            title={t("ordering.cards.zeroCommission.title")}
+            subtitle={t("ordering.cards.zeroCommission.subtitle")}
             cardClassName="h-full flex flex-col justify-between"
           />
 
@@ -116,7 +117,7 @@ export default function OrderingExperience() {
 <FeatureCard
   absolute
   title="+248%"
-  subtitle="Direct Orders"
+  subtitle={t("ordering.stats.directOrders")}
   className="top-4 right-4"
   cardClassName=""
 />
@@ -124,7 +125,7 @@ export default function OrderingExperience() {
 <FeatureCard
   absolute
   title="$18.7K"
-  subtitle="Revenue"
+  subtitle={t("ordering.stats.revenue")}
   className="bottom-6 left-4"
   cardClassName=""
 />
@@ -132,7 +133,7 @@ export default function OrderingExperience() {
 <FeatureCard
   absolute
   title="+412"
-  subtitle="New Customers"
+  subtitle={t("ordering.stats.newCustomers")}
   className="bottom-6 right-4"
   cardClassName=""
 />
@@ -143,16 +144,16 @@ export default function OrderingExperience() {
           {/* Card 3 */}
           <FeatureCard
             Icon={Truck}
-            title="Pickup & Delivery"
-            subtitle="Deliver meals wherever your customers are."
+            title={t("ordering.cards.pickupDelivery.title")}
+            subtitle={t("ordering.cards.pickupDelivery.subtitle")}
             cardClassName="h-full flex flex-col justify-between"
           />
 
           {/* Card 4 */}
           <FeatureCard
             Icon={ShoppingBag}
-            title="Direct Orders"
-            subtitle="Own the customer relationship and data."
+            title={t("ordering.cards.directOrders.title")}
+            subtitle={t("ordering.cards.directOrders.subtitle")}
             cardClassName="h-full flex flex-col justify-between"
           />
 
@@ -181,7 +182,7 @@ export default function OrderingExperience() {
     shadow-lg
   "
 >
-  Explore Online Ordering
+  {t("ordering.cta")}
   <ArrowRight size={18} />
 </Button>
         </div>

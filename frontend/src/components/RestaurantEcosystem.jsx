@@ -7,45 +7,14 @@ import {
   CreditCard,
   BarChart3,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import centerImage from "../assets/panel.png";
 import FeatureCard from "../components/FeatureCard";
 import Button from "./Button";
 
-const features = [
-  {
-    title: "Online Ordering",
-    icon: ShoppingBag,
-    position: "top",
-  },
-  {
-    title: "Reservations",
-    icon: CalendarDays,
-    position: "top-right",
-  },
-  {
-    title: "QR Ordering",
-    icon: QrCode,
-    position: "bottom-right",
-  },
-  {
-    title: "Marketing",
-    icon: Megaphone,
-    position: "bottom",
-  },
-  {
-    title: "POS System",
-    icon: CreditCard,
-    position: "bottom-left",
-  },
-  {
-    title: "Analytics",
-    icon: BarChart3,
-    position: "top-left",
-  },
-];
-
 export default function RestaurantEcosystem() {
+  const { t } = useTranslation();
 return (
   <section className="relative py-24 overflow-hidden bg-[#FAFAFA]">
 
@@ -73,21 +42,20 @@ return (
     font-medium
   "
 >
-  Connected Restaurant Ecosystem
+  {t("ecosystem.badge")}
 </Button>
 
         <h2 className="text-5xl lg:text-6xl font-black mt-6 text-[#111827]">
-          Everything Your Restaurant
+          {t("ecosystem.headingLine1")}
 
           <span className="block text-red-600">
-            Needs In One Place
+            {t("ecosystem.headingLine2")}
           </span>
 
         </h2>
 
         <p className="text-gray-600 mt-5 max-w-2xl mx-auto text-lg">
-          Manage orders, reservations, POS, QR menus,
-          marketing and analytics from one platform.
+          {t("ecosystem.description")}
         </p>
 
       </div>
@@ -172,8 +140,8 @@ return (
 
 <FeatureCard
   absolute
-  title="Online Ordering"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.onlineOrdering")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={ShoppingBag}
   className="top-0 left-1/2 -translate-x-1/2"
   cardClassName="min-w-[250px] flex items-center gap-4"
@@ -181,8 +149,8 @@ return (
 
 <FeatureCard
   absolute
-  title="Reservations"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.reservations")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={CalendarDays}
   className="top-40 right-0"
   cardClassName="min-w-[250px] flex items-center gap-4"
@@ -190,8 +158,8 @@ return (
 
 <FeatureCard
   absolute
-  title="QR Ordering"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.qrOrdering")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={QrCode}
   className="bottom-40 right-0"
   cardClassName="min-w-[250px] flex items-center gap-4"
@@ -199,8 +167,8 @@ return (
 
 <FeatureCard
   absolute
-  title="Marketing"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.marketing")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={Megaphone}
   className="bottom-0 left-1/2 -translate-x-1/2"
   cardClassName="min-w-[250px] flex items-center gap-4"
@@ -208,8 +176,8 @@ return (
 
 <FeatureCard
   absolute
-  title="POS System"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.posSystem")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={CreditCard}
   className="bottom-40 left-0"
   cardClassName="min-w-[250px] flex items-center gap-4"
@@ -217,8 +185,8 @@ return (
 
 <FeatureCard
   absolute
-  title="Analytics"
-  subtitle="Connected Module"
+  title={t("ecosystem.features.analytics")}
+  subtitle={t("ecosystem.connectedModule")}
   Icon={BarChart3}
   className="top-40 left-0"
   cardClassName="min-w-[250px] flex items-center gap-4"

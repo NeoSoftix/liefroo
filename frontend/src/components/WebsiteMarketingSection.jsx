@@ -5,33 +5,36 @@ import {
 } from "react-icons/fi";
 import { LuUtensilsCrossed } from "react-icons/lu";
 import { FiArrowRight } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 export default function WebsiteMarketingSection() {
+  const { t } = useTranslation();
+
   const websiteFeatures = [
     {
       icon: <FiSmartphone />,
-      title: "Mobile First",
+      title: t("marketing.website.features.mobileFirst"),
     },
     {
       icon: <LuUtensilsCrossed />,
-      title: "Ordering Built-in",
+      title: t("marketing.website.features.orderingBuiltIn"),
     },
     {
       icon: <FiCalendar />,
-      title: "Reservations Ready",
+      title: t("marketing.website.features.reservationsReady"),
     },
     {
       icon: <FiTrendingUp />,
-      title: "SEO Optimised",
+      title: t("marketing.website.features.seoOptimised"),
     },
   ];
 
   const marketingFeatures = [
-    "Email Campaigns",
-    "SMS Reminders",
-    "Loyalty Programs",
-    "Win-back Automation",
-    "Gift Cards",
+    t("marketing.automation.features.emailCampaigns"),
+    t("marketing.automation.features.smsReminders"),
+    t("marketing.automation.features.loyaltyPrograms"),
+    t("marketing.automation.features.winBackAutomation"),
+    t("marketing.automation.features.giftCards"),
   ];
 
   return (
@@ -63,27 +66,26 @@ export default function WebsiteMarketingSection() {
               </div>
 
               <span className="uppercase tracking-[4px] text-red-600 font-semibold text-sm">
-                Website Builder
+                {t("marketing.website.badge")}
               </span>
             </div>
 
             <h2 className="text-5xl font-black leading-tight text-black mb-6">
-              Websites that
+              {t("marketing.website.headingLine1")}
               <br />
-              bring more guests,
+              {t("marketing.website.headingLine2")}
               <br />
               <span className="text-red-600 relative inline-block">
-                every single day.
+                {t("marketing.website.headingLine3")}
               </span>
             </h2>
 
             <p className="text-gray-600 text-lg max-w-md leading-relaxed mb-8">
-              Mobile-first, SEO-optimised websites with ordering &
-              reservations built to convert.
+              {t("marketing.website.description")}
             </p>
 
             <button className="group flex items-center gap-3 text-red-600 font-semibold text-lg">
-              Explore Websites
+              {t("marketing.website.cta")}
 
               <FiArrowRight className="group-hover:translate-x-2 transition-all duration-300" />
             </button>
@@ -132,7 +134,7 @@ export default function WebsiteMarketingSection() {
               ✉️
 
               <span className="uppercase tracking-[4px] text-sm font-semibold">
-                Marketing Automation
+                {t("marketing.automation.badge")}
               </span>
             </div>
 
@@ -141,20 +143,19 @@ export default function WebsiteMarketingSection() {
               {/* Left */}
               <div>
                 <h2 className="text-5xl font-black leading-tight mb-6">
-                  Build loyalty.
+                  {t("marketing.automation.headingLine1")}
                   <br />
                   <span className="text-red-600">
-                    Bring guests back.
+                    {t("marketing.automation.headingLine2")}
                   </span>
                 </h2>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                  Email, SMS, loyalty, win-back, and gift cards —
-                  powered by your real POS data.
+                  {t("marketing.automation.description")}
                 </p>
 
                 <button className="group flex items-center gap-3 text-red-600 font-semibold text-lg">
-                  Explore Marketing
+                  {t("marketing.automation.cta")}
 
                   <FiArrowRight className="group-hover:translate-x-2 transition-all duration-300" />
                 </button>

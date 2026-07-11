@@ -2,10 +2,14 @@ import { useState } from "react";
 import { slides } from "../../data/slides";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronUp, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import FeatureCard from "./FeatureCard";
 import Button from "./Button";
 export default function HeroSlider() {
+  const { t } = useTranslation();
   const [active, setActive] = useState(0);
+  const activeSlide = slides[active];
+  const slideText = t(`hero.slides.${activeSlide.id}`, { returnObjects: true });
 
   const nextSlide = () => {
     setActive((prev) =>
@@ -30,7 +34,7 @@ export default function HeroSlider() {
       <AnimatePresence mode="wait">
 
         <motion.div
-          key={slides[active].id}
+          key={activeSlide.id}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -48,15 +52,15 @@ export default function HeroSlider() {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-flex bg-red-100 text-red-600 px-5 py-2 rounded-full font-medium">
-                {slides[active].subtitle}
+                {slideText.subtitle}
               </span>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mt-6 leading-[0.95]">
-                {slides[active].title}
+                {slideText.title}
               </h1>
 
               <p className="text-lg text-gray-600 mt-6 max-w-xl leading-relaxed">
-                {slides[active].description}
+                {slideText.description}
               </p>
 
               <div className="flex flex-wrap gap-4 mt-10">
@@ -69,7 +73,7 @@ export default function HeroSlider() {
     hover:bg-white hover:text-red-600
   "
 >
-  Book Demo
+  {t("hero.bookDemo")}
 </Button>
 <Button
   onClick={() => console.log("Learn More")}
@@ -80,7 +84,7 @@ export default function HeroSlider() {
     hover:bg-red-600 hover:text-white
   "
 >
-  Learn More
+  {t("hero.learnMore")}
 </Button>
 
 
@@ -90,17 +94,17 @@ export default function HeroSlider() {
 
                 <div className="flex items-center gap-2">
                   <span className="text-red-600">✓</span>
-                  Live in 30 minutes
+                  {t("hero.badges.liveIn30")}
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="text-red-600">✓</span>
-                  0% commission
+                  {t("hero.badges.zeroCommission")}
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="text-red-600">✓</span>
-                  Smart Restaurant OS
+                  {t("hero.badges.smartOs")}
                 </div>
 
               </div>
@@ -117,9 +121,9 @@ export default function HeroSlider() {
               {/* Image */}
 
               <motion.img
-                key={slides[active].image}
-                src={slides[active].image}
-                alt={slides[active].title}
+                key={activeSlide.image}
+                src={activeSlide.image}
+                alt={slideText.title}
                 initial={{
                   x: 250,
                   opacity: 0,
@@ -164,8 +168,8 @@ export default function HeroSlider() {
 {/* Floating Stats Card */}
 
 <FeatureCard
-  title={slides[active].stat}
-  subtitle={slides[active].card}
+  title={activeSlide.stat}
+  subtitle={slideText.card}
   className="absolute bottom-10 right-[-80px] z-30"
   size="sm"
 />
@@ -174,7 +178,7 @@ export default function HeroSlider() {
 
 <FeatureCard
   title="+128"
-  subtitle="Orders Today"
+  subtitle={t("hero.ordersToday")}
   className="absolute left-0 top-20 z-30"
   size="sm"
 />

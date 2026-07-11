@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Prevent section overlap by ensuring proper box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ensure sections don't visually collapse */
+section {
+  position: relative;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);

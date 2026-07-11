@@ -1,32 +1,34 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { CreditCard, BarChart3, ShoppingBag } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function POSSection() {
+  const { t } = useTranslation();
   const [progress, setProgress] = useState(0);
   const [active, setActive] = useState(0);
 
   const steps = [
     {
       icon: CreditCard,
-      title: "Instant Billing Engine",
-      desc: "Lightning fast checkout with zero delay processing",
+      title: t("pos.steps.billing.title"),
+      desc: t("pos.steps.billing.desc"),
       revenue: "$2,480",
       orders: "128",
       time: "12m"
     },
     {
       icon: ShoppingBag,
-      title: "Smart Order Flow",
-      desc: "Automatically syncs kitchen, staff & delivery",
+      title: t("pos.steps.orderFlow.title"),
+      desc: t("pos.steps.orderFlow.desc"),
       revenue: "$3,120",
       orders: "184",
       time: "9m"
     },
     {
       icon: BarChart3,
-      title: "AI Analytics Dashboard",
-      desc: "Predict revenue & optimize performance in real time",
+      title: t("pos.steps.analytics.title"),
+      desc: t("pos.steps.analytics.desc"),
       revenue: "$4,560",
       orders: "240",
       time: "7m"
@@ -99,11 +101,11 @@ export default function POSSection() {
 
             <div>
               <span className="text-red-500 text-sm tracking-[0.3em] uppercase">
-                Restaurant OS
+                {t("pos.eyebrow")}
               </span>
 
               <h2 className="text-5xl font-black text-gray-900 mt-4 leading-tight">
-                Next Generation
+                {t("pos.headingPrefix")}
                 <span className="text-red-600 block">{current.title}</span>
               </h2>
 
@@ -152,23 +154,23 @@ export default function POSSection() {
             <div className="mt-10 bg-white border border-gray-200 rounded-3xl p-5 shadow-sm">
 
   <h4 className="font-bold text-gray-900 mb-3">
-    System Status
+    {t("pos.systemStatus.title")}
   </h4>
 
   <div className="space-y-3 text-sm">
 
     <div className="flex justify-between items-center">
-      <span className="text-gray-600">Server Health</span>
-      <span className="text-green-500 font-semibold">Stable</span>
+      <span className="text-gray-600">{t("pos.systemStatus.serverHealth")}</span>
+      <span className="text-green-500 font-semibold">{t("pos.systemStatus.stable")}</span>
     </div>
 
     <div className="flex justify-between items-center">
-      <span className="text-gray-600">Sync Speed</span>
+      <span className="text-gray-600">{t("pos.systemStatus.syncSpeed")}</span>
       <span className="text-red-500 font-semibold">120ms</span>
     </div>
 
     <div className="flex justify-between items-center">
-      <span className="text-gray-600">Uptime</span>
+      <span className="text-gray-600">{t("pos.systemStatus.uptime")}</span>
       <span className="text-green-500 font-semibold">99.9%</span>
     </div>
 
@@ -192,9 +194,9 @@ export default function POSSection() {
 
     {/* Header */}
     <div className="bg-gradient-to-r from-red-500 to-red-600 p-5 text-white flex justify-between items-center">
-      <h3 className="font-bold">Live POS System</h3>
+      <h3 className="font-bold">{t("pos.card.live")}</h3>
       <span className="text-xs bg-white/20 px-3 py-1 rounded-full">
-        ● LIVE
+        ● {t("pos.card.liveBadge")}
       </span>
     </div>
 
@@ -202,7 +204,7 @@ export default function POSSection() {
 
       {/* Revenue */}
       <div className="bg-red-50 border border-red-100 p-6 rounded-3xl">
-        <p className="text-gray-500 text-sm">Revenue</p>
+        <p className="text-gray-500 text-sm">{t("pos.card.revenue")}</p>
         <h2 className="text-4xl font-black text-red-600 mt-2">
           {current.revenue}
         </h2>
@@ -217,12 +219,12 @@ export default function POSSection() {
       <div className="grid grid-cols-2 gap-4">
 
         <div className="bg-white border rounded-2xl p-4 shadow-sm">
-          <p className="text-xs text-gray-500">Orders</p>
+          <p className="text-xs text-gray-500">{t("pos.card.orders")}</p>
           <p className="text-2xl font-bold">{current.orders}</p>
         </div>
 
         <div className="bg-white border rounded-2xl p-4 shadow-sm">
-          <p className="text-xs text-gray-500">Avg Time</p>
+          <p className="text-xs text-gray-500">{t("pos.card.avgTime")}</p>
           <p className="text-2xl font-bold">{current.time}</p>
         </div>
 
@@ -231,23 +233,23 @@ export default function POSSection() {
       {/* Kitchen Status */}
       <div className="bg-white border rounded-3xl p-5 shadow-sm">
         <h4 className="font-bold text-gray-900 mb-3">
-          Kitchen Status
+          {t("pos.card.kitchenStatus")}
         </h4>
 
         <div className="space-y-2 text-sm text-gray-600">
 
           <div className="flex justify-between">
-            <span>🍳 Preparing</span>
+            <span>🍳 {t("pos.card.preparing")}</span>
             <span className="text-red-500 font-semibold">12</span>
           </div>
 
           <div className="flex justify-between">
-            <span>🍽 Ready</span>
+            <span>🍽 {t("pos.card.ready")}</span>
             <span className="text-green-500 font-semibold">5</span>
           </div>
 
           <div className="flex justify-between">
-            <span>🚚 Delivery</span>
+            <span>🚚 {t("pos.card.delivery")}</span>
             <span className="text-blue-500 font-semibold">3</span>
           </div>
 
@@ -258,24 +260,24 @@ export default function POSSection() {
       <div className="bg-white border rounded-3xl p-5 shadow-sm">
 
         <h4 className="font-bold text-gray-900 mb-3">
-          Live Orders
+          {t("pos.card.liveOrders")}
         </h4>
 
         <div className="space-y-3 text-sm">
 
           <div className="flex justify-between">
             <span>Order #1024</span>
-            <span className="text-yellow-500">Preparing</span>
+            <span className="text-yellow-500">{t("pos.card.orderPreparing")}</span>
           </div>
 
           <div className="flex justify-between">
             <span>Order #1025</span>
-            <span className="text-green-500">Delivered</span>
+            <span className="text-green-500">{t("pos.card.orderDelivered")}</span>
           </div>
 
           <div className="flex justify-between">
             <span>Order #1026</span>
-            <span className="text-red-500">New</span>
+            <span className="text-red-500">{t("pos.card.orderNew")}</span>
           </div>
 
         </div>

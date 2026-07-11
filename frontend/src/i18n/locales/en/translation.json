@@ -1,0 +1,1770 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "features": "Features",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "bookDemo": "Book Demo",
+    "megaMenu": {
+      "groups": {
+        "orderingOperations": "Ordering & Operations",
+        "growthMarketing": "Growth & Marketing"
+      },
+      "items": {
+        "menuManagement": {
+          "title": "Menu Management",
+          "desc": "Update items, prices & availability instantly."
+        },
+        "onlineOrdering": {
+          "title": "Online Ordering",
+          "desc": "Your own branded ordering system."
+        },
+        "qrOrdering": {
+          "title": "QR Ordering & Pay",
+          "desc": "Scan, order, and pay from the table."
+        },
+        "posSystem": {
+          "title": "POS System",
+          "desc": "Touch POS for dine-in, splits & discounts."
+        },
+        "reservationSystem": {
+          "title": "Reservation System",
+          "desc": "Smart table bookings made simple."
+        },
+        "printerIntegration": {
+          "title": "Printer Integration",
+          "desc": "Auto-print orders to kitchen & bar."
+        },
+        "websiteDevelopment": {
+          "title": "Website Development",
+          "desc": "Custom websites built for restaurants."
+        },
+        "mobileAppDevelopment": {
+          "title": "Mobile App Development",
+          "desc": "Native iOS & Android apps for your brand."
+        },
+        "googleAds": {
+          "title": "Google Ads (PPC)",
+          "desc": "Drive high-intent traffic to your orders."
+        },
+        "metaAds": {
+          "title": "Meta Ads",
+          "desc": "Facebook & Instagram campaigns that convert."
+        },
+        "googleBusinessSEO": {
+          "title": "Google Business & SEO",
+          "desc": "Get found and drive direct orders."
+        },
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "desc": "Turn your data into real insights."
+        },
+        "technicalSupport": {
+          "title": "Technical Support",
+          "desc": "7-day help in 5 languages, whenever you need it."
+        }
+      },
+      "exploreAll": "Get in touch"
+    }
+  },
+  "hero": {
+    "slides": {
+      "1": {
+        "title": "The Restaurant Operating System",
+        "subtitle": "Built for independent restaurants",
+        "description": "Website, ordering, POS, reservations and marketing — all connected, all intelligent.",
+        "card": "POS Revenue"
+      },
+      "2": {
+        "title": "Grow Direct Online Orders",
+        "subtitle": "0% Commission",
+        "description": "Accept online orders directly from your customers without marketplace fees.",
+        "card": "Orders Today"
+      },
+      "3": {
+        "title": "Reservations & QR Ordering",
+        "subtitle": "Smart Dining Experience",
+        "description": "Manage reservations, table bookings and QR ordering from one dashboard.",
+        "card": "Tables Booked"
+      }
+    },
+    "bookDemo": "Book Demo",
+    "learnMore": "Learn More",
+    "badges": {
+      "liveIn30": "Live in 30 minutes",
+      "zeroCommission": "0% commission",
+      "smartOs": "Smart Restaurant OS"
+    },
+    "ordersToday": "Orders Today"
+  },
+  "ecosystem": {
+    "badge": "Connected Restaurant Ecosystem",
+    "headingLine1": "Everything Your Restaurant",
+    "headingLine2": "Needs In One Place",
+    "description": "Manage orders, reservations, POS, QR menus, marketing and analytics from one platform.",
+    "connectedModule": "Connected Module",
+    "features": {
+      "onlineOrdering": "Online Ordering",
+      "reservations": "Reservations",
+      "qrOrdering": "QR Ordering",
+      "marketing": "Marketing",
+      "posSystem": "POS System",
+      "analytics": "Analytics"
+    }
+  },
+  "ordering": {
+    "badge": "Online Ordering",
+    "headingLine1": "Ordering Customers",
+    "headingLine2": "Actually Enjoy Using",
+    "description": "Branded ordering website, direct online orders, pickup & delivery, and zero commission fees.",
+    "cards": {
+      "brandedWebsite": {
+        "title": "Branded Website",
+        "subtitle": "Create a beautiful online ordering experience."
+      },
+      "zeroCommission": {
+        "title": "0% Commission",
+        "subtitle": "Keep more revenue from every order."
+      },
+      "pickupDelivery": {
+        "title": "Pickup & Delivery",
+        "subtitle": "Deliver meals wherever your customers are."
+      },
+      "directOrders": {
+        "title": "Direct Orders",
+        "subtitle": "Own the customer relationship and data."
+      }
+    },
+    "stats": {
+      "directOrders": "Direct Orders",
+      "revenue": "Revenue",
+      "newCustomers": "New Customers"
+    },
+    "cta": "Explore Online Ordering"
+  },
+  "marketing": {
+    "website": {
+      "badge": "Website Builder",
+      "headingLine1": "Websites that",
+      "headingLine2": "bring more guests,",
+      "headingLine3": "every single day.",
+      "description": "Mobile-first, SEO-optimised websites with ordering & reservations built to convert.",
+      "cta": "Explore Websites",
+      "features": {
+        "mobileFirst": "Mobile First",
+        "orderingBuiltIn": "Ordering Built-in",
+        "reservationsReady": "Reservations Ready",
+        "seoOptimised": "SEO Optimised"
+      }
+    },
+    "automation": {
+      "badge": "Marketing Automation",
+      "headingLine1": "Build loyalty.",
+      "headingLine2": "Bring guests back.",
+      "description": "Email, SMS, loyalty, win-back, and gift cards — powered by your real POS data.",
+      "cta": "Explore Marketing",
+      "features": {
+        "emailCampaigns": "Email Campaigns",
+        "smsReminders": "SMS Reminders",
+        "loyaltyPrograms": "Loyalty Programs",
+        "winBackAutomation": "Win-back Automation",
+        "giftCards": "Gift Cards"
+      }
+    }
+  },
+  "pos": {
+    "eyebrow": "Restaurant OS",
+    "headingPrefix": "Next Generation",
+    "steps": {
+      "billing": {
+        "title": "Instant Billing Engine",
+        "desc": "Lightning fast checkout with zero delay processing"
+      },
+      "orderFlow": {
+        "title": "Smart Order Flow",
+        "desc": "Automatically syncs kitchen, staff & delivery"
+      },
+      "analytics": {
+        "title": "AI Analytics Dashboard",
+        "desc": "Predict revenue & optimize performance in real time"
+      }
+    },
+    "systemStatus": {
+      "title": "System Status",
+      "serverHealth": "Server Health",
+      "stable": "Stable",
+      "syncSpeed": "Sync Speed",
+      "uptime": "Uptime"
+    },
+    "card": {
+      "live": "Live POS System",
+      "liveBadge": "LIVE",
+      "revenue": "Revenue",
+      "orders": "Orders",
+      "avgTime": "Avg Time",
+      "kitchenStatus": "Kitchen Status",
+      "preparing": "Preparing",
+      "ready": "Ready",
+      "delivery": "Delivery",
+      "liveOrders": "Live Orders",
+      "orderPreparing": "Preparing",
+      "orderDelivered": "Delivered",
+      "orderNew": "New"
+    }
+  },
+  "reservation": {
+    "eyebrow": "Reservations",
+    "headingLine1": "Fill More Tables.",
+    "headingLine2": "Without More Calls.",
+    "description": "Give guests a seamless reservation experience with real-time availability, automated reminders, Google Reserve integration and intelligent waitlist management.",
+    "benefits": {
+      "availability": "Real-time table availability",
+      "googleReserve": "Google Reserve integration",
+      "confirmations": "SMS & Email confirmations",
+      "noShows": "Reduce no-shows automatically"
+    },
+    "stats": {
+      "fewerNoShows": "Fewer No-Shows",
+      "fasterBooking": "Faster Booking"
+    },
+    "cta": "Explore Reservations",
+    "card": {
+      "title": "Live Reservations",
+      "liveAvailability": "Live Availability",
+      "floorPlan": "Restaurant Floor Plan",
+      "selected": "Selected",
+      "available": "Available",
+      "reserved": "Reserved",
+      "table": "Table {{number}}",
+      "selectedReservation": "Selected Reservation",
+      "instantConfirmation": "Instant Confirmation",
+      "date": "Date",
+      "guests": "Guests",
+      "guestsCount": "4 People",
+      "time": "Time"
+    }
+  },
+  "qr": {
+    "badge": "QR Ordering & Pay",
+    "headingLine1": "Scan.",
+    "headingLine2": "Order.",
+    "headingLine3": "Pay.",
+    "headingLine4": "Repeat.",
+    "description": "Guests order and pay directly from the table via QR — fully connected to your POS system for a seamless dining experience.",
+    "features": {
+      "faster": { "title": "Faster", "subtitle": "Service" },
+      "higher": { "title": "Higher", "subtitle": "AOV" },
+      "lessStaff": { "title": "Less Staff", "subtitle": "Workload" },
+      "secure": { "title": "Secure", "subtitle": "Payments" }
+    },
+    "cta": "See QR Ordering In Action"
+  },
+  "faq": {
+    "eyebrow": "Food Ordering System",
+    "title": "FAQ",
+    "heading": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our online food ordering platform, payments, reservations, and restaurant management tools.",
+    "items": {
+      "q1": {
+        "question": "What is an Online Ordering System?",
+        "answer": "An online ordering system allows customers to browse menus, place orders, and make secure payments directly through your website or mobile device."
+      },
+      "q2": {
+        "question": "Can customers order without downloading an app?",
+        "answer": "Yes. Customers can order directly from your website by simply scanning a QR code or visiting your ordering page."
+      },
+      "q3": {
+        "question": "Does the system support online payments?",
+        "answer": "Yes. The platform supports UPI, Credit Cards, Debit Cards, Net Banking, Wallets, and other secure payment gateways."
+      },
+      "q4": {
+        "question": "Can I manage orders in real time?",
+        "answer": "Absolutely. Restaurant staff can view, accept, reject, and track orders instantly from the admin dashboard."
+      },
+      "q5": {
+        "question": "Does the system support table reservations?",
+        "answer": "Yes. Customers can reserve tables online and receive instant booking confirmations."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "headingLine1": "Let's create",
+    "headingLine2": "something",
+    "headingLine3": "amazing together.",
+    "description": "Have a question or ready to get started? We'd love to hear from you across our global offices.",
+    "offices": {
+      "india": {
+        "title": "India Office",
+        "address": "123 Main Street,",
+        "city": "New Delhi, India"
+      },
+      "europe": {
+        "title": "Europe Office",
+        "address": "456 Business Avenue,",
+        "city": "Berlin, Germany"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "privacy": "We respect your privacy. Your information will never be shared."
+    }
+  },
+  "footer": {
+    "watermark": "Restaurant OS",
+    "cta": {
+      "eyebrow": "Restaurant Growth Starts Here",
+      "headingLine1": "Ready To Transform",
+      "headingLine2": "Your Restaurant?",
+      "description": "Manage orders, billing, kitchen operations, delivery and analytics from one powerful Restaurant Operating System.",
+      "button": "Book Free Demo"
+    },
+    "brand": {
+      "description": "Complete restaurant operating system for modern restaurants. Manage orders, POS, delivery, analytics and customer engagement from a single platform.",
+      "restaurants": "Restaurants",
+      "uptime": "Uptime"
+    },
+    "product": {
+      "title": "Product",
+      "items": {
+        "pos": "POS System",
+        "onlineOrdering": "Online Ordering",
+        "kitchenDisplay": "Kitchen Display",
+        "qrMenu": "QR Menu",
+        "analytics": "Analytics"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "items": {
+        "about": "About Us",
+        "careers": "Careers",
+        "partners": "Partners",
+        "blog": "Blog",
+        "contact": "Contact"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "hello@mealshub.com",
+      "phone": "+1 (800) 123-4567",
+      "support": "24/7 Support",
+      "location": "New York, United States"
+    },
+    "copyright": "© 2026 MealsHub. All rights reserved."
+  },
+  "websiteDevelopment": {
+    "hero": {
+      "badge": "Restaurant Website Builder",
+      "headingLine1": "Custom Websites",
+      "headingLine2": "Built for Restaurants",
+      "description": "Get a fully customized website that reflects your brand, attracts more customers, and grows your business online.",
+      "features": {
+        "domain": "Your Own Domain",
+        "mobile": "Mobile-First Design",
+        "ordering": "Built-in Ordering",
+        "seo": "SEO Optimized"
+      },
+      "cta": "Book a Demo"
+    },
+    "templates": {
+      "eyebrow": "Template Gallery",
+      "heading": "Designed for appetite.",
+      "headingRed": "Built to perform.",
+      "description": "Choose from professionally designed templates crafted specifically for restaurants, cafes and bars — then make it yours in minutes.",
+      "cta": "Browse Templates",
+      "items": {
+        "fineDining": "Fine Dining",
+        "cafeBrunch": "Cafe & Brunch",
+        "fastCasual": "Fast Casual",
+        "barLounge": "Bar & Lounge"
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How It Works",
+      "heading": "From template to live",
+      "headingRed": "in a single afternoon.",
+      "steps": {
+        "choose": {
+          "title": "Choose Your Template",
+          "desc": "Pick a design that matches your restaurant's vibe and cuisine."
+        },
+        "customize": {
+          "title": "Customize With Your Menu",
+          "desc": "Add your menu, photos, hours and branding — no code required."
+        },
+        "launch": {
+          "title": "Go Live",
+          "desc": "Publish on your own domain and start taking orders the same day."
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Built For Operators",
+      "heading": "Built for the way restaurant",
+      "headingRed": "owners actually work.",
+      "items": {
+        "updates": {
+          "title": "Real-Time Menu Updates",
+          "desc": "Change prices, mark items sold out, or add specials instantly."
+        },
+        "ordering": {
+          "title": "Direct Online Ordering",
+          "desc": "Every website comes connected to ordering — no separate app needed."
+        },
+        "support": {
+          "title": "Dedicated Support",
+          "desc": "A real team helps you launch and keeps your site running smoothly."
+        }
+      }
+    },
+    "stats": {
+      "seoScore": "SEO Score",
+      "conversionLift": "More Direct Orders",
+      "launchTime": "Average Launch Time",
+      "launchValue": "1 Day",
+      "testimonial": "We went from a Facebook page to a real website with online ordering in one afternoon. Direct orders more than tripled in two months.",
+      "testimonialName": "Maria Costa",
+      "testimonialRole": "Owner, Costa's Trattoria"
+    },
+    "pricing": {
+      "eyebrow": "Why It's Worth It",
+      "heading": "Why operators pick us",
+      "headingRed": "over generic builders.",
+      "columns": {
+        "us": "RestroOS",
+        "diy": "DIY Builder",
+        "agency": "Custom Agency"
+      },
+      "rows": {
+        "setupTime": {
+          "label": "Setup Time",
+          "us": "1 Day",
+          "diy": "1-2 Weeks",
+          "agency": "4-8 Weeks"
+        },
+        "ordering": {
+          "label": "Ordering Included",
+          "us": "Included",
+          "diy": "Extra App Needed",
+          "agency": "Extra Integration"
+        },
+        "posSync": {
+          "label": "Synced With POS Menu",
+          "us": "Automatic",
+          "diy": "Manual",
+          "agency": "Manual"
+        },
+        "support": {
+          "label": "Ongoing Support",
+          "us": "24/7",
+          "diy": "Community Forums",
+          "agency": "Limited"
+        },
+        "cost": {
+          "label": "Typical Cost",
+          "us": "One Flat Plan",
+          "diy": "$20–60/mo + Fees",
+          "agency": "$3,000+ Upfront"
+        }
+      }
+    },
+    "bundled": {
+      "headingLine1": "Website bundled with ordering",
+      "headingLine2": "on one flat monthly plan.",
+      "description": "No setup fees, no design costs, no separate ordering app. Everything you need to sell online is included from day one.",
+      "benefits": {
+        "noSetup": "No setup or design fees",
+        "cancel": "Cancel anytime, no contracts",
+        "launch": "Live in 24-48 hours"
+      },
+      "cta": "Get Started"
+    }
+  },
+  "mobileAppDevelopment": {
+    "hero": {
+      "badge": "Mobile App Development",
+      "headingLine1": "Mobile App",
+      "headingLine2": "Development",
+      "description": "Native iOS and Android apps for your brand: ordering, vouchers, payments, push updates, and tracking — wired to the same backend as your site, POS, and printers.",
+      "checklist": {
+        "nativeApps": "Native iOS & Android apps",
+        "tracking": "Push notifications & order tracking",
+        "deployment": "App Store & Play Store deployment",
+        "integration": "Full integration with your ecosystem"
+      },
+      "cta": "Book a Demo",
+      "secondaryCta": "See How It Works",
+      "features": {
+        "nativeApps": "Native Apps",
+        "pushNotifications": "Push Notifications",
+        "storeDeployment": "Store Deployment",
+        "ecosystem": "Full Integration"
+      }
+    },
+    "featureGrid": {
+      "eyebrow": "What's Included",
+      "heading": "Everything you need to",
+      "headingRed": "launch a great app.",
+      "items": {
+        "brandedApp": {
+          "title": "Custom Branded Mobile App",
+          "desc": "Your brand, your app. Unique experience."
+        },
+        "ordering": {
+          "title": "Seamless Ordering Experience",
+          "desc": "Fast, simple & conversion-focused."
+        },
+        "notifications": {
+          "title": "Push Notifications",
+          "desc": "Send offers, updates & reminders that drive engagement."
+        },
+        "payments": {
+          "title": "Secure Payments",
+          "desc": "Multiple payment options with top-level security."
+        },
+        "tracking": {
+          "title": "Real-time Tracking",
+          "desc": "Order status, delivery tracking & live notifications."
+        },
+        "integration": {
+          "title": "Full Ecosystem Integration",
+          "desc": "Works with your website, POS, printers & more."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "heading": "From idea to app store.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "desc": "We understand your business, goals & app requirements."
+        },
+        "design": {
+          "title": "UI/UX Design",
+          "desc": "Beautiful, intuitive designs focused on user experience."
+        },
+        "development": {
+          "title": "Development",
+          "desc": "Native iOS & Android development with clean, scalable code."
+        },
+        "testing": {
+          "title": "Testing",
+          "desc": "Rigorous testing for performance, security & bug-free apps."
+        },
+        "deployment": {
+          "title": "Deployment",
+          "desc": "We publish your app on App Store & Google Play Store."
+        },
+        "support": {
+          "title": "Support & Updates",
+          "desc": "Continuous support, updates & feature enhancements."
+        }
+      }
+    },
+    "whyChoose": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Powerful apps that grow your restaurant business.",
+      "benefits": {
+        "loyalty": "Increase customer loyalty & retention",
+        "repeat": "Boost repeat orders with ease",
+        "sales": "Drive more sales with push campaigns",
+        "insights": "Real-time insights to make better decisions"
+      },
+      "stats": {
+        "satisfaction": { "value": "98%", "label": "Client Satisfaction" },
+        "appsDelivered": { "value": "250+", "label": "Apps Delivered" },
+        "repeatOrders": { "value": "30%", "label": "Increase in Repeat Orders" },
+        "support": { "value": "24/7", "label": "Support Available" }
+      }
+    },
+    "testimonial": {
+      "quote": "RestroOS built our mobile app exactly how we imagined. Orders increased by 40% in the first month after launch!",
+      "name": "Rahul Mehta",
+      "role": "Owner, Tasty Bites",
+      "stats": {
+        "rating": "4.9/5",
+        "ratingLabel": "Average Rating",
+        "orders": "+40%",
+        "ordersLabel": "Increase in Orders",
+        "downloads": "50K+",
+        "downloadsLabel": "App Downloads",
+        "processed": "2.5M+",
+        "processedLabel": "Orders Processed"
+      }
+    }
+  },
+  "printerIntegration": {
+    "hero": {
+      "badge": "Automated Printer Integration",
+      "headingLine1": "Automated",
+      "headingLine2": "Printer Integration",
+      "description": "Orders from web and app print automatically to kitchen and bar — clear tickets, optional 8\" Android display, standard thermal hardware. We pair devices to your account so nothing gets lost in manual forwarding.",
+      "checklist": {
+        "thermalPrint": "Thermal printer auto-print",
+        "androidDisplay": "8\" Android touch display",
+        "printerSupport": "Kitchen & bar printer support",
+        "zeroForwarding": "Zero manual order forwarding"
+      },
+      "cta": "Book a Demo",
+      "secondaryCta": "See How It Works",
+      "features": {
+        "autoPrint": "Auto Print",
+        "androidDisplay": "8\" Android Display",
+        "kitchenBar": "Kitchen & Bar Support",
+        "noManual": "No Manual Forwarding"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "autoPrint": {
+          "title": "Auto Print",
+          "desc": "Orders print automatically as soon as they are placed."
+        },
+        "androidDisplay": {
+          "title": "8\" Android Display",
+          "desc": "Live order display with status updates in real-time."
+        },
+        "kitchenBar": {
+          "title": "Kitchen & Bar Support",
+          "desc": "Dedicated printers for kitchen and bar operations."
+        },
+        "noManual": {
+          "title": "No Manual Forwarding",
+          "desc": "No retyping. No forwarding. Zero order loss."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From order to print in seconds.",
+      "steps": {
+        "orderReceived": {
+          "title": "Order Received",
+          "desc": "Order placed on website or mobile app."
+        },
+        "sentToSystem": {
+          "title": "Sent to System",
+          "desc": "Order instantly sent to your dashboard."
+        },
+        "autoRouting": {
+          "title": "Auto Routing",
+          "desc": "Automatically routed to kitchen or bar printer."
+        },
+        "printedInstantly": {
+          "title": "Printed Instantly",
+          "desc": "Thermal printers print clear order tickets."
+        },
+        "orderInProgress": {
+          "title": "Order in Progress",
+          "desc": "Staff starts preparing — seamless and fast."
+        }
+      }
+    },
+    "hardware": {
+      "eyebrow": "Hardware We Support",
+      "heading": "Reliable hardware. Seamless performance.",
+      "description": "We work with standard thermal printers and 8\" Android displays. We pair and configure devices with your account for a plug-and-play experience.",
+      "items": {
+        "printers": "58mm / 80mm Thermal Printers",
+        "display": "8\" Android Touch Display",
+        "connectivity": "Wi-Fi / LAN / Bluetooth",
+        "cloud": "Cloud Connected & Secure"
+      }
+    },
+    "testimonial": {
+      "quote": "Printer integration from RestroOS saved us hours every day. Orders print instantly and our kitchen runs smoother than ever.",
+      "name": "Alex Johnson",
+      "role": "Owner, Burger House",
+      "stats": {
+        "printSuccess": "99.9%",
+        "printSuccessLabel": "Print Success Rate",
+        "restaurants": "200+",
+        "restaurantsLabel": "Restaurants Using RestroOS",
+        "manualForwarding": "0",
+        "manualForwardingLabel": "Manual Order Forwarding",
+        "performance": "24/7",
+        "performanceLabel": "Reliable Performance"
+      }
+    }
+  },
+  "posSystemDevelopment": {
+    "hero": {
+      "badge": "POS System Development",
+      "headingLine1": "POS System",
+      "headingLine2": "Development",
+      "description": "Touch POS for dine-in, splits, and discounts — online orders land in the same flow as walk-ins, with printers and payments aligned. One counter or many stations, scaled to your locations.",
+      "checklist": {
+        "touchInterface": "Touch-screen interface",
+        "unifiedOrders": "Unified online & walk-in orders",
+        "tableManagement": "Table management & bill splitting",
+        "multiLocation": "Multi-location support"
+      },
+      "cta": "Book a Demo",
+      "secondaryCta": "See How It Works",
+      "features": {
+        "touchInterface": "Easy Touch Interface",
+        "unifiedOrders": "Unified Orders",
+        "tableManagement": "Table & Bill Management",
+        "multiLocation": "Multi-Location Ready"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "touchInterface": {
+          "title": "Easy Touch Interface",
+          "desc": "Intuitive and fast interface designed for speed and accuracy."
+        },
+        "unifiedOrders": {
+          "title": "Unified Orders",
+          "desc": "Online orders and walk-ins in one seamless workflow."
+        },
+        "tableManagement": {
+          "title": "Table & Bill Management",
+          "desc": "Manage tables, transfers, and split bills with ease."
+        },
+        "multiLocation": {
+          "title": "Multi-Location Ready",
+          "desc": "One POS system to manage all your outlets."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "One seamless flow. Every order.",
+      "steps": {
+        "orderAnywhere": {
+          "title": "Order Anywhere",
+          "desc": "Customer orders online or walks in to the restaurant."
+        },
+        "arrivesInPos": {
+          "title": "Arrives in POS",
+          "desc": "Orders appear instantly in the POS system."
+        },
+        "processManage": {
+          "title": "Process & Manage",
+          "desc": "Manage tables, split bills, apply discounts."
+        },
+        "printPrepare": {
+          "title": "Print & Prepare",
+          "desc": "Orders print to kitchen/bar printers automatically."
+        },
+        "serveGetPaid": {
+          "title": "Serve & Get Paid",
+          "desc": "Complete the order and collect payment."
+        }
+      }
+    },
+    "showcase": {
+      "eyebrow": "Powerful Features For Your Restaurant",
+      "heading": "Everything you need in one powerful POS.",
+      "items": {
+        "menu": {
+          "title": "Menu & Modifiers",
+          "desc": "Add items, combos, addons & variants."
+        },
+        "discounts": {
+          "title": "Discounts & Offers",
+          "desc": "Apply discounts, coupons and happy hours."
+        },
+        "payments": {
+          "title": "Payments",
+          "desc": "Cash, card, UPI & wallets — all in one place."
+        },
+        "reports": {
+          "title": "Reports & Analytics",
+          "desc": "Real-time sales, items, orders & more."
+        },
+        "staff": {
+          "title": "Staff Management",
+          "desc": "Roles, permissions and activity tracking."
+        },
+        "printers": {
+          "title": "Printers Integration",
+          "desc": "Kitchen, bar & receipt printers supported."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "RestroOS POS made our operations smoother and faster. Online and in-store orders in one system — game changer!",
+      "name": "Neha Sharma",
+      "role": "Owner, Urban Bites",
+      "stats": {
+        "restaurants": "10,000+",
+        "restaurantsLabel": "Restaurants Trust RestroOS POS",
+        "uptime": "99.9%",
+        "uptimeLabel": "Uptime & Reliability",
+        "efficiency": "30%+",
+        "efficiencyLabel": "Increase in Efficiency",
+        "support": "24/7",
+        "supportLabel": "Support & Assistance"
+      }
+    }
+  },
+  "technicalSupport": {
+    "hero": {
+      "badge": "Technical Support",
+      "headingLine1": "Technical",
+      "headingLine2": "Support",
+      "description": "7-day help by phone, WhatsApp, and email in Hindi, Punjabi, Urdu, English, and German — onboarding, printer or payment issues, and menu questions handled fast.",
+      "checklist": {
+        "support7d": "7-day support availability",
+        "languages": "Hindi, Punjabi, Urdu, English, German",
+        "channels": "Phone, WhatsApp & email",
+        "onboarding": "Onboarding & training"
+      },
+      "cta": "Contact Support",
+      "secondaryCta": "See How It Works",
+      "features": {
+        "support7d": "7-Day Support",
+        "languages": "5 Languages",
+        "channels": "Multiple Channels",
+        "onboarding": "Onboarding & Training",
+        "reliable": "Fast & Reliable"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "support7d": {
+          "title": "7-Day Support",
+          "desc": "We're available every day of the week to help you."
+        },
+        "languages": {
+          "title": "5 Languages",
+          "desc": "Hindi, Punjabi, Urdu, English, German."
+        },
+        "channels": {
+          "title": "Multiple Channels",
+          "desc": "Reach us via phone, WhatsApp or email."
+        },
+        "onboarding": {
+          "title": "Onboarding & Training",
+          "desc": "Complete setup assistance and team training."
+        },
+        "reliable": {
+          "title": "Fast & Reliable",
+          "desc": "Quick response. Real solutions. No long waiting."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How We Help",
+      "heading": "Quick help. Real solutions.",
+      "steps": {
+        "reachOut": {
+          "title": "Reach Out",
+          "desc": "Contact us via phone, WhatsApp or email."
+        },
+        "explainIssue": {
+          "title": "Explain the Issue",
+          "desc": "Tell us your problem in your preferred language."
+        },
+        "investigate": {
+          "title": "We Investigate",
+          "desc": "Our team checks and finds the best solution."
+        },
+        "resolve": {
+          "title": "We Resolve",
+          "desc": "We fix the issue or guide you step-by-step."
+        },
+        "allSet": {
+          "title": "You're All Set",
+          "desc": "Get back to running your business smoothly."
+        }
+      }
+    },
+    "alwaysThere": {
+      "eyebrow": "Always There",
+      "heading": "Support that speaks your language and understands your business.",
+      "stats": {
+        "days": { "value": "7 Days", "label": "Support Availability" },
+        "languages": { "value": "5 Languages", "label": "Supported" },
+        "response": { "value": "Fast", "label": "Average First Response" },
+        "secure": { "value": "Secure", "label": "Your data and business are safe" }
+      }
+    },
+    "testimonial": {
+      "quote": "Amazing support! They helped us set up everything and resolved our printer issue within minutes.",
+      "name": "Harpreet Singh",
+      "role": "Owner, Tandoori Flames",
+      "stats": {
+        "rating": "4.9/5",
+        "ratingLabel": "Average Support Rating",
+        "resolved": "98%",
+        "resolvedLabel": "Issues Resolved on First Contact",
+        "partners": "10K+",
+        "partnersLabel": "Happy Restaurant Partners",
+        "available": "24/7",
+        "availableLabel": "We're Ready to Help"
+      }
+    }
+  },
+  "menuManagement": {
+    "hero": {
+      "badge": "Menu Management System",
+      "headingLine1": "Menu Management",
+      "headingLine2": "System",
+      "description": "Change items, prices, photos, modifiers, and availability from one dashboard — synced to web, app, and POS. Multiple menus, time rules, and promos without waiting on a developer.",
+      "checklist": {
+        "realTimeUpdates": "Real-time menu updates",
+        "availability": "Availability & pricing control",
+        "modifiers": "Modifiers, allergens & dietary info",
+        "multiLocation": "Multi-location & multi-menu support"
+      },
+      "cta": "See How It Works",
+      "features": {
+        "realTime": "Real-time Updates",
+        "pricing": "Pricing & Availability",
+        "modifiers": "Modifiers & Add-ons",
+        "multiLocation": "Multi-Location Support",
+        "multiMenu": "Multiple Menus"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "realTime": {
+          "title": "Real-time Updates",
+          "desc": "Instant changes across all channels."
+        },
+        "pricing": {
+          "title": "Pricing & Availability",
+          "desc": "Control prices and availability with ease."
+        },
+        "modifiers": {
+          "title": "Modifiers & Add-ons",
+          "desc": "Manage options, allergens & dietary preferences."
+        },
+        "multiLocation": {
+          "title": "Multi-Location Support",
+          "desc": "Handle multiple outlets from one dashboard."
+        },
+        "multiMenu": {
+          "title": "Multiple Menus",
+          "desc": "Create menus for different times, zones or brands."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "Manage your menu in minutes.",
+      "steps": {
+        "addItems": {
+          "title": "Add Items",
+          "desc": "Add or import your menu items and photos."
+        },
+        "setRules": {
+          "title": "Set Rules",
+          "desc": "Set availability, timing, and location rules."
+        },
+        "customize": {
+          "title": "Customize",
+          "desc": "Add modifiers, allergens, and dietary info."
+        },
+        "publish": {
+          "title": "Publish",
+          "desc": "Publish and sync to web, app & POS."
+        },
+        "update": {
+          "title": "Update Anytime",
+          "desc": "Make changes anytime, instantly everywhere."
+        }
+      }
+    },
+    "dashboard": {
+      "eyebrow": "Powerful Dashboard",
+      "headingLine1": "One dashboard.",
+      "headingLine2": "Total control.",
+      "description": "From items to promotions, manage everything from a single, easy-to-use dashboard designed for restaurants of any size.",
+      "cta": "Explore Dashboard",
+      "benefits": {
+        "dragDrop": "Drag & drop reordering",
+        "bulkEdits": "Bulk updates & quick edits",
+        "search": "Smart search & filters",
+        "insights": "Detailed performance insights"
+      }
+    }
+  },
+  "googleBusinessSEO": {
+    "hero": {
+      "badge": "Google Business & SEO",
+      "headingLine1": "Google Business",
+      "headingLine2": "& SEO",
+      "description": "Google Business setup, local SEO, structured data, and social profiles pointed at your own ordering — so discovery leads to direct orders, not portal fees.",
+      "checklist": {
+        "profile": "Google Business Profile optimization",
+        "localSeo": "Local SEO & keyword strategy",
+        "social": "Social media setup & linking",
+        "reviews": "Review & reputation management"
+      },
+      "cta": "See How It Works",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "profile": "Google Business Profile Optimization",
+        "localSeo": "Local SEO & Keyword Strategy",
+        "social": "Social Media Setup & Linking",
+        "reviews": "Review & Reputation Management"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "profile": {
+          "title": "Google Business Profile Optimization",
+          "desc": "Complete setup, accurate info, categories, photos, services, and more."
+        },
+        "localSeo": {
+          "title": "Local SEO & Keyword Strategy",
+          "desc": "Rank in local searches with the right keywords, content, and on-page SEO."
+        },
+        "social": {
+          "title": "Social Media Setup & Linking",
+          "desc": "Create and optimize social profiles that drive customers to your direct ordering."
+        },
+        "reviews": {
+          "title": "Review & Reputation Management",
+          "desc": "Get more reviews, respond smartly, and build a trusted online reputation."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From Search to Direct Orders.",
+      "steps": {
+        "audit": {
+          "title": "Audit & Setup",
+          "desc": "We audit your business and set up/optimize your Google & online presence."
+        },
+        "optimize": {
+          "title": "Optimize & Rank",
+          "desc": "We optimize your profile, website, and content to rank higher locally."
+        },
+        "discovered": {
+          "title": "Get Discovered",
+          "desc": "Customers find you on Google Search, Maps, and social platforms."
+        },
+        "visit": {
+          "title": "Visit & Order",
+          "desc": "They visit your website or ordering page and place an order."
+        },
+        "grow": {
+          "title": "Grow & Repeat",
+          "desc": "More visibility, more orders, more growth — on your terms."
+        }
+      }
+    },
+    "alwaysAhead": {
+      "eyebrow": "Always Ahead",
+      "heading": "More visibility. More orders. Less dependency on portals.",
+      "stats": {
+        "rankings": {
+          "title": "Higher Rankings",
+          "desc": "Be seen where your customers search."
+        },
+        "orders": {
+          "title": "More Direct Orders",
+          "desc": "Drive traffic to your own ordering."
+        },
+        "trust": {
+          "title": "Build Trust",
+          "desc": "Strong reviews and reputation."
+        },
+        "savings": {
+          "title": "Save More",
+          "desc": "Avoid high commissions and extra fees."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Our visibility on Google jumped by 3X within weeks. Direct orders increased and we saved big on commission fees.",
+      "name": "Alex Johnson",
+      "role": "Burger House",
+      "stats": {
+        "visibility": "3X",
+        "visibilityLabel": "Increase in Visibility",
+        "orders": "2.5X",
+        "ordersLabel": "More Direct Orders",
+        "keywords": "500+",
+        "keywordsLabel": "Keywords Ranking",
+        "rating": "4.8★",
+        "ratingLabel": "Average Rating Improvement",
+        "savings": "60%",
+        "savingsLabel": "Cost Savings on Commissions"
+      }
+    }
+  },
+  "metaAds": {
+    "hero": {
+      "badge": "Meta Ads & Facebook • Instagram",
+      "headingLine1": "Meta Ads &",
+      "headingLine2": "Facebook • Instagram",
+      "description": "Run high-converting Facebook and Instagram ad campaigns that bring new customers, increase repeat orders, and grow your restaurant — without relying only on food delivery platforms.",
+      "checklist": {
+        "campaigns": "Facebook & Instagram Campaign Setup",
+        "targeting": "Audience Targeting & Retargeting",
+        "creative": "Creative Design & Ad Copy",
+        "tracking": "Performance Tracking & ROAS Optimization"
+      },
+      "cta": "Launch Campaign",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "campaigns": "Facebook & Instagram Campaigns",
+        "targeting": "Audience Targeting & Retargeting",
+        "creative": "Creative Design & Ad Copy",
+        "tracking": "Performance Tracking"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "campaigns": {
+          "title": "Facebook & Instagram Campaigns",
+          "desc": "Launch optimized campaigns across Facebook and Instagram to reach nearby hungry customers."
+        },
+        "targeting": {
+          "title": "Audience Targeting & Retargeting",
+          "desc": "Target people by location, interests, behavior, and re-engage previous visitors."
+        },
+        "creative": {
+          "title": "Creative Design & Ad Copy",
+          "desc": "Professional images, videos, headlines, and offers designed to maximize conversions."
+        },
+        "tracking": {
+          "title": "Performance Tracking",
+          "desc": "Track ROAS, conversions, clicks, reach, and continuously optimize campaigns."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From Ads to More Orders.",
+      "steps": {
+        "strategy": {
+          "title": "Campaign Strategy",
+          "desc": "Understand your restaurant, goals, audience, and promotions."
+        },
+        "launch": {
+          "title": "Create & Launch Ads",
+          "desc": "Design creatives and launch optimized Facebook & Instagram campaigns."
+        },
+        "reach": {
+          "title": "Reach Nearby Customers",
+          "desc": "Your ads appear to customers most likely to order from your restaurant."
+        },
+        "orders": {
+          "title": "Get More Orders",
+          "desc": "Customers click your ad, visit your ordering page, and place an order."
+        },
+        "optimize": {
+          "title": "Optimize & Scale",
+          "desc": "Improve performance weekly to increase ROAS and reduce advertising costs."
+        }
+      }
+    },
+    "growFaster": {
+      "eyebrow": "Always Ahead",
+      "heading": "Grow Faster with Smart Meta Advertising.",
+      "stats": {
+        "reach": {
+          "title": "Higher Reach",
+          "desc": "Show your restaurant to thousands of nearby customers."
+        },
+        "directOrders": {
+          "title": "More Direct Orders",
+          "desc": "Drive customers directly to your website or ordering app."
+        },
+        "roi": {
+          "title": "Better ROI",
+          "desc": "Spend smarter with optimized targeting and bidding."
+        },
+        "retarget": {
+          "title": "Retarget Visitors",
+          "desc": "Bring back customers who visited your website but didn't order."
+        },
+        "lowerCost": {
+          "title": "Lower Cost Per Acquisition",
+          "desc": "Reduce advertising costs while increasing conversions."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Within one month our Facebook ads generated more direct orders than any food delivery app. Our ROAS stayed above 5x.",
+      "name": "Sarah Williams",
+      "role": "Urban Grill",
+      "stats": {
+        "roas": "5X",
+        "roasLabel": "Average ROAS",
+        "reached": "220K+",
+        "reachedLabel": "People Reached Monthly",
+        "cost": "40%",
+        "costLabel": "Lower Cost Per Order",
+        "satisfaction": "4.9★",
+        "satisfactionLabel": "Client Satisfaction",
+        "growth": "300%",
+        "growthLabel": "Average Order Growth"
+      }
+    }
+  },
+  "googleAds": {
+    "hero": {
+      "badge": "Google Ads (PPC)",
+      "headingLine1": "Google Ads (PPC)",
+      "headingLine2": "Drive More Orders.",
+      "description": "Get your restaurant in front of people who are searching right now. Our Google Ads (PPC) campaigns drive high-intent traffic to your ordering page and increase direct orders — without paying commission.",
+      "checklist": {
+        "searchDisplay": "Google Search & Display Ads",
+        "keywordResearch": "Keyword Research & Ad Creation",
+        "locationBidding": "Location Targeting & Bidding",
+        "conversionTracking": "Conversion Tracking & ROI Optimization"
+      },
+      "cta": "Start Google Ads",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "searchAds": "Google Search Ads",
+        "displayAds": "Display & Remarketing Ads",
+        "locationTargeting": "Location Targeting",
+        "roiTracking": "Conversion & ROI Tracking"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "searchAds": {
+          "title": "Google Search Ads",
+          "desc": "Appear at the top when customers search for food, restaurants, or delivery near them."
+        },
+        "displayAds": {
+          "title": "Display & Remarketing Ads",
+          "desc": "Reach potential customers across websites and bring back visitors who didn't order."
+        },
+        "locationTargeting": {
+          "title": "Location Targeting",
+          "desc": "Show ads to people in specific areas around your restaurant to get more local orders."
+        },
+        "roiTracking": {
+          "title": "Conversion & ROI Tracking",
+          "desc": "Track every click, order, and rupee spent to maximize your return on ad spend."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From Click to Customer.",
+      "steps": {
+        "keywordResearch": {
+          "title": "Keyword Research",
+          "desc": "We find the best keywords your customers use to search for food online."
+        },
+        "createLaunch": {
+          "title": "Create & Launch Ads",
+          "desc": "We create high-converting ads and launch campaigns on Google."
+        },
+        "showRightPeople": {
+          "title": "Show to Right People",
+          "desc": "Your ads appear to people searching for food in your area, ready to order."
+        },
+        "clickOrder": {
+          "title": "They Click & Order",
+          "desc": "Customers click your ad, visit your site, and place an order."
+        },
+        "optimizeGrow": {
+          "title": "Optimize & Grow",
+          "desc": "We continuously optimize to get more orders at the lowest cost."
+        }
+      }
+    },
+    "smarterAds": {
+      "eyebrow": "Always Ahead",
+      "heading": "Smarter Ads. More Orders. Better Returns.",
+      "stats": {
+        "visibility": {
+          "title": "Higher Visibility",
+          "desc": "Rank on top of Google and get noticed."
+        },
+        "directOrders": {
+          "title": "More Direct Orders",
+          "desc": "Drive traffic to your own ordering system."
+        },
+        "lowerSpend": {
+          "title": "Lower Ad Spend",
+          "desc": "Reduce waste with smart targeting & bidding."
+        },
+        "roi": {
+          "title": "Better ROI",
+          "desc": "Get more orders for every rupee spent."
+        },
+        "tracking": {
+          "title": "Real-Time Tracking",
+          "desc": "Track performance and improve in real time."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Our Google Ads campaigns increased direct orders by 240% in just 45 days. The cost per order dropped while our sales grew!",
+      "name": "Rohit Mehra",
+      "role": "Spice House",
+      "stats": {
+        "directOrders": "240%",
+        "directOrdersLabel": "Increase in Direct Orders",
+        "roi": "3.2X",
+        "roiLabel": "Average ROI on Ad Spend",
+        "orders": "12K+",
+        "ordersLabel": "Orders Generated Through Ads",
+        "rating": "4.8★",
+        "ratingLabel": "Average Client Rating",
+        "cost": "35%",
+        "costLabel": "Lower Cost Per Order"
+      }
+    }
+  },
+  "onlineOrdering": {
+    "hero": {
+      "badge": "Online Ordering System",
+      "headingLine1": "Online Ordering",
+      "headingLine2": "System",
+      "description": "Your own branded online ordering system that lets customers order directly from your website or app. More orders. Lower fees. Happier customers.",
+      "checklist": {
+        "brandedLink": "Branded Website & Ordering Link",
+        "customMenu": "Custom Menu & Add-ons",
+        "deliveryOptions": "Delivery, Pickup & Pre-order Options",
+        "orderPayment": "Real-time Order & Payment Management"
+      },
+      "cta": "See How It Works",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "brandedExperience": "Branded Ordering Experience",
+        "noCommission": "No Commission Fees",
+        "orderOptions": "Multiple Order Options",
+        "securePayments": "Secure Payments & Tracking"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "brandedExperience": {
+          "title": "Branded Ordering Experience",
+          "desc": "Your logo, colors, and domain. A seamless experience that builds your brand."
+        },
+        "noCommission": {
+          "title": "No Commission Fees",
+          "desc": "Keep 100% of your profits. No hidden charges or portal commissions."
+        },
+        "orderOptions": {
+          "title": "Multiple Order Options",
+          "desc": "Delivery, pickup, dine-in, scheduled orders — all in one system."
+        },
+        "securePayments": {
+          "title": "Secure Payments & Tracking",
+          "desc": "Accept online payments securely and track every order in real-time."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From Click to Customer.",
+      "steps": {
+        "placeOrder": {
+          "title": "Customer Places Order",
+          "desc": "Visitors browse your menu and place an order on your website or app."
+        },
+        "orderReceived": {
+          "title": "Order Received in Real-time",
+          "desc": "You get instant notification on dashboard and manage the order easily."
+        },
+        "prepareDeliver": {
+          "title": "Prepare & Deliver or Pickup",
+          "desc": "Prepare order for delivery or pickup as per customer preference."
+        },
+        "satisfied": {
+          "title": "Customer Satisfied",
+          "desc": "Happy customers, repeat orders, and more positive reviews."
+        },
+        "grows": {
+          "title": "Business Grows",
+          "desc": "More direct orders, better margins, and stronger customer loyalty."
+        }
+      }
+    },
+    "takeControl": {
+      "eyebrow": "Always Ahead",
+      "heading": "Take control of your orders. Grow your business your way.",
+      "stats": {
+        "profits": {
+          "title": "Higher Profits",
+          "desc": "No marketplace fees. More earnings."
+        },
+        "relationship": {
+          "title": "Direct Customer Relationship",
+          "desc": "Build loyalty and stay connected."
+        },
+        "insights": {
+          "title": "Better Insights",
+          "desc": "Understand your customers and sales."
+        },
+        "offers": {
+          "title": "Custom Offers",
+          "desc": "Run promos and discounts on your terms."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Switching to RestroOS's Online Ordering increased our direct orders by 3X and cut our dependency on third-party platforms.",
+      "name": "David Taylor",
+      "role": "Pizza House",
+      "stats": {
+        "directOrders": "3X",
+        "directOrdersLabel": "Increase in Direct Orders",
+        "repeatOrders": "2.5X",
+        "repeatOrdersLabel": "Higher Repeat Orders",
+        "restaurants": "500+",
+        "restaurantsLabel": "Happy Restaurants",
+        "rating": "4.8★",
+        "ratingLabel": "Average Rating Improvement",
+        "savings": "60%",
+        "savingsLabel": "Savings on Commission Fees"
+      }
+    }
+  },
+  "googleAnalytics": {
+    "hero": {
+      "badge": "Google Analytics",
+      "headingLine1": "Google Analytics",
+      "headingLine2": "Made Simple",
+      "description": "Turn your data into real insights. Track performance, understand your audience, and grow your business with Google Analytics.",
+      "checklist": {
+        "performance": "Track Website & App Performance",
+        "audience": "Understand Your Audience",
+        "conversions": "Measure Conversions & Goals",
+        "reports": "Real-time Data & Custom Reports",
+        "decisions": "Data-Driven Decisions for Growth"
+      },
+      "cta": "See How It Works",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "visibility": "Complete Data Visibility",
+        "audience": "Understand Your Audience",
+        "goals": "Track Goals & Conversions",
+        "dashboards": "Custom Reports & Dashboards",
+        "decisions": "Data-Driven Decisions"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "visibility": {
+          "title": "Complete Data Visibility",
+          "desc": "Get a clear view of your website and app performance."
+        },
+        "audience": {
+          "title": "Understand Your Audience",
+          "desc": "Know who your visitors are and what they care about."
+        },
+        "goals": {
+          "title": "Track Goals & Conversions",
+          "desc": "Measure key actions that drive your business forward."
+        },
+        "dashboards": {
+          "title": "Custom Reports & Dashboards",
+          "desc": "Create reports that highlight what really matters."
+        },
+        "decisions": {
+          "title": "Data-Driven Decisions",
+          "desc": "Use insights to optimize campaigns and boost your ROI."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "From Data to Decisions.",
+      "steps": {
+        "setup": {
+          "title": "Setup",
+          "desc": "We set up Google Analytics on your website or app."
+        },
+        "collection": {
+          "title": "Data Collection",
+          "desc": "Track visitors, events, and conversions automatically."
+        },
+        "analyze": {
+          "title": "Analyze",
+          "desc": "We analyze the data to uncover valuable insights."
+        },
+        "report": {
+          "title": "Report",
+          "desc": "Get easy-to-understand reports and custom dashboards."
+        },
+        "optimize": {
+          "title": "Optimize",
+          "desc": "Use insights to improve performance and achieve goals."
+        },
+        "grow": {
+          "title": "Grow",
+          "desc": "Make smarter decisions and grow your business."
+        }
+      }
+    },
+    "betterInsights": {
+      "eyebrow": "Always Ahead",
+      "heading": "Better Insights. Better Growth.",
+      "stats": {
+        "tracking": {
+          "title": "Accurate Tracking",
+          "desc": "Reliable data you can trust."
+        },
+        "insights": {
+          "title": "Actionable Insights",
+          "desc": "Turn data into real results."
+        },
+        "monitoring": {
+          "title": "Performance Monitoring",
+          "desc": "Track what matters, all in one place."
+        },
+        "saveTime": {
+          "title": "Save Time",
+          "desc": "Automated reports save you hours."
+        },
+        "growth": {
+          "title": "Business Growth",
+          "desc": "Data that helps you grow faster."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Google Analytics gave us the clarity we needed to grow smarter and faster.",
+      "name": "Rahul Sharma",
+      "role": "Marketing Head",
+      "stats": {
+        "traffic": "2X",
+        "trafficLabel": "Increase in Website Traffic",
+        "conversions": "35%",
+        "conversionsLabel": "More Conversions Tracked",
+        "roi": "28%",
+        "roiLabel": "Improvement in ROI",
+        "rating": "4.7/5",
+        "ratingLabel": "Average Customer Rating",
+        "tracking": "24/7",
+        "trackingLabel": "Data Tracking & Insights"
+      }
+    }
+  },
+  "reservationSystem": {
+    "hero": {
+      "badge": "Reservation System",
+      "headingLine1": "Reservation",
+      "headingLine2": "System",
+      "description": "Smart table reservations made simple. Accept bookings, manage availability, and deliver seamless guest experiences — all from one system.",
+      "checklist": {
+        "onlineReservations": "Online Table Reservations",
+        "realTimeAvailability": "Real-time Availability",
+        "guestManagement": "Guest Management",
+        "reminders": "Automated Confirmations & Reminders",
+        "noShows": "Reduce No-Shows & Improve Efficiency",
+        "reports": "Insights & Booking Reports"
+      },
+      "cta": "See How It Works",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "onlineReservations": "Online Reservations",
+        "guestManagement": "Guest Management",
+        "realTimeAvailability": "Real-time Availability",
+        "reminders": "Automated Reminders",
+        "reports": "Reports & Insights",
+        "integration": "Easy Integration"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "onlineReservations": {
+          "title": "Online Reservations",
+          "desc": "Let your guests book anytime, anywhere from any device."
+        },
+        "guestManagement": {
+          "title": "Guest Management",
+          "desc": "Store guest preferences and build stronger customer relationships."
+        },
+        "realTimeAvailability": {
+          "title": "Real-time Availability",
+          "desc": "Avoid double bookings with live table availability updates."
+        },
+        "reminders": {
+          "title": "Automated Reminders",
+          "desc": "Reduce no-shows with SMS and email reminders."
+        },
+        "reports": {
+          "title": "Reports & Insights",
+          "desc": "Track bookings, peak hours, cancellations, and more."
+        },
+        "integration": {
+          "title": "Easy Integration",
+          "desc": "Works seamlessly with your POS and other tools."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "Simple Steps, Smarter Reservations.",
+      "steps": {
+        "guestBooks": {
+          "title": "Guest Books",
+          "desc": "Guests choose date, time, party size and location."
+        },
+        "checkAvailability": {
+          "title": "Check Availability",
+          "desc": "System shows real-time available tables instantly."
+        },
+        "confirmBooking": {
+          "title": "Confirm Booking",
+          "desc": "Reservation is confirmed with instant notifications."
+        },
+        "manageEfficiently": {
+          "title": "Manage Efficiently",
+          "desc": "View and manage all reservations from one dashboard."
+        },
+        "serveBetter": {
+          "title": "Serve Better",
+          "desc": "Deliver a better experience and build loyal customers."
+        }
+      }
+    },
+    "betterReservations": {
+      "eyebrow": "Always Ahead",
+      "heading": "Better Reservations. Better Experiences.",
+      "stats": {
+        "occupancy": "Increase Table Occupancy",
+        "noShows": "Reduce No-Shows & Wait Times",
+        "satisfaction": "Improved Guest Satisfaction",
+        "saveTime": "Save Time & Reduce Errors",
+        "revenue": "Boost Revenue & Repeat Bookings"
+      }
+    },
+    "testimonial": {
+      "quote": "Our reservation process is now smooth, efficient, and our guests love the experience!",
+      "name": "Alex Turner",
+      "role": "Restaurant Owner",
+      "stats": {
+        "occupancy": "45%",
+        "occupancyLabel": "Increase in Table Occupancy",
+        "noShows": "30%",
+        "noShowsLabel": "Reduction in No-Shows",
+        "repeatBookings": "25%",
+        "repeatBookingsLabel": "More Repeat Bookings",
+        "rating": "4.8/5",
+        "ratingLabel": "Average Guest Satisfaction",
+        "availability": "24/7",
+        "availabilityLabel": "Online Booking Availability"
+      }
+    }
+  },
+  "qrOrdering": {
+    "hero": {
+      "badge": "QR Ordering & Pay System",
+      "headingLine1": "QR Ordering",
+      "headingLine2": "& Pay System",
+      "description": "Let your guests scan, order, and pay — all from their phone.",
+      "checklist": {
+        "contactless": "Contactless Ordering Experience",
+        "securePayments": "Secure Online Payments",
+        "fasterService": "Faster Service & Higher Table Turnover",
+        "reduceWorkload": "Reduce Staff Workload",
+        "realTimeUpdates": "Real-time Order Updates",
+        "posIntegration": "Fully Integrated with POS"
+      },
+      "cta": "See How It Works",
+      "secondaryCta": "View Success Stories",
+      "features": {
+        "scanOrder": "Scan & Order",
+        "easyOrdering": "Easy Ordering",
+        "securePayments": "Secure Payments",
+        "realTimeUpdates": "Real-time Updates",
+        "insights": "Business Insights",
+        "posIntegration": "POS Integration"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "scanOrder": {
+          "title": "Scan & Order",
+          "desc": "Guests scan the QR code and browse the menu instantly."
+        },
+        "easyOrdering": {
+          "title": "Easy Ordering",
+          "desc": "Add items to cart and place orders directly from their device."
+        },
+        "securePayments": {
+          "title": "Secure Payments",
+          "desc": "Pay online securely using multiple payment options."
+        },
+        "realTimeUpdates": {
+          "title": "Real-time Updates",
+          "desc": "Get live updates on order status and notifications."
+        },
+        "insights": {
+          "title": "Business Insights",
+          "desc": "Track orders, revenue and customer behavior in real-time."
+        },
+        "posIntegration": {
+          "title": "POS Integration",
+          "desc": "Seamlessly integrated with RestroOS POS for smooth operations."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "heading": "Simple Steps, Seamless Experience.",
+      "steps": {
+        "scanQr": {
+          "title": "Scan QR Code",
+          "desc": "Guests scan the QR code on the table."
+        },
+        "browseMenu": {
+          "title": "Browse Menu",
+          "desc": "Explore the digital menu and choose your favorite items."
+        },
+        "placeOrder": {
+          "title": "Place Order",
+          "desc": "Add items to cart and place the order instantly."
+        },
+        "makePayment": {
+          "title": "Make Payment",
+          "desc": "Pay securely online through multiple payment options."
+        },
+        "enjoyMeal": {
+          "title": "Enjoy Your Meal",
+          "desc": "We receive the order and serve you hassle-free."
+        }
+      }
+    },
+    "smarterOrdering": {
+      "eyebrow": "Always Ahead",
+      "heading": "Smarter Ordering. Better Business.",
+      "stats": {
+        "orderValue": "Increase Average Order Value",
+        "tableTurnover": "Faster Table Turnover",
+        "costs": "Reduced Operational Costs",
+        "reviews": "Happier Customers, Better Reviews",
+        "decisions": "Data-Driven Decisions"
+      }
+    },
+    "testimonial": {
+      "quote": "QR Ordering & Pay has completely transformed our service speed and customer satisfaction!",
+      "name": "Sarah Johnson",
+      "role": "Cafe Owner",
+      "stats": {
+        "turnover": "40%",
+        "turnoverLabel": "Increase in Table Turnover",
+        "orders": "35%",
+        "ordersLabel": "More Orders per Day",
+        "orderValue": "28%",
+        "orderValueLabel": "Higher Average Order Value",
+        "satisfaction": "4.9/5",
+        "satisfactionLabel": "Average Customer Satisfaction",
+        "contactless": "24/7",
+        "contactlessLabel": "Contactless & Hassle-free"
+      }
+    }
+  }
+}

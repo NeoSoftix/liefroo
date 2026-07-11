@@ -1,0 +1,1770 @@
+{
+  "header": {
+    "nav": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "contact": "Kontakt"
+    },
+    "bookDemo": "Demo buchen",
+    "megaMenu": {
+      "groups": {
+        "orderingOperations": "Bestellung & Betrieb",
+        "growthMarketing": "Wachstum & Marketing"
+      },
+      "items": {
+        "menuManagement": {
+          "title": "Menüverwaltung",
+          "desc": "Artikel, Preise & Verfügbarkeit sofort aktualisieren."
+        },
+        "onlineOrdering": {
+          "title": "Online-Bestellung",
+          "desc": "Ihr eigenes, markengeprägtes Bestellsystem."
+        },
+        "qrOrdering": {
+          "title": "QR-Bestellung & Zahlung",
+          "desc": "Scannen, bestellen und bezahlen am Tisch."
+        },
+        "posSystem": {
+          "title": "Kassensystem",
+          "desc": "Touch-Kasse für Speisen vor Ort, Teilungen & Rabatte."
+        },
+        "reservationSystem": {
+          "title": "Reservierungssystem",
+          "desc": "Intelligente Tischbuchungen leicht gemacht."
+        },
+        "printerIntegration": {
+          "title": "Drucker-Integration",
+          "desc": "Automatischer Druck an Küche & Bar."
+        },
+        "websiteDevelopment": {
+          "title": "Website-Entwicklung",
+          "desc": "Individuelle Websites für Restaurants."
+        },
+        "mobileAppDevelopment": {
+          "title": "App-Entwicklung",
+          "desc": "Native iOS- & Android-Apps für Ihre Marke."
+        },
+        "googleAds": {
+          "title": "Google Ads (PPC)",
+          "desc": "Kaufbereiten Traffic zu Ihren Bestellungen leiten."
+        },
+        "metaAds": {
+          "title": "Meta Ads",
+          "desc": "Facebook- & Instagram-Kampagnen, die konvertieren."
+        },
+        "googleBusinessSEO": {
+          "title": "Google Unternehmensprofil & SEO",
+          "desc": "Gefunden werden und Direktbestellungen steigern."
+        },
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "desc": "Verwandeln Sie Ihre Daten in echte Erkenntnisse."
+        },
+        "technicalSupport": {
+          "title": "Technischer Support",
+          "desc": "7 Tage Hilfe in 5 Sprachen, wann immer Sie sie brauchen."
+        }
+      },
+      "exploreAll": "Kontakt aufnehmen"
+    }
+  },
+  "hero": {
+    "slides": {
+      "1": {
+        "title": "Das Betriebssystem für Restaurants",
+        "subtitle": "Entwickelt für unabhängige Restaurants",
+        "description": "Website, Bestellung, Kasse, Reservierungen und Marketing — alles verbunden, alles intelligent.",
+        "card": "Kassenumsatz"
+      },
+      "2": {
+        "title": "Mehr direkte Online-Bestellungen",
+        "subtitle": "0% Provision",
+        "description": "Nehmen Sie Online-Bestellungen direkt von Ihren Kunden entgegen — ohne Marktplatzgebühren.",
+        "card": "Bestellungen heute"
+      },
+      "3": {
+        "title": "Reservierungen & QR-Bestellung",
+        "subtitle": "Intelligentes Restauranterlebnis",
+        "description": "Verwalten Sie Reservierungen, Tischbuchungen und QR-Bestellungen von einem einzigen Dashboard aus.",
+        "card": "Gebuchte Tische"
+      }
+    },
+    "bookDemo": "Demo buchen",
+    "learnMore": "Mehr erfahren",
+    "badges": {
+      "liveIn30": "In 30 Minuten startklar",
+      "zeroCommission": "0% Provision",
+      "smartOs": "Intelligentes Restaurant-Betriebssystem"
+    },
+    "ordersToday": "Bestellungen heute"
+  },
+  "ecosystem": {
+    "badge": "Vernetztes Restaurant-Ökosystem",
+    "headingLine1": "Alles, was Ihr Restaurant",
+    "headingLine2": "braucht — an einem Ort",
+    "description": "Verwalten Sie Bestellungen, Reservierungen, Kasse, QR-Speisekarten, Marketing und Analysen auf einer einzigen Plattform.",
+    "connectedModule": "Verbundenes Modul",
+    "features": {
+      "onlineOrdering": "Online-Bestellung",
+      "reservations": "Reservierungen",
+      "qrOrdering": "QR-Bestellung",
+      "marketing": "Marketing",
+      "posSystem": "Kassensystem",
+      "analytics": "Analysen"
+    }
+  },
+  "ordering": {
+    "badge": "Online-Bestellung",
+    "headingLine1": "Bestellungen, die Kunden",
+    "headingLine2": "wirklich gerne nutzen",
+    "description": "Eigene Bestell-Website, direkte Online-Bestellungen, Abholung & Lieferung — und keine Provisionsgebühren.",
+    "cards": {
+      "brandedWebsite": {
+        "title": "Eigene Website",
+        "subtitle": "Schaffen Sie ein wunderschönes Online-Bestellerlebnis."
+      },
+      "zeroCommission": {
+        "title": "0% Provision",
+        "subtitle": "Behalten Sie mehr Umsatz von jeder Bestellung."
+      },
+      "pickupDelivery": {
+        "title": "Abholung & Lieferung",
+        "subtitle": "Liefern Sie Speisen dorthin, wo Ihre Kunden sind."
+      },
+      "directOrders": {
+        "title": "Direkte Bestellungen",
+        "subtitle": "Behalten Sie die Kundenbeziehung und die Daten selbst."
+      }
+    },
+    "stats": {
+      "directOrders": "Direkte Bestellungen",
+      "revenue": "Umsatz",
+      "newCustomers": "Neue Kunden"
+    },
+    "cta": "Online-Bestellung entdecken"
+  },
+  "marketing": {
+    "website": {
+      "badge": "Website-Baukasten",
+      "headingLine1": "Websites, die",
+      "headingLine2": "mehr Gäste bringen —",
+      "headingLine3": "Tag für Tag.",
+      "description": "Mobil-optimierte, SEO-freundliche Websites mit integrierter Bestellung & Reservierung, die konvertieren.",
+      "cta": "Websites entdecken",
+      "features": {
+        "mobileFirst": "Mobil optimiert",
+        "orderingBuiltIn": "Bestellung integriert",
+        "reservationsReady": "Reservierung startklar",
+        "seoOptimised": "SEO-optimiert"
+      }
+    },
+    "automation": {
+      "badge": "Marketing-Automatisierung",
+      "headingLine1": "Kundenbindung aufbauen.",
+      "headingLine2": "Gäste zurückholen.",
+      "description": "E-Mail, SMS, Treueprogramme, Rückgewinnung und Geschenkkarten — angetrieben von Ihren echten Kassendaten.",
+      "cta": "Marketing entdecken",
+      "features": {
+        "emailCampaigns": "E-Mail-Kampagnen",
+        "smsReminders": "SMS-Erinnerungen",
+        "loyaltyPrograms": "Treueprogramme",
+        "winBackAutomation": "Rückgewinnungs-Automatisierung",
+        "giftCards": "Geschenkkarten"
+      }
+    }
+  },
+  "pos": {
+    "eyebrow": "Restaurant-Betriebssystem",
+    "headingPrefix": "Der nächsten Generation:",
+    "steps": {
+      "billing": {
+        "title": "Sofortige Abrechnung",
+        "desc": "Blitzschneller Checkout ohne Verzögerung"
+      },
+      "orderFlow": {
+        "title": "Intelligenter Bestellablauf",
+        "desc": "Synchronisiert automatisch Küche, Personal & Lieferung"
+      },
+      "analytics": {
+        "title": "KI-Analyse-Dashboard",
+        "desc": "Umsatz vorhersagen & Leistung in Echtzeit optimieren"
+      }
+    },
+    "systemStatus": {
+      "title": "Systemstatus",
+      "serverHealth": "Serverzustand",
+      "stable": "Stabil",
+      "syncSpeed": "Synchronisationsgeschwindigkeit",
+      "uptime": "Verfügbarkeit"
+    },
+    "card": {
+      "live": "Live-Kassensystem",
+      "liveBadge": "LIVE",
+      "revenue": "Umsatz",
+      "orders": "Bestellungen",
+      "avgTime": "Ø Zeit",
+      "kitchenStatus": "Küchenstatus",
+      "preparing": "In Zubereitung",
+      "ready": "Fertig",
+      "delivery": "Lieferung",
+      "liveOrders": "Live-Bestellungen",
+      "orderPreparing": "In Zubereitung",
+      "orderDelivered": "Geliefert",
+      "orderNew": "Neu"
+    }
+  },
+  "reservation": {
+    "eyebrow": "Reservierungen",
+    "headingLine1": "Mehr Tische füllen.",
+    "headingLine2": "Ohne mehr Anrufe.",
+    "description": "Bieten Sie Ihren Gästen ein nahtloses Reservierungserlebnis mit Echtzeit-Verfügbarkeit, automatischen Erinnerungen, Google-Reserve-Integration und intelligenter Wartelistenverwaltung.",
+    "benefits": {
+      "availability": "Tischverfügbarkeit in Echtzeit",
+      "googleReserve": "Google-Reserve-Integration",
+      "confirmations": "Bestätigung per SMS & E-Mail",
+      "noShows": "Automatisch weniger Nichterscheinen"
+    },
+    "stats": {
+      "fewerNoShows": "Weniger Nichterscheinen",
+      "fasterBooking": "Schnellere Buchung"
+    },
+    "cta": "Reservierungen entdecken",
+    "card": {
+      "title": "Live-Reservierungen",
+      "liveAvailability": "Live-Verfügbarkeit",
+      "floorPlan": "Restaurant-Grundriss",
+      "selected": "Ausgewählt",
+      "available": "Verfügbar",
+      "reserved": "Reserviert",
+      "table": "Tisch {{number}}",
+      "selectedReservation": "Ausgewählte Reservierung",
+      "instantConfirmation": "Sofortige Bestätigung",
+      "date": "Datum",
+      "guests": "Gäste",
+      "guestsCount": "4 Personen",
+      "time": "Uhrzeit"
+    }
+  },
+  "qr": {
+    "badge": "QR-Bestellung & Bezahlung",
+    "headingLine1": "Scannen.",
+    "headingLine2": "Bestellen.",
+    "headingLine3": "Bezahlen.",
+    "headingLine4": "Wiederholen.",
+    "description": "Gäste bestellen und bezahlen direkt am Tisch per QR-Code — vollständig verbunden mit Ihrem Kassensystem für ein nahtloses Restauranterlebnis.",
+    "features": {
+      "faster": { "title": "Schneller", "subtitle": "Service" },
+      "higher": { "title": "Höherer", "subtitle": "Bestellwert" },
+      "lessStaff": { "title": "Weniger", "subtitle": "Personalaufwand" },
+      "secure": { "title": "Sichere", "subtitle": "Zahlungen" }
+    },
+    "cta": "QR-Bestellung live erleben"
+  },
+  "faq": {
+    "eyebrow": "Bestellsystem für Restaurants",
+    "title": "FAQ",
+    "heading": "Häufig gestellte Fragen",
+    "description": "Finden Sie Antworten auf häufige Fragen zu unserer Online-Bestellplattform, Zahlungen, Reservierungen und Restaurant-Management-Tools.",
+    "items": {
+      "q1": {
+        "question": "Was ist ein Online-Bestellsystem?",
+        "answer": "Mit einem Online-Bestellsystem können Kunden Speisekarten durchsuchen, Bestellungen aufgeben und sicher bezahlen — direkt über Ihre Website oder ihr Mobilgerät."
+      },
+      "q2": {
+        "question": "Können Kunden bestellen, ohne eine App herunterzuladen?",
+        "answer": "Ja. Kunden können direkt über Ihre Website bestellen, indem sie einfach einen QR-Code scannen oder Ihre Bestellseite aufrufen."
+      },
+      "q3": {
+        "question": "Unterstützt das System Online-Zahlungen?",
+        "answer": "Ja. Die Plattform unterstützt Kreditkarten, Debitkarten, Online-Überweisung, digitale Wallets und weitere sichere Zahlungsanbieter."
+      },
+      "q4": {
+        "question": "Kann ich Bestellungen in Echtzeit verwalten?",
+        "answer": "Auf jeden Fall. Ihr Restaurantpersonal kann Bestellungen sofort im Admin-Dashboard einsehen, annehmen, ablehnen und verfolgen."
+      },
+      "q5": {
+        "question": "Unterstützt das System Tischreservierungen?",
+        "answer": "Ja. Kunden können online Tische reservieren und erhalten sofort eine Buchungsbestätigung."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Kontaktieren Sie uns",
+    "headingLine1": "Lassen Sie uns gemeinsam",
+    "headingLine2": "etwas",
+    "headingLine3": "Großartiges schaffen.",
+    "description": "Haben Sie eine Frage oder möchten Sie loslegen? Wir freuen uns, von Ihnen zu hören — an jedem unserer Standorte weltweit.",
+    "offices": {
+      "india": {
+        "title": "Büro Indien",
+        "address": "123 Main Street,",
+        "city": "Neu-Delhi, Indien"
+      },
+      "europe": {
+        "title": "Büro Europa",
+        "address": "456 Business Avenue,",
+        "city": "Berlin, Deutschland"
+      }
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "send": "Nachricht senden",
+      "privacy": "Wir respektieren Ihre Privatsphäre. Ihre Daten werden niemals weitergegeben."
+    }
+  },
+  "footer": {
+    "watermark": "Restaurant-Betriebssystem",
+    "cta": {
+      "eyebrow": "Restaurantwachstum beginnt hier",
+      "headingLine1": "Bereit für den Wandel",
+      "headingLine2": "Ihres Restaurants?",
+      "description": "Verwalten Sie Bestellungen, Abrechnung, Küchenabläufe, Lieferung und Analysen aus einem leistungsstarken Restaurant-Betriebssystem.",
+      "button": "Kostenlose Demo buchen"
+    },
+    "brand": {
+      "description": "Vollständiges Betriebssystem für moderne Restaurants. Verwalten Sie Bestellungen, Kasse, Lieferung, Analysen und Kundenbindung auf einer einzigen Plattform.",
+      "restaurants": "Restaurants",
+      "uptime": "Verfügbarkeit"
+    },
+    "product": {
+      "title": "Produkt",
+      "items": {
+        "pos": "Kassensystem",
+        "onlineOrdering": "Online-Bestellung",
+        "kitchenDisplay": "Küchenmonitor",
+        "qrMenu": "QR-Speisekarte",
+        "analytics": "Analysen"
+      }
+    },
+    "company": {
+      "title": "Unternehmen",
+      "items": {
+        "about": "Über uns",
+        "careers": "Karriere",
+        "partners": "Partner",
+        "blog": "Blog",
+        "contact": "Kontakt"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "hello@mealshub.com",
+      "phone": "+49 30 123456",
+      "support": "24/7 Support",
+      "location": "Berlin, Deutschland"
+    },
+    "copyright": "© 2026 MealsHub. Alle Rechte vorbehalten."
+  },
+  "websiteDevelopment": {
+    "hero": {
+      "badge": "Website-Baukasten für Restaurants",
+      "headingLine1": "Individuelle Websites",
+      "headingLine2": "für Restaurants",
+      "description": "Erhalten Sie eine vollständig individuelle Website, die Ihre Marke widerspiegelt, mehr Kunden anzieht und Ihr Geschäft online wachsen lässt.",
+      "features": {
+        "domain": "Eigene Domain",
+        "mobile": "Mobil-optimiertes Design",
+        "ordering": "Integrierte Bestellung",
+        "seo": "SEO-optimiert"
+      },
+      "cta": "Demo buchen"
+    },
+    "templates": {
+      "eyebrow": "Vorlagen-Galerie",
+      "heading": "Appetitanregend gestaltet.",
+      "headingRed": "Auf Leistung ausgelegt.",
+      "description": "Wählen Sie aus professionell gestalteten Vorlagen, die speziell für Restaurants, Cafés und Bars entwickelt wurden — und machen Sie sie in wenigen Minuten zu Ihrer eigenen.",
+      "cta": "Vorlagen durchsuchen",
+      "items": {
+        "fineDining": "Gehobene Küche",
+        "cafeBrunch": "Café & Brunch",
+        "fastCasual": "Schnellrestaurant",
+        "barLounge": "Bar & Lounge"
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Von der Vorlage bis live",
+      "headingRed": "an einem einzigen Nachmittag.",
+      "steps": {
+        "choose": {
+          "title": "Vorlage auswählen",
+          "desc": "Wählen Sie ein Design, das zum Stil und zur Küche Ihres Restaurants passt."
+        },
+        "customize": {
+          "title": "Mit Ihrer Speisekarte anpassen",
+          "desc": "Fügen Sie Speisekarte, Fotos, Öffnungszeiten und Branding hinzu — ganz ohne Programmierung."
+        },
+        "launch": {
+          "title": "Live gehen",
+          "desc": "Veröffentlichen Sie auf Ihrer eigenen Domain und nehmen Sie noch am selben Tag Bestellungen entgegen."
+        }
+      }
+    },
+    "features": {
+      "eyebrow": "Für Betreiber gemacht",
+      "heading": "Gemacht für den Alltag von",
+      "headingRed": "Restaurantbesitzern.",
+      "items": {
+        "updates": {
+          "title": "Speisekarte in Echtzeit aktualisieren",
+          "desc": "Preise ändern, Artikel als ausverkauft markieren oder Angebote sofort hinzufügen."
+        },
+        "ordering": {
+          "title": "Direkte Online-Bestellung",
+          "desc": "Jede Website ist mit der Bestellfunktion verbunden — keine separate App nötig."
+        },
+        "support": {
+          "title": "Persönlicher Support",
+          "desc": "Ein echtes Team hilft Ihnen beim Start und sorgt für einen reibungslosen Betrieb."
+        }
+      }
+    },
+    "stats": {
+      "seoScore": "SEO-Wert",
+      "conversionLift": "Mehr direkte Bestellungen",
+      "launchTime": "Durchschnittliche Startzeit",
+      "launchValue": "1 Tag",
+      "testimonial": "Wir sind von einer Facebook-Seite zu einer echten Website mit Online-Bestellung übergegangen — an einem einzigen Nachmittag. Die direkten Bestellungen haben sich in zwei Monaten mehr als verdreifacht.",
+      "testimonialName": "Maria Costa",
+      "testimonialRole": "Inhaberin, Costa's Trattoria"
+    },
+    "pricing": {
+      "eyebrow": "Warum es sich lohnt",
+      "heading": "Warum Betreiber uns wählen",
+      "headingRed": "statt generischer Baukästen.",
+      "columns": {
+        "us": "RestroOS",
+        "diy": "Selbstbau-Baukasten",
+        "agency": "Individuelle Agentur"
+      },
+      "rows": {
+        "setupTime": {
+          "label": "Einrichtungszeit",
+          "us": "1 Tag",
+          "diy": "1-2 Wochen",
+          "agency": "4-8 Wochen"
+        },
+        "ordering": {
+          "label": "Bestellung inklusive",
+          "us": "Inklusive",
+          "diy": "Zusätzliche App nötig",
+          "agency": "Zusätzliche Integration"
+        },
+        "posSync": {
+          "label": "Synchronisiert mit Kassenmenü",
+          "us": "Automatisch",
+          "diy": "Manuell",
+          "agency": "Manuell"
+        },
+        "support": {
+          "label": "Laufender Support",
+          "us": "24/7",
+          "diy": "Community-Foren",
+          "agency": "Eingeschränkt"
+        },
+        "cost": {
+          "label": "Typische Kosten",
+          "us": "Ein Festpreis-Tarif",
+          "diy": "20–60 €/Monat + Gebühren",
+          "agency": "Ab 3.000 € im Voraus"
+        }
+      }
+    },
+    "bundled": {
+      "headingLine1": "Website inklusive Bestellung",
+      "headingLine2": "in einem einzigen Festpreis-Tarif.",
+      "description": "Keine Einrichtungsgebühren, keine Designkosten, keine separate Bestell-App. Alles, was Sie zum Online-Verkauf brauchen, ist von Anfang an enthalten.",
+      "benefits": {
+        "noSetup": "Keine Einrichtungs- oder Designgebühren",
+        "cancel": "Jederzeit kündbar, keine Vertragsbindung",
+        "launch": "Live in 24-48 Stunden"
+      },
+      "cta": "Jetzt starten"
+    }
+  },
+  "mobileAppDevelopment": {
+    "hero": {
+      "badge": "Mobile App-Entwicklung",
+      "headingLine1": "Mobile App-",
+      "headingLine2": "Entwicklung",
+      "description": "Native iOS- und Android-Apps für Ihre Marke: Bestellungen, Gutscheine, Zahlungen, Push-Updates und Tracking — verbunden mit demselben Backend wie Ihre Website, Kasse und Drucker.",
+      "checklist": {
+        "nativeApps": "Native iOS- & Android-Apps",
+        "tracking": "Push-Benachrichtigungen & Bestellverfolgung",
+        "deployment": "Veröffentlichung im App Store & Play Store",
+        "integration": "Vollständige Integration in Ihr Ökosystem"
+      },
+      "cta": "Demo buchen",
+      "secondaryCta": "So funktioniert's",
+      "features": {
+        "nativeApps": "Native Apps",
+        "pushNotifications": "Push-Benachrichtigungen",
+        "storeDeployment": "Store-Veröffentlichung",
+        "ecosystem": "Vollständige Integration"
+      }
+    },
+    "featureGrid": {
+      "eyebrow": "Was ist enthalten",
+      "heading": "Alles, was Sie für",
+      "headingRed": "eine großartige App brauchen.",
+      "items": {
+        "brandedApp": {
+          "title": "Individuelle Markenapp",
+          "desc": "Ihre Marke, Ihre App. Einzigartiges Erlebnis."
+        },
+        "ordering": {
+          "title": "Nahtlose Bestellerfahrung",
+          "desc": "Schnell, einfach & konversionsorientiert."
+        },
+        "notifications": {
+          "title": "Push-Benachrichtigungen",
+          "desc": "Senden Sie Angebote, Updates & Erinnerungen, die das Engagement steigern."
+        },
+        "payments": {
+          "title": "Sichere Zahlungen",
+          "desc": "Mehrere Zahlungsoptionen mit höchster Sicherheit."
+        },
+        "tracking": {
+          "title": "Echtzeit-Tracking",
+          "desc": "Bestellstatus, Lieferverfolgung & Live-Benachrichtigungen."
+        },
+        "integration": {
+          "title": "Vollständige Ökosystem-Integration",
+          "desc": "Funktioniert mit Ihrer Website, Kasse, Druckern & mehr."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Unser Prozess",
+      "heading": "Von der Idee bis in den App Store.",
+      "steps": {
+        "discovery": {
+          "title": "Analyse",
+          "desc": "Wir verstehen Ihr Geschäft, Ihre Ziele & App-Anforderungen."
+        },
+        "design": {
+          "title": "UI/UX-Design",
+          "desc": "Schöne, intuitive Designs mit Fokus auf Benutzererfahrung."
+        },
+        "development": {
+          "title": "Entwicklung",
+          "desc": "Native iOS- & Android-Entwicklung mit sauberem, skalierbarem Code."
+        },
+        "testing": {
+          "title": "Testen",
+          "desc": "Gründliche Tests für Leistung, Sicherheit & fehlerfreie Apps."
+        },
+        "deployment": {
+          "title": "Veröffentlichung",
+          "desc": "Wir veröffentlichen Ihre App im App Store & Google Play Store."
+        },
+        "support": {
+          "title": "Support & Updates",
+          "desc": "Kontinuierlicher Support, Updates & Funktionserweiterungen."
+        }
+      }
+    },
+    "whyChoose": {
+      "eyebrow": "Warum uns wählen",
+      "heading": "Leistungsstarke Apps, die Ihr Restaurantgeschäft wachsen lassen.",
+      "benefits": {
+        "loyalty": "Kundenbindung & -treue steigern",
+        "repeat": "Wiederholte Bestellungen mühelos fördern",
+        "sales": "Mehr Umsatz durch Push-Kampagnen",
+        "insights": "Echtzeit-Einblicke für bessere Entscheidungen"
+      },
+      "stats": {
+        "satisfaction": { "value": "98%", "label": "Kundenzufriedenheit" },
+        "appsDelivered": { "value": "250+", "label": "Ausgelieferte Apps" },
+        "repeatOrders": { "value": "30%", "label": "Mehr Wiederholungsbestellungen" },
+        "support": { "value": "24/7", "label": "Support verfügbar" }
+      }
+    },
+    "testimonial": {
+      "quote": "RestroOS hat unsere mobile App genau so umgesetzt, wie wir es uns vorgestellt haben. Die Bestellungen sind im ersten Monat nach dem Start um 40 % gestiegen!",
+      "name": "Rahul Mehta",
+      "role": "Inhaber, Tasty Bites",
+      "stats": {
+        "rating": "4,9/5",
+        "ratingLabel": "Durchschnittliche Bewertung",
+        "orders": "+40%",
+        "ordersLabel": "Mehr Bestellungen",
+        "downloads": "50K+",
+        "downloadsLabel": "App-Downloads",
+        "processed": "2,5M+",
+        "processedLabel": "Verarbeitete Bestellungen"
+      }
+    }
+  },
+  "printerIntegration": {
+    "hero": {
+      "badge": "Automatisierte Drucker-Integration",
+      "headingLine1": "Automatisierte",
+      "headingLine2": "Drucker-Integration",
+      "description": "Bestellungen aus Web und App werden automatisch in Küche und Bar gedruckt — klare Bons, optionales 8-Zoll-Android-Display, standardmäßige Thermodrucker-Hardware. Wir koppeln Geräte mit Ihrem Konto, damit bei der manuellen Weiterleitung nichts verloren geht.",
+      "checklist": {
+        "thermalPrint": "Automatischer Thermodrucker-Druck",
+        "androidDisplay": "8-Zoll-Android-Touchdisplay",
+        "printerSupport": "Unterstützung für Küchen- & Bardrucker",
+        "zeroForwarding": "Keine manuelle Bestellweiterleitung"
+      },
+      "cta": "Demo buchen",
+      "secondaryCta": "So funktioniert's",
+      "features": {
+        "autoPrint": "Automatischer Druck",
+        "androidDisplay": "8-Zoll-Android-Display",
+        "kitchenBar": "Küche & Bar Support",
+        "noManual": "Keine manuelle Weiterleitung"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "autoPrint": {
+          "title": "Automatischer Druck",
+          "desc": "Bestellungen werden sofort nach Eingang automatisch gedruckt."
+        },
+        "androidDisplay": {
+          "title": "8-Zoll-Android-Display",
+          "desc": "Live-Bestellanzeige mit Statusaktualisierungen in Echtzeit."
+        },
+        "kitchenBar": {
+          "title": "Küche & Bar Support",
+          "desc": "Dedizierte Drucker für Küchen- und Barbetrieb."
+        },
+        "noManual": {
+          "title": "Keine manuelle Weiterleitung",
+          "desc": "Kein erneutes Eintippen. Keine Weiterleitung. Keine verlorenen Bestellungen."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Von der Bestellung zum Druck in Sekunden.",
+      "steps": {
+        "orderReceived": {
+          "title": "Bestellung eingegangen",
+          "desc": "Bestellung über Website oder mobile App aufgegeben."
+        },
+        "sentToSystem": {
+          "title": "An System gesendet",
+          "desc": "Bestellung wird sofort an Ihr Dashboard gesendet."
+        },
+        "autoRouting": {
+          "title": "Automatische Weiterleitung",
+          "desc": "Automatisch an Küchen- oder Bardrucker weitergeleitet."
+        },
+        "printedInstantly": {
+          "title": "Sofort gedruckt",
+          "desc": "Thermodrucker drucken klare Bestellbons."
+        },
+        "orderInProgress": {
+          "title": "Bestellung in Bearbeitung",
+          "desc": "Personal beginnt mit der Zubereitung — nahtlos und schnell."
+        }
+      }
+    },
+    "hardware": {
+      "eyebrow": "Unterstützte Hardware",
+      "heading": "Zuverlässige Hardware. Nahtlose Leistung.",
+      "description": "Wir arbeiten mit Standard-Thermodruckern und 8-Zoll-Android-Displays. Wir koppeln und konfigurieren Geräte mit Ihrem Konto für ein Plug-and-Play-Erlebnis.",
+      "items": {
+        "printers": "58mm / 80mm Thermodrucker",
+        "display": "8-Zoll-Android-Touchdisplay",
+        "connectivity": "WLAN / LAN / Bluetooth",
+        "cloud": "Cloud-verbunden & sicher"
+      }
+    },
+    "testimonial": {
+      "quote": "Die Drucker-Integration von RestroOS hat uns jeden Tag Stunden gespart. Bestellungen werden sofort gedruckt und unsere Küche läuft reibungsloser als je zuvor.",
+      "name": "Alex Johnson",
+      "role": "Inhaber, Burger House",
+      "stats": {
+        "printSuccess": "99,9%",
+        "printSuccessLabel": "Druckerfolgsrate",
+        "restaurants": "200+",
+        "restaurantsLabel": "Restaurants nutzen RestroOS",
+        "manualForwarding": "0",
+        "manualForwardingLabel": "Manuelle Bestellweiterleitung",
+        "performance": "24/7",
+        "performanceLabel": "Zuverlässige Leistung"
+      }
+    }
+  },
+  "posSystemDevelopment": {
+    "hero": {
+      "badge": "Kassensystem-Entwicklung",
+      "headingLine1": "Kassensystem-",
+      "headingLine2": "Entwicklung",
+      "description": "Touch-Kasse für Speisen vor Ort, Rechnungsteilung und Rabatte — Online-Bestellungen laufen im selben Ablauf wie Laufkundschaft, mit abgestimmten Druckern und Zahlungen. Eine Theke oder viele Stationen, skaliert auf Ihre Standorte.",
+      "checklist": {
+        "touchInterface": "Touchscreen-Oberfläche",
+        "unifiedOrders": "Einheitliche Online- & Laufkundschafts-Bestellungen",
+        "tableManagement": "Tischverwaltung & Rechnungsteilung",
+        "multiLocation": "Unterstützung mehrerer Standorte"
+      },
+      "cta": "Demo buchen",
+      "secondaryCta": "So funktioniert's",
+      "features": {
+        "touchInterface": "Einfache Touch-Oberfläche",
+        "unifiedOrders": "Einheitliche Bestellungen",
+        "tableManagement": "Tisch- & Rechnungsverwaltung",
+        "multiLocation": "Mehrstandortfähig"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "touchInterface": {
+          "title": "Einfache Touch-Oberfläche",
+          "desc": "Intuitive und schnelle Oberfläche für Geschwindigkeit und Genauigkeit."
+        },
+        "unifiedOrders": {
+          "title": "Einheitliche Bestellungen",
+          "desc": "Online-Bestellungen und Laufkundschaft in einem nahtlosen Arbeitsablauf."
+        },
+        "tableManagement": {
+          "title": "Tisch- & Rechnungsverwaltung",
+          "desc": "Verwalten Sie Tische, Umbuchungen und geteilte Rechnungen mühelos."
+        },
+        "multiLocation": {
+          "title": "Mehrstandortfähig",
+          "desc": "Ein Kassensystem zur Verwaltung all Ihrer Filialen."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Ein nahtloser Ablauf. Jede Bestellung.",
+      "steps": {
+        "orderAnywhere": {
+          "title": "Überall bestellen",
+          "desc": "Kunde bestellt online oder kommt ins Restaurant."
+        },
+        "arrivesInPos": {
+          "title": "Ankunft im Kassensystem",
+          "desc": "Bestellungen erscheinen sofort im Kassensystem."
+        },
+        "processManage": {
+          "title": "Bearbeiten & Verwalten",
+          "desc": "Tische verwalten, Rechnungen teilen, Rabatte anwenden."
+        },
+        "printPrepare": {
+          "title": "Drucken & Zubereiten",
+          "desc": "Bestellungen werden automatisch an Küchen-/Bardrucker gesendet."
+        },
+        "serveGetPaid": {
+          "title": "Servieren & Bezahlen",
+          "desc": "Bestellung abschließen und Zahlung entgegennehmen."
+        }
+      }
+    },
+    "showcase": {
+      "eyebrow": "Leistungsstarke Funktionen für Ihr Restaurant",
+      "heading": "Alles, was Sie in einer leistungsstarken Kasse brauchen.",
+      "items": {
+        "menu": {
+          "title": "Menü & Modifikatoren",
+          "desc": "Artikel, Kombis, Zusatzoptionen & Varianten hinzufügen."
+        },
+        "discounts": {
+          "title": "Rabatte & Angebote",
+          "desc": "Rabatte, Gutscheine und Happy Hours anwenden."
+        },
+        "payments": {
+          "title": "Zahlungen",
+          "desc": "Bargeld, Karte, UPI & Wallets — alles an einem Ort."
+        },
+        "reports": {
+          "title": "Berichte & Analysen",
+          "desc": "Echtzeit-Umsätze, Artikel, Bestellungen & mehr."
+        },
+        "staff": {
+          "title": "Personalverwaltung",
+          "desc": "Rollen, Berechtigungen und Aktivitätsverfolgung."
+        },
+        "printers": {
+          "title": "Drucker-Integration",
+          "desc": "Küchen-, Bar- & Belegdrucker werden unterstützt."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Die RestroOS-Kasse hat unsere Abläufe reibungsloser und schneller gemacht. Online- und Vor-Ort-Bestellungen in einem System — ein echter Gamechanger!",
+      "name": "Neha Sharma",
+      "role": "Inhaberin, Urban Bites",
+      "stats": {
+        "restaurants": "10.000+",
+        "restaurantsLabel": "Restaurants vertrauen RestroOS",
+        "uptime": "99,9%",
+        "uptimeLabel": "Verfügbarkeit & Zuverlässigkeit",
+        "efficiency": "30%+",
+        "efficiencyLabel": "Effizienzsteigerung",
+        "support": "24/7",
+        "supportLabel": "Support & Unterstützung"
+      }
+    }
+  },
+  "technicalSupport": {
+    "hero": {
+      "badge": "Technischer Support",
+      "headingLine1": "Technischer",
+      "headingLine2": "Support",
+      "description": "7 Tage Hilfe per Telefon, WhatsApp und E-Mail auf Hindi, Punjabi, Urdu, Englisch und Deutsch — Onboarding, Drucker- oder Zahlungsprobleme und Fragen zur Speisekarte werden schnell bearbeitet.",
+      "checklist": {
+        "support7d": "7 Tage Support-Verfügbarkeit",
+        "languages": "Hindi, Punjabi, Urdu, Englisch, Deutsch",
+        "channels": "Telefon, WhatsApp & E-Mail",
+        "onboarding": "Onboarding & Schulung"
+      },
+      "cta": "Support kontaktieren",
+      "secondaryCta": "So funktioniert's",
+      "features": {
+        "support7d": "7-Tage-Support",
+        "languages": "5 Sprachen",
+        "channels": "Mehrere Kanäle",
+        "onboarding": "Onboarding & Schulung",
+        "reliable": "Schnell & Zuverlässig"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "support7d": {
+          "title": "7-Tage-Support",
+          "desc": "Wir sind jeden Tag der Woche für Sie da."
+        },
+        "languages": {
+          "title": "5 Sprachen",
+          "desc": "Hindi, Punjabi, Urdu, Englisch, Deutsch."
+        },
+        "channels": {
+          "title": "Mehrere Kanäle",
+          "desc": "Erreichen Sie uns per Telefon, WhatsApp oder E-Mail."
+        },
+        "onboarding": {
+          "title": "Onboarding & Schulung",
+          "desc": "Vollständige Einrichtungshilfe und Teamschulung."
+        },
+        "reliable": {
+          "title": "Schnell & Zuverlässig",
+          "desc": "Schnelle Reaktion. Echte Lösungen. Keine langen Wartezeiten."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So helfen wir",
+      "heading": "Schnelle Hilfe. Echte Lösungen.",
+      "steps": {
+        "reachOut": {
+          "title": "Kontakt aufnehmen",
+          "desc": "Kontaktieren Sie uns per Telefon, WhatsApp oder E-Mail."
+        },
+        "explainIssue": {
+          "title": "Problem erklären",
+          "desc": "Schildern Sie uns Ihr Problem in Ihrer bevorzugten Sprache."
+        },
+        "investigate": {
+          "title": "Wir untersuchen",
+          "desc": "Unser Team prüft und findet die beste Lösung."
+        },
+        "resolve": {
+          "title": "Wir lösen",
+          "desc": "Wir beheben das Problem oder führen Sie Schritt für Schritt."
+        },
+        "allSet": {
+          "title": "Alles bereit",
+          "desc": "Führen Sie Ihr Geschäft wieder reibungslos weiter."
+        }
+      }
+    },
+    "alwaysThere": {
+      "eyebrow": "Immer für Sie da",
+      "heading": "Support, der Ihre Sprache spricht und Ihr Geschäft versteht.",
+      "stats": {
+        "days": { "value": "7 Tage", "label": "Support-Verfügbarkeit" },
+        "languages": { "value": "5 Sprachen", "label": "Unterstützt" },
+        "response": { "value": "Schnell", "label": "Durchschnittliche erste Reaktion" },
+        "secure": { "value": "Sicher", "label": "Ihre Daten und Ihr Geschäft sind geschützt" }
+      }
+    },
+    "testimonial": {
+      "quote": "Fantastischer Support! Sie haben uns bei der Einrichtung geholfen und unser Druckerproblem innerhalb weniger Minuten gelöst.",
+      "name": "Harpreet Singh",
+      "role": "Inhaber, Tandoori Flames",
+      "stats": {
+        "rating": "4,9/5",
+        "ratingLabel": "Durchschnittliche Support-Bewertung",
+        "resolved": "98%",
+        "resolvedLabel": "Beim ersten Kontakt gelöst",
+        "partners": "10K+",
+        "partnersLabel": "Zufriedene Restaurant-Partner",
+        "available": "24/7",
+        "availableLabel": "Wir sind bereit zu helfen"
+      }
+    }
+  },
+  "menuManagement": {
+    "hero": {
+      "badge": "Menüverwaltungssystem",
+      "headingLine1": "Menüverwaltungs-",
+      "headingLine2": "system",
+      "description": "Ändern Sie Artikel, Preise, Fotos, Modifikatoren und Verfügbarkeit von einem Dashboard aus — synchronisiert mit Website, App und Kasse. Mehrere Menüs, Zeitregeln und Aktionen, ohne auf einen Entwickler zu warten.",
+      "checklist": {
+        "realTimeUpdates": "Echtzeit-Menü-Updates",
+        "availability": "Verfügbarkeits- & Preiskontrolle",
+        "modifiers": "Modifikatoren, Allergene & Ernährungsinfos",
+        "multiLocation": "Unterstützung mehrerer Standorte & Menüs"
+      },
+      "cta": "So funktioniert's",
+      "features": {
+        "realTime": "Echtzeit-Updates",
+        "pricing": "Preise & Verfügbarkeit",
+        "modifiers": "Modifikatoren & Extras",
+        "multiLocation": "Mehrstandort-Support",
+        "multiMenu": "Mehrere Menüs"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "realTime": {
+          "title": "Echtzeit-Updates",
+          "desc": "Sofortige Änderungen über alle Kanäle."
+        },
+        "pricing": {
+          "title": "Preise & Verfügbarkeit",
+          "desc": "Steuern Sie Preise und Verfügbarkeit mühelos."
+        },
+        "modifiers": {
+          "title": "Modifikatoren & Extras",
+          "desc": "Verwalten Sie Optionen, Allergene & Ernährungspräferenzen."
+        },
+        "multiLocation": {
+          "title": "Mehrstandort-Support",
+          "desc": "Verwalten Sie mehrere Filialen von einem Dashboard aus."
+        },
+        "multiMenu": {
+          "title": "Mehrere Menüs",
+          "desc": "Erstellen Sie Menüs für verschiedene Zeiten, Bereiche oder Marken."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Verwalten Sie Ihr Menü in Minuten.",
+      "steps": {
+        "addItems": {
+          "title": "Artikel hinzufügen",
+          "desc": "Fügen Sie Ihre Menüartikel und Fotos hinzu oder importieren Sie sie."
+        },
+        "setRules": {
+          "title": "Regeln festlegen",
+          "desc": "Legen Sie Verfügbarkeits-, Zeit- und Standortregeln fest."
+        },
+        "customize": {
+          "title": "Anpassen",
+          "desc": "Fügen Sie Modifikatoren, Allergene und Ernährungsinfos hinzu."
+        },
+        "publish": {
+          "title": "Veröffentlichen",
+          "desc": "Veröffentlichen und synchronisieren mit Website, App & Kasse."
+        },
+        "update": {
+          "title": "Jederzeit aktualisieren",
+          "desc": "Nehmen Sie jederzeit Änderungen vor — sofort überall sichtbar."
+        }
+      }
+    },
+    "dashboard": {
+      "eyebrow": "Leistungsstarkes Dashboard",
+      "headingLine1": "Ein Dashboard.",
+      "headingLine2": "Volle Kontrolle.",
+      "description": "Von Artikeln bis zu Aktionen — verwalten Sie alles über ein einziges, benutzerfreundliches Dashboard für Restaurants jeder Größe.",
+      "cta": "Dashboard entdecken",
+      "benefits": {
+        "dragDrop": "Drag & Drop-Neuanordnung",
+        "bulkEdits": "Massenaktualisierungen & Schnellbearbeitung",
+        "search": "Intelligente Suche & Filter",
+        "insights": "Detaillierte Leistungseinblicke"
+      }
+    }
+  },
+  "googleBusinessSEO": {
+    "hero": {
+      "badge": "Google Unternehmensprofil & SEO",
+      "headingLine1": "Google Unternehmensprofil",
+      "headingLine2": "& SEO",
+      "description": "Einrichtung des Google Unternehmensprofils, lokales SEO, strukturierte Daten und Social-Media-Profile, die auf Ihre eigene Bestellung verweisen — damit Auffindbarkeit zu direkten Bestellungen führt, nicht zu Portalgebühren.",
+      "checklist": {
+        "profile": "Optimierung des Google Unternehmensprofils",
+        "localSeo": "Lokale SEO- & Keyword-Strategie",
+        "social": "Social-Media-Einrichtung & Verlinkung",
+        "reviews": "Bewertungs- & Reputationsmanagement"
+      },
+      "cta": "So funktioniert's",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "profile": "Optimierung des Google Unternehmensprofils",
+        "localSeo": "Lokale SEO- & Keyword-Strategie",
+        "social": "Social-Media-Einrichtung & Verlinkung",
+        "reviews": "Bewertungs- & Reputationsmanagement"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "profile": {
+          "title": "Optimierung des Google Unternehmensprofils",
+          "desc": "Vollständige Einrichtung, korrekte Angaben, Kategorien, Fotos, Dienstleistungen und mehr."
+        },
+        "localSeo": {
+          "title": "Lokale SEO- & Keyword-Strategie",
+          "desc": "Ranken Sie bei lokalen Suchen mit den richtigen Keywords, Inhalten und On-Page-SEO."
+        },
+        "social": {
+          "title": "Social-Media-Einrichtung & Verlinkung",
+          "desc": "Erstellen und optimieren Sie Social-Media-Profile, die Kunden zu Ihrer Direktbestellung führen."
+        },
+        "reviews": {
+          "title": "Bewertungs- & Reputationsmanagement",
+          "desc": "Erhalten Sie mehr Bewertungen, reagieren Sie klug und bauen Sie eine vertrauenswürdige Online-Reputation auf."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Von der Suche zur Direktbestellung.",
+      "steps": {
+        "audit": {
+          "title": "Analyse & Einrichtung",
+          "desc": "Wir analysieren Ihr Unternehmen und richten Ihre Google- & Online-Präsenz ein/optimieren sie."
+        },
+        "optimize": {
+          "title": "Optimieren & Ranken",
+          "desc": "Wir optimieren Ihr Profil, Ihre Website und Inhalte für ein besseres lokales Ranking."
+        },
+        "discovered": {
+          "title": "Gefunden werden",
+          "desc": "Kunden finden Sie über Google-Suche, Maps und soziale Plattformen."
+        },
+        "visit": {
+          "title": "Besuchen & Bestellen",
+          "desc": "Sie besuchen Ihre Website oder Bestellseite und geben eine Bestellung auf."
+        },
+        "grow": {
+          "title": "Wachsen & Wiederholen",
+          "desc": "Mehr Sichtbarkeit, mehr Bestellungen, mehr Wachstum — zu Ihren Bedingungen."
+        }
+      }
+    },
+    "alwaysAhead": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Mehr Sichtbarkeit. Mehr Bestellungen. Weniger Abhängigkeit von Portalen.",
+      "stats": {
+        "rankings": {
+          "title": "Höhere Rankings",
+          "desc": "Gesehen werden, wo Ihre Kunden suchen."
+        },
+        "orders": {
+          "title": "Mehr Direktbestellungen",
+          "desc": "Leiten Sie Traffic zu Ihrer eigenen Bestellung."
+        },
+        "trust": {
+          "title": "Vertrauen aufbauen",
+          "desc": "Starke Bewertungen und Reputation."
+        },
+        "savings": {
+          "title": "Mehr sparen",
+          "desc": "Vermeiden Sie hohe Provisionen und Zusatzgebühren."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Unsere Sichtbarkeit auf Google ist innerhalb weniger Wochen um das 3-Fache gestiegen. Direktbestellungen nahmen zu und wir haben viel bei Provisionsgebühren gespart.",
+      "name": "Alex Johnson",
+      "role": "Burger House",
+      "stats": {
+        "visibility": "3X",
+        "visibilityLabel": "Steigerung der Sichtbarkeit",
+        "orders": "2,5X",
+        "ordersLabel": "Mehr Direktbestellungen",
+        "keywords": "500+",
+        "keywordsLabel": "Rankende Keywords",
+        "rating": "4,8★",
+        "ratingLabel": "Verbesserung der Bewertung",
+        "savings": "60%",
+        "savingsLabel": "Kosteneinsparung bei Provisionen"
+      }
+    }
+  },
+  "metaAds": {
+    "hero": {
+      "badge": "Meta Ads & Facebook • Instagram",
+      "headingLine1": "Meta Ads &",
+      "headingLine2": "Facebook • Instagram",
+      "description": "Führen Sie hochkonvertierende Facebook- und Instagram-Werbekampagnen durch, die neue Kunden gewinnen, Wiederholungsbestellungen steigern und Ihr Restaurant wachsen lassen — ohne sich nur auf Lieferplattformen zu verlassen.",
+      "checklist": {
+        "campaigns": "Einrichtung von Facebook- & Instagram-Kampagnen",
+        "targeting": "Zielgruppenansprache & Retargeting",
+        "creative": "Kreativdesign & Anzeigentexte",
+        "tracking": "Leistungsverfolgung & ROAS-Optimierung"
+      },
+      "cta": "Kampagne starten",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "campaigns": "Facebook- & Instagram-Kampagnen",
+        "targeting": "Zielgruppenansprache & Retargeting",
+        "creative": "Kreativdesign & Anzeigentexte",
+        "tracking": "Leistungsverfolgung"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "campaigns": {
+          "title": "Facebook- & Instagram-Kampagnen",
+          "desc": "Starten Sie optimierte Kampagnen auf Facebook und Instagram, um hungrige Kunden in der Nähe zu erreichen."
+        },
+        "targeting": {
+          "title": "Zielgruppenansprache & Retargeting",
+          "desc": "Sprechen Sie Personen nach Standort, Interessen und Verhalten an und reaktivieren Sie frühere Besucher."
+        },
+        "creative": {
+          "title": "Kreativdesign & Anzeigentexte",
+          "desc": "Professionelle Bilder, Videos, Überschriften und Angebote zur Maximierung der Conversions."
+        },
+        "tracking": {
+          "title": "Leistungsverfolgung",
+          "desc": "Verfolgen Sie ROAS, Conversions, Klicks, Reichweite und optimieren Sie Kampagnen kontinuierlich."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Von Anzeigen zu mehr Bestellungen.",
+      "steps": {
+        "strategy": {
+          "title": "Kampagnenstrategie",
+          "desc": "Verstehen Sie Ihr Restaurant, Ihre Ziele, Zielgruppe und Aktionen."
+        },
+        "launch": {
+          "title": "Anzeigen erstellen & starten",
+          "desc": "Gestalten Sie Creatives und starten Sie optimierte Facebook- & Instagram-Kampagnen."
+        },
+        "reach": {
+          "title": "Kunden in der Nähe erreichen",
+          "desc": "Ihre Anzeigen erscheinen bei Kunden, die am ehesten bei Ihrem Restaurant bestellen."
+        },
+        "orders": {
+          "title": "Mehr Bestellungen erhalten",
+          "desc": "Kunden klicken auf Ihre Anzeige, besuchen Ihre Bestellseite und geben eine Bestellung auf."
+        },
+        "optimize": {
+          "title": "Optimieren & Skalieren",
+          "desc": "Verbessern Sie die Leistung wöchentlich, um den ROAS zu steigern und Werbekosten zu senken."
+        }
+      }
+    },
+    "growFaster": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Schneller wachsen mit intelligenter Meta-Werbung.",
+      "stats": {
+        "reach": {
+          "title": "Höhere Reichweite",
+          "desc": "Zeigen Sie Ihr Restaurant Tausenden von Kunden in der Nähe."
+        },
+        "directOrders": {
+          "title": "Mehr Direktbestellungen",
+          "desc": "Leiten Sie Kunden direkt zu Ihrer Website oder Bestell-App."
+        },
+        "roi": {
+          "title": "Besserer ROI",
+          "desc": "Geben Sie klüger aus mit optimiertem Targeting und Bidding."
+        },
+        "retarget": {
+          "title": "Besucher zurückgewinnen",
+          "desc": "Bringen Sie Kunden zurück, die Ihre Website besucht, aber nicht bestellt haben."
+        },
+        "lowerCost": {
+          "title": "Niedrigere Kosten pro Akquisition",
+          "desc": "Reduzieren Sie Werbekosten und steigern Sie gleichzeitig die Conversions."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Innerhalb eines Monats haben unsere Facebook-Anzeigen mehr Direktbestellungen generiert als jede Lieferapp. Unser ROAS lag konstant über dem 5-Fachen.",
+      "name": "Sarah Williams",
+      "role": "Urban Grill",
+      "stats": {
+        "roas": "5X",
+        "roasLabel": "Durchschnittlicher ROAS",
+        "reached": "220K+",
+        "reachedLabel": "Monatlich erreichte Personen",
+        "cost": "40%",
+        "costLabel": "Niedrigere Kosten pro Bestellung",
+        "satisfaction": "4,9★",
+        "satisfactionLabel": "Kundenzufriedenheit",
+        "growth": "300%",
+        "growthLabel": "Durchschnittliches Bestellwachstum"
+      }
+    }
+  },
+  "googleAds": {
+    "hero": {
+      "badge": "Google Ads (PPC)",
+      "headingLine1": "Google Ads (PPC)",
+      "headingLine2": "Mehr Bestellungen.",
+      "description": "Bringen Sie Ihr Restaurant vor Menschen, die gerade jetzt suchen. Unsere Google Ads (PPC)-Kampagnen leiten kaufbereiten Traffic auf Ihre Bestellseite und steigern Direktbestellungen — ohne Provisionszahlung.",
+      "checklist": {
+        "searchDisplay": "Google Such- & Display-Anzeigen",
+        "keywordResearch": "Keyword-Recherche & Anzeigenerstellung",
+        "locationBidding": "Standort-Targeting & Gebote",
+        "conversionTracking": "Conversion-Tracking & ROI-Optimierung"
+      },
+      "cta": "Google Ads starten",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "searchAds": "Google Suchanzeigen",
+        "displayAds": "Display- & Remarketing-Anzeigen",
+        "locationTargeting": "Standort-Targeting",
+        "roiTracking": "Conversion- & ROI-Tracking"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "searchAds": {
+          "title": "Google Suchanzeigen",
+          "desc": "Erscheinen Sie ganz oben, wenn Kunden nach Essen, Restaurants oder Lieferung in ihrer Nähe suchen."
+        },
+        "displayAds": {
+          "title": "Display- & Remarketing-Anzeigen",
+          "desc": "Erreichen Sie potenzielle Kunden auf Websites und gewinnen Sie Besucher zurück, die nicht bestellt haben."
+        },
+        "locationTargeting": {
+          "title": "Standort-Targeting",
+          "desc": "Zeigen Sie Anzeigen Personen in bestimmten Gebieten rund um Ihr Restaurant, um mehr lokale Bestellungen zu erhalten."
+        },
+        "roiTracking": {
+          "title": "Conversion- & ROI-Tracking",
+          "desc": "Verfolgen Sie jeden Klick, jede Bestellung und jede ausgegebene Rupie, um Ihre Werberendite zu maximieren."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Vom Klick zum Kunden.",
+      "steps": {
+        "keywordResearch": {
+          "title": "Keyword-Recherche",
+          "desc": "Wir finden die besten Keywords, mit denen Ihre Kunden online nach Essen suchen."
+        },
+        "createLaunch": {
+          "title": "Anzeigen erstellen & starten",
+          "desc": "Wir erstellen hochkonvertierende Anzeigen und starten Kampagnen auf Google."
+        },
+        "showRightPeople": {
+          "title": "Den richtigen Menschen zeigen",
+          "desc": "Ihre Anzeigen erscheinen bei Menschen, die in Ihrer Region nach Essen suchen und bestellbereit sind."
+        },
+        "clickOrder": {
+          "title": "Klicken & Bestellen",
+          "desc": "Kunden klicken auf Ihre Anzeige, besuchen Ihre Website und geben eine Bestellung auf."
+        },
+        "optimizeGrow": {
+          "title": "Optimieren & Wachsen",
+          "desc": "Wir optimieren kontinuierlich, um mehr Bestellungen zu den niedrigsten Kosten zu erzielen."
+        }
+      }
+    },
+    "smarterAds": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Intelligentere Anzeigen. Mehr Bestellungen. Bessere Erträge.",
+      "stats": {
+        "visibility": {
+          "title": "Höhere Sichtbarkeit",
+          "desc": "Ranken Sie ganz oben bei Google und werden Sie wahrgenommen."
+        },
+        "directOrders": {
+          "title": "Mehr Direktbestellungen",
+          "desc": "Leiten Sie Traffic zu Ihrem eigenen Bestellsystem."
+        },
+        "lowerSpend": {
+          "title": "Niedrigere Werbeausgaben",
+          "desc": "Reduzieren Sie Verschwendung durch intelligentes Targeting & Bidding."
+        },
+        "roi": {
+          "title": "Besserer ROI",
+          "desc": "Erhalten Sie mehr Bestellungen für jede ausgegebene Rupie."
+        },
+        "tracking": {
+          "title": "Echtzeit-Tracking",
+          "desc": "Verfolgen Sie die Leistung und verbessern Sie sie in Echtzeit."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Unsere Google Ads-Kampagnen steigerten die Direktbestellungen in nur 45 Tagen um 240 %. Die Kosten pro Bestellung sanken, während unser Umsatz wuchs!",
+      "name": "Rohit Mehra",
+      "role": "Spice House",
+      "stats": {
+        "directOrders": "240%",
+        "directOrdersLabel": "Steigerung der Direktbestellungen",
+        "roi": "3,2X",
+        "roiLabel": "Durchschnittlicher ROI der Werbeausgaben",
+        "orders": "12K+",
+        "ordersLabel": "Über Anzeigen generierte Bestellungen",
+        "rating": "4,8★",
+        "ratingLabel": "Durchschnittliche Kundenbewertung",
+        "cost": "35%",
+        "costLabel": "Niedrigere Kosten pro Bestellung"
+      }
+    }
+  },
+  "onlineOrdering": {
+    "hero": {
+      "badge": "Online-Bestellsystem",
+      "headingLine1": "Online-Bestell-",
+      "headingLine2": "system",
+      "description": "Ihr eigenes, markengeprägtes Online-Bestellsystem, mit dem Kunden direkt über Ihre Website oder App bestellen können. Mehr Bestellungen. Niedrigere Gebühren. Zufriedenere Kunden.",
+      "checklist": {
+        "brandedLink": "Markenwebsite & Bestelllink",
+        "customMenu": "Individuelles Menü & Extras",
+        "deliveryOptions": "Liefer-, Abhol- & Vorbestelloptionen",
+        "orderPayment": "Echtzeit-Bestell- & Zahlungsverwaltung"
+      },
+      "cta": "So funktioniert's",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "brandedExperience": "Markenbestellerlebnis",
+        "noCommission": "Keine Provisionsgebühren",
+        "orderOptions": "Mehrere Bestelloptionen",
+        "securePayments": "Sichere Zahlungen & Tracking"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "brandedExperience": {
+          "title": "Markenbestellerlebnis",
+          "desc": "Ihr Logo, Ihre Farben, Ihre Domain. Ein nahtloses Erlebnis, das Ihre Marke stärkt."
+        },
+        "noCommission": {
+          "title": "Keine Provisionsgebühren",
+          "desc": "Behalten Sie 100 % Ihres Gewinns. Keine versteckten Kosten oder Portalprovisionen."
+        },
+        "orderOptions": {
+          "title": "Mehrere Bestelloptionen",
+          "desc": "Lieferung, Abholung, vor Ort, geplante Bestellungen — alles in einem System."
+        },
+        "securePayments": {
+          "title": "Sichere Zahlungen & Tracking",
+          "desc": "Akzeptieren Sie Online-Zahlungen sicher und verfolgen Sie jede Bestellung in Echtzeit."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Vom Klick zum Kunden.",
+      "steps": {
+        "placeOrder": {
+          "title": "Kunde gibt Bestellung auf",
+          "desc": "Besucher durchstöbern Ihr Menü und bestellen über Ihre Website oder App."
+        },
+        "orderReceived": {
+          "title": "Bestellung in Echtzeit erhalten",
+          "desc": "Sie erhalten sofort eine Benachrichtigung im Dashboard und verwalten die Bestellung mühelos."
+        },
+        "prepareDeliver": {
+          "title": "Zubereiten & Liefern oder Abholen",
+          "desc": "Bereiten Sie die Bestellung je nach Kundenwunsch für Lieferung oder Abholung vor."
+        },
+        "satisfied": {
+          "title": "Kunde zufrieden",
+          "desc": "Zufriedene Kunden, Wiederholungsbestellungen und mehr positive Bewertungen."
+        },
+        "grows": {
+          "title": "Geschäft wächst",
+          "desc": "Mehr Direktbestellungen, bessere Margen und stärkere Kundenbindung."
+        }
+      }
+    },
+    "takeControl": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Übernehmen Sie die Kontrolle über Ihre Bestellungen. Wachsen Sie auf Ihre Weise.",
+      "stats": {
+        "profits": {
+          "title": "Höhere Gewinne",
+          "desc": "Keine Marktplatzgebühren. Mehr Einnahmen."
+        },
+        "relationship": {
+          "title": "Direkte Kundenbeziehung",
+          "desc": "Bauen Sie Loyalität auf und bleiben Sie verbunden."
+        },
+        "insights": {
+          "title": "Bessere Einblicke",
+          "desc": "Verstehen Sie Ihre Kunden und Verkäufe."
+        },
+        "offers": {
+          "title": "Individuelle Angebote",
+          "desc": "Führen Sie Aktionen und Rabatte nach Ihren Bedingungen durch."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Der Wechsel zur Online-Bestellung von RestroOS hat unsere Direktbestellungen um das 3-Fache gesteigert und unsere Abhängigkeit von Drittanbieter-Plattformen verringert.",
+      "name": "David Taylor",
+      "role": "Pizza House",
+      "stats": {
+        "directOrders": "3X",
+        "directOrdersLabel": "Steigerung der Direktbestellungen",
+        "repeatOrders": "2,5X",
+        "repeatOrdersLabel": "Mehr Wiederholungsbestellungen",
+        "restaurants": "500+",
+        "restaurantsLabel": "Zufriedene Restaurants",
+        "rating": "4,8★",
+        "ratingLabel": "Verbesserung der Bewertung",
+        "savings": "60%",
+        "savingsLabel": "Einsparung bei Provisionsgebühren"
+      }
+    }
+  },
+  "googleAnalytics": {
+    "hero": {
+      "badge": "Google Analytics",
+      "headingLine1": "Google Analytics",
+      "headingLine2": "leicht gemacht",
+      "description": "Verwandeln Sie Ihre Daten in echte Erkenntnisse. Verfolgen Sie die Leistung, verstehen Sie Ihre Zielgruppe und lassen Sie Ihr Geschäft mit Google Analytics wachsen.",
+      "checklist": {
+        "performance": "Website- & App-Leistung verfolgen",
+        "audience": "Zielgruppe verstehen",
+        "conversions": "Conversions & Ziele messen",
+        "reports": "Echtzeitdaten & individuelle Berichte",
+        "decisions": "Datengestützte Entscheidungen für Wachstum"
+      },
+      "cta": "So funktioniert's",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "visibility": "Vollständige Datentransparenz",
+        "audience": "Zielgruppe verstehen",
+        "goals": "Ziele & Conversions verfolgen",
+        "dashboards": "Individuelle Berichte & Dashboards",
+        "decisions": "Datengestützte Entscheidungen"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "visibility": {
+          "title": "Vollständige Datentransparenz",
+          "desc": "Erhalten Sie einen klaren Überblick über Ihre Website- und App-Leistung."
+        },
+        "audience": {
+          "title": "Zielgruppe verstehen",
+          "desc": "Erfahren Sie, wer Ihre Besucher sind und was ihnen wichtig ist."
+        },
+        "goals": {
+          "title": "Ziele & Conversions verfolgen",
+          "desc": "Messen Sie zentrale Aktionen, die Ihr Geschäft voranbringen."
+        },
+        "dashboards": {
+          "title": "Individuelle Berichte & Dashboards",
+          "desc": "Erstellen Sie Berichte, die das Wesentliche hervorheben."
+        },
+        "decisions": {
+          "title": "Datengestützte Entscheidungen",
+          "desc": "Nutzen Sie Erkenntnisse, um Kampagnen zu optimieren und den ROI zu steigern."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Von Daten zu Entscheidungen.",
+      "steps": {
+        "setup": {
+          "title": "Einrichtung",
+          "desc": "Wir richten Google Analytics auf Ihrer Website oder App ein."
+        },
+        "collection": {
+          "title": "Datenerfassung",
+          "desc": "Verfolgen Sie Besucher, Ereignisse und Conversions automatisch."
+        },
+        "analyze": {
+          "title": "Analysieren",
+          "desc": "Wir analysieren die Daten, um wertvolle Erkenntnisse zu gewinnen."
+        },
+        "report": {
+          "title": "Berichten",
+          "desc": "Erhalten Sie leicht verständliche Berichte und individuelle Dashboards."
+        },
+        "optimize": {
+          "title": "Optimieren",
+          "desc": "Nutzen Sie Erkenntnisse, um Leistung zu verbessern und Ziele zu erreichen."
+        },
+        "grow": {
+          "title": "Wachsen",
+          "desc": "Treffen Sie klügere Entscheidungen und lassen Sie Ihr Geschäft wachsen."
+        }
+      }
+    },
+    "betterInsights": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Bessere Erkenntnisse. Besseres Wachstum.",
+      "stats": {
+        "tracking": {
+          "title": "Präzises Tracking",
+          "desc": "Zuverlässige Daten, denen Sie vertrauen können."
+        },
+        "insights": {
+          "title": "Umsetzbare Erkenntnisse",
+          "desc": "Verwandeln Sie Daten in echte Ergebnisse."
+        },
+        "monitoring": {
+          "title": "Leistungsüberwachung",
+          "desc": "Verfolgen Sie das Wesentliche, alles an einem Ort."
+        },
+        "saveTime": {
+          "title": "Zeit sparen",
+          "desc": "Automatisierte Berichte sparen Ihnen Stunden."
+        },
+        "growth": {
+          "title": "Geschäftswachstum",
+          "desc": "Daten, die Ihnen helfen, schneller zu wachsen."
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Google Analytics gab uns die Klarheit, die wir brauchten, um smarter und schneller zu wachsen.",
+      "name": "Rahul Sharma",
+      "role": "Marketing Head",
+      "stats": {
+        "traffic": "2X",
+        "trafficLabel": "Steigerung des Website-Traffics",
+        "conversions": "35%",
+        "conversionsLabel": "Mehr erfasste Conversions",
+        "roi": "28%",
+        "roiLabel": "Verbesserung des ROI",
+        "rating": "4,7/5",
+        "ratingLabel": "Durchschnittliche Kundenbewertung",
+        "tracking": "24/7",
+        "trackingLabel": "Datenerfassung & Einblicke"
+      }
+    }
+  },
+  "reservationSystem": {
+    "hero": {
+      "badge": "Reservierungssystem",
+      "headingLine1": "Reservierungs-",
+      "headingLine2": "system",
+      "description": "Intelligente Tischreservierungen leicht gemacht. Nehmen Sie Buchungen entgegen, verwalten Sie Verfügbarkeit und bieten Sie nahtlose Gästeerlebnisse — alles aus einem System.",
+      "checklist": {
+        "onlineReservations": "Online-Tischreservierungen",
+        "realTimeAvailability": "Echtzeit-Verfügbarkeit",
+        "guestManagement": "Gästeverwaltung",
+        "reminders": "Automatische Bestätigungen & Erinnerungen",
+        "noShows": "Weniger No-Shows & mehr Effizienz",
+        "reports": "Einblicke & Buchungsberichte"
+      },
+      "cta": "So funktioniert's",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "onlineReservations": "Online-Reservierungen",
+        "guestManagement": "Gästeverwaltung",
+        "realTimeAvailability": "Echtzeit-Verfügbarkeit",
+        "reminders": "Automatische Erinnerungen",
+        "reports": "Berichte & Einblicke",
+        "integration": "Einfache Integration"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "onlineReservations": {
+          "title": "Online-Reservierungen",
+          "desc": "Lassen Sie Ihre Gäste jederzeit und von jedem Gerät aus buchen."
+        },
+        "guestManagement": {
+          "title": "Gästeverwaltung",
+          "desc": "Speichern Sie Gästepräferenzen und stärken Sie Kundenbeziehungen."
+        },
+        "realTimeAvailability": {
+          "title": "Echtzeit-Verfügbarkeit",
+          "desc": "Vermeiden Sie Doppelbuchungen mit Live-Tischverfügbarkeit."
+        },
+        "reminders": {
+          "title": "Automatische Erinnerungen",
+          "desc": "Reduzieren Sie No-Shows mit SMS- und E-Mail-Erinnerungen."
+        },
+        "reports": {
+          "title": "Berichte & Einblicke",
+          "desc": "Verfolgen Sie Buchungen, Stoßzeiten, Stornierungen und mehr."
+        },
+        "integration": {
+          "title": "Einfache Integration",
+          "desc": "Funktioniert nahtlos mit Ihrer Kasse und anderen Tools."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Einfache Schritte, smartere Reservierungen.",
+      "steps": {
+        "guestBooks": {
+          "title": "Gast bucht",
+          "desc": "Gäste wählen Datum, Uhrzeit, Personenanzahl und Standort."
+        },
+        "checkAvailability": {
+          "title": "Verfügbarkeit prüfen",
+          "desc": "Das System zeigt sofort verfügbare Tische in Echtzeit."
+        },
+        "confirmBooking": {
+          "title": "Buchung bestätigen",
+          "desc": "Die Reservierung wird mit sofortigen Benachrichtigungen bestätigt."
+        },
+        "manageEfficiently": {
+          "title": "Effizient verwalten",
+          "desc": "Sehen und verwalten Sie alle Reservierungen von einem Dashboard aus."
+        },
+        "serveBetter": {
+          "title": "Besser bedienen",
+          "desc": "Bieten Sie ein besseres Erlebnis und gewinnen Sie treue Kunden."
+        }
+      }
+    },
+    "betterReservations": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Bessere Reservierungen. Bessere Erlebnisse.",
+      "stats": {
+        "occupancy": "Höhere Tischauslastung",
+        "noShows": "Weniger No-Shows & Wartezeiten",
+        "satisfaction": "Verbesserte Gästezufriedenheit",
+        "saveTime": "Zeit sparen & Fehler reduzieren",
+        "revenue": "Mehr Umsatz & Wiederholungsbuchungen"
+      }
+    },
+    "testimonial": {
+      "quote": "Unser Reservierungsprozess ist jetzt reibungslos, effizient, und unsere Gäste lieben das Erlebnis!",
+      "name": "Alex Turner",
+      "role": "Restaurantbesitzer",
+      "stats": {
+        "occupancy": "45%",
+        "occupancyLabel": "Steigerung der Tischauslastung",
+        "noShows": "30%",
+        "noShowsLabel": "Reduzierung der No-Shows",
+        "repeatBookings": "25%",
+        "repeatBookingsLabel": "Mehr Wiederholungsbuchungen",
+        "rating": "4,8/5",
+        "ratingLabel": "Durchschnittliche Gästezufriedenheit",
+        "availability": "24/7",
+        "availabilityLabel": "Online-Buchungsverfügbarkeit"
+      }
+    }
+  },
+  "qrOrdering": {
+    "hero": {
+      "badge": "QR-Bestell- & Zahlsystem",
+      "headingLine1": "QR-Bestell-",
+      "headingLine2": "& Zahlsystem",
+      "description": "Lassen Sie Ihre Gäste scannen, bestellen und bezahlen — alles vom Smartphone aus.",
+      "checklist": {
+        "contactless": "Kontaktloses Bestellerlebnis",
+        "securePayments": "Sichere Online-Zahlungen",
+        "fasterService": "Schnellerer Service & höhere Tischauslastung",
+        "reduceWorkload": "Reduzierte Personalbelastung",
+        "realTimeUpdates": "Echtzeit-Bestellaktualisierungen",
+        "posIntegration": "Vollständig integriert mit der Kasse"
+      },
+      "cta": "So funktioniert's",
+      "secondaryCta": "Erfolgsgeschichten ansehen",
+      "features": {
+        "scanOrder": "Scannen & Bestellen",
+        "easyOrdering": "Einfache Bestellung",
+        "securePayments": "Sichere Zahlungen",
+        "realTimeUpdates": "Echtzeit-Updates",
+        "insights": "Geschäftseinblicke",
+        "posIntegration": "Kassenintegration"
+      }
+    },
+    "featureGrid": {
+      "items": {
+        "scanOrder": {
+          "title": "Scannen & Bestellen",
+          "desc": "Gäste scannen den QR-Code und durchstöbern sofort das Menü."
+        },
+        "easyOrdering": {
+          "title": "Einfache Bestellung",
+          "desc": "Artikel in den Warenkorb legen und direkt vom eigenen Gerät bestellen."
+        },
+        "securePayments": {
+          "title": "Sichere Zahlungen",
+          "desc": "Sicher online bezahlen mit mehreren Zahlungsoptionen."
+        },
+        "realTimeUpdates": {
+          "title": "Echtzeit-Updates",
+          "desc": "Erhalten Sie Live-Updates zum Bestellstatus und Benachrichtigungen."
+        },
+        "insights": {
+          "title": "Geschäftseinblicke",
+          "desc": "Verfolgen Sie Bestellungen, Umsatz und Kundenverhalten in Echtzeit."
+        },
+        "posIntegration": {
+          "title": "Kassenintegration",
+          "desc": "Nahtlos integriert mit der RestroOS-Kasse für einen reibungslosen Betrieb."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "So funktioniert's",
+      "heading": "Einfache Schritte, nahtloses Erlebnis.",
+      "steps": {
+        "scanQr": {
+          "title": "QR-Code scannen",
+          "desc": "Gäste scannen den QR-Code auf dem Tisch."
+        },
+        "browseMenu": {
+          "title": "Menü durchstöbern",
+          "desc": "Entdecken Sie das digitale Menü und wählen Sie Ihre Lieblingsgerichte."
+        },
+        "placeOrder": {
+          "title": "Bestellung aufgeben",
+          "desc": "Artikel in den Warenkorb legen und sofort bestellen."
+        },
+        "makePayment": {
+          "title": "Zahlung vornehmen",
+          "desc": "Sicher online über mehrere Zahlungsoptionen bezahlen."
+        },
+        "enjoyMeal": {
+          "title": "Mahlzeit genießen",
+          "desc": "Wir erhalten die Bestellung und bedienen Sie problemlos."
+        }
+      }
+    },
+    "smarterOrdering": {
+      "eyebrow": "Immer einen Schritt voraus",
+      "heading": "Intelligentere Bestellungen. Besseres Geschäft.",
+      "stats": {
+        "orderValue": "Höherer durchschnittlicher Bestellwert",
+        "tableTurnover": "Schnellere Tischauslastung",
+        "costs": "Geringere Betriebskosten",
+        "reviews": "Zufriedenere Kunden, bessere Bewertungen",
+        "decisions": "Datengestützte Entscheidungen"
+      }
+    },
+    "testimonial": {
+      "quote": "QR-Bestellung & Zahlung hat unsere Servicegeschwindigkeit und Kundenzufriedenheit komplett verändert!",
+      "name": "Sarah Johnson",
+      "role": "Café-Besitzerin",
+      "stats": {
+        "turnover": "40%",
+        "turnoverLabel": "Steigerung der Tischauslastung",
+        "orders": "35%",
+        "ordersLabel": "Mehr Bestellungen pro Tag",
+        "orderValue": "28%",
+        "orderValueLabel": "Höherer durchschnittlicher Bestellwert",
+        "satisfaction": "4,9/5",
+        "satisfactionLabel": "Durchschnittliche Kundenzufriedenheit",
+        "contactless": "24/7",
+        "contactlessLabel": "Kontaktlos & problemlos"
+      }
+    }
+  }
+}

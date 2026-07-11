@@ -1,41 +1,37 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import faqImage from "../assets/FAQimage.png";
 
 const FAQ = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqs = [
     {
       id: "01",
-      question: "What is an Online Ordering System?",
-      answer:
-        "An online ordering system allows customers to browse menus, place orders, and make secure payments directly through your website or mobile device.",
+      question: t("faq.items.q1.question"),
+      answer: t("faq.items.q1.answer"),
     },
     {
       id: "02",
-      question: "Can customers order without downloading an app?",
-      answer:
-        "Yes. Customers can order directly from your website by simply scanning a QR code or visiting your ordering page.",
+      question: t("faq.items.q2.question"),
+      answer: t("faq.items.q2.answer"),
     },
     {
       id: "03",
-      question: "Does the system support online payments?",
-      answer:
-        "Yes. The platform supports UPI, Credit Cards, Debit Cards, Net Banking, Wallets, and other secure payment gateways.",
+      question: t("faq.items.q3.question"),
+      answer: t("faq.items.q3.answer"),
     },
     {
       id: "04",
-      question: "Can I manage orders in real time?",
-      answer:
-        "Absolutely. Restaurant staff can view, accept, reject, and track orders instantly from the admin dashboard.",
+      question: t("faq.items.q4.question"),
+      answer: t("faq.items.q4.answer"),
     },
     {
       id: "05",
-      question: "Does the system support table reservations?",
-      answer:
-        "Yes. Customers can reserve tables online and receive instant booking confirmations.",
+      question: t("faq.items.q5.question"),
+      answer: t("faq.items.q5.answer"),
     },
-  
   ];
 
   const toggleFAQ = (index) => {
@@ -44,7 +40,7 @@ const FAQ = () => {
 
   return (
     <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+      className="relative z-10 bg-cover bg-center bg-no-repeat py-28"
       style={{
         backgroundImage: `url(${faqImage})`,
       }}
@@ -52,24 +48,23 @@ const FAQ = () => {
       {/* Overlay */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20">
+      <div className="relative max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="max-w-[700px]">
           <p className="text-red-600 font-semibold tracking-[3px] uppercase text-lg mb-2">
-            FOOD ORDERING SYSTEM
+            {t("faq.eyebrow")}
           </p>
 
           <h1 className="text-[80px] md:text-[100px] leading-none font-black text-red-600">
-            FAQ
+            {t("faq.title")}
           </h1>
 
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
-            Frequently Asked Questions
+            {t("faq.heading")}
           </h2>
 
           <p className="mt-5 text-lg text-gray-600 max-w-[600px]">
-            Find answers to common questions about our online food ordering
-            platform, payments, reservations, and restaurant management tools.
+            {t("faq.description")}
           </p>
         </div>
 

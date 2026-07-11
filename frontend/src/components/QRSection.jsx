@@ -6,8 +6,10 @@ import {
   FiShield,
   FiArrowRight,
 } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 export default function QRSection() {
+  const { t } = useTranslation();
   return (
     <section className="relative py-24 overflow-hidden bg-white">
       <div className="max-w-[1600px] mx-auto px-6">
@@ -26,25 +28,23 @@ export default function QRSection() {
 
               {/* Tag */}
               <div className="inline-flex items-center border border-red-500 rounded-full px-6 py-3 text-red-600 font-semibold tracking-wide mb-8">
-                QR ORDERING & PAY
+                {t("qr.badge")}
               </div>
 
               {/* Heading */}
               <h2 className="text-[60px] lg:text-[90px] leading-[0.95] font-black uppercase text-black">
-                Scan.
+                {t("qr.headingLine1")}
                 <br />
-                Order.
+                {t("qr.headingLine2")}
                 <br />
-                Pay.
+                {t("qr.headingLine3")}
                 <br />
-                <span className="text-red-600">Repeat.</span>
+                <span className="text-red-600">{t("qr.headingLine4")}</span>
               </h2>
 
               {/* Description */}
               <p className="mt-8 text-xl text-gray-600 leading-relaxed max-w-xl">
-                Guests order and pay directly from the table via QR —
-                fully connected to your POS system for a seamless dining
-                experience.
+                {t("qr.description")}
               </p>
 
               {/* Features */}
@@ -54,39 +54,39 @@ export default function QRSection() {
                   <div className="w-16 h-16 mx-auto rounded-full border border-red-200 flex items-center justify-center">
                     <FiClock className="text-red-600 text-2xl" />
                   </div>
-                  <h4 className="mt-3 font-semibold">Faster</h4>
-                  <p className="text-gray-500 text-sm">Service</p>
+                  <h4 className="mt-3 font-semibold">{t("qr.features.faster.title")}</h4>
+                  <p className="text-gray-500 text-sm">{t("qr.features.faster.subtitle")}</p>
                 </div>
 
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto rounded-full border border-red-200 flex items-center justify-center">
                     <FiTrendingUp className="text-red-600 text-2xl" />
                   </div>
-                  <h4 className="mt-3 font-semibold">Higher</h4>
-                  <p className="text-gray-500 text-sm">AOV</p>
+                  <h4 className="mt-3 font-semibold">{t("qr.features.higher.title")}</h4>
+                  <p className="text-gray-500 text-sm">{t("qr.features.higher.subtitle")}</p>
                 </div>
 
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto rounded-full border border-red-200 flex items-center justify-center">
                     <FiUsers className="text-red-600 text-2xl" />
                   </div>
-                  <h4 className="mt-3 font-semibold">Less Staff</h4>
-                  <p className="text-gray-500 text-sm">Workload</p>
+                  <h4 className="mt-3 font-semibold">{t("qr.features.lessStaff.title")}</h4>
+                  <p className="text-gray-500 text-sm">{t("qr.features.lessStaff.subtitle")}</p>
                 </div>
 
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto rounded-full border border-red-200 flex items-center justify-center">
                     <FiShield className="text-red-600 text-2xl" />
                   </div>
-                  <h4 className="mt-3 font-semibold">Secure</h4>
-                  <p className="text-gray-500 text-sm">Payments</p>
+                  <h4 className="mt-3 font-semibold">{t("qr.features.secure.title")}</h4>
+                  <p className="text-gray-500 text-sm">{t("qr.features.secure.subtitle")}</p>
                 </div>
 
               </div>
 
               {/* CTA */}
               <button className="group mt-14 bg-red-600 hover:bg-red-700 text-white px-10 py-5 rounded-2xl font-semibold text-lg flex items-center gap-4 transition-all duration-300">
-                See QR Ordering In Action
+                {t("qr.cta")}
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
 

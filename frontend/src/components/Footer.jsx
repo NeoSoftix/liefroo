@@ -6,8 +6,12 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const productItems = t("footer.product.items", { returnObjects: true });
+  const companyItems = t("footer.company.items", { returnObjects: true });
   return (
     <footer className="relative bg-[#fafafa] pt-32 overflow-hidden">
 
@@ -15,8 +19,8 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-red-100 blur-[120px] rounded-full opacity-70" />
 
       {/* Watermark */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-[180px] font-black text-red-50 select-none pointer-events-none whitespace-nowrap">
-        RESTAURANT OS
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-[180px] font-black text-red-50 select-none pointer-events-none whitespace-nowrap uppercase">
+        {t("footer.watermark")}
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -32,20 +36,18 @@ export default function Footer() {
 
             <div>
               <span className="uppercase tracking-[0.3em] text-red-100 text-xs">
-                Restaurant Growth Starts Here
+                {t("footer.cta.eyebrow")}
               </span>
 
               <h2 className="text-4xl md:text-5xl font-black text-white mt-4 leading-tight">
-                Ready To Transform
+                {t("footer.cta.headingLine1")}
                 <span className="block">
-                  Your Restaurant?
+                  {t("footer.cta.headingLine2")}
                 </span>
               </h2>
 
               <p className="text-red-100 mt-4 max-w-xl">
-                Manage orders, billing, kitchen operations,
-                delivery and analytics from one powerful
-                Restaurant Operating System.
+                {t("footer.cta.description")}
               </p>
             </div>
 
@@ -63,7 +65,7 @@ export default function Footer() {
     shadow-lg
   "
 >
-  Book Free Demo
+  {t("footer.cta.button")}
   <ArrowRight size={18} />
 </Button>
 
@@ -84,10 +86,7 @@ export default function Footer() {
             </h3>
 
             <p className="mt-5 text-gray-600 leading-relaxed">
-              Complete restaurant operating system for modern
-              restaurants. Manage orders, POS, delivery,
-              analytics and customer engagement from a
-              single platform.
+              {t("footer.brand.description")}
             </p>
 
             {/* Small Stats */}
@@ -98,7 +97,7 @@ export default function Footer() {
                   500+
                 </h4>
                 <p className="text-xs text-gray-500">
-                  Restaurants
+                  {t("footer.brand.restaurants")}
                 </p>
               </div>
 
@@ -107,7 +106,7 @@ export default function Footer() {
                   99.9%
                 </h4>
                 <p className="text-xs text-gray-500">
-                  Uptime
+                  {t("footer.brand.uptime")}
                 </p>
               </div>
 
@@ -119,18 +118,12 @@ export default function Footer() {
           <div>
 
             <h4 className="font-bold text-gray-900 mb-5">
-              Product
+              {t("footer.product.title")}
             </h4>
 
             <ul className="space-y-3">
 
-              {[
-                "POS System",
-                "Online Ordering",
-                "Kitchen Display",
-                "QR Menu",
-                "Analytics",
-              ].map((item) => (
+              {Object.values(productItems).map((item) => (
                 <li
                   key={item}
                   className="text-gray-600 hover:text-red-600 transition cursor-pointer"
@@ -147,18 +140,12 @@ export default function Footer() {
           <div>
 
             <h4 className="font-bold text-gray-900 mb-5">
-              Company
+              {t("footer.company.title")}
             </h4>
 
             <ul className="space-y-3">
 
-              {[
-                "About Us",
-                "Careers",
-                "Partners",
-                "Blog",
-                "Contact",
-              ].map((item) => (
+              {Object.values(companyItems).map((item) => (
                 <li
                   key={item}
                   className="text-gray-600 hover:text-red-600 transition cursor-pointer"
@@ -175,14 +162,14 @@ export default function Footer() {
           <div>
 
             <h4 className="font-bold text-gray-900 mb-5">
-              Contact
+              {t("footer.contact.title")}
             </h4>
 
             <ul className="space-y-3 text-gray-600">
-              <li>hello@mealshub.com</li>
-              <li>+1 (800) 123-4567</li>
-              <li>24/7 Support</li>
-              <li>New York, United States</li>
+              <li>{t("footer.contact.email")}</li>
+              <li>{t("footer.contact.phone")}</li>
+              <li>{t("footer.contact.support")}</li>
+              <li>{t("footer.contact.location")}</li>
             </ul>
 
           </div>
@@ -193,7 +180,7 @@ export default function Footer() {
         <div className="border-t border-gray-200 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
 
           <p className="text-gray-500 text-sm">
-            © 2026 MealsHub. All rights reserved.
+            {t("footer.copyright")}
           </p>
 
           <div className="flex items-center gap-4">

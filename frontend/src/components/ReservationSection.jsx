@@ -5,10 +5,18 @@ import {
   Users,
   CheckCircle2,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import Button from "./Button";
 
 export default function ReservationSection() {
+  const { t } = useTranslation();
+  const benefits = [
+    t("reservation.benefits.availability"),
+    t("reservation.benefits.googleReserve"),
+    t("reservation.benefits.confirmations"),
+    t("reservation.benefits.noShows"),
+  ];
   return (
     <section className="relative py-36 bg-[#fafafa] overflow-hidden">
 
@@ -28,32 +36,24 @@ export default function ReservationSection() {
             transition={{ duration: 0.7 }}
           >
             <span className="uppercase tracking-[0.35em] text-red-500 text-xs font-semibold">
-              Reservations
+              {t("reservation.eyebrow")}
             </span>
 
             <h2 className="text-5xl md:text-6xl font-black text-gray-900 mt-5 leading-[1.05]">
-              Fill More Tables.
+              {t("reservation.headingLine1")}
               <span className="block text-red-600">
-                Without More Calls.
+                {t("reservation.headingLine2")}
               </span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mt-6 max-w-xl">
-              Give guests a seamless reservation experience
-              with real-time availability, automated reminders,
-              Google Reserve integration and intelligent waitlist
-              management.
+              {t("reservation.description")}
             </p>
 
             {/* Benefits */}
             <div className="mt-10 space-y-4">
 
-              {[
-                "Real-time table availability",
-                "Google Reserve integration",
-                "SMS & Email confirmations",
-                "Reduce no-shows automatically",
-              ].map((item) => (
+              {benefits.map((item) => (
                 <div
                   key={item}
                   className="flex items-center gap-3"
@@ -79,7 +79,7 @@ export default function ReservationSection() {
                   42%
                 </h3>
                 <p className="text-sm text-gray-500">
-                  Fewer No-Shows
+                  {t("reservation.stats.fewerNoShows")}
                 </p>
               </div>
 
@@ -88,7 +88,7 @@ export default function ReservationSection() {
                   3x
                 </h3>
                 <p className="text-sm text-gray-500">
-                  Faster Booking
+                  {t("reservation.stats.fasterBooking")}
                 </p>
               </div>
 
@@ -105,7 +105,7 @@ export default function ReservationSection() {
                 font-semibold
               "
             >
-              Explore Reservations
+              {t("reservation.cta")}
             </Button>
           </motion.div>
 
@@ -129,11 +129,11 @@ export default function ReservationSection() {
 
                 <div className="flex justify-between items-center">
                   <h3 className="font-bold text-xl">
-                    Live Reservations
+                    {t("reservation.card.title")}
                   </h3>
 
                   <span className="bg-white/20 px-3 py-1 rounded-full text-xs">
-                    Live Availability
+                    {t("reservation.card.liveAvailability")}
                   </span>
                 </div>
 
@@ -149,24 +149,24 @@ export default function ReservationSection() {
   <div className="flex items-center justify-between mb-6">
 
     <h4 className="font-bold text-gray-900">
-      Restaurant Floor Plan
+      {t("reservation.card.floorPlan")}
     </h4>
 
     <div className="flex items-center gap-4 text-xs">
 
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 rounded-full bg-red-600" />
-        Selected
+        {t("reservation.card.selected")}
       </div>
 
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 rounded-full bg-white border border-red-300" />
-        Available
+        {t("reservation.card.available")}
       </div>
 
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 rounded-full bg-gray-300" />
-        Reserved
+        {t("reservation.card.reserved")}
       </div>
 
     </div>
@@ -190,7 +190,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 1
+    {t("reservation.card.table", { number: 1 })}
   </motion.div>
 
   <motion.div
@@ -206,7 +206,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 2
+    {t("reservation.card.table", { number: 2 })}
   </motion.div>
 
   <motion.div
@@ -221,7 +221,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 3
+    {t("reservation.card.table", { number: 3 })}
   </motion.div>
 
   {/* Row 2 */}
@@ -239,7 +239,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 4
+    {t("reservation.card.table", { number: 4 })}
   </motion.div>
 
   {/* Selected Table */}
@@ -270,11 +270,11 @@ export default function ReservationSection() {
     "
   >
     <span className="text-xs opacity-80">
-      Selected
+      {t("reservation.card.selected")}
     </span>
 
     <span className="text-xl">
-      Table 5
+      {t("reservation.card.table", { number: 5 })}
     </span>
   </motion.div>
 
@@ -291,7 +291,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 6
+    {t("reservation.card.table", { number: 6 })}
   </motion.div>
 
   {/* Row 3 */}
@@ -309,7 +309,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 7
+    {t("reservation.card.table", { number: 7 })}
   </motion.div>
 
   <motion.div
@@ -324,7 +324,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 8
+    {t("reservation.card.table", { number: 8 })}
   </motion.div>
 
   <motion.div
@@ -340,7 +340,7 @@ export default function ReservationSection() {
       cursor-pointer
     "
   >
-    Table 9
+    {t("reservation.card.table", { number: 9 })}
   </motion.div>
 
 </div>
@@ -353,21 +353,21 @@ export default function ReservationSection() {
 
     <div>
       <p className="text-gray-500 text-sm">
-        Selected Reservation
+        {t("reservation.card.selectedReservation")}
       </p>
 
       <h3 className="text-2xl font-black text-gray-900 mt-1">
-        Table 5
+        {t("reservation.card.table", { number: 5 })}
       </h3>
     </div>
 
     <div className="text-right">
       <p className="text-green-500 text-sm font-medium">
-        Available
+        {t("reservation.card.available")}
       </p>
 
       <p className="text-gray-500 text-xs">
-        Instant Confirmation
+        {t("reservation.card.instantConfirmation")}
       </p>
     </div>
 
@@ -384,7 +384,7 @@ export default function ReservationSection() {
                     />
 
                     <p className="text-xs text-gray-500">
-                      Date
+                      {t("reservation.card.date")}
                     </p>
 
                     <h4 className="font-bold">
@@ -399,11 +399,11 @@ export default function ReservationSection() {
                     />
 
                     <p className="text-xs text-gray-500">
-                      Guests
+                      {t("reservation.card.guests")}
                     </p>
 
                     <h4 className="font-bold">
-                      4 People
+                      {t("reservation.card.guestsCount")}
                     </h4>
                   </div>
 
@@ -414,7 +414,7 @@ export default function ReservationSection() {
                     />
 
                     <p className="text-xs text-gray-500">
-                      Time
+                      {t("reservation.card.time")}
                     </p>
 
                     <h4 className="font-bold">
