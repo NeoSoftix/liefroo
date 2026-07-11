@@ -45,7 +45,7 @@ export default function WebsiteDevelopment() {
   }));
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
       <Header />
       <main>
         <ServiceHero

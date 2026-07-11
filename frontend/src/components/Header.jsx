@@ -14,15 +14,20 @@ export default function Header() {
   const closeTimeout = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
+    const handleScroll = (event) => {
+      const scrollTop =
+        event.target?.scrollTop ||
+        window.scrollY ||
+        document.documentElement?.scrollTop ||
+        0;
+      if (scrollTop > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, true);
+    return () => window.removeEventListener("scroll", handleScroll, true);
   }, []);
 
   const changeLanguage = (lng) => {
