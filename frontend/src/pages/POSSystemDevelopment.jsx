@@ -15,6 +15,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } fr
 import { POSFeaturesShowcase } from "../components/POSSystemDevelopment";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import serviceImage from "../assets/posimage.png";
 
 export default function POSSystemDevelopment() {
   const { t } = useTranslation();
@@ -74,6 +75,7 @@ export default function POSSystemDevelopment() {
           ctaLabel={t("posSystemDevelopment.hero.cta")}
           secondaryCtaLabel={t("posSystemDevelopment.hero.secondaryCta")}
           features={heroFeatures}
+          image={serviceImage}
         />
         <FeatureGridSection
           items={featureItems}

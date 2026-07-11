@@ -14,6 +14,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps } from "../components/sha
 import { DashboardSection } from "../components/MenuManagement";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import serviceImage from "../assets/menumanagement.png";
 
 export default function MenuManagement() {
   const { t } = useTranslation();
@@ -69,6 +70,7 @@ export default function MenuManagement() {
           secondaryCtaHref="#how-it-works"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-5"
+          image={serviceImage}
         />
         <FeatureGridSection
           items={featureItems}

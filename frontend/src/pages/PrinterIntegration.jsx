@@ -14,6 +14,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } fr
 import { HardwareSection } from "../components/PrinterIntegration";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import serviceImage from "../assets/printerintegration.png";
 
 export default function PrinterIntegration() {
   const { t } = useTranslation();
@@ -73,6 +74,7 @@ export default function PrinterIntegration() {
           ctaLabel={t("printerIntegration.hero.cta")}
           secondaryCtaLabel={t("printerIntegration.hero.secondaryCta")}
           features={heroFeatures}
+          image={serviceImage}
         />
         <FeatureGridSection
           items={featureItems}

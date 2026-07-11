@@ -1,20 +1,13 @@
 import { Package, BadgePercent, ClipboardList, ShieldCheck, ShoppingCart, Bell, Truck, ThumbsUp, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
-import { TakeControlSection } from "../components/OnlineOrdering";
+import { FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { TakeControlSection, OnlineOrderingHero } from "../components/OnlineOrdering";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
 export default function OnlineOrdering() {
   const { t } = useTranslation();
-
-  const heroFeatures = [
-    { Icon: Package, key: "brandedExperience" },
-    { Icon: BadgePercent, key: "noCommission" },
-    { Icon: ClipboardList, key: "orderOptions" },
-    { Icon: ShieldCheck, key: "securePayments" },
-  ].map(({ Icon, key }) => ({ Icon, label: t(`onlineOrdering.hero.features.${key}`) }));
 
   const featureItems = [
     { key: "brandedExperience", Icon: Package },
@@ -54,19 +47,7 @@ export default function OnlineOrdering() {
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
       <Header />
       <main>
-        <ServiceHero
-          badge={t("onlineOrdering.hero.badge")}
-          headingLine1={t("onlineOrdering.hero.headingLine1")}
-          headingLine2={t("onlineOrdering.hero.headingLine2")}
-          description={t("onlineOrdering.hero.description")}
-          checklist={["brandedLink", "customMenu", "deliveryOptions", "orderPayment"].map((key) =>
-            t(`onlineOrdering.hero.checklist.${key}`)
-          )}
-          ctaLabel={t("onlineOrdering.hero.cta")}
-          secondaryCtaLabel={t("onlineOrdering.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
-          features={heroFeatures}
-        />
+        <OnlineOrderingHero />
         <FeatureGridSection
           items={featureItems}
           gridClassName="sm:grid-cols-2 lg:grid-cols-4"

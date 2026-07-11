@@ -14,6 +14,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } fr
 import { SmarterOrderingSection } from "../components/QROrdering";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import serviceImage from "../assets/qrordering.png";
 
 export default function QROrdering() {
   const { t } = useTranslation();
@@ -85,6 +86,7 @@ export default function QROrdering() {
           secondaryCtaHref="#success-stories"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
+          image={serviceImage}
         />
         <FeatureGridSection
           items={featureItems}

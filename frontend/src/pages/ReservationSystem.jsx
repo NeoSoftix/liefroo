@@ -15,6 +15,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } fr
 import { BetterReservationsSection } from "../components/ReservationSystem";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import serviceImage from "../assets/reservation.png";
 
 export default function ReservationSystem() {
   const { t } = useTranslation();
@@ -86,6 +87,7 @@ export default function ReservationSystem() {
           secondaryCtaHref="#success-stories"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
+          image={serviceImage}
         />
         <FeatureGridSection
           items={featureItems}
