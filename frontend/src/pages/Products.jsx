@@ -12,7 +12,7 @@ import ContactSection from "../components/ContactSection";
 
 export default function Products() {
   return (
-    <>
+    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
       <Header />
       <HeroSlider />
       <RestaurantEcosystem />
@@ -26,7 +26,7 @@ export default function Products() {
       <FAQ />
       <ContactSection />
       <Footer />
-    </>
+    </div>
   );
 }
 

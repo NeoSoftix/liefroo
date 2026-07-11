@@ -40,59 +40,59 @@ const FAQ = () => {
 
   return (
     <section
-      className="relative z-10 bg-cover bg-center bg-no-repeat py-28"
+      className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative z-10 bg-cover bg-center bg-no-repeat py-8 lg:py-16"
       style={{
         backgroundImage: `url(${faqImage})`,
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 " />
+      <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-6 w-full">
         {/* Heading */}
         <div className="max-w-[700px]">
-          <p className="text-red-600 font-semibold tracking-[3px] uppercase text-lg mb-2">
+          <p className="text-red-600 font-semibold tracking-[3px] uppercase text-xs sm:text-sm mb-1 sm:mb-2">
             {t("faq.eyebrow")}
           </p>
 
-          <h1 className="text-[80px] md:text-[100px] leading-none font-black text-red-600">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-red-600">
             {t("faq.title")}
           </h1>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mt-1">
             {t("faq.heading")}
           </h2>
 
-          <p className="mt-5 text-lg text-gray-600 max-w-[600px]">
+          <p className="mt-2 text-xs sm:text-sm lg:text-base text-gray-600 max-w-[600px]">
             {t("faq.description")}
           </p>
         </div>
 
         {/* FAQ LIST */}
-        <div className="mt-14 w-full lg:w-[70%] space-y-5 ">
+        <div className="mt-6 w-full lg:w-[70%] space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="w-[80%] group bg-white/80 backdrop-blur-md rounded-[32px] border border-white/50 shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_50px_rgba(220,38,38,0.15)]"
+              className="w-full lg:w-[80%] group bg-white/90 backdrop-blur-md rounded-2xl border border-white/50 shadow-[0_8px_20px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300 hover:shadow-[0_15px_40px_rgba(220,38,38,0.1)]"
             >
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 flex items-center gap-5 text-left"
+                className="w-full px-4 py-3 sm:px-6 sm:py-4 flex items-center gap-3 sm:gap-5 text-left"
               >
                 {/* Number */}
-                <div className="w-14 h-14 rounded-full bg-gradient-to-b from-red-500 to-red-700 text-white font-bold text-lg flex items-center justify-center shrink-0 shadow-lg">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-b from-red-500 to-red-700 text-white font-bold text-sm sm:text-base flex items-center justify-center shrink-0 shadow-md">
                   {faq.id}
                 </div>
 
                 {/* Question Text */}
-                <h3 className="flex-1 text-lg md:text-xl font-semibold text-gray-800">
+                <h3 className="flex-1 text-sm sm:text-base font-semibold text-gray-800 leading-snug">
                   {faq.question}
                 </h3>
 
                 {/* Toggle Icon */}
                 <div
-                  className={`w-11 h-11 rounded-full flex items-center justify-center text-red-600 bg-red-50 text-2xl font-light transition-all duration-300 ${
+                  className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-red-600 bg-red-50 text-base sm:text-lg font-light transition-all duration-300 shrink-0 ${
                     openIndex === index
                       ? "rotate-180 bg-red-600 text-white"
                       : ""
@@ -110,7 +110,7 @@ const FAQ = () => {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="pl-[95px] pr-8 pb-6 text-gray-600 leading-relaxed text-base md:text-lg">
+                <div className="pl-6 sm:pl-[76px] pr-4 sm:pr-8 pb-4 sm:pb-6 text-gray-600 leading-relaxed text-xs sm:text-sm">
                   {faq.answer}
                 </div>
               </div>

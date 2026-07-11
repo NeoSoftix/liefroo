@@ -7,7 +7,7 @@ export default function PricingComparison() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative z-10 py-28 bg-white">
+    <section id="pricing" className="relative z-10 py-28 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-red-500 text-sm tracking-[0.3em] uppercase font-semibold">

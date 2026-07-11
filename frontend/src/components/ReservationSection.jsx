@@ -18,15 +18,15 @@ export default function ReservationSection() {
     t("reservation.benefits.noShows"),
   ];
   return (
-    <section className="relative py-36 bg-[#fafafa] overflow-hidden">
+    <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-0 left-[-200px] w-[600px] h-[600px] bg-red-100/50 blur-[180px] rounded-full" />
       <div className="absolute bottom-0 right-[-200px] w-[600px] h-[600px] bg-orange-100/40 blur-[180px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 w-full">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center w-full">
 
           {/* LEFT CONTENT */}
           <motion.div
@@ -34,24 +34,25 @@ export default function ReservationSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="space-y-4 sm:space-y-6"
           >
             <span className="uppercase tracking-[0.35em] text-red-500 text-xs font-semibold">
               {t("reservation.eyebrow")}
             </span>
 
-            <h2 className="text-5xl md:text-6xl font-black text-gray-900 mt-5 leading-[1.05]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mt-3 leading-[1.05]">
               {t("reservation.headingLine1")}
               <span className="block text-red-600">
                 {t("reservation.headingLine2")}
               </span>
             </h2>
 
-            <p className="text-gray-600 text-lg leading-relaxed mt-6 max-w-xl">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed mt-3 max-w-xl">
               {t("reservation.description")}
             </p>
 
             {/* Benefits */}
-            <div className="mt-10 space-y-4">
+            <div className="mt-4 lg:mt-6 space-y-2 lg:space-y-3">
 
               {benefits.map((item) => (
                 <div
@@ -59,11 +60,11 @@ export default function ReservationSection() {
                   className="flex items-center gap-3"
                 >
                   <CheckCircle2
-                    size={18}
-                    className="text-red-500"
+                    size={16}
+                    className="text-red-500 shrink-0"
                   />
 
-                  <span className="text-gray-700">
+                  <span className="text-gray-700 text-sm sm:text-base">
                     {item}
                   </span>
                 </div>
@@ -72,22 +73,22 @@ export default function ReservationSection() {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-10 mt-12">
+            <div className="flex gap-8 mt-6">
 
               <div>
-                <h3 className="text-4xl font-black text-red-600">
+                <h3 className="text-2xl sm:text-3xl font-black text-red-600">
                   42%
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-xs sm:text-sm text-gray-500">
                   {t("reservation.stats.fewerNoShows")}
                 </p>
               </div>
 
               <div>
-                <h3 className="text-4xl font-black text-red-600">
+                <h3 className="text-2xl sm:text-3xl font-black text-red-600">
                   3x
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-xs sm:text-sm text-gray-500">
                   {t("reservation.stats.fasterBooking")}
                 </p>
               </div>
@@ -96,13 +97,16 @@ export default function ReservationSection() {
 
             <Button
               className="
-                mt-10
+                mt-6
                 bg-red-600
                 text-white
-                px-8
-                py-4
+                px-6
+                py-3
+                sm:px-8
+                sm:py-4
                 rounded-full
                 font-semibold
+                text-sm sm:text-base
               "
             >
               {t("reservation.cta")}
@@ -115,7 +119,7 @@ export default function ReservationSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative flex justify-center"
+            className="hidden lg:flex relative justify-center"
           >
 
             {/* Glow */}

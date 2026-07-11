@@ -1,14 +1,29 @@
 // components/Header.jsx
 
-import { useRef, useState } from "react";
-import { ChevronDown, Menu } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import ProductsMegaMenu from "./ProductsMegaMenu";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
   const [productsOpen, setProductsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const closeTimeout = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -27,26 +42,30 @@ export default function Header() {
     // Header ko full width kiya aur top par stick kiya
     <header className="fixed top-0 left-0 z-50 w-full">
       {/* Backdrop blur aur border bottom apply kiya */}
-      <div className="backdrop-blur-xl bg-white/70 border-b border-white/40 px-8 py-4 shadow-[0_15px_50px_rgba(0,0,0,0.08)]">
+      <div className={`transition-all duration-300 px-4 md:px-8 py-3 sm:py-4 ${
+        isScrolled
+          ? "backdrop-blur-xl bg-white/70 border-b border-white/40 shadow-[0_15px_50px_rgba(0,0,0,0.08)]"
+          : "bg-transparent border-b border-transparent shadow-none"
+      }`}>
 
         {/* max-w-7xl aur mx-auto lagaya taaki andar ka content center me rahe aur baki sab same hai */}
-        <div className="relative flex items-center justify-between max-w-7xl mx-auto">
+        <div className="relative flex items-center justify-between max-w-7xl mx-auto w-full">
 
-          <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">
-              R
-            </div>
-
-            <h2 className="font-black text-xl">
-              Restro<span className="text-red-600">OS</span>
-            </h2>
-          </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="RestroOS Logo" 
+              className={`transition-all duration-300 w-auto object-contain ${
+                isScrolled ? "h-10" : "h-[60px]"
+              }`} 
+            />
+          </Link>
 
           <nav className="hidden lg:flex items-center gap-10" onMouseLeave={closeProducts}>
-            <a href="#">{t("header.nav.home")}</a>
+            <Link to="/" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.home")}</Link>
 
             <button
-              className="flex items-center gap-1.5"
+              className="flex items-center gap-1.5 hover:text-red-600 transition-colors font-medium text-gray-700"
               onMouseEnter={openProducts}
               onClick={() => setProductsOpen((open) => !open)}
             >
@@ -57,9 +76,9 @@ export default function Header() {
               />
             </button>
 
-            <a href="#">{t("header.nav.features")}</a>
-            <a href="#">{t("header.nav.pricing")}</a>
-            <a href="#">{t("header.nav.contact")}</a>
+            <Link to="/#features" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.features")}</Link>
+            <Link to="/website-development#pricing" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.pricing")}</Link>
+            <Link to="/#contact" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.contact")}</Link>
           </nav>
 
           <ProductsMegaMenu
@@ -68,35 +87,33 @@ export default function Header() {
             onMouseLeave={closeProducts}
           />
 
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-1 border border-gray-200 rounded-full p-1 text-sm font-semibold">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 text-xs sm:text-sm font-semibold bg-white/50">
               <button
                 onClick={() => changeLanguage("de")}
-                className={`px-3 py-1 rounded-full transition-all ${
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "de"
                     ? "bg-red-600 text-white"
-                    : "text-gray-600"
+                    : "text-gray-600 hover:text-red-500"
                 }`}
               >
                 DE
               </button>
               <button
                 onClick={() => changeLanguage("en")}
-                className={`px-3 py-1 rounded-full transition-all ${
+                className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "en"
                     ? "bg-red-600 text-white"
-                    : "text-gray-600"
+                    : "text-gray-600 hover:text-red-500"
                 }`}
               >
                 EN
               </button>
             </div>
 
-            <button className="hidden lg:flex bg-red-600 text-white px-6 py-3 rounded-full">
+            <button className="hidden sm:flex bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-red-700 transition-all shadow-sm">
               {t("header.bookDemo")}
             </button>
-
-            <Menu size={24} />
           </div>
         </div>
       </div>

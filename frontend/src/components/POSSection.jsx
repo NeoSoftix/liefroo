@@ -68,18 +68,17 @@ export default function POSSection() {
   return (
     <section
       id="pos-section"
-      className="relative py-36 bg-white overflow-hidden"
+      className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-8 lg:py-16 bg-white overflow-hidden"
     >
 
       {/* Background */}
       <div className="absolute top-[-120px] left-[-120px] w-[600px] h-[600px] bg-red-100/40 blur-[160px] rounded-full" />
       <div className="absolute bottom-[-120px] right-[-120px] w-[600px] h-[600px] bg-orange-100/30 blur-[180px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 relative">
+      <div className="max-w-7xl mx-auto px-6 relative w-full">
 
         {/* CENTER LINE */}
-        <div className="absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-gray-200">
-
+        <div className="hidden lg:block absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-gray-200">
           {/* Progress fill */}
           <div
             className="absolute top-0 left-0 w-full bg-red-500 transition-all duration-300"
@@ -91,31 +90,30 @@ export default function POSSection() {
             className="absolute left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-red-500 shadow-lg transition-all duration-300"
             style={{ top: `${progress}%` }}
           />
-
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
 
           {/* LEFT SIDE */}
-          <div className="space-y-10">
+          <div className="space-y-4 sm:space-y-6">
 
             <div>
-              <span className="text-red-500 text-sm tracking-[0.3em] uppercase">
+              <span className="text-red-500 text-xs sm:text-sm tracking-[0.3em] uppercase">
                 {t("pos.eyebrow")}
               </span>
 
-              <h2 className="text-5xl font-black text-gray-900 mt-4 leading-tight">
-                {t("pos.headingPrefix")}
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mt-2 lg:mt-4 leading-tight">
+                {t("pos.headingPrefix")}{" "}
                 <span className="text-red-600 block">{current.title}</span>
               </h2>
 
-              <p className="text-gray-600 mt-5 max-w-md">
+              <p className="text-gray-600 mt-2 max-w-md text-sm sm:text-base">
                 {current.desc}
               </p>
             </div>
 
             {/* STEP LIST */}
-            <div className="space-y-6">
+            <div className="space-y-3 sm:space-y-4">
               {steps.map((item, i) => {
                 const Icon = item.icon;
                 const isActive = i === active;
@@ -123,27 +121,27 @@ export default function POSSection() {
                 return (
                   <motion.div
                     key={i}
-                    className={`flex gap-4 p-4 rounded-2xl transition-all ${
+                    className={`flex gap-3 p-3 rounded-2xl transition-all ${
                       isActive
                         ? "bg-red-50 border border-red-200"
                         : "bg-transparent"
                     }`}
                   >
                     <div
-                      className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all ${
+                      className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all ${
                         isActive
                           ? "bg-red-600 text-white"
                           : "bg-red-50 text-red-500 border border-red-100"
                       }`}
                     >
-                      <Icon size={20} />
+                      <Icon size={18} />
                     </div>
 
                     <div>
-                      <h4 className="font-bold text-gray-900">
+                      <h4 className="font-bold text-sm sm:text-base text-gray-900">
                         {item.title}
                       </h4>
-                      <p className="text-gray-500 text-sm">
+                      <p className="text-gray-500 text-xs sm:text-sm">
                         {item.desc}
                       </p>
                     </div>
@@ -151,142 +149,116 @@ export default function POSSection() {
                 );
               })}
             </div>
-            <div className="mt-10 bg-white border border-gray-200 rounded-3xl p-5 shadow-sm">
 
-  <h4 className="font-bold text-gray-900 mb-3">
-    {t("pos.systemStatus.title")}
-  </h4>
+            <div className="mt-4 bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+              <h4 className="font-bold text-sm sm:text-base text-gray-900 mb-2">
+                {t("pos.systemStatus.title")}
+              </h4>
 
-  <div className="space-y-3 text-sm">
+              <div className="space-y-2 text-xs sm:text-sm">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">{t("pos.systemStatus.serverHealth")}</span>
+                  <span className="text-green-500 font-semibold">{t("pos.systemStatus.stable")}</span>
+                </div>
 
-    <div className="flex justify-between items-center">
-      <span className="text-gray-600">{t("pos.systemStatus.serverHealth")}</span>
-      <span className="text-green-500 font-semibold">{t("pos.systemStatus.stable")}</span>
-    </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">{t("pos.systemStatus.syncSpeed")}</span>
+                  <span className="text-red-500 font-semibold">120ms</span>
+                </div>
 
-    <div className="flex justify-between items-center">
-      <span className="text-gray-600">{t("pos.systemStatus.syncSpeed")}</span>
-      <span className="text-red-500 font-semibold">120ms</span>
-    </div>
-
-    <div className="flex justify-between items-center">
-      <span className="text-gray-600">{t("pos.systemStatus.uptime")}</span>
-      <span className="text-green-500 font-semibold">99.9%</span>
-    </div>
-
-  </div>
-</div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">{t("pos.systemStatus.uptime")}</span>
+                  <span className="text-green-500 font-semibold">99.9%</span>
+                </div>
+              </div>
+            </div>
 
           </div>
 
-    {/* RIGHT SIDE - DYNAMIC CARD */}
-<div className="relative flex justify-center">
+          {/* RIGHT SIDE - DYNAMIC CARD */}
+          <div className="hidden lg:flex relative justify-center">
+            <div className="absolute w-[450px] h-[580px] bg-red-200/30 blur-[120px] rounded-full" />
 
-  <div className="absolute w-[520px] h-[720px] bg-red-200/30 blur-[140px] rounded-full" />
+            <motion.div
+              key={active}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4 }}
+              className="relative w-[450px] h-[600px] rounded-[40px] bg-white border border-gray-200 shadow-[0_40px_100px_rgba(0,0,0,0.12)] overflow-hidden"
+            >
+              {/* Header */}
+              <div className="bg-gradient-to-r from-red-500 to-red-600 p-4 text-white flex justify-between items-center text-sm">
+                <h3 className="font-bold">{t("pos.card.live")}</h3>
+                <span className="text-xs bg-white/20 px-3 py-1 rounded-full">
+                  ● {t("pos.card.liveBadge")}
+                </span>
+              </div>
 
-  <motion.div
-    key={active}
-    initial={{ opacity: 0, scale: 0.9 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.4 }}
-    className="relative w-[520px] h-[740px] rounded-[50px] bg-white border border-gray-200 shadow-[0_50px_120px_rgba(0,0,0,0.15)] overflow-hidden"
-  >
+              <div className="p-6 space-y-4">
+                {/* Revenue */}
+                <div className="bg-red-50 border border-red-100 p-4 rounded-2xl">
+                  <p className="text-gray-500 text-xs">{t("pos.card.revenue")}</p>
+                  <h2 className="text-2xl font-black text-red-600 mt-1">
+                    {current.revenue}
+                  </h2>
+                  {/* Mini trend bar */}
+                  <div className="mt-2 h-1.5 w-full bg-red-100 rounded-full overflow-hidden">
+                    <div className="h-full w-[70%] bg-red-500 rounded-full animate-pulse" />
+                  </div>
+                </div>
 
-    {/* Header */}
-    <div className="bg-gradient-to-r from-red-500 to-red-600 p-5 text-white flex justify-between items-center">
-      <h3 className="font-bold">{t("pos.card.live")}</h3>
-      <span className="text-xs bg-white/20 px-3 py-1 rounded-full">
-        ● {t("pos.card.liveBadge")}
-      </span>
-    </div>
+                {/* Stats */}
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="bg-white border rounded-xl p-3 shadow-sm">
+                    <p className="text-xs text-gray-500">{t("pos.card.orders")}</p>
+                    <p className="text-lg font-bold">{current.orders}</p>
+                  </div>
+                  <div className="bg-white border rounded-xl p-3 shadow-sm">
+                    <p className="text-xs text-gray-500">{t("pos.card.avgTime")}</p>
+                    <p className="text-lg font-bold">{current.time}</p>
+                  </div>
+                </div>
 
-    <div className="p-9 space-y-6">
+                {/* Kitchen Status */}
+                <div className="bg-white border rounded-2xl p-4 shadow-sm text-xs">
+                  <h4 className="font-bold text-gray-900 mb-2">
+                    {t("pos.card.kitchenStatus")}
+                  </h4>
+                  <div className="space-y-1 text-gray-600">
+                    <div className="flex justify-between">
+                      <span>🍳 {t("pos.card.preparing")}</span>
+                      <span className="text-red-500 font-semibold">12</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>🍽 {t("pos.card.ready")}</span>
+                      <span className="text-green-500 font-semibold">5</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>🚚 {t("pos.card.delivery")}</span>
+                      <span className="text-blue-500 font-semibold">3</span>
+                    </div>
+                  </div>
+                </div>
 
-      {/* Revenue */}
-      <div className="bg-red-50 border border-red-100 p-6 rounded-3xl">
-        <p className="text-gray-500 text-sm">{t("pos.card.revenue")}</p>
-        <h2 className="text-4xl font-black text-red-600 mt-2">
-          {current.revenue}
-        </h2>
-
-        {/* Mini trend bar */}
-        <div className="mt-4 h-2 w-full bg-red-100 rounded-full overflow-hidden">
-          <div className="h-full w-[70%] bg-red-500 rounded-full animate-pulse" />
-        </div>
-      </div>
-
-      {/* Stats */}
-      <div className="grid grid-cols-2 gap-4">
-
-        <div className="bg-white border rounded-2xl p-4 shadow-sm">
-          <p className="text-xs text-gray-500">{t("pos.card.orders")}</p>
-          <p className="text-2xl font-bold">{current.orders}</p>
-        </div>
-
-        <div className="bg-white border rounded-2xl p-4 shadow-sm">
-          <p className="text-xs text-gray-500">{t("pos.card.avgTime")}</p>
-          <p className="text-2xl font-bold">{current.time}</p>
-        </div>
-
-      </div>
-
-      {/* Kitchen Status */}
-      <div className="bg-white border rounded-3xl p-5 shadow-sm">
-        <h4 className="font-bold text-gray-900 mb-3">
-          {t("pos.card.kitchenStatus")}
-        </h4>
-
-        <div className="space-y-2 text-sm text-gray-600">
-
-          <div className="flex justify-between">
-            <span>🍳 {t("pos.card.preparing")}</span>
-            <span className="text-red-500 font-semibold">12</span>
+                {/* Live Orders Feed */}
+                <div className="bg-white border rounded-2xl p-4 shadow-sm text-xs">
+                  <h4 className="font-bold text-gray-900 mb-2">
+                    {t("pos.card.liveOrders")}
+                  </h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span>Order #1024</span>
+                      <span className="text-yellow-500 font-semibold">{t("pos.card.orderPreparing")}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Order #1025</span>
+                      <span className="text-green-500 font-semibold">{t("pos.card.orderDelivered")}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
-
-          <div className="flex justify-between">
-            <span>🍽 {t("pos.card.ready")}</span>
-            <span className="text-green-500 font-semibold">5</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>🚚 {t("pos.card.delivery")}</span>
-            <span className="text-blue-500 font-semibold">3</span>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Live Orders Feed */}
-      <div className="bg-white border rounded-3xl p-5 shadow-sm">
-
-        <h4 className="font-bold text-gray-900 mb-3">
-          {t("pos.card.liveOrders")}
-        </h4>
-
-        <div className="space-y-3 text-sm">
-
-          <div className="flex justify-between">
-            <span>Order #1024</span>
-            <span className="text-yellow-500">{t("pos.card.orderPreparing")}</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>Order #1025</span>
-            <span className="text-green-500">{t("pos.card.orderDelivered")}</span>
-          </div>
-
-          <div className="flex justify-between">
-            <span>Order #1026</span>
-            <span className="text-red-500">{t("pos.card.orderNew")}</span>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </motion.div>
-
-</div>
 
         </div>
       </div>

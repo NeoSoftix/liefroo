@@ -13,12 +13,12 @@ import { useTranslation } from "react-i18next";
 export default function ContactSection() {
   const { t } = useTranslation();
   return (
-    <section className="py-24 bg-[#fafafa]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-white rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.08)] border border-gray-100 p-8 lg:p-14">
+    <section id="contact" className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 w-full">
+        <div className="bg-white rounded-3xl lg:rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.08)] border border-gray-100 p-6 sm:p-8 lg:p-10">
           
           {/* Main Grid: Left side content widened slightly to accommodate two columns */}
-          <div className="grid lg:grid-cols-[480px_1fr] gap-16">
+          <div className="grid lg:grid-cols-[480px_1fr] gap-8 lg:gap-16">
 
             {/* LEFT SIDE: Heading & Multi-location Info */}
             <div>

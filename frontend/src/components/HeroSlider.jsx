@@ -1,256 +1,137 @@
-import { useState } from "react";
 import { slides } from "../../data/slides";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronUp, ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import FeatureCard from "./FeatureCard";
 import Button from "./Button";
+
 export default function HeroSlider() {
   const { t } = useTranslation();
-  const [active, setActive] = useState(0);
-  const activeSlide = slides[active];
+  const activeSlide = slides[0];
   const slideText = t(`hero.slides.${activeSlide.id}`, { returnObjects: true });
 
-  const nextSlide = () => {
-    setActive((prev) =>
-      prev === slides.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setActive((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
-  };
-
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
+    <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative overflow-hidden bg-white">
 
       {/* Background Effects */}
       <div className="absolute top-20 left-20 w-[500px] h-[500px] bg-red-500/10 rounded-full blur-[150px]" />
-
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-red-500/10 rounded-full blur-[150px]" />
 
-      <AnimatePresence mode="wait">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="max-w-7xl mx-auto px-6 pt-24 pb-6 w-full"
+      >
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
-        <motion.div
-          key={activeSlide.id}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
-          className="max-w-7xl mx-auto px-6 pt-44"
-        >
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ y: 80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-flex bg-red-100 text-red-600 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium">
+              {slideText.subtitle}
+            </span>
 
-            {/* LEFT CONTENT */}
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black mt-4 lg:mt-6 leading-[0.95]">
+              {slideText.title}
+            </h1>
 
-            <motion.div
-              initial={{ y: 80, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -80, opacity: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="inline-flex bg-red-100 text-red-600 px-5 py-2 rounded-full font-medium">
-                {slideText.subtitle}
-              </span>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-4 max-w-xl leading-relaxed">
+              {slideText.description}
+            </p>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mt-6 leading-[0.95]">
-                {slideText.title}
-              </h1>
-
-              <p className="text-lg text-gray-600 mt-6 max-w-xl leading-relaxed">
-                {slideText.description}
-              </p>
-
-              <div className="flex flex-wrap gap-4 mt-10">
-                <Button
-  onClick={() => console.log("Book Demo")}
-  className="
-    bg-red-600 text-white border border-red-600
-    px-8 py-4 rounded-full font-semibold shadow-lg
-    transition-all duration-300
-    hover:bg-white hover:text-red-600
-  "
->
-  {t("hero.bookDemo")}
-</Button>
-<Button
-  onClick={() => console.log("Learn More")}
-  className="
-    bg-white text-black border border-red-600
-    px-8 py-4 rounded-full font-semibold
-    transition-all duration-300
-    hover:bg-red-600 hover:text-white
-  "
->
-  {t("hero.learnMore")}
-</Button>
-
-
-              </div>
-
-              <div className="flex flex-wrap gap-8 mt-10 text-sm font-medium text-gray-700">
-
-                <div className="flex items-center gap-2">
-                  <span className="text-red-600">✓</span>
-                  {t("hero.badges.liveIn30")}
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <span className="text-red-600">✓</span>
-                  {t("hero.badges.zeroCommission")}
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <span className="text-red-600">✓</span>
-                  {t("hero.badges.smartOs")}
-                </div>
-
-              </div>
-            </motion.div>
-
-            {/* RIGHT SIDE */}
-
-            <div className="relative flex justify-center items-center">
-
-              {/* Main Glow */}
-
-              <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-100 via-red-50 to-transparent blur-3xl" />
-
-              {/* Image */}
-
-              <motion.img
-                key={activeSlide.image}
-                src={activeSlide.image}
-                alt={slideText.title}
-                initial={{
-                  x: 250,
-                  opacity: 0,
-                  scale: 0.9,
-                  rotate: 5,
-                }}
-                animate={{
-                  x: 0,
-                  opacity: 1,
-                  scale: 1,
-                  rotate: 0,
-                  y: [0, -15, 0],
-                }}
-                exit={{
-                  x: 250,
-                  opacity: 0,
-                }}
-                transition={{
-                  x: {
-                    duration: 0.8,
-                    ease: "easeOut",
-                  },
-                  opacity: {
-                    duration: 0.6,
-                  },
-                  scale: {
-                    duration: 0.8,
-                  },
-                  rotate: {
-                    duration: 0.8,
-                  },
-                  y: {
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
-                }}
-                className="relative z-20 w-full max-w-[620px] drop-shadow-[0_50px_60px_rgba(0,0,0,0.18)]"
-              />
-
-              {/* Floating Stats Card */}
-{/* Floating Stats Card */}
-
-<FeatureCard
-  title={activeSlide.stat}
-  subtitle={slideText.card}
-  className="absolute bottom-10 right-[-80px] z-30"
-  size="sm"
-/>
-
-{/* Floating Orders Card */}
-
-<FeatureCard
-  title="+128"
-  subtitle={t("hero.ordersToday")}
-  className="absolute left-0 top-20 z-30"
-  size="sm"
-/>
-
+            <div className="flex flex-wrap gap-4 mt-6">
+              <Button
+                onClick={() => console.log("Book Demo")}
+                className="
+                  bg-red-600 text-white border border-red-600
+                  px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg text-sm sm:text-base
+                  transition-all duration-300
+                  hover:bg-white hover:text-red-600
+                "
+              >
+                {t("hero.bookDemo")}
+              </Button>
+              <Button
+                onClick={() => console.log("Learn More")}
+                className="
+                  bg-white text-black border border-red-600
+                  px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base
+                  transition-all duration-300
+                  hover:bg-red-600 hover:text-white
+                "
+              >
+                {t("hero.learnMore")}
+              </Button>
             </div>
 
-          </div>
-        </motion.div>
+            <div className="flex flex-wrap gap-4 sm:gap-8 mt-6 text-xs sm:text-sm font-medium text-gray-700">
+              <div className="flex items-center gap-2">
+                <span className="text-red-600">✓</span>
+                {t("hero.badges.liveIn30")}
+              </div>
 
-      </AnimatePresence>
+              <div className="flex items-center gap-2">
+                <span className="text-red-600">✓</span>
+                {t("hero.badges.zeroCommission")}
+              </div>
 
-      {/* RIGHT SIDE NAVIGATION */}
+              <div className="flex items-center gap-2">
+                <span className="text-red-600">✓</span>
+                {t("hero.badges.smartOs")}
+              </div>
+            </div>
+          </motion.div>
 
-      <div className="absolute right-8 lg:right-12 top-1/2 -translate-y-1/2 flex flex-col items-center gap-5 z-50">
+          {/* RIGHT SIDE */}
+          <div className="relative flex justify-center items-center">
+            {/* Main Glow */}
+            <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-100 via-red-50 to-transparent blur-3xl" />
 
-        {/* UP BUTTON */}
-
-        <button
-          onClick={prevSlide}
-          className="
-            w-14 h-14
-            rounded-full
-            bg-white/90
-            backdrop-blur-xl
-            border border-gray-200
-            shadow-xl
-            flex items-center justify-center
-            hover:bg-red-600
-            hover:text-white
-            transition-all duration-300
-            hover:scale-110
-          "
-        >
-          <ChevronUp size={22} />
-        </button>
-
-        {/* INDICATORS */}
-
-        <div className="flex flex-col gap-3">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActive(index)}
-              className={`rounded-full transition-all duration-500 ${
-                active === index
-                  ? "w-3 h-20 bg-gradient-to-b from-red-500 to-red-700"
-                  : "w-3 h-3 bg-gray-300"
-              }`}
+            {/* Image */}
+            <motion.img
+              src={activeSlide.image}
+              alt={slideText.title}
+              initial={{
+                x: 250,
+                opacity: 0,
+                scale: 0.9,
+                rotate: 5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+                rotate: 0,
+                y: [0, -15, 0],
+              }}
+              transition={{
+                x: {
+                  duration: 0.8,
+                  ease: "easeOut",
+                },
+                opacity: {
+                  duration: 0.6,
+                },
+                scale: {
+                  duration: 0.8,
+                },
+                rotate: {
+                  duration: 0.8,
+                },
+                y: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+              className="relative z-20 w-full max-h-[35vh] lg:max-h-[50vh] object-contain drop-shadow-[0_50px_60px_rgba(0,0,0,0.18)]"
             />
-          ))}
+          </div>
+
         </div>
-
-        {/* DOWN BUTTON */}
-
-        <button
-          onClick={nextSlide}
-          className="
-            w-14 h-14
-            rounded-full
-            bg-red-600
-            text-white
-            shadow-xl
-            flex items-center justify-center
-            hover:bg-red-700
-            transition-all duration-300
-            hover:scale-110
-          "
-        >
-          <ChevronDown size={22} />
-        </button>
-
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Products from "./pages/Products";
 import WebsiteDevelopment from "./pages/WebsiteDevelopment";
 import MobileAppDevelopment from "./pages/MobileAppDevelopment";
@@ -14,9 +15,29 @@ import GoogleAnalytics from "./pages/GoogleAnalytics";
 import ReservationSystem from "./pages/ReservationSystem";
 import QROrdering from "./pages/QROrdering";
 
+function ScrollToHashElement() {
+  const { hash, pathname } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash, pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToHashElement />
       <Routes>
         <Route path="/" element={<Products />} />
         <Route path="/website-development" element={<WebsiteDevelopment />} />
