@@ -18,7 +18,7 @@ export default function ReservationSection() {
     t("reservation.benefits.noShows"),
   ];
   return (
-    <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
+    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-0 left-[-200px] w-[600px] h-[600px] bg-red-100/50 blur-[180px] rounded-full" />

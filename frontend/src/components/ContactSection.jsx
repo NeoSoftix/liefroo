@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 export default function ContactSection() {
   const { t } = useTranslation();
   return (
-    <section id="contact" className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
+    <section id="contact" className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="bg-white rounded-3xl lg:rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.08)] border border-gray-100 p-6 sm:p-8 lg:p-10">
           

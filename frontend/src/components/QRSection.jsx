@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 export default function QRSection() {
   const { t } = useTranslation();
   return (
-    <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-6 lg:py-16 overflow-hidden bg-white">
+    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-6 lg:py-16 overflow-hidden bg-white">
       <div className="max-w-[1600px] mx-auto px-6 w-full h-full flex flex-col justify-center">
         <div className="relative min-h-[600px] lg:min-h-0 lg:h-[80vh] rounded-3xl lg:rounded-[40px] overflow-hidden shadow-2xl">
 

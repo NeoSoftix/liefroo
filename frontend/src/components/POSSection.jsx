@@ -68,7 +68,7 @@ export default function POSSection() {
   return (
     <section
       id="pos-section"
-      className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative py-8 lg:py-16 bg-white overflow-hidden"
+      className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-8 lg:py-16 bg-white overflow-hidden"
     >
 
       {/* Background */}

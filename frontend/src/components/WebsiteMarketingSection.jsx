@@ -40,7 +40,7 @@ export default function WebsiteMarketingSection() {
   return (
     <>
       {/* SECTION 1: WEBSITE BUILDER */}
-      <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative bg-white py-10 lg:py-12 overflow-hidden w-full">
+      <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative bg-white py-10 lg:py-12 overflow-hidden w-full">
         {/* Background glow */}
         <div className="absolute top-0 left-[-200px] w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -104,7 +104,7 @@ export default function WebsiteMarketingSection() {
       </section>
 
       {/* SECTION 2: MARKETING AUTOMATION */}
-      <section className="snap-start snap-always min-h-screen lg:h-screen flex flex-col justify-center relative bg-[#FCFCFC] py-10 lg:py-12 overflow-hidden w-full">
+      <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative bg-[#FCFCFC] py-10 lg:py-12 overflow-hidden w-full">
         {/* Background glow */}
         <div className="absolute bottom-0 right-[-200px] w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
