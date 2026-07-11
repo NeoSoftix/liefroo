@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import img1 from "../../assets/websiteDevelopmentSectionImage1.png";
+import img2 from "../../assets/websiteDevelopmentSectionImage2.png";
 
 const templates = [
-  { key: "fineDining", gradient: "from-[#2b1b17] via-[#5a2a1f] to-[#8c3a2b]" },
-  { key: "cafeBrunch", gradient: "from-[#f4c98a] via-[#e8a86b] to-[#c9713f]" },
-  { key: "fastCasual", gradient: "from-red-500 via-red-600 to-red-700" },
-  { key: "barLounge", gradient: "from-[#1a1a2e] via-[#2c1a3a] to-[#4a1f4a]" },
+  { key: "fineDining", img: img1 },
+  { key: "cafeBrunch", img: img2 },
+  { key: "fastCasual", img: img1 },
+  { key: "barLounge", img: img2 },
 ];
 
 export default function TemplatesShowcase() {
@@ -34,14 +36,21 @@ export default function TemplatesShowcase() {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-          {templates.map(({ key, gradient }) => (
+          {templates.map(({ key, img }) => (
             <motion.div
               key={key}
               whileHover={{ y: -8 }}
-              className="rounded-2xl lg:rounded-3xl overflow-hidden border border-gray-100 shadow-[0_20px_60px_rgba(0,0,0,0.08)] bg-white h-full"
+              className="rounded-2xl lg:rounded-3xl overflow-hidden border border-gray-100 shadow-[0_20px_60px_rgba(0,0,0,0.08)] bg-white h-full flex flex-col"
             >
-              <div className={`h-24 sm:h-32 lg:h-40 bg-gradient-to-br ${gradient}`} />
-              <div className="p-3 lg:p-4 bg-white">
+              <div className="h-28 sm:h-36 lg:h-48 overflow-hidden bg-gray-50 relative w-full">
+                <img
+                  src={img}
+                  alt={t(`websiteDevelopment.templates.items.${key}`)}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-3 lg:p-4 bg-white mt-auto border-t border-gray-50">
                 <h4 className="font-bold text-gray-900 text-xs sm:text-sm">
                   {t(`websiteDevelopment.templates.items.${key}`)}
                 </h4>

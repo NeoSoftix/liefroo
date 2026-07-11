@@ -441,7 +441,7 @@
       "heading": "Warum Betreiber uns wählen",
       "headingRed": "statt generischer Baukästen.",
       "columns": {
-        "us": "RestroOS",
+        "us": "Liefro",
         "diy": "Selbstbau-Baukasten",
         "agency": "Individuelle Agentur"
       },
@@ -589,7 +589,7 @@
       }
     },
     "testimonial": {
-      "quote": "RestroOS hat unsere mobile App genau so umgesetzt, wie wir es uns vorgestellt haben. Die Bestellungen sind im ersten Monat nach dem Start um 40 % gestiegen!",
+      "quote": "Liefro hat unsere mobile App genau so umgesetzt, wie wir es uns vorgestellt haben. Die Bestellungen sind im ersten Monat nach dem Start um 40 % gestiegen!",
       "name": "Rahul Mehta",
       "role": "Inhaber, Tasty Bites",
       "stats": {
@@ -683,14 +683,14 @@
       }
     },
     "testimonial": {
-      "quote": "Die Drucker-Integration von RestroOS hat uns jeden Tag Stunden gespart. Bestellungen werden sofort gedruckt und unsere Küche läuft reibungsloser als je zuvor.",
+      "quote": "Die Drucker-Integration von Liefro hat uns jeden Tag Stunden gespart. Bestellungen werden sofort gedruckt und unsere Küche läuft reibungsloser als je zuvor.",
       "name": "Alex Johnson",
       "role": "Inhaber, Burger House",
       "stats": {
         "printSuccess": "99,9%",
         "printSuccessLabel": "Druckerfolgsrate",
         "restaurants": "200+",
-        "restaurantsLabel": "Restaurants nutzen RestroOS",
+        "restaurantsLabel": "Restaurants nutzen Liefro",
         "manualForwarding": "0",
         "manualForwardingLabel": "Manuelle Bestellweiterleitung",
         "performance": "24/7",
@@ -796,12 +796,12 @@
       }
     },
     "testimonial": {
-      "quote": "Die RestroOS-Kasse hat unsere Abläufe reibungsloser und schneller gemacht. Online- und Vor-Ort-Bestellungen in einem System — ein echter Gamechanger!",
+      "quote": "Die Liefro-Kasse hat unsere Abläufe reibungsloser und schneller gemacht. Online- und Vor-Ort-Bestellungen in einem System — ein echter Gamechanger!",
       "name": "Neha Sharma",
       "role": "Inhaberin, Urban Bites",
       "stats": {
         "restaurants": "10.000+",
-        "restaurantsLabel": "Restaurants vertrauen RestroOS",
+        "restaurantsLabel": "Restaurants vertrauen Liefro",
         "uptime": "99,9%",
         "uptimeLabel": "Verfügbarkeit & Zuverlässigkeit",
         "efficiency": "30%+",
@@ -1413,7 +1413,7 @@
       }
     },
     "testimonial": {
-      "quote": "Der Wechsel zur Online-Bestellung von RestroOS hat unsere Direktbestellungen um das 3-Fache gesteigert und unsere Abhängigkeit von Drittanbieter-Plattformen verringert.",
+      "quote": "Der Wechsel zur Online-Bestellung von Liefro hat unsere Direktbestellungen um das 3-Fache gesteigert und unsere Abhängigkeit von Drittanbieter-Plattformen verringert.",
       "name": "David Taylor",
       "role": "Pizza House",
       "stats": {
@@ -1708,7 +1708,7 @@
         },
         "posIntegration": {
           "title": "Kassenintegration",
-          "desc": "Nahtlos integriert mit der RestroOS-Kasse für einen reibungslosen Betrieb."
+          "desc": "Nahtlos integriert mit der Liefro-Kasse für einen reibungslosen Betrieb."
         }
       }
     },

@@ -17,6 +17,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } fr
 import { WhyChooseSection } from "../components/MobileAppDevelopment";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import mobileAppImg from "../assets/mobileAppDevelopmentImage.png";
 
 export default function MobileAppDevelopment() {
   const { t } = useTranslation();
@@ -79,6 +80,7 @@ export default function MobileAppDevelopment() {
           ctaLabel={t("mobileAppDevelopment.hero.cta")}
           secondaryCtaLabel={t("mobileAppDevelopment.hero.secondaryCta")}
           features={heroFeatures}
+          imageSrc={mobileAppImg}
         />
         <FeatureGridSection
           eyebrow={t("mobileAppDevelopment.featureGrid.eyebrow")}

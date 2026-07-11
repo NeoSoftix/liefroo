@@ -441,7 +441,7 @@
       "heading": "Why operators pick us",
       "headingRed": "over generic builders.",
       "columns": {
-        "us": "RestroOS",
+        "us": "Liefro",
         "diy": "DIY Builder",
         "agency": "Custom Agency"
       },
@@ -589,7 +589,7 @@
       }
     },
     "testimonial": {
-      "quote": "RestroOS built our mobile app exactly how we imagined. Orders increased by 40% in the first month after launch!",
+      "quote": "Liefro built our mobile app exactly how we imagined. Orders increased by 40% in the first month after launch!",
       "name": "Rahul Mehta",
       "role": "Owner, Tasty Bites",
       "stats": {
@@ -683,14 +683,14 @@
       }
     },
     "testimonial": {
-      "quote": "Printer integration from RestroOS saved us hours every day. Orders print instantly and our kitchen runs smoother than ever.",
+      "quote": "Printer integration from Liefro saved us hours every day. Orders print instantly and our kitchen runs smoother than ever.",
       "name": "Alex Johnson",
       "role": "Owner, Burger House",
       "stats": {
         "printSuccess": "99.9%",
         "printSuccessLabel": "Print Success Rate",
         "restaurants": "200+",
-        "restaurantsLabel": "Restaurants Using RestroOS",
+        "restaurantsLabel": "Restaurants Using Liefro",
         "manualForwarding": "0",
         "manualForwardingLabel": "Manual Order Forwarding",
         "performance": "24/7",
@@ -796,12 +796,12 @@
       }
     },
     "testimonial": {
-      "quote": "RestroOS POS made our operations smoother and faster. Online and in-store orders in one system — game changer!",
+      "quote": "Liefro POS made our operations smoother and faster. Online and in-store orders in one system — game changer!",
       "name": "Neha Sharma",
       "role": "Owner, Urban Bites",
       "stats": {
         "restaurants": "10,000+",
-        "restaurantsLabel": "Restaurants Trust RestroOS POS",
+        "restaurantsLabel": "Restaurants Trust Liefro POS",
         "uptime": "99.9%",
         "uptimeLabel": "Uptime & Reliability",
         "efficiency": "30%+",
@@ -1413,7 +1413,7 @@
       }
     },
     "testimonial": {
-      "quote": "Switching to RestroOS's Online Ordering increased our direct orders by 3X and cut our dependency on third-party platforms.",
+      "quote": "Switching to Liefro's Online Ordering increased our direct orders by 3X and cut our dependency on third-party platforms.",
       "name": "David Taylor",
       "role": "Pizza House",
       "stats": {
@@ -1708,7 +1708,7 @@
         },
         "posIntegration": {
           "title": "POS Integration",
-          "desc": "Seamlessly integrated with RestroOS POS for smooth operations."
+          "desc": "Seamlessly integrated with Liefro POS for smooth operations."
         }
       }
     },

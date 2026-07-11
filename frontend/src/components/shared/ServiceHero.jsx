@@ -180,11 +180,11 @@ export default function ServiceHero({
         )}
 
         {features.length > 0 && (
-          <div className={`grid ${featuresGridClassName} gap-4 sm:gap-6 mt-8 lg:mt-12 max-w-2xl mx-auto`}>
+          <div className={`grid ${featuresGridClassName} gap-4 sm:gap-6 mt-8 lg:mt-12 w-full ${imageSrc ? "max-w-4xl" : "max-w-2xl"} mx-auto`}>
             {features.map(({ Icon, label }) => (
               <div key={label} className="text-center">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto rounded-full border border-red-200 bg-white flex items-center justify-center shadow-sm">
-                  <Icon className="text-red-600" size={20} className="sm:size-[26px]" />
+                  <Icon className="text-red-600" size={20}/>
                 </div>
                 <h4 className="mt-2 font-semibold text-gray-900 text-xs sm:text-sm">{label}</h4>
               </div>

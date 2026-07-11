@@ -68,7 +68,7 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
-              alt="RestroOS Logo" 
+              alt="Liefro Logo" 
               className={`transition-all duration-300 w-auto object-contain ${
                 isScrolled ? "h-10" : "h-[60px]"
               }`} 
