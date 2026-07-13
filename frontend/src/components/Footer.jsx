@@ -7,11 +7,14 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { goToSection } from "../utils/scrollToSection";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
   const productItems = t("footer.product.items", { returnObjects: true });
   const companyItems = t("footer.company.items", { returnObjects: true });
   return (
@@ -54,6 +57,7 @@ export default function Footer() {
             </div>
 
             <Button
+              onClick={() => goToSection(navigate, pathname, "contact")}
               className="
                 bg-white
                 text-red-600
@@ -155,23 +159,22 @@ export default function Footer() {
 
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               {Object.entries(companyItems).map(([key, label]) => {
-                let href = "/";
-                if (key === "contact") href = "/#contact";
-                else if (key === "about") href = "/#features";
-                else href = "#";
+                const sectionId =
+                  key === "contact" ? "contact" : key === "about" ? "features" : null;
 
                 return (
                   <li key={key}>
-                    {href.startsWith("#") ? (
-                      <a
-                        href={href}
+                    {sectionId ? (
+                      <button
+                        type="button"
+                        onClick={() => goToSection(navigate, pathname, sectionId)}
                         className="text-gray-600 hover:text-red-600 transition font-medium"
                       >
                         {label}
-                      </a>
+                      </button>
                     ) : (
                       <Link
-                        to={href}
+                        to="/"
                         className="text-gray-600 hover:text-red-600 transition font-medium"
                       >
                         {label}

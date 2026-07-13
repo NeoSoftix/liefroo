@@ -3,13 +3,16 @@
 import { useRef, useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import ProductsMegaMenu from "./ProductsMegaMenu";
 import logo from "../assets/logo.png";
+import { goToSection } from "../utils/scrollToSection";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const handleContactClick = () => goToSection(navigate, pathname, "contact");
   const [productsOpen, setProductsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -59,7 +62,7 @@ export default function Header() {
   };
 
   const mobileNavLinks = [
-    { to: "/#contact", label: t("header.nav.contact") },
+    { key: "contact", label: t("header.nav.contact") },
   ];
 
   return (
@@ -100,7 +103,13 @@ export default function Header() {
               />
             </button>
 
-            <Link to="/#contact" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.contact")}</Link>
+            <button
+              type="button"
+              onClick={handleContactClick}
+              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+            >
+              {t("header.nav.contact")}
+            </button>
           </nav>
 
           <ProductsMegaMenu
@@ -134,7 +143,7 @@ export default function Header() {
             </div>
 
             <button
-              onClick={() => navigate("/#contact")}
+              onClick={handleContactClick}
               className="hidden sm:flex bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-red-700 transition-all shadow-sm"
             >
               {t("header.bookDemo")}
@@ -211,14 +220,17 @@ export default function Header() {
           <div className="flex-1 overflow-y-auto">
             <nav className="flex flex-col divide-y divide-gray-100">
               {mobileNavLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setMobileOpen(false)}
-                  className="px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                <button
+                  key={link.key}
+                  type="button"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    handleContactClick();
+                  }}
+                  className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                 >
                   {link.label}
-                </Link>
+                </button>
               ))}
 
               <div>
@@ -277,7 +289,7 @@ export default function Header() {
             <button
               onClick={() => {
                 setMobileOpen(false);
-                navigate("/#contact");
+                handleContactClick();
               }}
               className="w-full bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-sm"
             >
