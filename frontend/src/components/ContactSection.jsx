@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FiPhone,
   FiMail,
@@ -9,9 +10,52 @@ import {
 } from "react-icons/fi";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+const initialForm = { name: "", email: "", phone: "", subject: "", message: "" };
 
 export default function ContactSection() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const [form, setForm] = useState(initialForm);
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch(`${API_URL}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+
+      setStatus("success");
+      navigate("/thank-you", {
+        state: { name: form.name, email: form.email, subject: form.subject },
+      });
+      setForm(initialForm);
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(err.message || "Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 w-full">
@@ -114,12 +158,16 @@ export default function ContactSection() {
                 <div className="hidden sm:block flex-1 h-[2px] bg-gradient-to-r from-red-500 to-transparent"></div>
               </div>
 
-              <form className="space-y-4 sm:space-y-6">
+              <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-5">
                   <div className="relative">
                     <FiUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
                       type="text"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      required
                       placeholder={t("contact.form.name")}
                       className="w-full h-12 sm:h-14 pl-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base"
                     />
@@ -129,6 +177,10 @@ export default function ContactSection() {
                     <FiMail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
                       type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      required
                       placeholder={t("contact.form.email")}
                       className="w-full h-12 sm:h-14 pl-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base"
                     />
@@ -138,6 +190,9 @@ export default function ContactSection() {
                     <FiPhone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
                       type="text"
+                      name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
                       placeholder={t("contact.form.phone")}
                       className="w-full h-12 sm:h-14 pl-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base"
                     />
@@ -147,6 +202,9 @@ export default function ContactSection() {
                     <FiTag className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
                       type="text"
+                      name="subject"
+                      value={form.subject}
+                      onChange={handleChange}
                       placeholder={t("contact.form.subject")}
                       className="w-full h-12 sm:h-14 pl-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base"
                     />
@@ -157,6 +215,10 @@ export default function ContactSection() {
                   <FiEdit3 className="absolute left-4 top-5 sm:top-6 text-gray-400" />
                   <textarea
                     rows="5"
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    required
                     placeholder={t("contact.form.message")}
                     className="w-full pl-12 pt-4 sm:pt-5 rounded-xl border border-gray-200 outline-none focus:border-red-500 resize-none text-sm sm:text-base"
                   />
@@ -164,11 +226,24 @@ export default function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full h-14 sm:h-16 rounded-xl bg-red-600 text-white font-semibold text-base sm:text-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all"
+                  disabled={status === "sending"}
+                  className="w-full h-14 sm:h-16 rounded-xl bg-red-600 text-white font-semibold text-base sm:text-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {t("contact.form.send")}
+                  {status === "sending" ? "Sending..." : t("contact.form.send")}
                   <FiArrowRight />
                 </button>
+
+                {status === "success" && (
+                  <p className="text-center text-sm text-green-600 font-medium">
+                    ✅ Your message has been sent successfully!
+                  </p>
+                )}
+
+                {status === "error" && (
+                  <p className="text-center text-sm text-red-600 font-medium">
+                    ⚠️ {errorMessage}
+                  </p>
+                )}
 
                 <p className="text-center text-xs sm:text-sm text-gray-500 pt-2">
                   🔒 {t("contact.form.privacy")}

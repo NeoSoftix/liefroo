@@ -14,6 +14,7 @@ import OnlineOrdering from "./pages/OnlineOrdering";
 import GoogleAnalytics from "./pages/GoogleAnalytics";
 import ReservationSystem from "./pages/ReservationSystem";
 import QROrdering from "./pages/QROrdering";
+import ThankYou from "./pages/ThankYou";
 
 function ScrollToHashElement() {
   const { hash, pathname } = useLocation();
@@ -53,6 +54,7 @@ function App() {
         <Route path="/google-analytics" element={<GoogleAnalytics />} />
         <Route path="/reservation-system" element={<ReservationSystem />} />
         <Route path="/qr-ordering" element={<QROrdering />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>
   );
