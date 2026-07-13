@@ -1,10 +1,7 @@
 {
   "header": {
     "nav": {
-      "home": "Home",
       "products": "Products",
-      "features": "Features",
-      "pricing": "Pricing",
       "contact": "Contact"
     },
     "bookDemo": "Book Demo",
@@ -320,7 +317,7 @@
     }
   },
   "footer": {
-    "watermark": "Restaurant OS",
+    "watermark": "Liefro",
     "cta": {
       "eyebrow": "Restaurant Growth Starts Here",
       "headingLine1": "Ready To Transform",
@@ -346,10 +343,6 @@
     "company": {
       "title": "Company",
       "items": {
-        "about": "About Us",
-        "careers": "Careers",
-        "partners": "Partners",
-        "blog": "Blog",
         "contact": "Contact"
       }
     },
@@ -360,7 +353,8 @@
       "support": "24/7 Support",
       "location": "New York, United States"
     },
-    "copyright": "© 2026 MealsHub. All rights reserved."
+    "copyright": "©2026 Liefro All Rights Reserved",
+    "backToTop": "Back to top"
   },
   "websiteDevelopment": {
     "hero": {

@@ -3,12 +3,13 @@
 import { useRef, useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ProductsMegaMenu from "./ProductsMegaMenu";
 import logo from "../assets/logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [productsOpen, setProductsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -58,9 +59,6 @@ export default function Header() {
   };
 
   const mobileNavLinks = [
-    { to: "/", label: t("header.nav.home") },
-    { to: "/#features", label: t("header.nav.features") },
-    { to: "/website-development#pricing", label: t("header.nav.pricing") },
     { to: "/#contact", label: t("header.nav.contact") },
   ];
 
@@ -88,7 +86,7 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10" onMouseLeave={closeProducts}>
-            <Link to="/" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.home")}</Link>
+          
 
             <button
               className="flex items-center gap-1.5 hover:text-red-600 transition-colors font-medium text-gray-700"
@@ -102,8 +100,6 @@ export default function Header() {
               />
             </button>
 
-            <Link to="/#features" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.features")}</Link>
-            <Link to="/website-development#pricing" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.pricing")}</Link>
             <Link to="/#contact" className="hover:text-red-600 transition-colors font-medium text-gray-700">{t("header.nav.contact")}</Link>
           </nav>
 
@@ -137,7 +133,10 @@ export default function Header() {
               </button>
             </div>
 
-            <button className="hidden sm:flex bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-red-700 transition-all shadow-sm">
+            <button
+              onClick={() => navigate("/#contact")}
+              className="hidden sm:flex bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-red-700 transition-all shadow-sm"
+            >
               {t("header.bookDemo")}
             </button>
 
@@ -275,7 +274,13 @@ export default function Header() {
 
           {/* Drawer Footer */}
           <div className="p-5 border-t border-gray-100">
-            <button className="w-full bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-sm">
+            <button
+              onClick={() => {
+                setMobileOpen(false);
+                navigate("/#contact");
+              }}
+              className="w-full bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-sm"
+            >
               {t("header.bookDemo")}
             </button>
           </div>

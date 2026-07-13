@@ -1,10 +1,7 @@
 {
   "header": {
     "nav": {
-      "home": "Startseite",
       "products": "Produkte",
-      "features": "Funktionen",
-      "pricing": "Preise",
       "contact": "Kontakt"
     },
     "bookDemo": "Demo buchen",
@@ -320,7 +317,7 @@
     }
   },
   "footer": {
-    "watermark": "Restaurant-Betriebssystem",
+    "watermark": "Liefro",
     "cta": {
       "eyebrow": "Restaurantwachstum beginnt hier",
       "headingLine1": "Bereit für den Wandel",
@@ -346,10 +343,6 @@
     "company": {
       "title": "Unternehmen",
       "items": {
-        "about": "Über uns",
-        "careers": "Karriere",
-        "partners": "Partner",
-        "blog": "Blog",
         "contact": "Kontakt"
       }
     },
@@ -360,7 +353,8 @@
       "support": "24/7 Support",
       "location": "Berlin, Deutschland"
     },
-    "copyright": "© 2026 MealsHub. Alle Rechte vorbehalten."
+    "copyright": "© 2026 Liefro. Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben"
   },
   "websiteDevelopment": {
     "hero": {

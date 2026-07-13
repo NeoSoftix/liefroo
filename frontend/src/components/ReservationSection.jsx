@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import {
   Calendar,
   Clock3,
@@ -18,7 +18,7 @@ export default function ReservationSection() {
     t("reservation.benefits.noShows"),
   ];
   return (
-    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#fafafa] overflow-hidden">
+    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-4 lg:py-8 bg-[#fafafa] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-0 left-[-200px] w-[600px] h-[600px] bg-red-100/50 blur-[180px] rounded-full" />
@@ -123,16 +123,16 @@ export default function ReservationSection() {
           >
 
             {/* Glow */}
-            <div className="absolute w-[550px] h-[550px] bg-red-200/40 blur-[140px] rounded-full" />
+            <div className="absolute w-120 h-[min(560px,72vh)] bg-red-200/40 blur-[140px] rounded-full" />
 
             {/* Main Card */}
-            <div className="relative w-[560px] rounded-[40px] bg-white border border-gray-200 shadow-[0_50px_120px_rgba(0,0,0,0.12)] overflow-hidden">
+            <div className="relative w-120 h-[min(600px,78vh)] rounded-[40px] bg-white border border-gray-200 shadow-[0_50px_120px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col">
 
               {/* Header */}
-              <div className="bg-gradient-to-r from-red-600 to-red-500 p-6 text-white">
+              <div className="bg-gradient-to-r from-red-600 to-red-500 p-4 text-white shrink-0">
 
                 <div className="flex justify-between items-center">
-                  <h3 className="font-bold text-xl">
+                  <h3 className="font-bold text-lg">
                     {t("reservation.card.title")}
                   </h3>
 
@@ -143,16 +143,16 @@ export default function ReservationSection() {
 
               </div>
 
-              <div className="p-8">
+              <div className="p-4 space-y-3 overflow-y-auto">
 
                 {/* Floor Layout */}
            {/* Floor Plan */}
 
-<div className="bg-[#fafafa] border border-gray-200 rounded-[30px] p-8">
+<div className="bg-[#fafafa] border border-gray-200 rounded-3xl p-4">
 
-  <div className="flex items-center justify-between mb-6">
+  <div className="flex items-center justify-between mb-3">
 
-    <h4 className="font-bold text-gray-900">
+    <h4 className="font-bold text-gray-900 text-sm">
       {t("reservation.card.floorPlan")}
     </h4>
 
@@ -177,14 +177,14 @@ export default function ReservationSection() {
 
   </div>
 
-<div className="grid grid-cols-3 gap-6">
+<div className="grid grid-cols-3 gap-3">
 
   {/* Row 1 */}
 
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-white
       border border-red-200
@@ -200,7 +200,7 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-white
       border border-red-200
@@ -216,7 +216,7 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-gray-200
       flex items-center justify-center
@@ -233,8 +233,8 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[110px]
-      rounded-[30px]
+      h-[64px]
+      rounded-2xl
       bg-white
       border border-red-200
       flex items-center justify-center
@@ -262,8 +262,8 @@ export default function ReservationSection() {
     }}
     whileHover={{ scale: 1.05 }}
     className="
-      h-[110px]
-      rounded-[30px]
+      h-[64px]
+      rounded-2xl
       bg-red-600
       text-white
       flex flex-col
@@ -285,8 +285,8 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[110px]
-      rounded-[30px]
+      h-[64px]
+      rounded-2xl
       bg-white
       border border-red-200
       flex items-center justify-center
@@ -303,7 +303,7 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-white
       border border-red-200
@@ -319,7 +319,7 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-gray-200
       flex items-center justify-center
@@ -334,7 +334,7 @@ export default function ReservationSection() {
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="
-      h-[90px]
+      h-[56px]
       rounded-3xl
       bg-white
       border border-red-200
@@ -351,22 +351,22 @@ export default function ReservationSection() {
 
 </div>
 
-<div className="bg-gradient-to-r from-red-50 to-white border border-red-100 rounded-3xl p-5">
+<div className="bg-gradient-to-r from-red-50 to-white border border-red-100 rounded-2xl p-3">
 
   <div className="flex justify-between items-center">
 
     <div>
-      <p className="text-gray-500 text-sm">
+      <p className="text-gray-500 text-xs">
         {t("reservation.card.selectedReservation")}
       </p>
 
-      <h3 className="text-2xl font-black text-gray-900 mt-1">
+      <h3 className="text-lg font-black text-gray-900 mt-0.5">
         {t("reservation.card.table", { number: 5 })}
       </h3>
     </div>
 
     <div className="text-right">
-      <p className="text-green-500 text-sm font-medium">
+      <p className="text-green-500 text-xs font-medium">
         {t("reservation.card.available")}
       </p>
 
@@ -379,49 +379,49 @@ export default function ReservationSection() {
 
 </div>
                 {/* Booking Details */}
-                <div className="grid grid-cols-3 gap-4 mt-8">
+                <div className="grid grid-cols-3 gap-2">
 
-                  <div className="border border-gray-200 rounded-2xl p-4">
+                  <div className="border border-gray-200 rounded-xl p-2">
                     <Calendar
-                      size={18}
-                      className="text-red-500 mb-2"
+                      size={16}
+                      className="text-red-500 mb-1"
                     />
 
                     <p className="text-xs text-gray-500">
                       {t("reservation.card.date")}
                     </p>
 
-                    <h4 className="font-bold">
+                    <h4 className="font-bold text-sm">
                       Jun 24
                     </h4>
                   </div>
 
-                  <div className="border border-gray-200 rounded-2xl p-4">
+                  <div className="border border-gray-200 rounded-xl p-2">
                     <Users
-                      size={18}
-                      className="text-red-500 mb-2"
+                      size={16}
+                      className="text-red-500 mb-1"
                     />
 
                     <p className="text-xs text-gray-500">
                       {t("reservation.card.guests")}
                     </p>
 
-                    <h4 className="font-bold">
+                    <h4 className="font-bold text-sm">
                       {t("reservation.card.guestsCount")}
                     </h4>
                   </div>
 
-                  <div className="border border-gray-200 rounded-2xl p-4">
+                  <div className="border border-gray-200 rounded-xl p-2">
                     <Clock3
-                      size={18}
-                      className="text-red-500 mb-2"
+                      size={16}
+                      className="text-red-500 mb-1"
                     />
 
                     <p className="text-xs text-gray-500">
                       {t("reservation.card.time")}
                     </p>
 
-                    <h4 className="font-bold">
+                    <h4 className="font-bold text-sm">
                       7:30 PM
                     </h4>
                   </div>
@@ -430,8 +430,6 @@ export default function ReservationSection() {
 
               </div>
             </div>
-
-         
 
           </motion.div>
 

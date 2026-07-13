@@ -1,10 +1,12 @@
 import { slides } from "../../data/slides";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 export default function HeroSlider() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const activeSlide = slides[0];
   const slideText = t(`hero.slides.${activeSlide.id}`, { returnObjects: true });
 
@@ -43,7 +45,7 @@ export default function HeroSlider() {
 
             <div className="flex flex-wrap gap-4 mt-6">
               <Button
-                onClick={() => console.log("Book Demo")}
+                onClick={() => navigate("/#contact")}
                 className="
                   bg-red-600 text-white border border-red-600
                   px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg text-sm sm:text-base

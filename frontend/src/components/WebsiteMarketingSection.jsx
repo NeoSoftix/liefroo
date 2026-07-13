@@ -109,21 +109,21 @@ export default function WebsiteMarketingSection() {
         <div className="absolute bottom-0 right-[-200px] w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-          <div className="max-w-5xl mx-auto bg-white border border-red-100 rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
-            
+          <div className="max-w-5xl xl:max-w-6xl mx-auto bg-white border border-red-100 rounded-4xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
+
             {/* Top Label */}
-            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-br-2xl text-xs sm:text-sm">
+            <div className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-br-2xl text-xs sm:text-sm lg:text-base">
               ✉️
               <span className="uppercase tracking-[3px] font-semibold">
                 {t("marketing.automation.badge")}
               </span>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 p-6 sm:p-10">
-              
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 p-6 sm:p-10 lg:p-16 xl:p-20">
+
               {/* Left Column */}
-              <div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight mb-4">
+              <div className="lg:flex lg:flex-col lg:justify-center">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black leading-tight mb-4 lg:mb-6">
                   {t("marketing.automation.headingLine1")}
                   <br />
                   <span className="text-red-600">
@@ -131,29 +131,29 @@ export default function WebsiteMarketingSection() {
                   </span>
                 </h2>
 
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8">
                   {t("marketing.automation.description")}
                 </p>
 
-                <button className="group flex items-center gap-2 text-red-600 font-semibold text-sm sm:text-base">
+                <button className="group flex items-center gap-2 text-red-600 font-semibold text-sm sm:text-base lg:text-lg">
                   {t("marketing.automation.cta")}
                   <FiArrowRight className="group-hover:translate-x-1.5 transition-all duration-300" />
                 </button>
               </div>
 
               {/* Right Column */}
-              <div className="lg:border-l border-gray-100 lg:pl-10 flex flex-col justify-center">
-                <div className="space-y-3 sm:space-y-4">
+              <div className="lg:border-l border-gray-100 lg:pl-10 xl:pl-14 flex flex-col justify-center">
+                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   {marketingFeatures.map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-between border-b border-gray-50 pb-2 last:border-b-0"
+                      className="flex items-center justify-between border-b border-gray-50 pb-2 lg:pb-3 last:border-b-0"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="w-6 h-6 rounded-full border border-red-500 flex items-center justify-center text-red-500 text-xs shrink-0 bg-red-50">
+                      <div className="flex items-center gap-3 lg:gap-4">
+                        <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-full border border-red-500 flex items-center justify-center text-red-500 text-xs lg:text-sm shrink-0 bg-red-50">
                           ✓
                         </div>
-                        <span className="text-sm sm:text-base font-medium text-gray-800">
+                        <span className="text-sm sm:text-base lg:text-lg font-medium text-gray-800">
                           {item}
                         </span>
                       </div>
