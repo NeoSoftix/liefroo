@@ -32,6 +32,18 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll, true);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -140,16 +152,71 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu Panel */}
-        {mobileOpen && (
-          <div className="lg:hidden mt-3 max-w-7xl mx-auto w-full rounded-2xl border border-gray-100 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.08)] max-h-[75vh] overflow-y-auto">
+        {/* Mobile Drawer Backdrop */}
+        <div
+          className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-50 lg:hidden transition-opacity duration-300 ${
+            mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setMobileOpen(false)}
+        />
+
+        {/* Mobile Drawer Panel */}
+        <div
+          className={`fixed top-0 right-0 h-screen w-[320px] max-w-[90vw] bg-white z-50 lg:hidden flex flex-col shadow-2xl transition-transform duration-300 ease-in-out ${
+            mobileOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Drawer Header */}
+          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+            <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
+              <img 
+                src={logo} 
+                alt="Liefro Logo" 
+                className="h-8 w-auto object-contain" 
+              />
+            </Link>
+
+            <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 text-xs font-semibold bg-white">
+              <button
+                onClick={() => changeLanguage("de")}
+                className={`px-2 py-0.5 rounded-full transition-all ${
+                  i18n.resolvedLanguage === "de"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-600 hover:text-red-500"
+                }`}
+              >
+                DE
+              </button>
+              <button
+                onClick={() => changeLanguage("en")}
+                className={`px-2 py-0.5 rounded-full transition-all ${
+                  i18n.resolvedLanguage === "en"
+                    ? "bg-red-600 text-white"
+                    : "text-gray-600 hover:text-red-500"
+                }`}
+              >
+                EN
+              </button>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center justify-center w-8 h-8 rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50"
+            >
+              <X size={18} />
+            </button>
+          </div>
+
+          {/* Drawer Content */}
+          <div className="flex-1 overflow-y-auto">
             <nav className="flex flex-col divide-y divide-gray-100">
               {mobileNavLinks.map((link) => (
                 <Link
                   key={link.to}
                   to={link.to}
                   onClick={() => setMobileOpen(false)}
-                  className="px-5 py-3 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                  className="px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -159,7 +226,7 @@ export default function Header() {
                 <button
                   type="button"
                   onClick={() => setMobileProductsOpen((open) => !open)}
-                  className="w-full flex items-center justify-between px-5 py-3 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                  className="w-full flex items-center justify-between px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                 >
                   {t("header.nav.products")}
                   <ChevronDown
@@ -169,7 +236,7 @@ export default function Header() {
                 </button>
 
                 {mobileProductsOpen && (
-                  <div className="px-5 pb-3 flex flex-col gap-1">
+                  <div className="px-5 pb-4 flex flex-col gap-1 bg-gray-50/50 pt-2">
                     {[
                       { key: "menuManagement", href: "/menu-management" },
                       { key: "onlineOrdering", href: "/online-ordering" },
@@ -204,14 +271,15 @@ export default function Header() {
                 )}
               </div>
             </nav>
-
-            <div className="p-4 border-t border-gray-100">
-              <button className="w-full bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-sm">
-                {t("header.bookDemo")}
-              </button>
-            </div>
           </div>
-        )}
+
+          {/* Drawer Footer */}
+          <div className="p-5 border-t border-gray-100">
+            <button className="w-full bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-sm">
+              {t("header.bookDemo")}
+            </button>
+          </div>
+        </div>
       </div>
     </header>
   );
