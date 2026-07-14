@@ -20,6 +20,7 @@ import TermsConditions from "./pages/TermsConditions";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import BackToTopButton from "./components/BackToTopButton";
+import PageNotFound from "./components/shared/PageNotFound";
 
 function ScrollToHashElement() {
   const { hash, pathname } = useLocation();
@@ -78,6 +79,7 @@ function App() {
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/products" element={<Services />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <BackToTopButton />
     </BrowserRouter>
