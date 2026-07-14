@@ -13,7 +13,31 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Deploy to EC2
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build frontend (with prerendered SEO tags)
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+          test -f dist/index.html
+
+      - name: Upload frontend build to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          source: "frontend/dist/*"
+          target: "~/liefroo_dist_incoming"
+          strip_components: 2
+          overwrite: true
+
+      - name: Deploy on EC2
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -28,19 +52,14 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
 
-            cd frontend
-            # EC2 doesn't have `unzip` (or Chrome's runtime libs), so puppeteer's
-            # postinstall Chromium download fails and takes down the whole
-            # deploy. Skip it here — scripts/prerender.mjs already falls back
-            # to a plain (non-prerendered) build when it can't launch a browser.
-            PUPPETEER_SKIP_DOWNLOAD=true npm install
-            npm run build
-
-            test -f dist/index.html
-
+            # Frontend is built (and prerendered with real Chromium) in CI —
+            # EC2 lacks the libs Chromium needs, so building here silently
+            # fell back to plain SPA output with no baked-in per-page SEO tags.
+            test -f ~/liefroo_dist_incoming/index.html
             sudo rm -rf /var/www/html/*
-            sudo cp -r dist/* /var/www/html/
+            sudo cp -r ~/liefroo_dist_incoming/* /var/www/html/
+            rm -rf ~/liefroo_dist_incoming
 
-            cd ../backend
+            cd backend
             npm install
             pm2 restart liefroo-backend
