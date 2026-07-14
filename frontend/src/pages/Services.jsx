@@ -1,46 +1,13 @@
-import {
-  LayoutGrid,
-  Search,
-  QrCode,
-  Monitor,
-  CalendarCheck,
-  Printer,
-  Megaphone,
-  BarChart3,
-  Headphones,
-  Globe,
-  Smartphone,
-  MapPin,
-  ChevronRight,
-} from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { ServiceCard, Seo } from "../components/shared";
+import { ServicesGrid, Seo } from "../components/shared";
 import posImage from "../assets/posimage.png";
-
-const serviceMeta = [
-  { icon: LayoutGrid, href: "/menu-management" },
-  { icon: Search, href: "/online-ordering" },
-  { icon: QrCode, href: "/qr-ordering" },
-  { icon: Monitor, href: "/pos-system-development" },
-  { icon: CalendarCheck, href: "/reservation-system" },
-  { icon: Printer, href: "/printer-integration" },
-  { icon: Megaphone, href: "/google-ads" },
-  { icon: BarChart3, href: "/google-analytics" },
-  { icon: Headphones, href: "/technical-support" },
-  { icon: Globe, href: "/website-development" },
-  { icon: Smartphone, href: "/mobile-app-development" },
-  { icon: MapPin, href: "/google-business-seo" },
-];
 
 export default function Services() {
   const { t } = useTranslation();
-  const items = t("services.items", { returnObjects: true }).map((item, index) => ({
-    ...item,
-    ...serviceMeta[index],
-  }));
 
   return (
     <div className="w-full overflow-x-hidden bg-white">
@@ -87,38 +54,11 @@ export default function Services() {
           </div>
         </section>
 
-        {/* SERVICES GRID */}
-        <section className="w-full py-14 lg:py-20 bg-[#fafafa]">
-          <div className="max-w-7xl mx-auto px-6 w-full">
-            <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
-              <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-xs sm:text-sm">
-                {t("services.eyebrow")}
-              </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black mt-3 text-gray-900">
-                {t("services.sectionTitle")}
-              </h2>
-              <p className="text-sm sm:text-base text-gray-600 mt-3 leading-relaxed">
-                {t("services.sectionDescription")}
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-              {items.map((item, index) => (
-                <ServiceCard
-                  key={item.title}
-                  number={index + 1}
-                  icon={item.icon}
-                  image={item.image}
-                  title={item.title}
-                  description={item.description}
-                  bullets={item.bullets}
-                  href={item.href}
-                  exploreLabel={t("services.exploreMore")}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <ServicesGrid
+          eyebrow={t("services.eyebrow")}
+          heading={t("services.sectionTitle")}
+          description={t("services.sectionDescription")}
+        />
       </main>
 
       <Footer />

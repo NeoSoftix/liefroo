@@ -15,6 +15,7 @@
     "nav": {
       "home": "Home",
       "products": "Products",
+      "about": "About",
       "contact": "Contact"
     },
     "bookDemo": "Book Demo",
@@ -1950,5 +1951,90 @@
         "bullets": ["Google Business Profile", "Local SEO & keywords", "Review management"]
       }
     ]
+  },
+  "about": {
+    "seo": {
+      "title": "About Liefro",
+      "description": "Liefro is an all-in-one platform built to help restaurants streamline operations, enhance customer experience, and grow their business with smart technology."
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "headingLine1": "Simplifying Restaurants.",
+      "headingLine2": "Powering Growth.",
+      "description": "Liefro is an all-in-one platform built to help restaurants streamline operations, enhance customer experience, and grow their business with smart technology.",
+      "features": {
+        "builtFor": "Built for Restaurants",
+        "innovation": "Driven by Innovation",
+        "support": "Backed by Support"
+      }
+    },
+    "stats": {
+      "restaurants": { "value": "1000+", "label": "Restaurants Powered" },
+      "users": { "value": "50K+", "label": "Happy Users" },
+      "orders": { "value": "1M+", "label": "Orders Processed" },
+      "uptime": { "value": "99.9%", "label": "System Uptime" }
+    },
+    "why": {
+      "eyebrow": "Why Liefro?",
+      "heading": "Everything You Need,",
+      "headingRed": "All in One Place",
+      "items": {
+        "allInOne": {
+          "title": "All-in-One Platform",
+          "desc": "Manage everything from orders to analytics in a single system."
+        },
+        "experience": {
+          "title": "Enhance Customer Experience",
+          "desc": "Faster service, easy ordering, and seamless experience for your customers."
+        },
+        "saveTime": {
+          "title": "Save Time & Costs",
+          "desc": "Automate tasks and reduce manual work to save time and money."
+        },
+        "scalable": {
+          "title": "Scalable for Growth",
+          "desc": "Whether you run one outlet or many, Liefro grows with you."
+        },
+        "insights": {
+          "title": "Data-Driven Insights",
+          "desc": "Make smarter decisions with real-time reports and analytics."
+        },
+        "support": {
+          "title": "Reliable Support",
+          "desc": "Our team is always here to help you, whenever you need it."
+        }
+      }
+    },
+    "offer": {
+      "eyebrow": "What We Offer",
+      "heading": "Powerful Solutions to Run Your Restaurant",
+      "headingRed": "Smarter"
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "heading": "Simple Steps.",
+      "headingRed": "Powerful Results.",
+      "steps": {
+        "understand": { "title": "Understand", "desc": "We learn about your restaurant and goals." },
+        "setup": { "title": "Setup", "desc": "We configure the platform to suit your needs." },
+        "launch": { "title": "Launch", "desc": "Go live and start using Liefro with your team." },
+        "grow": { "title": "Grow", "desc": "We support you to grow your business continuously." }
+      }
+    },
+    "testimonial": {
+      "quote": "Liefro has transformed the way we operate. From online orders to table bookings, everything is now seamless and efficient.",
+      "name": "Rajesh Kumar",
+      "role": "Owner, Spice Hub",
+      "stats": {
+        "restaurants": "1000+",
+        "restaurantsLabel": "Restaurants Powered",
+        "users": "50K+",
+        "usersLabel": "Happy Users",
+        "orders": "1M+",
+        "ordersLabel": "Orders Processed",
+        "uptime": "99.9%",
+        "uptimeLabel": "System Uptime"
+      }
+    }
   }
 }

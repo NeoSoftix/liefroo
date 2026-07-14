@@ -110,6 +110,13 @@ export default function Header() {
               />
             </Link>
 
+            <Link
+              to="/about"
+              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+            >
+              {t("header.nav.about")}
+            </Link>
+
             <button
               type="button"
               onClick={handleContactClick}
@@ -232,6 +239,14 @@ export default function Header() {
                 className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
               >
                 {t("header.nav.home")}
+              </Link>
+
+              <Link
+                to="/about"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.about")}
               </Link>
 
               {mobileNavLinks.map((link) => (

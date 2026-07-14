@@ -18,6 +18,7 @@ import ThankYou from "./pages/ThankYou";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import Services from "./pages/Services";
+import About from "./pages/About";
 import BackToTopButton from "./components/BackToTopButton";
 
 function ScrollToHashElement() {
@@ -76,6 +77,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/products" element={<Services />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <BackToTopButton />
     </BrowserRouter>

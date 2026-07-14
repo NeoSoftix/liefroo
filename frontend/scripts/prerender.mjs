@@ -18,6 +18,7 @@ const root = path.resolve(__dirname, "..");
 const routes = [
   "/",
   "/products",
+  "/about",
   "/website-development",
   "/mobile-app-development",
   "/printer-integration",

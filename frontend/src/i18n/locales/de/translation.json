@@ -15,6 +15,7 @@
     "nav": {
       "home": "Startseite",
       "products": "Produkte",
+      "about": "Über uns",
       "contact": "Kontakt"
     },
     "bookDemo": "Demo buchen",
@@ -1950,5 +1951,90 @@
         "bullets": ["Google Unternehmensprofil", "Lokale SEO & Keywords", "Bewertungsmanagement"]
       }
     ]
+  },
+  "about": {
+    "seo": {
+      "title": "Über Liefro",
+      "description": "Liefro ist eine All-in-One-Plattform, die Restaurants hilft, Abläufe zu optimieren, das Kundenerlebnis zu verbessern und ihr Geschäft mit smarter Technologie zu skalieren."
+    },
+    "hero": {
+      "eyebrow": "Über uns",
+      "headingLine1": "Restaurants vereinfachen.",
+      "headingLine2": "Wachstum ermöglichen.",
+      "description": "Liefro ist eine All-in-One-Plattform, die Restaurants hilft, Abläufe zu optimieren, das Kundenerlebnis zu verbessern und ihr Geschäft mit smarter Technologie zu skalieren.",
+      "features": {
+        "builtFor": "Für Restaurants gemacht",
+        "innovation": "Innovationsgetrieben",
+        "support": "Mit starkem Support"
+      }
+    },
+    "stats": {
+      "restaurants": { "value": "1000+", "label": "Betriebene Restaurants" },
+      "users": { "value": "50K+", "label": "Zufriedene Nutzer" },
+      "orders": { "value": "1M+", "label": "Verarbeitete Bestellungen" },
+      "uptime": { "value": "99,9%", "label": "Systemverfügbarkeit" }
+    },
+    "why": {
+      "eyebrow": "Warum Liefro?",
+      "heading": "Alles was Sie brauchen,",
+      "headingRed": "an einem Ort",
+      "items": {
+        "allInOne": {
+          "title": "All-in-One-Plattform",
+          "desc": "Verwalten Sie alles von Bestellungen bis Analysen in einem System."
+        },
+        "experience": {
+          "title": "Besseres Kundenerlebnis",
+          "desc": "Schnellerer Service, einfache Bestellung und ein nahtloses Erlebnis für Ihre Kunden."
+        },
+        "saveTime": {
+          "title": "Zeit & Kosten sparen",
+          "desc": "Automatisieren Sie Aufgaben und reduzieren Sie manuellen Aufwand."
+        },
+        "scalable": {
+          "title": "Skalierbar für Wachstum",
+          "desc": "Ob ein Standort oder viele — Liefro wächst mit Ihnen."
+        },
+        "insights": {
+          "title": "Datenbasierte Einblicke",
+          "desc": "Treffen Sie bessere Entscheidungen mit Echtzeitberichten und Analysen."
+        },
+        "support": {
+          "title": "Zuverlässiger Support",
+          "desc": "Unser Team ist immer für Sie da, wann immer Sie uns brauchen."
+        }
+      }
+    },
+    "offer": {
+      "eyebrow": "Unser Angebot",
+      "heading": "Leistungsstarke Lösungen für Ihr Restaurant",
+      "headingRed": "Smarter"
+    },
+    "process": {
+      "eyebrow": "Unser Prozess",
+      "heading": "Einfache Schritte.",
+      "headingRed": "Starke Ergebnisse.",
+      "steps": {
+        "understand": { "title": "Verstehen", "desc": "Wir lernen Ihr Restaurant und Ihre Ziele kennen." },
+        "setup": { "title": "Einrichten", "desc": "Wir konfigurieren die Plattform nach Ihren Bedürfnissen." },
+        "launch": { "title": "Starten", "desc": "Gehen Sie live und nutzen Sie Liefro mit Ihrem Team." },
+        "grow": { "title": "Wachsen", "desc": "Wir unterstützen Sie beim kontinuierlichen Wachstum." }
+      }
+    },
+    "testimonial": {
+      "quote": "Liefro hat unsere Arbeitsweise verändert. Von Online-Bestellungen bis zu Tischreservierungen ist jetzt alles nahtlos und effizient.",
+      "name": "Rajesh Kumar",
+      "role": "Inhaber, Spice Hub",
+      "stats": {
+        "restaurants": "1000+",
+        "restaurantsLabel": "Betriebene Restaurants",
+        "users": "50K+",
+        "usersLabel": "Zufriedene Nutzer",
+        "orders": "1M+",
+        "ordersLabel": "Verarbeitete Bestellungen",
+        "uptime": "99,9%",
+        "uptimeLabel": "Systemverfügbarkeit"
+      }
+    }
   }
 }
