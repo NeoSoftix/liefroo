@@ -4,27 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liefro — All-in-One Restaurant Operating System</title>
-    <meta
-      name="description"
-      content="Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants."
-    />
-
-    <meta property="og:site_name" content="Liefro" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Liefro — All-in-One Restaurant Operating System" />
-    <meta
-      property="og:description"
-      content="Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants."
-    />
-    <meta property="og:image" content="/favicon.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Liefro — All-in-One Restaurant Operating System" />
-    <meta
-      name="twitter:description"
-      content="Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants."
-    />
+    <!--
+      No static <title>/description/OG/Twitter tags here on purpose: every real
+      route is prerendered by scripts/prerender.mjs after `npm run build`, which
+      bakes in the correct per-page tags via react-helmet-async. A static <title>
+      here would sit alongside (not replace) the one Helmet injects, since Helmet
+      only manages tags it created itself. src/components/shared/Seo.jsx sets a
+      default title/description via useEffect for the rare unmatched/dev-only
+      route that isn't prerendered.
+    -->
   </head>
   <body>
     <div id="root"></div>
