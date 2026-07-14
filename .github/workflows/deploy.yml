@@ -21,6 +21,8 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: ${{ secrets.EC2_PORT }}
           script: |
+            set -euo pipefail
+
             cd ~/liefroo
 
             git pull origin main
@@ -28,6 +30,8 @@ jobs:
             cd frontend
             npm install
             npm run build
+
+            test -f dist/index.html
 
             sudo rm -rf /var/www/html/*
             sudo cp -r dist/* /var/www/html/

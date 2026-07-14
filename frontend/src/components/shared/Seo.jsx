@@ -2,6 +2,11 @@ import { Helmet } from "react-helmet-async";
 import logo from "../../assets/logo.png";
 
 const SITE_NAME = "Liefro";
+// Fixed on purpose (not window.location.origin) — OG tags are baked into static
+// HTML at build time by scripts/prerender.mjs, which runs against a local
+// preview server (http://localhost:4173). Using window.location.origin there
+// would bake "localhost:4173" into the deployed OG/canonical URLs.
+const SITE_URL = "https://liefro.com";
 const DEFAULT_TITLE = "Liefro — All-in-One Restaurant Operating System";
 const DEFAULT_DESCRIPTION =
   "Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants.";
@@ -13,9 +18,8 @@ const DEFAULT_DESCRIPTION =
 export default function Seo({ title, description, path = "", image, noIndex = false }) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
   const metaDescription = description || DEFAULT_DESCRIPTION;
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  const url = `${origin}${path}`;
-  const ogImage = `${origin}${image || logo}`;
+  const url = `${SITE_URL}${path}`;
+  const ogImage = `${SITE_URL}${image || logo}`;
 
   return (
     <Helmet>
