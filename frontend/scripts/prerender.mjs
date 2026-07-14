@@ -39,7 +39,7 @@ async function run() {
   const server = await preview({ root, preview: { port: 4173, strictPort: false } });
   const { local } = server.resolvedUrls.local.length
     ? server.resolvedUrls
-    : { local: [`http://localhost:${server.config.preview.port}/`] };
+    : { local: [`https://liefro.com/${server.config.preview.port}/`] };
   const baseUrl = local[0].replace(/\/$/, "");
 
   let browser;
