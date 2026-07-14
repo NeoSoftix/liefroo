@@ -29,7 +29,11 @@ jobs:
             git reset --hard origin/main
 
             cd frontend
-            npm install
+            # EC2 doesn't have `unzip` (or Chrome's runtime libs), so puppeteer's
+            # postinstall Chromium download fails and takes down the whole
+            # deploy. Skip it here — scripts/prerender.mjs already falls back
+            # to a plain (non-prerendered) build when it can't launch a browser.
+            PUPPETEER_SKIP_DOWNLOAD=true npm install
             npm run build
 
             test -f dist/index.html
