@@ -1,6 +1,19 @@
 {
+  "home": {
+    "seo": {
+      "title": "Liefro — All-in-One Restaurant Operating System",
+      "description": "Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants."
+    }
+  },
+  "thankYou": {
+    "seo": {
+      "title": "Thank You",
+      "description": "Thanks for reaching out to Liefro — our team will get back to you shortly."
+    }
+  },
   "header": {
     "nav": {
+      "home": "Home",
       "products": "Products",
       "contact": "Contact"
     },
@@ -346,6 +359,13 @@
         "contact": "Contact"
       }
     },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions"
+      }
+    },
     "contact": {
       "title": "Contact",
       "email": "hello@mealshub.com",
@@ -357,6 +377,10 @@
     "backToTop": "Back to top"
   },
   "websiteDevelopment": {
+    "seo": {
+      "title": "Restaurant Website Development",
+      "description": "Get a fully customized website that reflects your brand, attracts more customers, and grows your business online."
+    },
     "hero": {
       "badge": "Restaurant Website Builder",
       "headingLine1": "Custom Websites",
@@ -485,6 +509,10 @@
     }
   },
   "mobileAppDevelopment": {
+    "seo": {
+      "title": "Mobile App Development",
+      "description": "Native iOS and Android apps for your brand — ordering, vouchers, payments, push updates, and tracking, all in one system."
+    },
     "hero": {
       "badge": "Mobile App Development",
       "headingLine1": "Mobile App",
@@ -599,6 +627,10 @@
     }
   },
   "printerIntegration": {
+    "seo": {
+      "title": "Automated Printer Integration",
+      "description": "Orders from web and app print automatically to your kitchen and bar — clear tickets, no manual entry."
+    },
     "hero": {
       "badge": "Automated Printer Integration",
       "headingLine1": "Automated",
@@ -693,6 +725,10 @@
     }
   },
   "posSystemDevelopment": {
+    "seo": {
+      "title": "POS System for Restaurants",
+      "description": "Touch POS for dine-in, splits, and discounts — online orders flow into the same system as walk-ins."
+    },
     "hero": {
       "badge": "POS System Development",
       "headingLine1": "POS System",
@@ -806,6 +842,10 @@
     }
   },
   "technicalSupport": {
+    "seo": {
+      "title": "24/7 Technical Support",
+      "description": "7-day help by phone, WhatsApp, and email in Hindi, Punjabi, Urdu, English, and German — always here when you need us."
+    },
     "hero": {
       "badge": "Technical Support",
       "headingLine1": "Technical",
@@ -904,6 +944,10 @@
     }
   },
   "menuManagement": {
+    "seo": {
+      "title": "Menu Management System",
+      "description": "Update items, prices, photos, modifiers, and availability from one dashboard — synced across web, app, and POS."
+    },
     "hero": {
       "badge": "Menu Management System",
       "headingLine1": "Menu Management",
@@ -989,6 +1033,10 @@
     }
   },
   "googleBusinessSEO": {
+    "seo": {
+      "title": "Google Business Profile & Local SEO",
+      "description": "Google Business setup, local SEO, structured data, and social profiles that point straight to your own ordering system."
+    },
     "hero": {
       "badge": "Google Business & SEO",
       "headingLine1": "Google Business",
@@ -1096,6 +1144,10 @@
     }
   },
   "metaAds": {
+    "seo": {
+      "title": "Meta Ads: Facebook & Instagram",
+      "description": "Run high-converting Facebook and Instagram ad campaigns that bring new customers and grow repeat orders for your restaurant."
+    },
     "hero": {
       "badge": "Meta Ads & Facebook • Instagram",
       "headingLine1": "Meta Ads &",
@@ -1207,6 +1259,10 @@
     }
   },
   "googleAds": {
+    "seo": {
+      "title": "Google Ads (PPC) for Restaurants",
+      "description": "Get your restaurant in front of high-intent searchers with managed Google Ads (PPC) campaigns that drive more orders."
+    },
     "hero": {
       "badge": "Google Ads (PPC)",
       "headingLine1": "Google Ads (PPC)",
@@ -1318,6 +1374,10 @@
     }
   },
   "onlineOrdering": {
+    "seo": {
+      "title": "Online Ordering System",
+      "description": "Your own branded online ordering system for web and mobile — more orders, lower commission, full control."
+    },
     "hero": {
       "badge": "Online Ordering System",
       "headingLine1": "Online Ordering",
@@ -1425,6 +1485,10 @@
     }
   },
   "googleAnalytics": {
+    "seo": {
+      "title": "Google Analytics for Restaurants",
+      "description": "Turn your data into real insights. Track performance, understand your audience, and grow your restaurant with Google Analytics."
+    },
     "hero": {
       "badge": "Google Analytics",
       "headingLine1": "Google Analytics",
@@ -1546,6 +1610,10 @@
     }
   },
   "reservationSystem": {
+    "seo": {
+      "title": "Restaurant Reservation System",
+      "description": "Smart table reservations made simple — accept bookings, manage availability, and deliver seamless guest experiences."
+    },
     "hero": {
       "badge": "Reservation System",
       "headingLine1": "Reservation",
@@ -1654,6 +1722,10 @@
     }
   },
   "qrOrdering": {
+    "seo": {
+      "title": "QR Ordering & Pay",
+      "description": "Let your guests scan, order, and pay directly from their phone — contactless and faster table turnover."
+    },
     "hero": {
       "badge": "QR Ordering & Pay System",
       "headingLine1": "QR Ordering",
@@ -1760,5 +1832,123 @@
         "contactlessLabel": "Contactless & Hassle-free"
       }
     }
+  },
+  "privacyPolicy": {
+    "badge": "Legal",
+    "title": "Privacy Policy",
+    "description": "Your privacy matters to us. This Privacy Policy explains how Liefro collects, uses, and protects your information.",
+    "toc": "On this page",
+    "contactEmail": "privacy@liefroo.com",
+    "contactPhone": "+91 98765 43210",
+    "sections": [
+      { "title": "1. Introduction", "body": "Liefro (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, products, and services." },
+      { "title": "2. Information We Collect", "body": "We collect information you provide directly to us, such as your name, email address, phone number, business details, and payment information. We also collect usage data, device information, and cookies to improve your experience." },
+      { "title": "3. How We Use Your Information", "body": "We use the information we collect to provide, operate, and maintain our services, process transactions, communicate with you, improve our platform, and ensure security." },
+      { "title": "4. Information Sharing", "body": "We do not sell your personal information. We may share your information with trusted service providers who help us operate our platform, comply with legal obligations, or protect our rights." },
+      { "title": "5. Data Security", "body": "We implement appropriate technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction." },
+      { "title": "6. Your Rights", "body": "You have the right to access, update, or delete your personal information. You can also object to or restrict certain processing activities. To exercise your rights, contact us using the details below." },
+      { "title": "7. Cookies & Tracking", "body": "We use cookies and similar technologies to enhance your experience, analyze usage, and personalize content. You can control cookie settings through your browser preferences." },
+      { "title": "8. Data Retention", "body": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by law." },
+      { "title": "9. Third-Party Services", "body": "Our platform may contain links to third-party websites or integrate with third-party services. We are not responsible for their privacy practices." },
+      { "title": "10. Children's Privacy", "body": "Liefro is not intended for children under the age of 16. We do not knowingly collect personal information from children." },
+      { "title": "11. Changes to This Policy", "body": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date." },
+      { "title": "12. Contact Us", "body": "If you have any questions about this Privacy Policy, please contact us at:" }
+    ]
+  },
+  "termsConditions": {
+    "badge": "Legal",
+    "title": "Terms & Conditions",
+    "description": "These Terms & Conditions govern your use of Liefro's website and services. Please read them carefully.",
+    "toc": "On this page",
+    "contactEmail": "legal@liefroo.com",
+    "contactPhone": "+91 98765 43210",
+    "sections": [
+      { "title": "1. Acceptance of Terms", "body": "By accessing or using Liefro's website or services, you agree to be bound by these Terms & Conditions and our Privacy Policy." },
+      { "title": "2. Description of Services", "body": "Liefro provides an all-in-one platform for restaurants that includes ordering, POS, marketing, analytics, and other related services." },
+      { "title": "3. User Accounts", "body": "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account." },
+      { "title": "4. Acceptable Use", "body": "You agree to use Liefro only for lawful purposes and in accordance with these Terms. You must not use our services in any way that could harm, disable, or impair our platform." },
+      { "title": "5. Payments & Billing", "body": "Some features require payment. All fees are stated in our pricing plans. Payments are non-refundable except as required by law or as stated in our refund policy." },
+      { "title": "6. Intellectual Property", "body": "All content, trademarks, logos, and software on Liefro are the property of Liefro and are protected by applicable intellectual property laws." },
+      { "title": "7. Third-Party Services", "body": "Our platform may integrate with third-party services. We are not responsible for their content, policies, or practices." },
+      { "title": "8. Limitation of Liability", "body": "Liefro is provided \"as is\" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of our services." },
+      { "title": "9. Indemnification", "body": "You agree to indemnify and hold Liefro harmless from any claims, damages, or expenses arising from your use of the services or violation of these terms." },
+      { "title": "10. Termination", "body": "We may suspend or terminate your access to Liefro at any time if you violate these Terms or misuse our services." },
+      { "title": "11. Governing Law", "body": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Liefro is established." },
+      { "title": "12. Changes to Terms", "body": "We may update these Terms from time to time. Continued use of our services after changes means you accept the new Terms." },
+      { "title": "13. Contact Us", "body": "If you have any questions about these Terms & Conditions, please contact us at:" }
+    ]
+  },
+  "services": {
+    "breadcrumbHome": "Home",
+    "breadcrumbServices": "Services",
+    "headingLine1": "Powerful Services for",
+    "headingLine2": "Every Restaurant",
+    "description": "Liefro brings all the tools you need to streamline operations, delight customers, and grow your restaurant business.",
+    "eyebrow": "Our Services",
+    "sectionTitle": "Everything You Need, All in One Place",
+    "sectionDescription": "Explore our comprehensive suite of solutions designed to run your restaurant smarter and faster.",
+    "exploreMore": "Explore Now",
+    "items": [
+      {
+        "title": "Menu Management",
+        "description": "Update items, prices & availability instantly across all platforms.",
+        "bullets": ["Easy menu updates", "Categories & variations", "Availability control"]
+      },
+      {
+        "title": "Online Ordering",
+        "description": "Launch your branded online ordering system for web & mobile.",
+        "bullets": ["Branded ordering system", "Real-time order tracking", "Customizable UI"]
+      },
+      {
+        "title": "QR Ordering & Pay",
+        "description": "Let customers scan, order, and pay directly from their table.",
+        "bullets": ["Scan, order & pay", "Contactless experience", "Faster table turnover"]
+      },
+      {
+        "title": "POS System",
+        "description": "Powerful POS for dine-in, splits, discounts and more.",
+        "bullets": ["Touch POS", "Split bills & combos", "Discounts & taxes"]
+      },
+      {
+        "title": "Reservation System",
+        "description": "Smart table booking system to manage reservations effortlessly.",
+        "bullets": ["Online reservations", "Real-time availability", "Reminders & notifications"]
+      },
+      {
+        "title": "Printer Integration",
+        "description": "Auto-print orders to kitchen, bar, or multiple stations.",
+        "bullets": ["Multi-printer support", "Kitchen & bar printing", "Custom print rules"]
+      },
+      {
+        "title": "Marketing & Growth",
+        "description": "Reach more customers and grow your business with smart marketing.",
+        "bullets": ["Meta & Google Ads", "Campaign management", "Performance tracking"]
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Track performance and make smarter decisions with real-time data.",
+        "bullets": ["Sales & order reports", "Customer insights", "Visual analytics"]
+      },
+      {
+        "title": "Technical Support",
+        "description": "7-day help in 6 languages, whenever you need it.",
+        "bullets": ["Multi-language support", "Quick response", "Expert assistance"]
+      },
+      {
+        "title": "Website Development",
+        "description": "Custom websites built for restaurants that drive orders.",
+        "bullets": ["Modern & responsive", "SEO optimized", "Order integration"]
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "Native iOS & Android apps for your restaurant brand.",
+        "bullets": ["iOS & Android apps", "User-friendly UI", "Push notifications"]
+      },
+      {
+        "title": "Google Business & SEO",
+        "description": "Get discovered locally and drive direct orders.",
+        "bullets": ["Google Business Profile", "Local SEO & keywords", "Review management"]
+      }
+    ]
   }
 }

@@ -1,7 +1,7 @@
 import { Search, LayoutTemplate, Crosshair, BarChart3, PlayCircle, Target, MousePointerClick, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
 import { SmarterAdsSection } from "../components/GoogleAds";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -52,6 +52,11 @@ export default function GoogleAds() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("googleAds.seo.title")}
+        description={t("googleAds.seo.description")}
+        path="/google-ads"
+      />
       <Header />
       <main>
         <ServiceHero

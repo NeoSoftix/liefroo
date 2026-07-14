@@ -1,6 +1,19 @@
 {
+  "home": {
+    "seo": {
+      "title": "Liefro — Das All-in-One-Betriebssystem für Restaurants",
+      "description": "Verwalten Sie Bestellungen, Kasse, Lieferung, Marketing und Analysen von einer leistungsstarken Plattform für moderne Restaurants."
+    }
+  },
+  "thankYou": {
+    "seo": {
+      "title": "Vielen Dank",
+      "description": "Danke, dass Sie Liefro kontaktiert haben — unser Team meldet sich in Kürze bei Ihnen."
+    }
+  },
   "header": {
     "nav": {
+      "home": "Startseite",
       "products": "Produkte",
       "contact": "Kontakt"
     },
@@ -346,6 +359,13 @@
         "contact": "Kontakt"
       }
     },
+    "legal": {
+      "title": "Rechtliches",
+      "items": {
+        "privacy": "Datenschutzerklärung",
+        "terms": "AGB"
+      }
+    },
     "contact": {
       "title": "Kontakt",
       "email": "hello@mealshub.com",
@@ -357,6 +377,10 @@
     "backToTop": "Nach oben"
   },
   "websiteDevelopment": {
+    "seo": {
+      "title": "Website-Entwicklung für Restaurants",
+      "description": "Erhalten Sie eine individuelle Website, die Ihre Marke widerspiegelt, mehr Kunden anzieht und Ihr Geschäft online wachsen lässt."
+    },
     "hero": {
       "badge": "Website-Baukasten für Restaurants",
       "headingLine1": "Individuelle Websites",
@@ -485,6 +509,10 @@
     }
   },
   "mobileAppDevelopment": {
+    "seo": {
+      "title": "Mobile App-Entwicklung",
+      "description": "Native iOS- und Android-Apps für Ihre Marke: Bestellungen, Gutscheine, Zahlungen, Push-Updates und Tracking in einem System."
+    },
     "hero": {
       "badge": "Mobile App-Entwicklung",
       "headingLine1": "Mobile App-",
@@ -599,6 +627,10 @@
     }
   },
   "printerIntegration": {
+    "seo": {
+      "title": "Automatisierte Drucker-Integration",
+      "description": "Bestellungen aus Web und App werden automatisch in Küche und Bar gedruckt — klare Bons, keine manuelle Eingabe."
+    },
     "hero": {
       "badge": "Automatisierte Drucker-Integration",
       "headingLine1": "Automatisierte",
@@ -693,6 +725,10 @@
     }
   },
   "posSystemDevelopment": {
+    "seo": {
+      "title": "Kassensystem für Restaurants",
+      "description": "Touch-Kasse für Speisen vor Ort, Rechnungsteilung und Rabatte — Online-Bestellungen laufen im selben System wie Laufkundschaft."
+    },
     "hero": {
       "badge": "Kassensystem-Entwicklung",
       "headingLine1": "Kassensystem-",
@@ -806,6 +842,10 @@
     }
   },
   "technicalSupport": {
+    "seo": {
+      "title": "Technischer Support rund um die Uhr",
+      "description": "7 Tage Hilfe per Telefon, WhatsApp und E-Mail auf Hindi, Punjabi, Urdu, Englisch und Deutsch — immer für Sie da."
+    },
     "hero": {
       "badge": "Technischer Support",
       "headingLine1": "Technischer",
@@ -904,6 +944,10 @@
     }
   },
   "menuManagement": {
+    "seo": {
+      "title": "Menüverwaltungssystem",
+      "description": "Aktualisieren Sie Artikel, Preise, Fotos, Modifikatoren und Verfügbarkeit von einem Dashboard aus — synchron mit Website, App und Kasse."
+    },
     "hero": {
       "badge": "Menüverwaltungssystem",
       "headingLine1": "Menüverwaltungs-",
@@ -989,6 +1033,10 @@
     }
   },
   "googleBusinessSEO": {
+    "seo": {
+      "title": "Google Unternehmensprofil & lokale SEO",
+      "description": "Einrichtung des Google Unternehmensprofils, lokales SEO und Social-Profile, die direkt auf Ihre eigene Bestellung verweisen."
+    },
     "hero": {
       "badge": "Google Unternehmensprofil & SEO",
       "headingLine1": "Google Unternehmensprofil",
@@ -1096,6 +1144,10 @@
     }
   },
   "metaAds": {
+    "seo": {
+      "title": "Meta Ads: Facebook & Instagram",
+      "description": "Führen Sie hochkonvertierende Facebook- und Instagram-Kampagnen, die neue Kunden gewinnen und Wiederholungsbestellungen steigern."
+    },
     "hero": {
       "badge": "Meta Ads & Facebook • Instagram",
       "headingLine1": "Meta Ads &",
@@ -1207,6 +1259,10 @@
     }
   },
   "googleAds": {
+    "seo": {
+      "title": "Google Ads (PPC) für Restaurants",
+      "description": "Bringen Sie Ihr Restaurant vor kaufbereite Suchende – mit verwalteten Google Ads (PPC)-Kampagnen für mehr Bestellungen."
+    },
     "hero": {
       "badge": "Google Ads (PPC)",
       "headingLine1": "Google Ads (PPC)",
@@ -1318,6 +1374,10 @@
     }
   },
   "onlineOrdering": {
+    "seo": {
+      "title": "Online-Bestellsystem",
+      "description": "Ihr eigenes markengeprägtes Online-Bestellsystem für Web und Mobile — mehr Bestellungen, niedrigere Provisionen, volle Kontrolle."
+    },
     "hero": {
       "badge": "Online-Bestellsystem",
       "headingLine1": "Online-Bestell-",
@@ -1425,6 +1485,10 @@
     }
   },
   "googleAnalytics": {
+    "seo": {
+      "title": "Google Analytics für Restaurants",
+      "description": "Verwandeln Sie Daten in echte Erkenntnisse – verfolgen Sie die Leistung und lassen Sie Ihr Restaurant mit Google Analytics wachsen."
+    },
     "hero": {
       "badge": "Google Analytics",
       "headingLine1": "Google Analytics",
@@ -1546,6 +1610,10 @@
     }
   },
   "reservationSystem": {
+    "seo": {
+      "title": "Reservierungssystem für Restaurants",
+      "description": "Intelligente Tischreservierungen leicht gemacht — Buchungen annehmen, Verfügbarkeit verwalten, nahtlose Gästeerlebnisse."
+    },
     "hero": {
       "badge": "Reservierungssystem",
       "headingLine1": "Reservierungs-",
@@ -1654,6 +1722,10 @@
     }
   },
   "qrOrdering": {
+    "seo": {
+      "title": "QR-Bestellung & Zahlung",
+      "description": "Lassen Sie Ihre Gäste scannen, bestellen und bezahlen — direkt vom Smartphone, kontaktlos und mit schnellerem Tischwechsel."
+    },
     "hero": {
       "badge": "QR-Bestell- & Zahlsystem",
       "headingLine1": "QR-Bestell-",
@@ -1760,5 +1832,123 @@
         "contactlessLabel": "Kontaktlos & problemlos"
       }
     }
+  },
+  "privacyPolicy": {
+    "badge": "Rechtliches",
+    "title": "Datenschutzerklärung",
+    "description": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erklärt, wie Liefro Ihre Informationen sammelt, verwendet und schützt.",
+    "toc": "Auf dieser Seite",
+    "contactEmail": "privacy@liefroo.com",
+    "contactPhone": "+91 98765 43210",
+    "sections": [
+      { "title": "1. Einleitung", "body": "Liefro („wir“, „unser“ oder „uns“) verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website, Produkte und Dienste nutzen." },
+      { "title": "2. Von uns erhobene Informationen", "body": "Wir erheben Informationen, die Sie uns direkt zur Verfügung stellen, wie Namen, E-Mail-Adresse, Telefonnummer, Geschäftsdaten und Zahlungsinformationen. Außerdem erfassen wir Nutzungsdaten, Geräteinformationen und Cookies, um Ihre Erfahrung zu verbessern." },
+      { "title": "3. Wie wir Ihre Informationen verwenden", "body": "Wir nutzen die erhobenen Informationen, um unsere Dienste bereitzustellen, zu betreiben und zu warten, Transaktionen zu verarbeiten, mit Ihnen zu kommunizieren, unsere Plattform zu verbessern und die Sicherheit zu gewährleisten." },
+      { "title": "4. Weitergabe von Informationen", "body": "Wir verkaufen Ihre persönlichen Informationen nicht. Wir können Ihre Informationen mit vertrauenswürdigen Dienstleistern teilen, die uns beim Betrieb unserer Plattform unterstützen, gesetzliche Verpflichtungen erfüllen oder unsere Rechte schützen." },
+      { "title": "5. Datensicherheit", "body": "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen." },
+      { "title": "6. Ihre Rechte", "body": "Sie haben das Recht, auf Ihre persönlichen Informationen zuzugreifen, sie zu aktualisieren oder zu löschen. Sie können bestimmten Verarbeitungstätigkeiten auch widersprechen oder deren Einschränkung verlangen. Um Ihre Rechte auszuüben, kontaktieren Sie uns über die unten stehenden Angaben." },
+      { "title": "7. Cookies & Tracking", "body": "Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern, die Nutzung zu analysieren und Inhalte zu personalisieren. Sie können die Cookie-Einstellungen über Ihre Browsereinstellungen steuern." },
+      { "title": "8. Datenaufbewahrung", "body": "Wir bewahren Ihre persönlichen Informationen nur so lange auf, wie es für die in dieser Richtlinie genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben ist." },
+      { "title": "9. Dienste Dritter", "body": "Unsere Plattform kann Links zu Websites Dritter enthalten oder Dienste Dritter integrieren. Wir sind nicht verantwortlich für deren Datenschutzpraktiken." },
+      { "title": "10. Datenschutz von Kindern", "body": "Liefro richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern." },
+      { "title": "11. Änderungen dieser Richtlinie", "body": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über wesentliche Änderungen informieren, indem wir die neue Richtlinie mit einem aktualisierten Gültigkeitsdatum auf dieser Seite veröffentlichen." },
+      { "title": "12. Kontaktieren Sie uns", "body": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:" }
+    ]
+  },
+  "termsConditions": {
+    "badge": "Rechtliches",
+    "title": "Allgemeine Geschäftsbedingungen",
+    "description": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Nutzung der Website und der Dienste von Liefro. Bitte lesen Sie sie sorgfältig durch.",
+    "toc": "Auf dieser Seite",
+    "contactEmail": "legal@liefroo.com",
+    "contactPhone": "+91 98765 43210",
+    "sections": [
+      { "title": "1. Annahme der Bedingungen", "body": "Durch den Zugriff auf oder die Nutzung der Website oder Dienste von Liefro erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen und unserer Datenschutzerklärung einverstanden." },
+      { "title": "2. Beschreibung der Dienste", "body": "Liefro bietet eine All-in-One-Plattform für Restaurants, die Bestellwesen, Kassensystem, Marketing, Analysen und weitere verwandte Dienste umfasst." },
+      { "title": "3. Benutzerkonten", "body": "Sie sind für die Vertraulichkeit Ihrer Kontodaten und für alle Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden." },
+      { "title": "4. Zulässige Nutzung", "body": "Sie stimmen zu, Liefro nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen. Sie dürfen unsere Dienste nicht in einer Weise nutzen, die unsere Plattform schädigen, deaktivieren oder beeinträchtigen könnte." },
+      { "title": "5. Zahlungen & Abrechnung", "body": "Einige Funktionen erfordern eine Zahlung. Alle Gebühren sind in unseren Preisplänen angegeben. Zahlungen sind nicht erstattungsfähig, außer soweit gesetzlich vorgeschrieben oder in unserer Rückerstattungsrichtlinie angegeben." },
+      { "title": "6. Geistiges Eigentum", "body": "Alle Inhalte, Marken, Logos und Software auf Liefro sind Eigentum von Liefro und durch geltendes geistiges Eigentumsrecht geschützt." },
+      { "title": "7. Dienste Dritter", "body": "Unsere Plattform kann Dienste Dritter integrieren. Wir sind nicht verantwortlich für deren Inhalte, Richtlinien oder Praktiken." },
+      { "title": "8. Haftungsbeschränkung", "body": "Liefro wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Wir haften nicht für indirekte, beiläufige oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen." },
+      { "title": "9. Freistellung", "body": "Sie stimmen zu, Liefro von allen Ansprüchen, Schäden oder Kosten freizustellen, die aus Ihrer Nutzung der Dienste oder einem Verstoß gegen diese Bedingungen entstehen." },
+      { "title": "10. Kündigung", "body": "Wir können Ihren Zugang zu Liefro jederzeit sperren oder beenden, wenn Sie gegen diese Bedingungen verstoßen oder unsere Dienste missbrauchen." },
+      { "title": "11. Anwendbares Recht", "body": "Diese Bedingungen unterliegen den Gesetzen des Rechtsraums, in dem Liefro ansässig ist, und werden entsprechend ausgelegt." },
+      { "title": "12. Änderungen der Bedingungen", "body": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Die fortgesetzte Nutzung unserer Dienste nach Änderungen bedeutet, dass Sie die neuen Bedingungen akzeptieren." },
+      { "title": "13. Kontaktieren Sie uns", "body": "Wenn Sie Fragen zu diesen Allgemeinen Geschäftsbedingungen haben, kontaktieren Sie uns bitte unter:" }
+    ]
+  },
+  "services": {
+    "breadcrumbHome": "Startseite",
+    "breadcrumbServices": "Leistungen",
+    "headingLine1": "Leistungsstarke Lösungen für",
+    "headingLine2": "jedes Restaurant",
+    "description": "Liefro bietet alle Werkzeuge, die Sie brauchen, um den Betrieb zu optimieren, Kunden zu begeistern und Ihr Restaurantgeschäft auszubauen.",
+    "eyebrow": "Unsere Leistungen",
+    "sectionTitle": "Alles, was Sie brauchen, an einem Ort",
+    "sectionDescription": "Entdecken Sie unsere umfassende Suite von Lösungen, mit denen Sie Ihr Restaurant smarter und schneller führen.",
+    "exploreMore": "Mehr erfahren",
+    "items": [
+      {
+        "title": "Menüverwaltung",
+        "description": "Aktualisieren Sie Artikel, Preise & Verfügbarkeit sofort auf allen Plattformen.",
+        "bullets": ["Einfache Menü-Updates", "Kategorien & Varianten", "Verfügbarkeitssteuerung"]
+      },
+      {
+        "title": "Online-Bestellung",
+        "description": "Starten Sie Ihr eigenes markengeprägtes Online-Bestellsystem für Web & Mobile.",
+        "bullets": ["Markengeprägtes Bestellsystem", "Bestellverfolgung in Echtzeit", "Anpassbare Oberfläche"]
+      },
+      {
+        "title": "QR-Bestellung & Zahlung",
+        "description": "Lassen Sie Kunden direkt am Tisch scannen, bestellen und bezahlen.",
+        "bullets": ["Scannen, bestellen & bezahlen", "Kontaktloses Erlebnis", "Schnellerer Tischwechsel"]
+      },
+      {
+        "title": "Kassensystem",
+        "description": "Leistungsstarke Kasse für Speisen vor Ort, Teilungen, Rabatte und mehr.",
+        "bullets": ["Touch-Kasse", "Geteilte Rechnungen & Kombis", "Rabatte & Steuern"]
+      },
+      {
+        "title": "Reservierungssystem",
+        "description": "Intelligentes Tischbuchungssystem für mühelose Reservierungsverwaltung.",
+        "bullets": ["Online-Reservierungen", "Echtzeit-Verfügbarkeit", "Erinnerungen & Benachrichtigungen"]
+      },
+      {
+        "title": "Drucker-Integration",
+        "description": "Automatischer Druck von Bestellungen an Küche, Bar oder mehrere Stationen.",
+        "bullets": ["Mehrdrucker-Unterstützung", "Küchen- & Bardruck", "Individuelle Druckregeln"]
+      },
+      {
+        "title": "Marketing & Wachstum",
+        "description": "Erreichen Sie mehr Kunden und wachsen Sie mit intelligentem Marketing.",
+        "bullets": ["Meta- & Google-Ads", "Kampagnenmanagement", "Leistungsverfolgung"]
+      },
+      {
+        "title": "Analytics-Dashboard",
+        "description": "Verfolgen Sie die Leistung und treffen Sie smartere Entscheidungen mit Echtzeitdaten.",
+        "bullets": ["Verkaufs- & Bestellberichte", "Kundeneinblicke", "Visuelle Analysen"]
+      },
+      {
+        "title": "Technischer Support",
+        "description": "7 Tage die Woche Hilfe in 6 Sprachen, wann immer Sie sie brauchen.",
+        "bullets": ["Mehrsprachiger Support", "Schnelle Reaktion", "Fachkundige Unterstützung"]
+      },
+      {
+        "title": "Website-Entwicklung",
+        "description": "Individuelle Websites für Restaurants, die Bestellungen ankurbeln.",
+        "bullets": ["Modern & responsiv", "SEO-optimiert", "Bestellintegration"]
+      },
+      {
+        "title": "App-Entwicklung",
+        "description": "Native iOS- & Android-Apps für Ihre Restaurantmarke.",
+        "bullets": ["iOS- & Android-Apps", "Benutzerfreundliche Oberfläche", "Push-Benachrichtigungen"]
+      },
+      {
+        "title": "Google Business & SEO",
+        "description": "Werden Sie lokal gefunden und erhalten Sie mehr direkte Bestellungen.",
+        "bullets": ["Google Unternehmensprofil", "Lokale SEO & Keywords", "Bewertungsmanagement"]
+      }
+    ]
   }
 }

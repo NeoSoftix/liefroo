@@ -1,7 +1,7 @@
 import { Package, BadgePercent, ClipboardList, ShieldCheck, ShoppingCart, Bell, Truck, ThumbsUp, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
 import { TakeControlSection, OnlineOrderingHero } from "../components/OnlineOrdering";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -45,6 +45,11 @@ export default function OnlineOrdering() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("onlineOrdering.seo.title")}
+        description={t("onlineOrdering.seo.description")}
+        path="/online-ordering"
+      />
       <Header />
       <main>
         <OnlineOrderingHero />

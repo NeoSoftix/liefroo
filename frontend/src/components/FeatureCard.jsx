@@ -24,7 +24,7 @@ export default function FeatureCard({
         className={`
           group
           bg-white
-          border
+          
           border-red-100
           rounded-3xl
           p-6

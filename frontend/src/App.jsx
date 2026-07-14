@@ -15,6 +15,9 @@ import GoogleAnalytics from "./pages/GoogleAnalytics";
 import ReservationSystem from "./pages/ReservationSystem";
 import QROrdering from "./pages/QROrdering";
 import ThankYou from "./pages/ThankYou";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import Services from "./pages/Services";
 import BackToTopButton from "./components/BackToTopButton";
 
 function ScrollToHashElement() {
@@ -70,6 +73,9 @@ function App() {
         <Route path="/reservation-system" element={<ReservationSystem />} />
         <Route path="/qr-ordering" element={<QROrdering />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/products" element={<Services />} />
       </Routes>
       <BackToTopButton />
     </BrowserRouter>

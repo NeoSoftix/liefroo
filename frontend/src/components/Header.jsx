@@ -89,19 +89,26 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10" onMouseLeave={closeProducts}>
-          
 
-            <button
+            <Link
+              to="/"
+              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+            >
+              {t("header.nav.home")}
+            </Link>
+
+            <Link
+              to="/products"
               className="flex items-center gap-1.5 hover:text-red-600 transition-colors font-medium text-gray-700"
               onMouseEnter={openProducts}
-              onClick={() => setProductsOpen((open) => !open)}
+              onClick={() => setProductsOpen(false)}
             >
               {t("header.nav.products")}
               <ChevronDown
                 size={16}
                 className={`transition-transform ${productsOpen ? "rotate-180" : ""}`}
               />
-            </button>
+            </Link>
 
             <button
               type="button"
@@ -219,6 +226,14 @@ export default function Header() {
           {/* Drawer Content */}
           <div className="flex-1 overflow-y-auto">
             <nav className="flex flex-col divide-y divide-gray-100">
+              <Link
+                to="/"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.home")}
+              </Link>
+
               {mobileNavLinks.map((link) => (
                 <button
                   key={link.key}

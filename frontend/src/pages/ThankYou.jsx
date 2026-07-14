@@ -2,8 +2,11 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PartyPopper, User, Mail, MessageSquare, CheckCircle2, Home } from "lucide-react";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Seo } from "../components/shared";
 
 export default function ThankYou() {
+  const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   const { name, email, subject } = location.state || {};
@@ -18,6 +21,12 @@ export default function ThankYou() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-[#fafafa] px-4 py-12 relative overflow-hidden">
+      <Seo
+        title={t("thankYou.seo.title")}
+        description={t("thankYou.seo.description")}
+        path="/thank-you"
+        noIndex
+      />
 
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-red-100/50 blur-[160px] rounded-full pointer-events-none" />

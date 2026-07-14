@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, Seo } from "../components/shared";
 import { DashboardSection } from "../components/MenuManagement";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -56,6 +56,11 @@ export default function MenuManagement() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("menuManagement.seo.title")}
+        description={t("menuManagement.seo.description")}
+        path="/menu-management"
+      />
       <Header />
       <main>
         <ServiceHero

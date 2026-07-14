@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
 import { SmarterOrderingSection } from "../components/QROrdering";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -66,6 +66,11 @@ export default function QROrdering() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("qrOrdering.seo.title")}
+        description={t("qrOrdering.seo.description")}
+        path="/qr-ordering"
+      />
       <Header />
       <main>
         <ServiceHero

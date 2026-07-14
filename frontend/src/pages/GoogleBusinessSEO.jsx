@@ -1,7 +1,7 @@
 import { Store, Search, Share2, Star, Megaphone, MousePointerClick, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
 import { AlwaysAheadSection } from "../components/GoogleBusinessSEO";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -52,6 +52,11 @@ export default function GoogleBusinessSEO() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("googleBusinessSEO.seo.title")}
+        description={t("googleBusinessSEO.seo.description")}
+        path="/google-business-seo"
+      />
       <Header />
       <main>
         <ServiceHero

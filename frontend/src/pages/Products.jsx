@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
+import { Seo } from "../components/shared";
 import HeroSlider from "../components/HeroSlider";
 import RestaurantEcosystem from "../components/RestaurantEcosystem";
 import OrderingExperience from "../components/OrderingExperience";
@@ -14,6 +16,7 @@ import ContactSection from "../components/ContactSection";
 import { scrollToElementId } from "../utils/scrollToSection";
 
 export default function Products() {
+  const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -29,6 +32,11 @@ export default function Products() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("home.seo.title")}
+        description={t("home.seo.description")}
+        path="/"
+      />
       <Header />
       <HeroSlider />
       <RestaurantEcosystem />

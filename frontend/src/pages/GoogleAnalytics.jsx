@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
 import { BetterInsightsSection } from "../components/GoogleAnalytics";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -67,6 +67,11 @@ export default function GoogleAnalytics() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("googleAnalytics.seo.title")}
+        description={t("googleAnalytics.seo.description")}
+        path="/google-analytics"
+      />
       <Header />
       <main>
         <ServiceHero

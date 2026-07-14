@@ -17,6 +17,7 @@ export default function Footer() {
   const { pathname } = useLocation();
   const productItems = t("footer.product.items", { returnObjects: true });
   const companyItems = t("footer.company.items", { returnObjects: true });
+  const legalItems = t("footer.legal.items", { returnObjects: true });
   return (
     <footer className="snap-start snap-always min-h-screen flex flex-col justify-center relative bg-[#fafafa] pt-10 lg:pt-16 pb-4 lg:pb-6 overflow-hidden w-full">
 
@@ -81,7 +82,7 @@ export default function Footer() {
         </div>
 
         {/* FOOTER CONTENT */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 py-8 lg:py-12">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-12 py-8 lg:py-12">
 
           {/* BRAND */}
           <div className="col-span-2 lg:col-span-1">
@@ -180,6 +181,32 @@ export default function Footer() {
                         {label}
                       </Link>
                     )}
+                  </li>
+                );
+              })}
+            </ul>
+
+          </div>
+
+          {/* LEGAL */}
+          <div className="col-span-1">
+
+            <h4 className="font-bold text-sm sm:text-base text-gray-900 mb-3 sm:mb-5">
+              {t("footer.legal.title")}
+            </h4>
+
+            <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
+              {Object.entries(legalItems).map(([key, label]) => {
+                const href = key === "terms" ? "/terms-conditions" : "/privacy-policy";
+
+                return (
+                  <li key={key}>
+                    <Link
+                      to={href}
+                      className="text-gray-600 hover:text-red-600 transition font-medium"
+                    >
+                      {label}
+                    </Link>
                   </li>
                 );
               })}

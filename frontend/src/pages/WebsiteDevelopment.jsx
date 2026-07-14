@@ -1,7 +1,7 @@
 import { Globe, Smartphone, UtensilsCrossed, BarChart3, RefreshCw, ShoppingBag, LifeBuoy, LayoutTemplate, Rocket } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps } from "../components/shared";
+import { ServiceHero, FeatureGridSection, ProcessSteps, Seo } from "../components/shared";
 import {
   TemplatesShowcase,
   StatsTestimonial,
@@ -46,6 +46,11 @@ export default function WebsiteDevelopment() {
 
   return (
     <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+      <Seo
+        title={t("websiteDevelopment.seo.title")}
+        description={t("websiteDevelopment.seo.description")}
+        path="/website-development"
+      />
       <Header />
       <main>
         <ServiceHero
