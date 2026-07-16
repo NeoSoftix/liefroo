@@ -6,7 +6,7 @@ const SITE_NAME = "Liefro";
 // HTML at build time by scripts/prerender.mjs, which runs against a local
 // preview server (http://localhost:4173). Using window.location.origin there
 // would bake "localhost:4173" into the deployed OG/canonical URLs.
-const SITE_URL = "https://liefro.com";
+const SITE_URL = "https://www.liefro.com";
 const DEFAULT_TITLE = "Liefro — All-in-One Restaurant Operating System";
 const DEFAULT_DESCRIPTION =
   "Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants.";

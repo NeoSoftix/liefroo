@@ -4,7 +4,7 @@ import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
-  FaTwitter,
+  FaPinterestP,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -242,31 +242,39 @@ export default function Footer() {
           <div className="flex items-center gap-3 sm:gap-4">
 
             <a
-              href="#"
+              href="https://www.instagram.com/liefro_bites/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300"
             >
               <FaInstagram size={14} className="sm:size-[16px]" />
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/liefro/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300"
             >
               <FaFacebookF size={14} className="sm:size-[16px]" />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/liefro/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300"
             >
               <FaLinkedinIn size={14} className="sm:size-[16px]" />
             </a>
 
             <a
-              href="#"
+              href="https://in.pinterest.com/liefrobites/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300"
             >
-              <FaTwitter size={14} className="sm:size-[16px]" />
+              <FaPinterestP size={14} className="sm:size-[16px]" />
             </a>
 
           </div>
