@@ -70,18 +70,18 @@ export default function HeroSlider() {
               </Button>
             </div>
 
-            <div className="flex flex-wrap gap-4 sm:gap-8 mt-6 text-xs sm:text-sm font-medium text-gray-700">
-              <div className="flex items-center gap-2">
+            <div className="flex flex-wrap gap-2 sm:gap-4 mt-6 text-sm font-semibold text-gray-900">
+              <div className="flex items-center gap-1.5 bg-white/90 border border-gray-100 rounded-full px-3 py-1.5 shadow-sm">
                 <span className="text-red-600">✓</span>
                 {t("hero.badges.liveIn30")}
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 bg-white/90 border border-gray-100 rounded-full px-3 py-1.5 shadow-sm">
                 <span className="text-red-600">✓</span>
                 {t("hero.badges.zeroCommission")}
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 bg-white/90 border border-gray-100 rounded-full px-3 py-1.5 shadow-sm">
                 <span className="text-red-600">✓</span>
                 {t("hero.badges.smartOs")}
               </div>

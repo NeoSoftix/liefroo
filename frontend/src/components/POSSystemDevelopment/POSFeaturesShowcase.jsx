@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import {
   LayoutGrid,
-  Tag,
   Wallet,
   BarChart3,
   Users,
@@ -11,7 +10,6 @@ import { useTranslation } from "react-i18next";
 
 const items = [
   { key: "menu", Icon: LayoutGrid },
-  { key: "discounts", Icon: Tag },
   { key: "payments", Icon: Wallet },
   { key: "reports", Icon: BarChart3 },
   { key: "staff", Icon: Users },

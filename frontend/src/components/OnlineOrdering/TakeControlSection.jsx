@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { BarChart3, Users, LineChart, Tag } from "lucide-react";
+import { BarChart3, Users, LineChart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const stats = [
   { key: "profits", Icon: BarChart3 },
   { key: "relationship", Icon: Users },
   { key: "insights", Icon: LineChart },
-  { key: "offers", Icon: Tag },
 ];
 
 export default function TakeControlSection() {
@@ -26,7 +25,7 @@ export default function TakeControlSection() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 mt-6 lg:mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 mt-6 lg:mt-8">
             {stats.map(({ key, Icon }) => (
               <motion.div
                 key={key}

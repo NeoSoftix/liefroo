@@ -39,7 +39,7 @@
         },
         "posSystem": {
           "title": "POS System",
-          "desc": "Touch POS for dine-in, splits & discounts."
+          "desc": "Touch POS for dine-in & bill splits."
         },
         "reservationSystem": {
           "title": "Reservation System",
@@ -289,7 +289,7 @@
       },
       "q3": {
         "question": "Does the system support online payments?",
-        "answer": "Yes. The platform supports UPI, Credit Cards, Debit Cards, Net Banking, Wallets, and other secure payment gateways."
+        "answer": "Yes. The platform supports Credit Cards, Debit Cards, Net Banking, Wallets, and other secure payment gateways."
       },
       "q4": {
         "question": "Can I manage orders in real time?",
@@ -728,13 +728,13 @@
   "posSystemDevelopment": {
     "seo": {
       "title": "POS System for Restaurants",
-      "description": "Touch POS for dine-in, splits, and discounts — online orders flow into the same system as walk-ins."
+      "description": "Touch POS for dine-in and bill splits — online orders flow into the same system as walk-ins."
     },
     "hero": {
       "badge": "POS System Development",
       "headingLine1": "POS System",
       "headingLine2": "Development",
-      "description": "Touch POS for dine-in, splits, and discounts — online orders land in the same flow as walk-ins, with printers and payments aligned. One counter or many stations, scaled to your locations.",
+      "description": "Touch POS for dine-in and bill splits — online orders land in the same flow as walk-ins, with printers and payments aligned. One counter or many stations, scaled to your locations.",
       "checklist": {
         "touchInterface": "Touch-screen interface",
         "unifiedOrders": "Unified online & walk-in orders",
@@ -784,7 +784,7 @@
         },
         "processManage": {
           "title": "Process & Manage",
-          "desc": "Manage tables, split bills, apply discounts."
+          "desc": "Manage tables and split bills."
         },
         "printPrepare": {
           "title": "Print & Prepare",
@@ -804,13 +804,9 @@
           "title": "Menu & Modifiers",
           "desc": "Add items, combos, addons & variants."
         },
-        "discounts": {
-          "title": "Discounts & Offers",
-          "desc": "Apply discounts, coupons and happy hours."
-        },
         "payments": {
           "title": "Payments",
-          "desc": "Cash, card, UPI & wallets — all in one place."
+          "desc": "Cash, card & wallets — all in one place."
         },
         "reports": {
           "title": "Reports & Analytics",
@@ -1460,10 +1456,6 @@
         "insights": {
           "title": "Better Insights",
           "desc": "Understand your customers and sales."
-        },
-        "offers": {
-          "title": "Custom Offers",
-          "desc": "Run promos and discounts on your terms."
         }
       }
     },
@@ -1907,8 +1899,8 @@
       },
       {
         "title": "POS System",
-        "description": "Powerful POS for dine-in, splits, discounts and more.",
-        "bullets": ["Touch POS", "Split bills & combos", "Discounts & taxes"]
+        "description": "Powerful POS for dine-in, splits and more.",
+        "bullets": ["Touch POS", "Split bills & combos", "Taxes & billing"]
       },
       {
         "title": "Reservation System",

@@ -39,7 +39,7 @@
         },
         "posSystem": {
           "title": "Kassensystem",
-          "desc": "Touch-Kasse für Speisen vor Ort, Teilungen & Rabatte."
+          "desc": "Touch-Kasse für Speisen vor Ort & Rechnungsteilung."
         },
         "reservationSystem": {
           "title": "Reservierungssystem",
@@ -728,13 +728,13 @@
   "posSystemDevelopment": {
     "seo": {
       "title": "Kassensystem für Restaurants",
-      "description": "Touch-Kasse für Speisen vor Ort, Rechnungsteilung und Rabatte — Online-Bestellungen laufen im selben System wie Laufkundschaft."
+      "description": "Touch-Kasse für Speisen vor Ort und Rechnungsteilung — Online-Bestellungen laufen im selben System wie Laufkundschaft."
     },
     "hero": {
       "badge": "Kassensystem-Entwicklung",
       "headingLine1": "Kassensystem-",
       "headingLine2": "Entwicklung",
-      "description": "Touch-Kasse für Speisen vor Ort, Rechnungsteilung und Rabatte — Online-Bestellungen laufen im selben Ablauf wie Laufkundschaft, mit abgestimmten Druckern und Zahlungen. Eine Theke oder viele Stationen, skaliert auf Ihre Standorte.",
+      "description": "Touch-Kasse für Speisen vor Ort und Rechnungsteilung — Online-Bestellungen laufen im selben Ablauf wie Laufkundschaft, mit abgestimmten Druckern und Zahlungen. Eine Theke oder viele Stationen, skaliert auf Ihre Standorte.",
       "checklist": {
         "touchInterface": "Touchscreen-Oberfläche",
         "unifiedOrders": "Einheitliche Online- & Laufkundschafts-Bestellungen",
@@ -784,7 +784,7 @@
         },
         "processManage": {
           "title": "Bearbeiten & Verwalten",
-          "desc": "Tische verwalten, Rechnungen teilen, Rabatte anwenden."
+          "desc": "Tische verwalten und Rechnungen teilen."
         },
         "printPrepare": {
           "title": "Drucken & Zubereiten",
@@ -804,13 +804,9 @@
           "title": "Menü & Modifikatoren",
           "desc": "Artikel, Kombis, Zusatzoptionen & Varianten hinzufügen."
         },
-        "discounts": {
-          "title": "Rabatte & Angebote",
-          "desc": "Rabatte, Gutscheine und Happy Hours anwenden."
-        },
         "payments": {
           "title": "Zahlungen",
-          "desc": "Bargeld, Karte, UPI & Wallets — alles an einem Ort."
+          "desc": "Bargeld, Karte & Wallets — alles an einem Ort."
         },
         "reports": {
           "title": "Berichte & Analysen",
@@ -1460,10 +1456,6 @@
         "insights": {
           "title": "Bessere Einblicke",
           "desc": "Verstehen Sie Ihre Kunden und Verkäufe."
-        },
-        "offers": {
-          "title": "Individuelle Angebote",
-          "desc": "Führen Sie Aktionen und Rabatte nach Ihren Bedingungen durch."
         }
       }
     },
@@ -1907,8 +1899,8 @@
       },
       {
         "title": "Kassensystem",
-        "description": "Leistungsstarke Kasse für Speisen vor Ort, Teilungen, Rabatte und mehr.",
-        "bullets": ["Touch-Kasse", "Geteilte Rechnungen & Kombis", "Rabatte & Steuern"]
+        "description": "Leistungsstarke Kasse für Speisen vor Ort, Teilungen und mehr.",
+        "bullets": ["Touch-Kasse", "Geteilte Rechnungen & Kombis", "Steuern & Abrechnung"]
       },
       {
         "title": "Reservierungssystem",
