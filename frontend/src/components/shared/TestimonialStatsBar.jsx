@@ -12,7 +12,7 @@ export default function TestimonialStatsBar({
   return (
     <section className="snap-start snap-always relative z-10 py-12 lg:py-16 bg-red-50/60 w-full">
       <div className="max-w-6xl mx-auto px-6 w-full">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-10 text-center md:text-left">
           <div className="max-w-xl">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-red-600 text-white flex items-center justify-center font-bold mx-auto md:mx-0 text-sm sm:text-base">
               {name?.charAt(0)}

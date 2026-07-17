@@ -10,22 +10,10 @@ export default function ProcessSteps({
   heading,
   headingRed,
   steps = [],
-  gridClassName,
+  gridClassName = "sm:grid-cols-2 md:grid-cols-3",
   connector = false,
   bgClassName = "bg-[#fafafa]",
 }) {
-  const columns = steps.length || 3;
-  const columnGridClassName = {
-    1: "grid-cols-1",
-    2: "sm:grid-cols-2",
-    3: "sm:grid-cols-2 md:grid-cols-3",
-    4: "sm:grid-cols-2 md:grid-cols-4",
-    5: "sm:grid-cols-2 md:grid-cols-5",
-  };
-  const resolvedGridClassName =
-    gridClassName || columnGridClassName[columns] || "sm:grid-cols-2 md:grid-cols-3";
-  const connectorInset = `${100 / (2 * columns)}%`;
-
   return (
     <section id={id} className={`snap-start snap-always relative z-10 py-12 lg:py-20 ${bgClassName} overflow-hidden w-full`}>
       <div className="max-w-7xl mx-auto px-6 w-full">
@@ -42,12 +30,9 @@ export default function ProcessSteps({
           </h2>
         </div>
 
-        <div className={`relative grid ${resolvedGridClassName} gap-4 lg:gap-8`}>
+        <div className={`relative grid ${gridClassName} gap-4 lg:gap-8`}>
           {connector && (
-            <div
-              className="hidden md:block absolute top-8 h-[2px] bg-red-200"
-              style={{ left: connectorInset, right: connectorInset }}
-            />
+            <div className="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-[2px] bg-red-200" />
           )}
 
           {steps.map(({ key, Icon, number, title, desc }) => (

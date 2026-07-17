@@ -33,7 +33,7 @@ export default function POSFeaturesShowcase() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6 mt-6 lg:mt-8">
+          <div className="grid grid-cols-2 gap-4 lg:gap-6 mt-6 lg:mt-8">
             {items.map(({ key, Icon }) => (
               <motion.div
                 key={key}

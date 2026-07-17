@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import {
   Calendar,
   Clock3,
@@ -21,8 +21,8 @@ export default function ReservationSection() {
     <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-4 lg:py-8 bg-[#fafafa] overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute top-0 left-[-200px] w-[600px] h-[600px] bg-red-100/50 blur-[180px] rounded-full" />
-      <div className="absolute bottom-0 right-[-200px] w-[600px] h-[600px] bg-orange-100/40 blur-[180px] rounded-full" />
+      <div className="absolute top-0 left-[-200px] w-[600px] h-[600px]  rounded-full" />
+      <div className="absolute bottom-0 right-[-200px] w-[600px] h-[600px]  rounded-full" />
 
       <div className="max-w-7xl mx-auto px-6 w-full">
 
