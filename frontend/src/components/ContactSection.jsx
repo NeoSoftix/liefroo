@@ -14,6 +14,13 @@ import { useNavigate } from "react-router-dom";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
+const CONTACT_EMAIL = "enquiry@liefro.com";
+const CONTACT_PHONE = "8557062045";
+const GERMANY_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Homburger+Landstra%C3%9Fe+641%2C+60437+Frankfurt+am+Main+Nord-Ost%2C+Germany";
+const INDIA_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=A-817%2C+8th+Floor%2C+Bestech+Business+Tower%2C+Mohali%2C+160062";
+
 const initialForm = { name: "", email: "", phone: "", subject: "", message: "" };
 
 export default function ContactSection() {
@@ -98,50 +105,60 @@ export default function ContactSection() {
                     🇮🇳 {t("contact.offices.india.title")}
                   </h4>
 
-                  <div className="flex gap-3 text-xs sm:text-sm">
+                  <a
+                    href={INDIA_MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-3 text-xs sm:text-sm hover:text-red-600 transition"
+                  >
                     <FiMapPin className="text-red-600 shrink-0 mt-1" />
                     <p className="text-gray-600 leading-snug">
                       {t("contact.offices.india.address")}
                       <br />
                       {t("contact.offices.india.city")}
                     </p>
-                  </div>
+                  </a>
 
-                  <div className="flex gap-3 text-xs sm:text-sm items-center">
+                  <a href={`tel:${CONTACT_PHONE}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
                     <FiPhone className="text-red-600 shrink-0" />
-                    <p className="font-semibold text-gray-900">+91 98765 43210</p>
-                  </div>
+                    <p className="font-semibold text-gray-900">{CONTACT_PHONE}</p>
+                  </a>
 
-                  <div className="flex gap-3 text-xs sm:text-sm items-center">
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
                     <FiMail className="text-red-600 shrink-0" />
-                    <p className="text-gray-600 break-all">india@yourbusiness.com</p>
-                  </div>
+                    <p className="text-gray-600 break-all">{CONTACT_EMAIL}</p>
+                  </a>
                 </div>
 
-                {/* Europe Office */}
+                {/* Germany Office */}
                 <div className="space-y-3 sm:space-y-4">
                   <h4 className="text-gray-900 font-bold text-base sm:text-lg border-b border-gray-100 pb-2">
-                    🇪🇺 {t("contact.offices.europe.title")}
+                    🇩🇪 {t("contact.offices.europe.title")}
                   </h4>
 
-                  <div className="flex gap-3 text-xs sm:text-sm">
+                  <a
+                    href={GERMANY_MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-3 text-xs sm:text-sm hover:text-red-600 transition"
+                  >
                     <FiMapPin className="text-red-600 shrink-0 mt-1" />
                     <p className="text-gray-600 leading-snug">
                       {t("contact.offices.europe.address")}
                       <br />
                       {t("contact.offices.europe.city")}
                     </p>
-                  </div>
+                  </a>
 
-                  <div className="flex gap-3 text-xs sm:text-sm items-center">
+                  <a href={`tel:${CONTACT_PHONE}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
                     <FiPhone className="text-red-600 shrink-0" />
-                    <p className="font-semibold text-gray-900">+49 30 123456</p>
-                  </div>
+                    <p className="font-semibold text-gray-900">{CONTACT_PHONE}</p>
+                  </a>
 
-                  <div className="flex gap-3 text-xs sm:text-sm items-center">
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
                     <FiMail className="text-red-600 shrink-0" />
-                    <p className="text-gray-600 break-all">eu@yourbusiness.com</p>
-                  </div>
+                    <p className="text-gray-600 break-all">{CONTACT_EMAIL}</p>
+                  </a>
                 </div>
 
               </div>

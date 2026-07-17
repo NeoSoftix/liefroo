@@ -50,7 +50,7 @@ export default function ServiceHero({
         className={`relative max-w-7xl mx-auto px-6 w-full`}
       >
         {hasImage ? (
-          <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center text-left">
+          <div className="grid lg:grid-cols-[1fr_1.15fr] gap-10 lg:gap-16 items-stretch text-left">
             {/* Left side content */}
             <div className="space-y-4 sm:space-y-5">
               <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-xs sm:text-sm">
@@ -109,14 +109,13 @@ export default function ServiceHero({
             </div>
 
             {/* Right side image */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="absolute w-[300px] h-[300px] bg-red-100/60 blur-[90px] rounded-full pointer-events-none" />
+            <div className="relative flex items-center justify-center lg:justify-end w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[480px]">
               <motion.img
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 src={image}
                 alt={headingLine1}
-                className="relative z-10 w-full max-w-[460px] max-h-[35vh] lg:max-h-[48vh] object-contain rounded-2xl shadow-2xl border border-white bg-white/20 p-2"
+                className="relative z-10 w-full h-full lg:w-[100%] lg:max-w-none object-contain"
               />
             </div>
           </div>

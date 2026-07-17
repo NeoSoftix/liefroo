@@ -11,6 +11,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { goToSection } from "../utils/scrollToSection";
 
+const GERMANY_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Homburger+Landstra%C3%9Fe+641%2C+60437+Frankfurt+am+Main+Nord-Ost%2C+Germany";
+const INDIA_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=A-817%2C+8th+Floor%2C+Bestech+Business+Tower%2C+Mohali%2C+160062";
+
 export default function Footer() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -18,6 +23,8 @@ export default function Footer() {
   const productItems = t("footer.product.items", { returnObjects: true });
   const companyItems = t("footer.company.items", { returnObjects: true });
   const legalItems = t("footer.legal.items", { returnObjects: true });
+  const contactEmail = t("footer.contact.email");
+  const contactPhone = t("footer.contact.phone");
   return (
     <footer className="snap-start snap-always min-h-screen flex flex-col justify-center relative bg-[#fafafa] pt-10 lg:pt-16 pb-4 lg:pb-6 overflow-hidden w-full">
 
@@ -222,10 +229,37 @@ export default function Footer() {
             </h4>
 
             <ul className="space-y-2 sm:space-y-3 text-gray-600 font-medium text-xs sm:text-sm">
-              <li>{t("footer.contact.email")}</li>
-              <li>{t("footer.contact.phone")}</li>
+              <li>
+                <a href={`mailto:${contactEmail}`} className="hover:text-red-600 transition">
+                  {contactEmail}
+                </a>
+              </li>
+              <li>
+                <a href={`tel:${contactPhone}`} className="hover:text-red-600 transition">
+                  {contactPhone}
+                </a>
+              </li>
               <li>{t("footer.contact.support")}</li>
-              <li>{t("footer.contact.location")}</li>
+              <li>
+                <a
+                  href={GERMANY_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-600 transition block"
+                >
+                  {t("footer.contact.locations.germany.address")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={INDIA_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-600 transition block"
+                >
+                  {t("footer.contact.locations.india.address")}
+                </a>
+              </li>
             </ul>
 
           </div>

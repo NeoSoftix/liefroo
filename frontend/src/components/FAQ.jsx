@@ -46,7 +46,7 @@ const FAQ = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+      <div className="absolute " />
 
       <div className="relative max-w-7xl mx-auto px-6 w-full">
         {/* Heading */}

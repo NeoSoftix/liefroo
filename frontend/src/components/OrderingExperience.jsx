@@ -70,7 +70,7 @@ export default function OrderingExperience() {
             subtitle={t("ordering.cards.zeroCommission.subtitle")}
             cardClassName="h-full flex flex-col justify-between p-5"
           />
-
+ 
           {/* Main Dashboard */}
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -79,22 +79,9 @@ export default function OrderingExperience() {
               lg:col-span-2
               lg:row-span-2
               relative
-              overflow-hidden
-              rounded-3xl
-              bg-gradient-to-br
-              from-white
-              via-red-50
-              to-white
-              border
-              border-red-100
-              shadow-[0_20px_50px_rgba(0,0,0,0.06)]
-              p-6
-              flex
-              items-center
-              justify-center
+         
             "
-          >
-            <div className="relative w-full h-full flex items-center justify-center">
+          > 
               <motion.img
                 animate={{ y: [0, -8, 0] }}
                 transition={{
@@ -106,15 +93,14 @@ export default function OrderingExperience() {
                 alt=""
                 className="
                   w-full
-                  max-w-[500px]
-                  max-h-[25vh]
-                  lg:max-h-[35vh]
-                  object-contain
+                  max-w-[600px]
+                  max-h-[50vh]
+                  lg:max-h-[auto]
+                  object-cover
                   rounded-2xl
                   shadow-[0_30px_60px_rgba(0,0,0,0.1)]
                 "
               />
-            </div>
           </motion.div>
 
           {/* Card 3 */}

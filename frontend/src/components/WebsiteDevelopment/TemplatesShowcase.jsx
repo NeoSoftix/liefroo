@@ -2,14 +2,16 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
-import img1 from "../../assets/websiteDevelopmentSectionImage1.png";
-import img2 from "../../assets/websiteDevelopmentSectionImage2.png";
+import imgTandoori from "../../assets/websiteTemplateTandoori.png";
+import imgChaska from "../../assets/websiteTemplateChaska.png";
+import imgGoldeneGerste from "../../assets/websiteTemplateGoldeneGerste.png";
+import imgSuperkure from "../../assets/websiteTemplateSuperkure.png";
 
 const templates = [
-  { key: "fineDining", img: img1 },
-  { key: "cafeBrunch", img: img2 },
-  { key: "fastCasual", img: img1 },
-  { key: "barLounge", img: img2 },
+  { key: "tandoori", img: imgTandoori },
+  { key: "chaska", img: imgChaska },
+  { key: "goldeneGerste", img: imgGoldeneGerste },
+  { key: "superkure", img: imgSuperkure },
 ];
 
 export default function TemplatesShowcase() {

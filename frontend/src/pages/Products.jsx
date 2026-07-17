@@ -11,7 +11,7 @@ import ReservationSection from "../components/ReservationSection";
 import Footer from "../components/Footer";
 import QRSection from "../components/QRSection";
 import FAQ from "../components/FAQ";
-import WebsiteMarketingSection from "../components/WebsiteMarketingSection";
+// import WebsiteMarketingSection from "../components/WebsiteMarketingSection";
 import ContactSection from "../components/ContactSection";
 import { scrollToElementId } from "../utils/scrollToSection";
 
@@ -41,7 +41,7 @@ export default function Products() {
       <HeroSlider />
       <RestaurantEcosystem />
       <OrderingExperience />
-      <WebsiteMarketingSection />
+      {/* <WebsiteMarketingSection /> */}
 
       <PoSSection />
       <ReservationSection />

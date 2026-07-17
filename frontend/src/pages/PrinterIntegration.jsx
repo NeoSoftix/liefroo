@@ -14,7 +14,7 @@ import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo
 import { HardwareSection } from "../components/PrinterIntegration";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
-import serviceImage from "../assets/printerintegration.png";
+import serviceImage from "../assets/pos.png";
 
 export default function PrinterIntegration() {
   const { t } = useTranslation();

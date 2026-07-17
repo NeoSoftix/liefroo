@@ -23,8 +23,8 @@ export default function QRSection() {
           />
 
           {/* White Overlay Right Side */}
-          <div className="absolute right-0 top-0 h-full w-full lg:w-[48%] bg-white/90 lg:bg-white/80 backdrop-blur-md flex items-center">
-            <div className="px-6 py-8 sm:p-10 lg:px-16 w-full">
+          <div className="absolute right-0 top-0 h-full w-full lg:w-[48%] flex items-center">
+            <div className="px-6 py-8 sm:p-10 lg:px-36 w-full">
 
               {/* Tag */}
               <div className="inline-flex items-center border border-red-500 rounded-full px-4 py-1.5 sm:px-6 sm:py-2.5 text-red-600 font-semibold tracking-wide text-xs sm:text-sm mb-4 lg:mb-6">

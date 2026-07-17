@@ -310,13 +310,13 @@
     "offices": {
       "india": {
         "title": "Büro Indien",
-        "address": "123 Main Street,",
-        "city": "Neu-Delhi, Indien"
+        "address": "A-817, 8th Floor, Bestech Business Tower,",
+        "city": "Mohali, 160062"
       },
       "europe": {
-        "title": "Büro Europa",
-        "address": "456 Business Avenue,",
-        "city": "Berlin, Deutschland"
+        "title": "Büro Deutschland",
+        "address": "Homburger Landstraße 641,",
+        "city": "60437 Frankfurt am Main Nord-Ost, Deutschland"
       }
     },
     "form": {
@@ -369,10 +369,19 @@
     },
     "contact": {
       "title": "Kontakt",
-      "email": "hello@mealshub.com",
-      "phone": "+49 30 123456",
+      "email": "enquiry@liefro.com",
+      "phone": "8557062045",
       "support": "24/7 Support",
-      "location": "Berlin, Deutschland"
+      "locations": {
+        "germany": {
+          "label": "Deutschland",
+          "address": "Homburger Landstraße 641, 60437 Frankfurt am Main Nord-Ost, Deutschland"
+        },
+        "india": {
+          "label": "Indien",
+          "address": "A-817, 8th Floor, Bestech Business Tower, Mohali, 160062"
+        }
+      }
     },
     "copyright": "© 2026 Liefro. Alle Rechte vorbehalten.",
     "backToTop": "Nach oben"
@@ -402,10 +411,10 @@
       "description": "Wählen Sie aus professionell gestalteten Vorlagen, die speziell für Restaurants, Cafés und Bars entwickelt wurden — und machen Sie sie in wenigen Minuten zu Ihrer eigenen.",
       "cta": "Vorlagen durchsuchen",
       "items": {
-        "fineDining": "Gehobene Küche",
-        "cafeBrunch": "Café & Brunch",
-        "fastCasual": "Schnellrestaurant",
-        "barLounge": "Bar & Lounge"
+        "tandoori": "Tandoori",
+        "chaska": "Chaska - Indian Street Kitchen",
+        "goldeneGerste": "Goldene Gerste Pizzaservice",
+        "superkure": "SuperKure"
       }
     },
     "howItWorks": {
@@ -1831,8 +1840,8 @@
     "title": "Datenschutzerklärung",
     "description": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erklärt, wie Liefro Ihre Informationen sammelt, verwendet und schützt.",
     "toc": "Auf dieser Seite",
-    "contactEmail": "privacy@liefroo.com",
-    "contactPhone": "+91 98765 43210",
+    "contactEmail": "enquiry@liefro.com",
+    "contactPhone": "8557062045",
     "sections": [
       { "title": "1. Einleitung", "body": "Liefro („wir“, „unser“ oder „uns“) verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website, Produkte und Dienste nutzen." },
       { "title": "2. Von uns erhobene Informationen", "body": "Wir erheben Informationen, die Sie uns direkt zur Verfügung stellen, wie Namen, E-Mail-Adresse, Telefonnummer, Geschäftsdaten und Zahlungsinformationen. Außerdem erfassen wir Nutzungsdaten, Geräteinformationen und Cookies, um Ihre Erfahrung zu verbessern." },
@@ -1853,8 +1862,8 @@
     "title": "Allgemeine Geschäftsbedingungen",
     "description": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Nutzung der Website und der Dienste von Liefro. Bitte lesen Sie sie sorgfältig durch.",
     "toc": "Auf dieser Seite",
-    "contactEmail": "legal@liefroo.com",
-    "contactPhone": "+91 98765 43210",
+    "contactEmail": "enquiry@liefro.com",
+    "contactPhone": "8557062045",
     "sections": [
       { "title": "1. Annahme der Bedingungen", "body": "Durch den Zugriff auf oder die Nutzung der Website oder Dienste von Liefro erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen und unserer Datenschutzerklärung einverstanden." },
       { "title": "2. Beschreibung der Dienste", "body": "Liefro bietet eine All-in-One-Plattform für Restaurants, die Bestellwesen, Kassensystem, Marketing, Analysen und weitere verwandte Dienste umfasst." },
