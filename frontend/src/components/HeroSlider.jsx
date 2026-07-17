@@ -91,7 +91,7 @@ export default function HeroSlider() {
           {/* RIGHT SIDE */}
           <div className="relative flex justify-center items-center">
             {/* Main Glow */}
-            <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-100 via-red-50 to-transparent blur-3xl" />
+            <div className="absolute w-[600px] h-[600px] " />
 
             {/* Image */}
             <motion.img
