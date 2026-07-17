@@ -1975,6 +1975,20 @@
       "orders": { "value": "1M+", "label": "Verarbeitete Bestellungen" },
       "uptime": { "value": "99,9%", "label": "Systemverfügbarkeit" }
     },
+    "story": {
+      "eyebrow": "Unsere Geschichte",
+      "heading": "8 Jahre Erfahrung im Restaurant-Bereich",
+      "headingRed": "Wachstum",
+      "paragraph1": "Liefro begann mit einem einfachen Ziel: den Betrieb eines Restaurants einfacher zu machen. Seit über 8 Jahren arbeiten wir eng mit Restaurantbesitzern zusammen, um ihre täglichen Herausforderungen zu verstehen, von der Verwaltung von Bestellungen und Personal bis hin zur Kundenzufriedenheit.",
+      "paragraph2": "Im Laufe der Jahre sind wir von einer kleinen Idee zu einer vertrauenswürdigen Plattform gewachsen, die tausende Restaurants unterstützt. Wir haben Tools für Online-Bestellungen, Tischreservierungen, Lieferverwaltung, Abrechnung und Kundenbindung entwickelt und verfeinert, alles an einem Ort, damit sich Restaurantbesitzer auf das konzentrieren können, was sie am besten können: großartiges Essen servieren.",
+      "paragraph3": "Heute entwickelt sich Liefro weiterhin mit der Branche weiter und fügt neue Funktionen und smartere Technologie hinzu, damit Restaurants jeder Größe besser laufen und schneller wachsen können.",
+      "highlights": {
+        "founded": { "title": "8+ Jahre", "desc": "Seit dem ersten Tag im Dienst der Restaurantbranche." },
+        "trusted": { "title": "Vertrauenswürdiger Partner", "desc": "Tausende Restaurantbesitzer verlassen sich täglich auf uns." },
+        "dedicated": { "title": "Engagiertes Team", "desc": "Ein Team, das sich auf Ihren Erfolg konzentriert, nicht nur auf Software." },
+        "growing": { "title": "Stetiges Wachstum", "desc": "Wir fügen ständig neue Tools und Funktionen hinzu." }
+      }
+    },
     "why": {
       "eyebrow": "Warum Liefro?",
       "heading": "Alles was Sie brauchen,",

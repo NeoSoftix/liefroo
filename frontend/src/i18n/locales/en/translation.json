@@ -266,10 +266,22 @@
     "headingLine4": "Repeat.",
     "description": "Guests order and pay directly from the table via QR — fully connected to your POS system for a seamless dining experience.",
     "features": {
-      "faster": { "title": "Faster", "subtitle": "Service" },
-      "higher": { "title": "Higher", "subtitle": "AOV" },
-      "lessStaff": { "title": "Less Staff", "subtitle": "Workload" },
-      "secure": { "title": "Secure", "subtitle": "Payments" }
+      "faster": {
+        "title": "Faster",
+        "subtitle": "Service"
+      },
+      "higher": {
+        "title": "Higher",
+        "subtitle": "AOV"
+      },
+      "lessStaff": {
+        "title": "Less Staff",
+        "subtitle": "Workload"
+      },
+      "secure": {
+        "title": "Secure",
+        "subtitle": "Payments"
+      }
     },
     "cta": "See QR Ordering In Action"
   },
@@ -414,7 +426,7 @@
         "tandoori": "Tandoori",
         "chaska": "Chaska - Indian Street Kitchen",
         "goldeneGerste": "Goldene Gerste Pizzaservice",
-        "superkure": "SuperKure"
+        "superkure": "SuperSure"
       }
     },
     "howItWorks": {
@@ -614,10 +626,22 @@
         "insights": "Real-time insights to make better decisions"
       },
       "stats": {
-        "satisfaction": { "value": "98%", "label": "Client Satisfaction" },
-        "appsDelivered": { "value": "250+", "label": "Apps Delivered" },
-        "repeatOrders": { "value": "30%", "label": "Increase in Repeat Orders" },
-        "support": { "value": "24/7", "label": "Support Available" }
+        "satisfaction": {
+          "value": "98%",
+          "label": "Client Satisfaction"
+        },
+        "appsDelivered": {
+          "value": "250+",
+          "label": "Apps Delivered"
+        },
+        "repeatOrders": {
+          "value": "30%",
+          "label": "Increase in Repeat Orders"
+        },
+        "support": {
+          "value": "24/7",
+          "label": "Support Available"
+        }
       }
     },
     "testimonial": {
@@ -927,10 +951,22 @@
       "eyebrow": "Always There",
       "heading": "Support that speaks your language and understands your business.",
       "stats": {
-        "days": { "value": "7 Days", "label": "Support Availability" },
-        "languages": { "value": "5 Languages", "label": "Supported" },
-        "response": { "value": "Fast", "label": "Average First Response" },
-        "secure": { "value": "Secure", "label": "Your data and business are safe" }
+        "days": {
+          "value": "7 Days",
+          "label": "Support Availability"
+        },
+        "languages": {
+          "value": "5 Languages",
+          "label": "Supported"
+        },
+        "response": {
+          "value": "Fast",
+          "label": "Average First Response"
+        },
+        "secure": {
+          "value": "Secure",
+          "label": "Your data and business are safe"
+        }
       }
     },
     "testimonial": {
@@ -1843,18 +1879,54 @@
     "contactEmail": "enquiry@liefro.com",
     "contactPhone": "8557062045",
     "sections": [
-      { "title": "1. Introduction", "body": "Liefro (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, products, and services." },
-      { "title": "2. Information We Collect", "body": "We collect information you provide directly to us, such as your name, email address, phone number, business details, and payment information. We also collect usage data, device information, and cookies to improve your experience." },
-      { "title": "3. How We Use Your Information", "body": "We use the information we collect to provide, operate, and maintain our services, process transactions, communicate with you, improve our platform, and ensure security." },
-      { "title": "4. Information Sharing", "body": "We do not sell your personal information. We may share your information with trusted service providers who help us operate our platform, comply with legal obligations, or protect our rights." },
-      { "title": "5. Data Security", "body": "We implement appropriate technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction." },
-      { "title": "6. Your Rights", "body": "You have the right to access, update, or delete your personal information. You can also object to or restrict certain processing activities. To exercise your rights, contact us using the details below." },
-      { "title": "7. Cookies & Tracking", "body": "We use cookies and similar technologies to enhance your experience, analyze usage, and personalize content. You can control cookie settings through your browser preferences." },
-      { "title": "8. Data Retention", "body": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by law." },
-      { "title": "9. Third-Party Services", "body": "Our platform may contain links to third-party websites or integrate with third-party services. We are not responsible for their privacy practices." },
-      { "title": "10. Children's Privacy", "body": "Liefro is not intended for children under the age of 16. We do not knowingly collect personal information from children." },
-      { "title": "11. Changes to This Policy", "body": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date." },
-      { "title": "12. Contact Us", "body": "If you have any questions about this Privacy Policy, please contact us at:" }
+      {
+        "title": "1. Introduction",
+        "body": "Liefro (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, products, and services."
+      },
+      {
+        "title": "2. Information We Collect",
+        "body": "We collect information you provide directly to us, such as your name, email address, phone number, business details, and payment information. We also collect usage data, device information, and cookies to improve your experience."
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "body": "We use the information we collect to provide, operate, and maintain our services, process transactions, communicate with you, improve our platform, and ensure security."
+      },
+      {
+        "title": "4. Information Sharing",
+        "body": "We do not sell your personal information. We may share your information with trusted service providers who help us operate our platform, comply with legal obligations, or protect our rights."
+      },
+      {
+        "title": "5. Data Security",
+        "body": "We implement appropriate technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction."
+      },
+      {
+        "title": "6. Your Rights",
+        "body": "You have the right to access, update, or delete your personal information. You can also object to or restrict certain processing activities. To exercise your rights, contact us using the details below."
+      },
+      {
+        "title": "7. Cookies & Tracking",
+        "body": "We use cookies and similar technologies to enhance your experience, analyze usage, and personalize content. You can control cookie settings through your browser preferences."
+      },
+      {
+        "title": "8. Data Retention",
+        "body": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by law."
+      },
+      {
+        "title": "9. Third-Party Services",
+        "body": "Our platform may contain links to third-party websites or integrate with third-party services. We are not responsible for their privacy practices."
+      },
+      {
+        "title": "10. Children's Privacy",
+        "body": "Liefro is not intended for children under the age of 16. We do not knowingly collect personal information from children."
+      },
+      {
+        "title": "11. Changes to This Policy",
+        "body": "We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated effective date."
+      },
+      {
+        "title": "12. Contact Us",
+        "body": "If you have any questions about this Privacy Policy, please contact us at:"
+      }
     ]
   },
   "termsConditions": {
@@ -1865,19 +1937,58 @@
     "contactEmail": "enquiry@liefro.com",
     "contactPhone": "8557062045",
     "sections": [
-      { "title": "1. Acceptance of Terms", "body": "By accessing or using Liefro's website or services, you agree to be bound by these Terms & Conditions and our Privacy Policy." },
-      { "title": "2. Description of Services", "body": "Liefro provides an all-in-one platform for restaurants that includes ordering, POS, marketing, analytics, and other related services." },
-      { "title": "3. User Accounts", "body": "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account." },
-      { "title": "4. Acceptable Use", "body": "You agree to use Liefro only for lawful purposes and in accordance with these Terms. You must not use our services in any way that could harm, disable, or impair our platform." },
-      { "title": "5. Payments & Billing", "body": "Some features require payment. All fees are stated in our pricing plans. Payments are non-refundable except as required by law or as stated in our refund policy." },
-      { "title": "6. Intellectual Property", "body": "All content, trademarks, logos, and software on Liefro are the property of Liefro and are protected by applicable intellectual property laws." },
-      { "title": "7. Third-Party Services", "body": "Our platform may integrate with third-party services. We are not responsible for their content, policies, or practices." },
-      { "title": "8. Limitation of Liability", "body": "Liefro is provided \"as is\" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of our services." },
-      { "title": "9. Indemnification", "body": "You agree to indemnify and hold Liefro harmless from any claims, damages, or expenses arising from your use of the services or violation of these terms." },
-      { "title": "10. Termination", "body": "We may suspend or terminate your access to Liefro at any time if you violate these Terms or misuse our services." },
-      { "title": "11. Governing Law", "body": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Liefro is established." },
-      { "title": "12. Changes to Terms", "body": "We may update these Terms from time to time. Continued use of our services after changes means you accept the new Terms." },
-      { "title": "13. Contact Us", "body": "If you have any questions about these Terms & Conditions, please contact us at:" }
+      {
+        "title": "1. Acceptance of Terms",
+        "body": "By accessing or using Liefro's website or services, you agree to be bound by these Terms & Conditions and our Privacy Policy."
+      },
+      {
+        "title": "2. Description of Services",
+        "body": "Liefro provides an all-in-one platform for restaurants that includes ordering, POS, marketing, analytics, and other related services."
+      },
+      {
+        "title": "3. User Accounts",
+        "body": "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+      },
+      {
+        "title": "4. Acceptable Use",
+        "body": "You agree to use Liefro only for lawful purposes and in accordance with these Terms. You must not use our services in any way that could harm, disable, or impair our platform."
+      },
+      {
+        "title": "5. Payments & Billing",
+        "body": "Some features require payment. All fees are stated in our pricing plans. Payments are non-refundable except as required by law or as stated in our refund policy."
+      },
+      {
+        "title": "6. Intellectual Property",
+        "body": "All content, trademarks, logos, and software on Liefro are the property of Liefro and are protected by applicable intellectual property laws."
+      },
+      {
+        "title": "7. Third-Party Services",
+        "body": "Our platform may integrate with third-party services. We are not responsible for their content, policies, or practices."
+      },
+      {
+        "title": "8. Limitation of Liability",
+        "body": "Liefro is provided \"as is\" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of our services."
+      },
+      {
+        "title": "9. Indemnification",
+        "body": "You agree to indemnify and hold Liefro harmless from any claims, damages, or expenses arising from your use of the services or violation of these terms."
+      },
+      {
+        "title": "10. Termination",
+        "body": "We may suspend or terminate your access to Liefro at any time if you violate these Terms or misuse our services."
+      },
+      {
+        "title": "11. Governing Law",
+        "body": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Liefro is established."
+      },
+      {
+        "title": "12. Changes to Terms",
+        "body": "We may update these Terms from time to time. Continued use of our services after changes means you accept the new Terms."
+      },
+      {
+        "title": "13. Contact Us",
+        "body": "If you have any questions about these Terms & Conditions, please contact us at:"
+      }
     ]
   },
   "services": {
@@ -1894,62 +2005,110 @@
       {
         "title": "Menu Management",
         "description": "Update items, prices & availability instantly across all platforms.",
-        "bullets": ["Easy menu updates", "Categories & variations", "Availability control"]
+        "bullets": [
+          "Easy menu updates",
+          "Categories & variations",
+          "Availability control"
+        ]
       },
       {
         "title": "Online Ordering",
         "description": "Launch your branded online ordering system for web & mobile.",
-        "bullets": ["Branded ordering system", "Real-time order tracking", "Customizable UI"]
+        "bullets": [
+          "Branded ordering system",
+          "Real-time order tracking",
+          "Customizable UI"
+        ]
       },
       {
         "title": "QR Ordering & Pay",
         "description": "Let customers scan, order, and pay directly from their table.",
-        "bullets": ["Scan, order & pay", "Contactless experience", "Faster table turnover"]
+        "bullets": [
+          "Scan, order & pay",
+          "Contactless experience",
+          "Faster table turnover"
+        ]
       },
       {
         "title": "POS System",
         "description": "Powerful POS for dine-in, splits and more.",
-        "bullets": ["Touch POS", "Split bills & combos", "Taxes & billing"]
+        "bullets": [
+          "Touch POS",
+          "Split bills & combos",
+          "Taxes & billing"
+        ]
       },
       {
         "title": "Reservation System",
         "description": "Smart table booking system to manage reservations effortlessly.",
-        "bullets": ["Online reservations", "Real-time availability", "Reminders & notifications"]
+        "bullets": [
+          "Online reservations",
+          "Real-time availability",
+          "Reminders & notifications"
+        ]
       },
       {
         "title": "Printer Integration",
         "description": "Auto-print orders to kitchen, bar, or multiple stations.",
-        "bullets": ["Multi-printer support", "Kitchen & bar printing", "Custom print rules"]
+        "bullets": [
+          "Multi-printer support",
+          "Kitchen & bar printing",
+          "Custom print rules"
+        ]
       },
       {
         "title": "Marketing & Growth",
         "description": "Reach more customers and grow your business with smart marketing.",
-        "bullets": ["Meta & Google Ads", "Campaign management", "Performance tracking"]
+        "bullets": [
+          "Meta & Google Ads",
+          "Campaign management",
+          "Performance tracking"
+        ]
       },
       {
         "title": "Analytics Dashboard",
         "description": "Track performance and make smarter decisions with real-time data.",
-        "bullets": ["Sales & order reports", "Customer insights", "Visual analytics"]
+        "bullets": [
+          "Sales & order reports",
+          "Customer insights",
+          "Visual analytics"
+        ]
       },
       {
         "title": "Technical Support",
         "description": "7-day help in 6 languages, whenever you need it.",
-        "bullets": ["Multi-language support", "Quick response", "Expert assistance"]
+        "bullets": [
+          "Multi-language support",
+          "Quick response",
+          "Expert assistance"
+        ]
       },
       {
         "title": "Website Development",
         "description": "Custom websites built for restaurants that drive orders.",
-        "bullets": ["Modern & responsive", "SEO optimized", "Order integration"]
+        "bullets": [
+          "Modern & responsive",
+          "SEO optimized",
+          "Order integration"
+        ]
       },
       {
         "title": "Mobile App Development",
         "description": "Native iOS & Android apps for your restaurant brand.",
-        "bullets": ["iOS & Android apps", "User-friendly UI", "Push notifications"]
+        "bullets": [
+          "iOS & Android apps",
+          "User-friendly UI",
+          "Push notifications"
+        ]
       },
       {
         "title": "Google Business & SEO",
         "description": "Get discovered locally and drive direct orders.",
-        "bullets": ["Google Business Profile", "Local SEO & keywords", "Review management"]
+        "bullets": [
+          "Google Business Profile",
+          "Local SEO & keywords",
+          "Review management"
+        ]
       }
     ]
   },
@@ -1970,10 +2129,48 @@
       }
     },
     "stats": {
-      "restaurants": { "value": "1000+", "label": "Restaurants Powered" },
-      "users": { "value": "50K+", "label": "Happy Users" },
-      "orders": { "value": "1M+", "label": "Orders Processed" },
-      "uptime": { "value": "99.9%", "label": "System Uptime" }
+      "restaurants": {
+        "value": "1000+",
+        "label": "Restaurants Powered"
+      },
+      "users": {
+        "value": "50K+",
+        "label": "Happy Users"
+      },
+      "orders": {
+        "value": "1M+",
+        "label": "Orders Processed"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "System Uptime"
+      }
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "heading": "8 Years of Helping Restaurants",
+      "headingRed": "Grow",
+      "paragraph1": "Liefro started with a simple goal: to make running a restaurant easier. For over 8 years, we've worked closely with restaurant owners to understand their daily challenges, from managing orders and staff to keeping customers happy.",
+      "paragraph2": "Over the years, we've grown from a small idea into a trusted platform that powers thousands of restaurants. We've built and refined tools for online ordering, table booking, delivery management, billing, and customer engagement, all in one place, so restaurant owners can focus on what they do best: serving great food.",
+      "paragraph3": "Today, Liefro continues to evolve with the industry, adding new features and smarter technology to help restaurants of every size run better and grow faster.",
+      "highlights": {
+        "founded": {
+          "title": "8+ Years",
+          "desc": "Serving the restaurant industry since day one."
+        },
+        "trusted": {
+          "title": "Trusted Partner",
+          "desc": "Thousands of restaurant owners rely on us daily."
+        },
+        "dedicated": {
+          "title": "Dedicated Team",
+          "desc": "A team focused on your success, not just software."
+        },
+        "growing": {
+          "title": "Always Growing",
+          "desc": "Constantly adding new tools and features."
+        }
+      }
     },
     "why": {
       "eyebrow": "Why Liefro?",
@@ -2016,10 +2213,22 @@
       "heading": "Simple Steps.",
       "headingRed": "Powerful Results.",
       "steps": {
-        "understand": { "title": "Understand", "desc": "We learn about your restaurant and goals." },
-        "setup": { "title": "Setup", "desc": "We configure the platform to suit your needs." },
-        "launch": { "title": "Launch", "desc": "Go live and start using Liefro with your team." },
-        "grow": { "title": "Grow", "desc": "We support you to grow your business continuously." }
+        "understand": {
+          "title": "Understand",
+          "desc": "We learn about your restaurant and goals."
+        },
+        "setup": {
+          "title": "Setup",
+          "desc": "We configure the platform to suit your needs."
+        },
+        "launch": {
+          "title": "Launch",
+          "desc": "Go live and start using Liefro with your team."
+        },
+        "grow": {
+          "title": "Grow",
+          "desc": "We support you to grow your business continuously."
+        }
       }
     },
     "testimonial": {

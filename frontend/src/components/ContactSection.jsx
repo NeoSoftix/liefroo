@@ -99,37 +99,6 @@ export default function ContactSection() {
               {/* Dual Office Sections */}
               <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-6">
 
-                {/* India Office */}
-                <div className="space-y-3 sm:space-y-4">
-                  <h4 className="text-gray-900 font-bold text-base sm:text-lg border-b border-gray-100 pb-2">
-                    🇮🇳 {t("contact.offices.india.title")}
-                  </h4>
-
-                  <a
-                    href={INDIA_MAPS_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex gap-3 text-xs sm:text-sm hover:text-red-600 transition"
-                  >
-                    <FiMapPin className="text-red-600 shrink-0 mt-1" />
-                    <p className="text-gray-600 leading-snug">
-                      {t("contact.offices.india.address")}
-                      <br />
-                      {t("contact.offices.india.city")}
-                    </p>
-                  </a>
-
-                  <a href={`tel:${CONTACT_PHONE}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
-                    <FiPhone className="text-red-600 shrink-0" />
-                    <p className="font-semibold text-gray-900">{CONTACT_PHONE}</p>
-                  </a>
-
-                  <a href={`mailto:${CONTACT_EMAIL}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
-                    <FiMail className="text-red-600 shrink-0" />
-                    <p className="text-gray-600 break-all">{CONTACT_EMAIL}</p>
-                  </a>
-                </div>
-
                 {/* Germany Office */}
                 <div className="space-y-3 sm:space-y-4">
                   <h4 className="text-gray-900 font-bold text-base sm:text-lg border-b border-gray-100 pb-2">
@@ -147,6 +116,37 @@ export default function ContactSection() {
                       {t("contact.offices.europe.address")}
                       <br />
                       {t("contact.offices.europe.city")}
+                    </p>
+                  </a>
+
+                  <a href={`tel:${CONTACT_PHONE}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
+                    <FiPhone className="text-red-600 shrink-0" />
+                    <p className="font-semibold text-gray-900">{CONTACT_PHONE}</p>
+                  </a>
+
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="flex gap-3 text-xs sm:text-sm items-center hover:text-red-600 transition">
+                    <FiMail className="text-red-600 shrink-0" />
+                    <p className="text-gray-600 break-all">{CONTACT_EMAIL}</p>
+                  </a>
+                </div>
+
+                {/* India Office */}
+                <div className="space-y-3 sm:space-y-4">
+                  <h4 className="text-gray-900 font-bold text-base sm:text-lg border-b border-gray-100 pb-2">
+                    🇮🇳 {t("contact.offices.india.title")}
+                  </h4>
+
+                  <a
+                    href={INDIA_MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-3 text-xs sm:text-sm hover:text-red-600 transition"
+                  >
+                    <FiMapPin className="text-red-600 shrink-0 mt-1" />
+                    <p className="text-gray-600 leading-snug">
+                      {t("contact.offices.india.address")}
+                      <br />
+                      {t("contact.offices.india.city")}
                     </p>
                   </a>
 

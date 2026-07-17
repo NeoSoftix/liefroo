@@ -8,6 +8,10 @@ import {
   Clock,
   LayoutGrid,
   BarChart3,
+  Award,
+  CalendarDays,
+  Handshake,
+  Globe,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
@@ -20,7 +24,6 @@ import {
   TestimonialStatsBar,
   ServicesGrid,
 } from "../components/shared";
-import panelImage from "../assets/panel.png";
 
 export default function About() {
   const { t } = useTranslation();
@@ -69,6 +72,18 @@ export default function About() {
     desc: t(`about.process.steps.${key}.desc`),
   }));
 
+  const storyHighlights = [
+    { key: "founded", Icon: CalendarDays },
+    { key: "trusted", Icon: Handshake },
+    { key: "dedicated", Icon: Award },
+    { key: "growing", Icon: Globe },
+  ].map(({ key, Icon }) => ({
+    key,
+    Icon,
+    title: t(`about.story.highlights.${key}.title`),
+    desc: t(`about.story.highlights.${key}.desc`),
+  }));
+
   const testimonialStats = [
     { value: t("about.testimonial.stats.restaurants"), label: t("about.testimonial.stats.restaurantsLabel") },
     { value: t("about.testimonial.stats.users"), label: t("about.testimonial.stats.usersLabel") },
@@ -93,7 +108,6 @@ export default function About() {
           description={t("about.hero.description")}
           features={heroFeatures}
           featuresGridClassName="grid-cols-3"
-          image={panelImage}
         />
 
         <section className="relative z-10 w-full py-10 lg:py-14 bg-red-50/60">
@@ -108,6 +122,45 @@ export default function About() {
                     <h3 className="text-lg sm:text-2xl font-black text-gray-900">{value}</h3>
                     <p className="text-[10px] sm:text-xs text-gray-500">{label}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative z-10 w-full py-14 lg:py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-xs sm:text-sm">
+              {t("about.story.eyebrow")}
+            </span>
+
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black mt-4 leading-[1.15] text-gray-900">
+              {t("about.story.heading")} <span className="text-red-600">{t("about.story.headingRed")}</span>
+            </h2>
+
+            <p className="text-sm sm:text-base text-gray-600 mt-6 leading-relaxed">
+              {t("about.story.paragraph1")}
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 mt-4 leading-relaxed">
+              {t("about.story.paragraph2")}
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 mt-4 leading-relaxed">
+              {t("about.story.paragraph3")}
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto px-6 mt-10 lg:mt-14">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+              {storyHighlights.map(({ key, Icon, title, desc }) => (
+                <div
+                  key={key}
+                  className="bg-red-50/60 border border-red-100 rounded-2xl p-5 lg:p-6 text-center hover:shadow-[0_15px_50px_rgba(0,0,0,0.06)] transition-shadow duration-300"
+                >
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl bg-white border border-red-200 flex items-center justify-center shadow-sm">
+                    <Icon className="text-red-600" size={22} />
+                  </div>
+                  <h4 className="mt-3 font-bold text-gray-900 text-sm sm:text-base">{title}</h4>
+                  <p className="mt-1 text-xs sm:text-sm text-gray-600 leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
