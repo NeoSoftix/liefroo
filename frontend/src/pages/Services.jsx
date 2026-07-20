@@ -12,8 +12,8 @@ export default function Services() {
   return (
     <div className="w-full overflow-x-hidden bg-white">
       <Seo
-        title={`${t("services.headingLine1")} ${t("services.headingLine2")}`}
-        description={t("services.description")}
+        title={t("services.seo.title")}
+        description={t("services.seo.description")}
         path="/products"
       />
       <Header />

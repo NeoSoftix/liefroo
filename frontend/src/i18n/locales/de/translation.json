@@ -1,8 +1,8 @@
 {
   "home": {
     "seo": {
-      "title": "Liefro — Das All-in-One-Betriebssystem für Restaurants",
-      "description": "Verwalten Sie Bestellungen, Kasse, Lieferung, Marketing und Analysen von einer leistungsstarken Plattform für moderne Restaurants."
+      "title": "Digitale Lösungen für modernes Restaurantwachstum",
+      "description": "Steigern Sie Ihr Restaurant mit Online-Bestellungen, Kassensystemen, QR-Bestellungen, Websites, Apps und digitalem Marketing für nachhaltiges Wachstum."
     }
   },
   "thankYou": {
@@ -388,8 +388,8 @@
   },
   "websiteDevelopment": {
     "seo": {
-      "title": "Website-Entwicklung für Restaurants",
-      "description": "Erhalten Sie eine individuelle Website, die Ihre Marke widerspiegelt, mehr Kunden anzieht und Ihr Geschäft online wachsen lässt."
+      "title": "Professionelle Webentwicklung für Restaurants",
+      "description": "Erstellen Sie eine moderne Restaurant-Website, gewinnen Sie mehr Gäste und steigern Sie Online-Bestellungen mit professionellem Webdesign."
     },
     "hero": {
       "badge": "Website-Baukasten für Restaurants",
@@ -520,8 +520,8 @@
   },
   "mobileAppDevelopment": {
     "seo": {
-      "title": "Mobile App-Entwicklung",
-      "description": "Native iOS- und Android-Apps für Ihre Marke: Bestellungen, Gutscheine, Zahlungen, Push-Updates und Tracking in einem System."
+      "title": "Professionelle App-Entwicklung für Restaurants",
+      "description": "Entwickeln Sie Android- und iOS-Apps, steigern Sie die Kundenbindung und erleichtern Sie Online-Bestellungen für Ihre Gäste."
     },
     "hero": {
       "badge": "Mobile App-Entwicklung",
@@ -638,8 +638,8 @@
   },
   "printerIntegration": {
     "seo": {
-      "title": "Automatisierte Drucker-Integration",
-      "description": "Bestellungen aus Web und App werden automatisch in Küche und Bar gedruckt — klare Bons, keine manuelle Eingabe."
+      "title": "Druckerintegration für reibungslose Restaurantabläufe",
+      "description": "Verbinden Sie Küchen- und Belegdrucker nahtlos für eine schnelle, präzise und zuverlässige Bestellabwicklung im Restaurant."
     },
     "hero": {
       "badge": "Automatisierte Drucker-Integration",
@@ -647,8 +647,8 @@
       "headingLine2": "Drucker-Integration",
       "description": "Bestellungen aus Web und App werden automatisch in Küche und Bar gedruckt — klare Bons, optionales 8-Zoll-Android-Display, standardmäßige Thermodrucker-Hardware. Wir koppeln Geräte mit Ihrem Konto, damit bei der manuellen Weiterleitung nichts verloren geht.",
       "checklist": {
-        "thermalPrint": "Automatischer Thermodrucker-Druck",
-        "androidDisplay": "8-Zoll-Android-Touchdisplay",
+        "thermalPrint": "Kabelloser Drucker",
+        "androidDisplay": "11-Zoll-Android-Touchdisplay",
         "printerSupport": "Unterstützung für Küchen- & Bardrucker",
         "zeroForwarding": "Keine manuelle Bestellweiterleitung"
       },
@@ -736,8 +736,8 @@
   },
   "posSystemDevelopment": {
     "seo": {
-      "title": "Kassensystem für Restaurants",
-      "description": "Touch-Kasse für Speisen vor Ort und Rechnungsteilung — Online-Bestellungen laufen im selben System wie Laufkundschaft."
+      "title": "Modernes POS-System für effiziente Restaurants",
+      "description": "Optimieren Sie Zahlungen, Lagerverwaltung und Bestellungen mit einer modernen Kassensoftware für Restaurants jeder Größe."
     },
     "hero": {
       "badge": "Kassensystem-Entwicklung",
@@ -951,8 +951,8 @@
   },
   "menuManagement": {
     "seo": {
-      "title": "Menüverwaltungssystem",
-      "description": "Aktualisieren Sie Artikel, Preise, Fotos, Modifikatoren und Verfügbarkeit von einem Dashboard aus — synchron mit Website, App und Kasse."
+      "title": "Digitale Menüverwaltung für moderne Restaurants",
+      "description": "Verwalten Sie Speisekarten, Preise und Kategorien zentral und verbessern Sie Effizienz sowie das Erlebnis Ihrer Gäste nachhaltig."
     },
     "hero": {
       "badge": "Menüverwaltungssystem",
@@ -1040,8 +1040,8 @@
   },
   "googleBusinessSEO": {
     "seo": {
-      "title": "Google Unternehmensprofil & lokale SEO",
-      "description": "Einrichtung des Google Unternehmensprofils, lokales SEO und Social-Profile, die direkt auf Ihre eigene Bestellung verweisen."
+      "title": "Google Business SEO für bessere lokale Sichtbarkeit",
+      "description": "Optimieren Sie Ihr Google-Unternehmensprofil, verbessern Sie Ihre Google Maps-Platzierung und gewinnen Sie mehr lokale Kunden."
     },
     "hero": {
       "badge": "Google Unternehmensprofil & SEO",
@@ -1151,8 +1151,8 @@
   },
   "metaAds": {
     "seo": {
-      "title": "Meta Ads: Facebook & Instagram",
-      "description": "Führen Sie hochkonvertierende Facebook- und Instagram-Kampagnen, die neue Kunden gewinnen und Wiederholungsbestellungen steigern."
+      "title": "Meta Ads Management für nachhaltiges Unternehmenswachstum",
+      "description": "Erreichen Sie Ihre Zielgruppe mit optimierten Facebook- und Instagram-Kampagnen und steigern Sie Leads sowie Ihren Umsatz nachhaltig."
     },
     "hero": {
       "badge": "Meta Ads & Facebook • Instagram",
@@ -1266,8 +1266,8 @@
   },
   "googleAds": {
     "seo": {
-      "title": "Google Ads (PPC) für Restaurants",
-      "description": "Bringen Sie Ihr Restaurant vor kaufbereite Suchende – mit verwalteten Google Ads (PPC)-Kampagnen für mehr Bestellungen."
+      "title": "Google Ads Management für mehr Kunden und Umsatz",
+      "description": "Erreichen Sie neue Kunden mit professionell optimierten Google Ads-Kampagnen und steigern Sie Leads, Verkäufe und Ihren Umsatz nachhaltig."
     },
     "hero": {
       "badge": "Google Ads (PPC)",
@@ -1381,8 +1381,8 @@
   },
   "onlineOrdering": {
     "seo": {
-      "title": "Online-Bestellsystem",
-      "description": "Ihr eigenes markengeprägtes Online-Bestellsystem für Web und Mobile — mehr Bestellungen, niedrigere Provisionen, volle Kontrolle."
+      "title": "Online-Bestellsystem für mehr Restaurantumsatz",
+      "description": "Nehmen Sie direkte Online-Bestellungen an, sparen Sie Provisionen und bieten Sie Ihren Gästen ein schnelles und einfaches Bestellerlebnis."
     },
     "hero": {
       "badge": "Online-Bestellsystem",
@@ -1488,8 +1488,8 @@
   },
   "googleAnalytics": {
     "seo": {
-      "title": "Google Analytics für Restaurants",
-      "description": "Verwandeln Sie Daten in echte Erkenntnisse – verfolgen Sie die Leistung und lassen Sie Ihr Restaurant mit Google Analytics wachsen."
+      "title": "Google Analytics für fundierte Geschäftsentscheidungen",
+      "description": "Analysieren Sie Besucher, Nutzerverhalten und Conversions mit professionellen Google Analytics-Lösungen und detaillierten Berichten."
     },
     "hero": {
       "badge": "Google Analytics",
@@ -1613,8 +1613,8 @@
   },
   "reservationSystem": {
     "seo": {
-      "title": "Reservierungssystem für Restaurants",
-      "description": "Intelligente Tischreservierungen leicht gemacht — Buchungen annehmen, Verfügbarkeit verwalten, nahtlose Gästeerlebnisse."
+      "title": "Reservierungssystem für einfache Tischbuchungen",
+      "description": "Vereinfachen Sie Tischreservierungen, reduzieren Sie Ausfälle und verbessern Sie das Gästeerlebnis mit einem digitalen Buchungssystem."
     },
     "hero": {
       "badge": "Reservierungssystem",
@@ -1725,8 +1725,8 @@
   },
   "qrOrdering": {
     "seo": {
-      "title": "QR-Bestellung & Zahlung",
-      "description": "Lassen Sie Ihre Gäste scannen, bestellen und bezahlen — direkt vom Smartphone, kontaktlos und mit schnellerem Tischwechsel."
+      "title": "QR-Bestellsystem für schnelleren Restaurantservice",
+      "description": "Gäste scannen den QR-Code, bestellen kontaktlos und genießen schnelleren Service mit einer modernen digitalen Bestelllösung."
     },
     "hero": {
       "badge": "QR-Bestell- & Zahlsystem",
@@ -1881,6 +1881,10 @@
     ]
   },
   "services": {
+    "seo": {
+      "title": "Softwarelösungen für nachhaltiges Restaurantwachstum",
+      "description": "Entdecken Sie moderne Software für Kassensysteme, Bestellungen, Reservierungen, Websites, Apps und digitales Restaurantmarketing."
+    },
     "breadcrumbHome": "Startseite",
     "breadcrumbServices": "Leistungen",
     "headingLine1": "Leistungsstarke Lösungen für",
@@ -1955,8 +1959,8 @@
   },
   "about": {
     "seo": {
-      "title": "Über Liefro",
-      "description": "Liefro ist eine All-in-One-Plattform, die Restaurants hilft, Abläufe zu optimieren, das Kundenerlebnis zu verbessern und ihr Geschäft mit smarter Technologie zu skalieren."
+      "title": "Experten für digitale Technologien in Restaurants",
+      "description": "Erfahren Sie mehr über unsere Erfahrung und innovative Technologielösungen für Restaurants, die nachhaltiges Wachstum ermöglichen."
     },
     "hero": {
       "eyebrow": "Über uns",

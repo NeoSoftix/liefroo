@@ -1,8 +1,8 @@
 {
   "home": {
     "seo": {
-      "title": "Liefro — All-in-One Restaurant Operating System",
-      "description": "Manage orders, POS, delivery, marketing, and analytics from one powerful platform built for modern restaurants."
+      "title": "Smart Digital Solutions for Modern Restaurant Growth",
+      "description": "Grow your restaurant with online ordering, POS, QR ordering, websites, mobile apps, and digital marketing solutions designed for sustainable growth."
     }
   },
   "thankYou": {
@@ -400,8 +400,8 @@
   },
   "websiteDevelopment": {
     "seo": {
-      "title": "Restaurant Website Development",
-      "description": "Get a fully customized website that reflects your brand, attracts more customers, and grows your business online."
+      "title": "Professional Restaurant Website Development Services",
+      "description": "Build a responsive restaurant website that attracts customers, increases online orders, and strengthens your digital brand presence."
     },
     "hero": {
       "badge": "Restaurant Website Builder",
@@ -532,8 +532,8 @@
   },
   "mobileAppDevelopment": {
     "seo": {
-      "title": "Mobile App Development",
-      "description": "Native iOS and Android apps for your brand — ordering, vouchers, payments, push updates, and tracking, all in one system."
+      "title": "Restaurant Mobile App Development for Better Customer Care",
+      "description": "Launch Android and iOS apps that improve customer engagement, online ordering, loyalty, and overall business growth."
     },
     "hero": {
       "badge": "Mobile App Development",
@@ -662,8 +662,8 @@
   },
   "printerIntegration": {
     "seo": {
-      "title": "Automated Printer Integration",
-      "description": "Orders from web and app print automatically to your kitchen and bar — clear tickets, no manual entry."
+      "title": "Restaurant Printer Integration for Seamless Operations",
+      "description": "Connect kitchen and receipt printers with your restaurant system to ensure faster, accurate, and reliable order processing every day."
     },
     "hero": {
       "badge": "Automated Printer Integration",
@@ -671,8 +671,8 @@
       "headingLine2": "Printer Integration",
       "description": "Orders from web and app print automatically to kitchen and bar — clear tickets, optional 8\" Android display, standard thermal hardware. We pair devices to your account so nothing gets lost in manual forwarding.",
       "checklist": {
-        "thermalPrint": "Thermal printer auto-print",
-        "androidDisplay": "8\" Android touch display",
+        "thermalPrint": "Wireless printer",
+        "androidDisplay": "11\" Android touch display",
         "printerSupport": "Kitchen & bar printer support",
         "zeroForwarding": "Zero manual order forwarding"
       },
@@ -760,8 +760,8 @@
   },
   "posSystemDevelopment": {
     "seo": {
-      "title": "POS System for Restaurants",
-      "description": "Touch POS for dine-in and bill splits — online orders flow into the same system as walk-ins."
+      "title": "Restaurant POS System Built for Speed and Efficiency",
+      "description": "Streamline payments, inventory, billing, and order management with a modern POS system designed specifically for restaurant operations."
     },
     "hero": {
       "badge": "POS System Development",
@@ -987,8 +987,8 @@
   },
   "menuManagement": {
     "seo": {
-      "title": "Menu Management System",
-      "description": "Update items, prices, photos, modifiers, and availability from one dashboard — synced across web, app, and POS."
+      "title": "Digital Restaurant Menu Management for Better Operations",
+      "description": "Easily manage menus, prices, categories, and updates from one platform while improving customer experience and restaurant efficiency."
     },
     "hero": {
       "badge": "Menu Management System",
@@ -1076,8 +1076,8 @@
   },
   "googleBusinessSEO": {
     "seo": {
-      "title": "Google Business Profile & Local SEO",
-      "description": "Google Business setup, local SEO, structured data, and social profiles that point straight to your own ordering system."
+      "title": "Google Business SEO to Improve Local Search Visibility",
+      "description": "Optimize your Google Business Profile, improve Google Maps rankings, and attract more local customers through effective local SEO."
     },
     "hero": {
       "badge": "Google Business & SEO",
@@ -1187,8 +1187,8 @@
   },
   "metaAds": {
     "seo": {
-      "title": "Meta Ads: Facebook & Instagram",
-      "description": "Run high-converting Facebook and Instagram ad campaigns that bring new customers and grow repeat orders for your restaurant."
+      "title": "Meta Ads Campaign Management for Business Growth Online",
+      "description": "Reach the right audience on Facebook and Instagram with optimized Meta Ads campaigns designed to increase leads and sales."
     },
     "hero": {
       "badge": "Meta Ads & Facebook • Instagram",
@@ -1302,8 +1302,8 @@
   },
   "googleAds": {
     "seo": {
-      "title": "Google Ads (PPC) for Restaurants",
-      "description": "Get your restaurant in front of high-intent searchers with managed Google Ads (PPC) campaigns that drive more orders."
+      "title": "Google Ads Management to Generate More Leads and Sales",
+      "description": "Reach potential customers through optimized Google Ads campaigns that increase qualified leads, sales, and return on investment."
     },
     "hero": {
       "badge": "Google Ads (PPC)",
@@ -1417,8 +1417,8 @@
   },
   "onlineOrdering": {
     "seo": {
-      "title": "Online Ordering System",
-      "description": "Your own branded online ordering system for web and mobile — more orders, lower commission, full control."
+      "title": "Online Ordering System to Increase Restaurant Revenue",
+      "description": "Accept direct online orders, reduce commission costs, and provide customers with a fast, seamless ordering experience from any device."
     },
     "hero": {
       "badge": "Online Ordering System",
@@ -1524,8 +1524,8 @@
   },
   "googleAnalytics": {
     "seo": {
-      "title": "Google Analytics for Restaurants",
-      "description": "Turn your data into real insights. Track performance, understand your audience, and grow your restaurant with Google Analytics."
+      "title": "Google Analytics Services for Smarter Business Decisions",
+      "description": "Measure website traffic, customer behavior, and conversions with advanced Google Analytics tracking and reporting solutions."
     },
     "hero": {
       "badge": "Google Analytics",
@@ -1649,8 +1649,8 @@
   },
   "reservationSystem": {
     "seo": {
-      "title": "Restaurant Reservation System",
-      "description": "Smart table reservations made simple — accept bookings, manage availability, and deliver seamless guest experiences."
+      "title": "Restaurant Reservation System for Easy Table Bookings",
+      "description": "Simplify reservations, reduce no-shows, and improve customer experience with an online table booking system for restaurants."
     },
     "hero": {
       "badge": "Reservation System",
@@ -1761,8 +1761,8 @@
   },
   "qrOrdering": {
     "seo": {
-      "title": "QR Ordering & Pay",
-      "description": "Let your guests scan, order, and pay directly from their phone — contactless and faster table turnover."
+      "title": "QR Ordering System for Faster Restaurant Service Today",
+      "description": "Let guests scan, browse, and order instantly with a contactless QR ordering solution that improves speed and customer satisfaction."
     },
     "hero": {
       "badge": "QR Ordering & Pay System",
@@ -1992,6 +1992,10 @@
     ]
   },
   "services": {
+    "seo": {
+      "title": "Restaurant Software Products for Complete Business Growth",
+      "description": "Explore restaurant software including POS, QR ordering, reservations, websites, mobile apps, and digital marketing solutions."
+    },
     "breadcrumbHome": "Home",
     "breadcrumbServices": "Services",
     "headingLine1": "Powerful Services for",
@@ -2114,8 +2118,8 @@
   },
   "about": {
     "seo": {
-      "title": "About Liefro",
-      "description": "Liefro is an all-in-one platform built to help restaurants streamline operations, enhance customer experience, and grow their business with smart technology."
+      "title": "Restaurant Technology Experts Driving Digital Business Growth",
+      "description": "Learn about our mission, experience, and innovative restaurant technology solutions designed to help businesses grow successfully."
     },
     "hero": {
       "eyebrow": "About Us",
