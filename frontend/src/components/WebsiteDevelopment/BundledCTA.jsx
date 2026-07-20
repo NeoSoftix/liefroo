@@ -12,7 +12,7 @@ export default function BundledCTA() {
   ];
 
   return (
-    <section className="snap-start snap-always relative z-10 py-12 lg:py-20 bg-[#fafafa] w-full">
+    <section className="relative z-10 py-12 lg:py-20 bg-[#fafafa] w-full">
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="relative overflow-hidden rounded-3xl lg:rounded-[40px] bg-gradient-to-r from-red-600 to-red-500 p-6 sm:p-8 lg:p-12 shadow-[0_30px_80px_rgba(239,68,68,0.25)]">
           <div className="absolute right-0 top-0 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />

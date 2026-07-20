@@ -25,7 +25,7 @@ export default function ServiceHero({
   const hasImage = !!image;
 
   return (
-    <section className="snap-start snap-always relative overflow-hidden bg-gradient-to-b from-red-50 via-red-50/40 to-white pt-28 pb-12 lg:pt-36 lg:pb-20 z-10 w-full">
+    <section className="relative overflow-hidden bg-gradient-to-b from-red-50 via-red-50/40 to-white pt-28 pb-12 lg:pt-36 lg:pb-20 z-10 w-full">
       <div
         className="absolute top-24 left-8 w-40 h-40 opacity-40 pointer-events-none"
         style={{

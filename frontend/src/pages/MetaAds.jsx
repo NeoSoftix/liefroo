@@ -53,7 +53,7 @@ export default function MetaAds() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("metaAds.seo.title")}
         description={t("metaAds.seo.description")}

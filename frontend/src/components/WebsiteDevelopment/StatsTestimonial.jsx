@@ -12,7 +12,7 @@ export default function StatsTestimonial() {
   ];
 
   return (
-    <section className="snap-start snap-always relative z-10 py-12 lg:py-20 bg-[#fafafa] w-full">
+    <section className="relative z-10 py-12 lg:py-20 bg-[#fafafa] w-full">
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="grid md:grid-cols-2 gap-6 lg:gap-14 items-center w-full">
           {/* Stats */}

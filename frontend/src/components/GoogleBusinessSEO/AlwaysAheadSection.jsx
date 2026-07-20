@@ -13,7 +13,7 @@ export default function AlwaysAheadSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="snap-start snap-always relative z-10 py-12 lg:py-20 w-full">
+    <section className="relative z-10 py-12 lg:py-20 w-full">
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="relative overflow-hidden rounded-3xl lg:rounded-[40px] bg-red-50/60 border border-red-100 p-6 sm:p-8 lg:p-12">
           <div className="max-w-2xl">

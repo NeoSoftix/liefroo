@@ -44,7 +44,7 @@ export default function OnlineOrdering() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("onlineOrdering.seo.title")}
         description={t("onlineOrdering.seo.description")}

@@ -43,7 +43,7 @@ export default function ServicesGrid({ eyebrow, heading, description, bgClassNam
   }));
 
   return (
-    <section className={`snap-start snap-always relative z-10 w-full py-14 lg:py-20 ${bgClassName}`}>
+    <section className={`relative z-10 w-full py-14 lg:py-20 ${bgClassName}`}>
       <div className="max-w-7xl mx-auto px-6 w-full">
         {(eyebrow || heading) && (
           <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">

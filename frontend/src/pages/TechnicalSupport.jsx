@@ -62,7 +62,7 @@ export default function TechnicalSupport() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("technicalSupport.seo.title")}
         description={t("technicalSupport.seo.description")}

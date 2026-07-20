@@ -13,7 +13,7 @@ export default function HeroSlider() {
   const slideText = t(`hero.slides.${activeSlide.id}`, { returnObjects: true });
 
   return (
-    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative overflow-hidden bg-white">
+    <section className="flex flex-col justify-center relative overflow-hidden bg-white">
 
       {/* Background Effects */}
       <div className="absolute top-20 left-20 w-[500px] h-[500px] bg-red-500/10 rounded-full blur-[150px]" />

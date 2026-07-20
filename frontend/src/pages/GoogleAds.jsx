@@ -51,7 +51,7 @@ export default function GoogleAds() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("googleAds.seo.title")}
         description={t("googleAds.seo.description")}

@@ -55,7 +55,7 @@ export default function MenuManagement() {
   }));
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("menuManagement.seo.title")}
         description={t("menuManagement.seo.description")}

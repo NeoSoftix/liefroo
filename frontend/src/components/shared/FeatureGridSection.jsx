@@ -14,7 +14,7 @@ export default function FeatureGridSection({
   bgClassName = "bg-white",
 }) {
   return (
-    <section className={`snap-start snap-always relative z-10 py-12 lg:py-20 ${bgClassName} w-full`}>
+    <section className={`relative z-10 py-12 lg:py-20 ${bgClassName} w-full`}>
       <div className="max-w-7xl mx-auto px-6 w-full">
         {(eyebrow || heading) && (
           <div className="text-center max-w-2xl mx-auto mb-6 lg:mb-8">

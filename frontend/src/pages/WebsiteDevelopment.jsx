@@ -45,7 +45,7 @@ export default function WebsiteDevelopment() {
   }));
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("websiteDevelopment.seo.title")}
         description={t("websiteDevelopment.seo.description")}

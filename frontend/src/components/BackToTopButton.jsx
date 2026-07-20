@@ -9,29 +9,17 @@ export default function BackToTopButton() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const scrollContainer = document.querySelector(".snap-y");
-    if (!scrollContainer) return;
-
     const handleScroll = () => {
-      setVisible(scrollContainer.scrollTop > 200);
+      setVisible(window.scrollY > 200);
     };
 
     handleScroll();
-    scrollContainer.addEventListener("scroll", handleScroll);
-    return () => scrollContainer.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
   const scrollToTop = () => {
-    const scrollContainer = document.querySelector(".snap-y");
-    if (!scrollContainer) return;
-
-    const previousSnapType = scrollContainer.style.scrollSnapType;
-    scrollContainer.style.scrollSnapType = "none";
-    scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
-
-    setTimeout(() => {
-      scrollContainer.style.scrollSnapType = previousSnapType || "";
-    }, 700);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

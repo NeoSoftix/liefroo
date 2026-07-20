@@ -30,21 +30,7 @@ function ScrollToHashElement() {
       const element = document.getElementById(hash.replace("#", ""));
       if (element) {
         setTimeout(() => {
-          // scroll-snap containers block scrollIntoView from passing
-          // through intermediate sections, so disable snapping mid-scroll
-          const snapContainer = element.closest(".snap-y");
-          const previousSnapType = snapContainer?.style.scrollSnapType;
-          if (snapContainer) {
-            snapContainer.style.scrollSnapType = "none";
-          }
-
           element.scrollIntoView({ behavior: "smooth" });
-
-          if (snapContainer) {
-            setTimeout(() => {
-              snapContainer.style.scrollSnapType = previousSnapType || "";
-            }, 700);
-          }
         }, 100);
       }
     } else {

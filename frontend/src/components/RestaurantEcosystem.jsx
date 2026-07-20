@@ -16,7 +16,7 @@ import Button from "./Button";
 export default function RestaurantEcosystem() {
   const { t } = useTranslation();
   return (
-    <section id="features" className="snap-start snap-always min-h-screen flex flex-col justify-center relative pt-24 pb-8 lg:pt-16 lg:pb-16 overflow-hidden bg-[#FAFAFA]">
+    <section id="features" className="flex flex-col justify-center relative pt-24 pb-8 lg:pt-16 lg:pb-16 overflow-hidden bg-[#FAFAFA]">
 
       {/* Premium Background */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-red-100 rounded-full blur-[180px]" />

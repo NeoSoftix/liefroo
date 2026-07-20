@@ -26,7 +26,7 @@ export default function Footer() {
   const contactEmail = t("footer.contact.email");
   const contactPhone = t("footer.contact.phone");
   return (
-    <footer className="snap-start snap-always min-h-screen flex flex-col justify-center relative bg-[#fafafa] pt-10 lg:pt-16 pb-4 lg:pb-6 overflow-hidden w-full">
+    <footer className="flex flex-col justify-center relative bg-[#fafafa] pt-10 lg:pt-16 pb-4 lg:pb-6 overflow-hidden w-full">
 
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[200px] bg-red-100/50 blur-[100px] rounded-full opacity-70 pointer-events-none" />

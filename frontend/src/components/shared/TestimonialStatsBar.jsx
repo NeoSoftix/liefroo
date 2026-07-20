@@ -10,7 +10,7 @@ export default function TestimonialStatsBar({
   statsGridClassName = "grid-cols-2 md:grid-cols-4",
 }) {
   return (
-    <section className="snap-start snap-always relative z-10 py-12 lg:py-16 bg-red-50/60 w-full">
+    <section className="relative z-10 py-12 lg:py-16 bg-red-50/60 w-full">
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-10 text-center md:text-left">
           <div className="max-w-xl">

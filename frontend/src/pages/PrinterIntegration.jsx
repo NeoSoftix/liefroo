@@ -60,7 +60,7 @@ export default function PrinterIntegration() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("printerIntegration.seo.title")}
         description={t("printerIntegration.seo.description")}

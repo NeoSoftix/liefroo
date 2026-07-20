@@ -15,7 +15,7 @@ export default function ProcessSteps({
   bgClassName = "bg-[#fafafa]",
 }) {
   return (
-    <section id={id} className={`snap-start snap-always relative z-10 py-12 lg:py-20 ${bgClassName} overflow-hidden w-full`}>
+    <section id={id} className={`relative z-10 py-12 lg:py-20 ${bgClassName} overflow-hidden w-full`}>
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="text-center max-w-2xl mx-auto mb-6 lg:mb-8">
           {eyebrow && (

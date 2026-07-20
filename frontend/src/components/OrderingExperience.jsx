@@ -15,7 +15,7 @@ import Button from "./Button";
 export default function OrderingExperience() {
   const { t } = useTranslation();
   return (
-    <section className="snap-start snap-always min-h-screen flex flex-col justify-center relative py-10 lg:py-16 bg-[#FCFCFC] overflow-hidden">
+    <section className="flex flex-col justify-center relative py-10 lg:py-16 bg-[#FCFCFC] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-100 rounded-full blur-[150px]" />

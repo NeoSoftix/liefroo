@@ -66,7 +66,7 @@ export default function MobileAppDevelopment() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("mobileAppDevelopment.seo.title")}
         description={t("mobileAppDevelopment.seo.description")}

@@ -51,7 +51,7 @@ export default function GoogleBusinessSEO() {
   ];
 
   return (
-    <div className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth bg-white">
+    <div className="w-full overflow-x-hidden bg-white">
       <Seo
         title={t("googleBusinessSEO.seo.title")}
         description={t("googleBusinessSEO.seo.description")}
