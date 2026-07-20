@@ -1,24 +1,16 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Products from "./pages/Products";
-import WebsiteDevelopment from "./pages/WebsiteDevelopment";
-import MobileAppDevelopment from "./pages/MobileAppDevelopment";
-import PrinterIntegration from "./pages/PrinterIntegration";
-import POSSystemDevelopment from "./pages/POSSystemDevelopment";
-import TechnicalSupport from "./pages/TechnicalSupport";
-import MenuManagement from "./pages/MenuManagement";
-import GoogleBusinessSEO from "./pages/GoogleBusinessSEO";
-import MetaAds from "./pages/MetaAds";
-import GoogleAds from "./pages/GoogleAds";
-import OnlineOrdering from "./pages/OnlineOrdering";
-import GoogleAnalytics from "./pages/GoogleAnalytics";
-import ReservationSystem from "./pages/ReservationSystem";
-import QROrdering from "./pages/QROrdering";
-import ThankYou from "./pages/ThankYou";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsConditions from "./pages/TermsConditions";
-import Services from "./pages/Services";
-import About from "./pages/About";
+import { createElement, useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+  useLocation,
+  useParams,
+} from "react-router-dom";
+import * as Pages from "./pages";
+import { routes, LOCALES, DEFAULT_LOCALE } from "./routesConfig";
+import i18n from "./i18n";
 import BackToTopButton from "./components/BackToTopButton";
 import PageNotFound from "./components/shared/PageNotFound";
 
@@ -41,33 +33,52 @@ function ScrollToHashElement() {
   return null;
 }
 
+function LocaleLayout() {
+  const { lng } = useParams();
+  const location = useLocation();
+  const isValidLocale = LOCALES.includes(lng);
+
+  useEffect(() => {
+    if (isValidLocale) i18n.changeLanguage(lng);
+  }, [lng, isValidLocale]);
+
+  if (!isValidLocale) {
+    // Legacy unprefixed deep link (e.g. "/menu-management" — captured here
+    // as lng="menu-management") or a garbage path. Redirect into the default
+    // locale, preserving the rest of the URL.
+    return (
+      <Navigate
+        to={`/${DEFAULT_LOCALE}${location.pathname}${location.search}${location.hash}`}
+        replace
+      />
+    );
+  }
+
+  return (
+    <>
+      <ScrollToHashElement />
+      <Outlet />
+      <BackToTopButton />
+    </>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToHashElement />
       <Routes>
-        <Route path="/" element={<Products />} />
-        <Route path="/website-development" element={<WebsiteDevelopment />} />
-        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
-        <Route path="/printer-integration" element={<PrinterIntegration />} />
-        <Route path="/pos-system-development" element={<POSSystemDevelopment />} />
-        <Route path="/technical-support" element={<TechnicalSupport />} />
-        <Route path="/menu-management" element={<MenuManagement />} />
-        <Route path="/google-business-seo" element={<GoogleBusinessSEO />} />
-        <Route path="/meta-ads" element={<MetaAds />} />
-        <Route path="/google-ads" element={<GoogleAds />} />
-        <Route path="/online-ordering" element={<OnlineOrdering />} />
-        <Route path="/google-analytics" element={<GoogleAnalytics />} />
-        <Route path="/reservation-system" element={<ReservationSystem />} />
-        <Route path="/qr-ordering" element={<QROrdering />} />
-        <Route path="/thank-you" element={<ThankYou />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-conditions" element={<TermsConditions />} />
-        <Route path="/products" element={<Services />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<Navigate to={`/${DEFAULT_LOCALE}`} replace />} />
+        <Route path="/:lng" element={<LocaleLayout />}>
+          {routes.map(({ key, path, component }) =>
+            path === "/" ? (
+              <Route key={key} index element={createElement(Pages[component])} />
+            ) : (
+              <Route key={key} path={path.slice(1)} element={createElement(Pages[component])} />
+            )
+          )}
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
       </Routes>
-      <BackToTopButton />
     </BrowserRouter>
   );
 }

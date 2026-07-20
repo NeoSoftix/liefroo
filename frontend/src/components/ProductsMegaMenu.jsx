@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 import {
   Globe,
   Smartphone,
@@ -16,30 +15,27 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { LocalizedLink } from "./shared";
+import { megaMenuItems } from "../routesConfig";
+
+const iconByKey = {
+  menuManagement: LayoutGrid,
+  onlineOrdering: Search,
+  qrOrdering: QrCode,
+  posSystem: Monitor,
+  reservationSystem: CalendarCheck,
+  printerIntegration: Printer,
+  websiteDevelopment: Globe,
+  mobileAppDevelopment: Smartphone,
+  googleAds: Search,
+  metaAds: Share2,
+  googleBusinessSEO: MapPin,
+  googleAnalytics: BarChart3,
+};
 
 const groups = [
-  {
-    key: "orderingOperations",
-    items: [
-      { Icon: LayoutGrid, key: "menuManagement", href: "/menu-management" },
-      { Icon: Search, key: "onlineOrdering", href: "/online-ordering" },
-      { Icon: QrCode, key: "qrOrdering", href: "/qr-ordering" },
-      { Icon: Monitor, key: "posSystem", href: "/pos-system-development" },
-      { Icon: CalendarCheck, key: "reservationSystem", href: "/reservation-system" },
-      { Icon: Printer, key: "printerIntegration", href: "/printer-integration" },
-    ],
-  },
-  {
-    key: "growthMarketing",
-    items: [
-      { Icon: Globe, key: "websiteDevelopment", href: "/website-development" },
-      { Icon: Smartphone, key: "mobileAppDevelopment", href: "/mobile-app-development" },
-      { Icon: Search, key: "googleAds", href: "/google-ads" },
-      { Icon: Share2, key: "metaAds", href: "/meta-ads" },
-      { Icon: MapPin, key: "googleBusinessSEO", href: "/google-business-seo" },
-      { Icon: BarChart3, key: "googleAnalytics", href: "/google-analytics" },
-    ],
-  },
+  { key: "orderingOperations", items: megaMenuItems("orderingOperations") },
+  { key: "growthMarketing", items: megaMenuItems("growthMarketing") },
 ];
 
 export default function ProductsMegaMenu({ isOpen, onMouseEnter, onMouseLeave }) {
@@ -65,26 +61,29 @@ export default function ProductsMegaMenu({ isOpen, onMouseEnter, onMouseLeave })
                     {t(`header.megaMenu.groups.${group.key}`)}
                   </h4>
                   <ul className="space-y-1">
-                    {group.items.map(({ Icon, key, href }) => (
-                      <li key={key}>
-                        <Link
-                          to={href}
-                          className="group flex items-start gap-3 rounded-2xl p-2.5 -mx-2.5 hover:bg-red-50 transition-colors"
-                        >
-                          <div className="w-10 h-10 shrink-0 rounded-xl bg-red-50 group-hover:bg-white flex items-center justify-center transition-colors">
-                            <Icon className="text-red-600" size={18} />
-                          </div>
-                          <div>
-                            <p className="font-semibold text-sm text-gray-900">
-                              {t(`header.megaMenu.items.${key}.title`)}
-                            </p>
-                            <p className="text-xs text-gray-500 mt-0.5 leading-snug">
-                              {t(`header.megaMenu.items.${key}.desc`)}
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                    ))}
+                    {group.items.map(({ key, path }) => {
+                      const Icon = iconByKey[key];
+                      return (
+                        <li key={key}>
+                          <LocalizedLink
+                            to={path}
+                            className="group flex items-start gap-3 rounded-2xl p-2.5 -mx-2.5 hover:bg-red-50 transition-colors"
+                          >
+                            <div className="w-10 h-10 shrink-0 rounded-xl bg-red-50 group-hover:bg-white flex items-center justify-center transition-colors">
+                              <Icon className="text-red-600" size={18} />
+                            </div>
+                            <div>
+                              <p className="font-semibold text-sm text-gray-900">
+                                {t(`header.megaMenu.items.${key}.title`)}
+                              </p>
+                              <p className="text-xs text-gray-500 mt-0.5 leading-snug">
+                                {t(`header.megaMenu.items.${key}.desc`)}
+                              </p>
+                            </div>
+                          </LocalizedLink>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -102,13 +101,13 @@ export default function ProductsMegaMenu({ isOpen, onMouseEnter, onMouseLeave })
                   </p>
                 </div>
 
-                <Link
+                <LocalizedLink
                   to="/technical-support"
                   className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm mt-6 hover:gap-3 transition-all"
                 >
                   {t("header.megaMenu.exploreAll")}
                   <ArrowRight size={16} />
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>

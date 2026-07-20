@@ -1,16 +1,20 @@
+import { useLocalizedNavigate } from "./localizedRouting";
+
 const PageNotFound = () => {
+  const navigate = useLocalizedNavigate();
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6 bg-white text-gray-900 font-sans antialiased">
-      
+
       {/* Subtle Red Grid Background Accent */}
       <div className="absolute inset-0 z-0 opacity-5 bg-[linear-gradient(to_right,#ef4444_1px,transparent_1px),linear-gradient(to_bottom,#ef4444_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-      
+
       {/* Decorative Red Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-500 rounded-full blur-[120px] opacity-10 z-0" />
 
       {/* Main Content Box */}
       <div className="text-center z-10 max-w-xl">
-        
+
         {/* Error Code Graphic */}
         <div className="relative inline-block">
           <h1 className="text-[12rem] font-black tracking-tighter text-red-600 leading-none select-none sm:text-[16rem]">
@@ -31,20 +35,20 @@ const PageNotFound = () => {
 
         {/* Actions */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button 
-            onClick={() => window.location.href = '/'}
+          <button
+            onClick={() => navigate('/')}
             className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200 shadow-md shadow-red-600/10 cursor-pointer"
           >
             Go Back Home
           </button>
-          <button 
-            onClick={() => window.location.href = '/technical-support'}
+          <button
+            onClick={() => navigate('/technical-support')}
             className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border-2 border-red-600 text-base font-medium rounded-lg text-red-600 bg-transparent hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200 cursor-pointer"
           >
             Contact Support
           </button>
         </div>
-        
+
       </div>
 
       {/* Footer Note */}

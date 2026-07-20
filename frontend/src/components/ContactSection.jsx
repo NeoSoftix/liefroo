@@ -10,7 +10,7 @@ import {
 } from "react-icons/fi";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocalizedNavigate } from "./shared";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
@@ -25,7 +25,7 @@ const initialForm = { name: "", email: "", phone: "", subject: "", message: "" }
 
 export default function ContactSection() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
   const [errorMessage, setErrorMessage] = useState("");

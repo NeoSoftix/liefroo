@@ -1,40 +1,17 @@
 // Runs after `vite build`. Boots the built app on a local static server, visits
-// every route with headless Chrome, and overwrites dist/<route>/index.html with
-// the fully-rendered HTML — so <title>/OG/meta tags set by react-helmet-async
-// are present in the raw HTML for crawlers and "View Source", not just after
-// client-side JS runs.
+// every locale x route combination with headless Chrome, and overwrites
+// dist/<lng>/<route>/index.html with the fully-rendered HTML — so
+// <title>/OG/meta tags set by react-helmet-async are present in the raw HTML
+// for crawlers and "View Source", not just after client-side JS runs.
 import { preview } from "vite";
 import puppeteer from "puppeteer";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, copyFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { prerenderablePaths, LOCALES, DEFAULT_LOCALE } from "../src/routesConfig.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
-
-// Keep in sync with the <Route> list in src/App.jsx.
-// "/thank-you" is intentionally excluded — it only renders with in-memory
-// navigation state and is already marked noIndex.
-const routes = [
-  "/",
-  "/products",
-  "/about",
-  "/website-development",
-  "/mobile-app-development",
-  "/printer-integration",
-  "/pos-system-development",
-  "/technical-support",
-  "/menu-management",
-  "/google-business-seo",
-  "/meta-ads",
-  "/google-ads",
-  "/online-ordering",
-  "/google-analytics",
-  "/reservation-system",
-  "/qr-ordering",
-  "/privacy-policy",
-  "/terms-conditions",
-];
 
 async function run() {
   const server = await preview({ root, preview: { port: 4173, strictPort: false } });
@@ -58,16 +35,16 @@ async function run() {
     return;
   }
 
-  // dist/index.html is both the output file for "/" AND the file the preview
-  // server's SPA fallback serves for any route whose own dist/<route>/index.html
-  // doesn't exist yet. So "/" must be crawled and written LAST — otherwise every
-  // route processed after it would load Home's already-baked tags as its
-  // starting HTML and layer its own tags on top of them.
-  const orderedRoutes = [...routes.filter((r) => r !== "/"), "/"];
+  // Each locale's home route now writes to its own directory (dist/de/,
+  // dist/en/) instead of colliding with root dist/index.html, so there's no
+  // more "process home last" ordering hack needed.
+  const allRoutes = LOCALES.flatMap((lng) =>
+    prerenderablePaths.map((p) => `/${lng}${p === "/" ? "" : p}`)
+  );
   const failures = [];
 
   try {
-    for (const route of orderedRoutes) {
+    for (const route of allRoutes) {
       const page = await browser.newPage();
       try {
         await page.goto(`${baseUrl}${route}`, { waitUntil: "domcontentloaded", timeout: 30000 });
@@ -81,7 +58,7 @@ async function run() {
           });
         const html = await page.evaluate(() => "<!doctype html>\n" + document.documentElement.outerHTML);
 
-        const outDir = route === "/" ? path.join(root, "dist") : path.join(root, "dist", route.slice(1));
+        const outDir = path.join(root, "dist", ...route.slice(1).split("/"));
         await mkdir(outDir, { recursive: true });
         await writeFile(path.join(outDir, "index.html"), html, "utf-8");
         console.log(`[prerender] ${route} -> ${path.relative(root, path.join(outDir, "index.html"))}`);
@@ -92,6 +69,16 @@ async function run() {
         await page.close();
       }
     }
+
+    // Bare-domain hits (no locale prefix) still need something sensible at
+    // dist/index.html: copy the default locale's baked home page so direct
+    // hits to https://www.liefro.com/ get correct OG tags + a canonical
+    // pointing at /<DEFAULT_LOCALE>. The client-side <Navigate> in App.jsx
+    // then moves any JS-enabled visitor to /<DEFAULT_LOCALE> immediately.
+    await copyFile(
+      path.join(root, "dist", DEFAULT_LOCALE, "index.html"),
+      path.join(root, "dist", "index.html")
+    );
   } finally {
     await browser.close();
     await server.httpServer.close();

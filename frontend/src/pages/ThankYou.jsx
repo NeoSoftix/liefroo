@@ -1,14 +1,14 @@
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PartyPopper, User, Mail, MessageSquare, CheckCircle2, Home } from "lucide-react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Seo } from "../components/shared";
+import { Seo, LocalizedLink, useLocalizedNavigate } from "../components/shared";
 
 export default function ThankYou() {
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
   const { name, email, subject } = location.state || {};
 
   useEffect(() => {
@@ -82,13 +82,13 @@ export default function ThankYou() {
             </div>
           </div>
 
-          <Link
+          <LocalizedLink
             to="/"
             className="mt-8 inline-flex items-center justify-center gap-2 w-full h-14 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition-all"
           >
             <Home size={18} />
             Back to Home
-          </Link>
+          </LocalizedLink>
         </div>
       </motion.div>
     </div>

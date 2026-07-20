@@ -1,9 +1,8 @@
 import { ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { ServicesGrid, Seo } from "../components/shared";
+import { ServicesGrid, Seo, LocalizedLink } from "../components/shared";
 import posImage from "../assets/posimage.png";
 
 export default function Services() {
@@ -25,9 +24,9 @@ export default function Services() {
             <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center">
               <div>
                 <nav className="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-500 mb-3">
-                  <Link to="/" className="hover:text-red-600 transition-colors">
+                  <LocalizedLink to="/" className="hover:text-red-600 transition-colors">
                     {t("services.breadcrumbHome")}
-                  </Link>
+                  </LocalizedLink>
                   <ChevronRight size={14} />
                   <span className="text-red-600">{t("services.breadcrumbServices")}</span>
                 </nav>

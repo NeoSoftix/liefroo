@@ -7,9 +7,11 @@ import {
   FaPinterestP,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { goToSection } from "../utils/scrollToSection";
+import { LocalizedLink } from "./shared";
+import { LOCALES, DEFAULT_LOCALE } from "../routesConfig";
 
 const GERMANY_MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Homburger+Landstra%C3%9Fe+641%2C+60437+Frankfurt+am+Main+Nord-Ost%2C+Germany";
@@ -20,6 +22,8 @@ export default function Footer() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const { lng: rawLng } = useParams();
+  const lng = LOCALES.includes(rawLng) ? rawLng : DEFAULT_LOCALE;
   const productItems = t("footer.product.items", { returnObjects: true });
   const companyItems = t("footer.company.items", { returnObjects: true });
   const legalItems = t("footer.legal.items", { returnObjects: true });
@@ -65,7 +69,7 @@ export default function Footer() {
             </div>
 
             <Button
-              onClick={() => goToSection(navigate, pathname, "contact")}
+              onClick={() => goToSection(navigate, pathname, "contact", lng)}
               className="
                 bg-white
                 text-red-600
@@ -94,9 +98,9 @@ export default function Footer() {
           {/* BRAND */}
           <div className="col-span-2 lg:col-span-1">
 
-            <Link to="/" className="inline-block mb-3">
+            <LocalizedLink to="/" className="inline-block mb-3">
               <img src={logo} alt="MealsHub Logo" className="h-10 md:h-12 w-auto object-contain" />
-            </Link>
+            </LocalizedLink>
 
             <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
               {t("footer.brand.description")}
@@ -145,12 +149,12 @@ export default function Footer() {
 
                 return (
                   <li key={key}>
-                    <Link
+                    <LocalizedLink
                       to={href}
                       className="text-gray-600 hover:text-red-600 transition font-medium"
                     >
                       {label}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 );
               })}
@@ -175,18 +179,18 @@ export default function Footer() {
                     {sectionId ? (
                       <button
                         type="button"
-                        onClick={() => goToSection(navigate, pathname, sectionId)}
+                        onClick={() => goToSection(navigate, pathname, sectionId, lng)}
                         className="text-gray-600 hover:text-red-600 transition font-medium"
                       >
                         {label}
                       </button>
                     ) : (
-                      <Link
+                      <LocalizedLink
                         to="/"
                         className="text-gray-600 hover:text-red-600 transition font-medium"
                       >
                         {label}
-                      </Link>
+                      </LocalizedLink>
                     )}
                   </li>
                 );
@@ -208,12 +212,12 @@ export default function Footer() {
 
                 return (
                   <li key={key}>
-                    <Link
+                    <LocalizedLink
                       to={href}
                       className="text-gray-600 hover:text-red-600 transition font-medium"
                     >
                       {label}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 );
               })}

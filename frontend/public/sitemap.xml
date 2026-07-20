@@ -1,58 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.liefro.com/</loc>
+    <loc>https://www.liefro.com/de/</loc>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/" />
   </url>
   <url>
-    <loc>https://www.liefro.com/about</loc>
+    <loc>https://www.liefro.com/en/</loc>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/" />
   </url>
   <url>
-    <loc>https://www.liefro.com/products</loc>
+    <loc>https://www.liefro.com/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/about" />
   </url>
   <url>
-    <loc>https://www.liefro.com/menu-management</loc>
+    <loc>https://www.liefro.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/about" />
   </url>
   <url>
-    <loc>https://www.liefro.com/online-ordering</loc>
+    <loc>https://www.liefro.com/de/products</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/products" />
   </url>
   <url>
-    <loc>https://www.liefro.com/qr-ordering</loc>
+    <loc>https://www.liefro.com/en/products</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/products" />
   </url>
   <url>
-    <loc>https://www.liefro.com/pos-system-development</loc>
+    <loc>https://www.liefro.com/de/menu-management</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/menu-management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/menu-management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/menu-management" />
   </url>
   <url>
-    <loc>https://www.liefro.com/reservation-system</loc>
+    <loc>https://www.liefro.com/en/menu-management</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/menu-management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/menu-management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/menu-management" />
   </url>
   <url>
-    <loc>https://www.liefro.com/printer-integration</loc>
+    <loc>https://www.liefro.com/de/online-ordering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/online-ordering" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/online-ordering" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/online-ordering" />
   </url>
   <url>
-    <loc>https://www.liefro.com/website-development</loc>
+    <loc>https://www.liefro.com/en/online-ordering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/online-ordering" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/online-ordering" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/online-ordering" />
   </url>
   <url>
-    <loc>https://www.liefro.com/mobile-app-development</loc>
+    <loc>https://www.liefro.com/de/qr-ordering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/qr-ordering" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/qr-ordering" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/qr-ordering" />
   </url>
   <url>
-    <loc>https://www.liefro.com/google-ads</loc>
+    <loc>https://www.liefro.com/en/qr-ordering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/qr-ordering" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/qr-ordering" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/qr-ordering" />
   </url>
   <url>
-    <loc>https://www.liefro.com/meta-ads</loc>
+    <loc>https://www.liefro.com/de/pos-system-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/pos-system-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/pos-system-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/pos-system-development" />
   </url>
   <url>
-    <loc>https://www.liefro.com/google-business-seo</loc>
+    <loc>https://www.liefro.com/en/pos-system-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/pos-system-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/pos-system-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/pos-system-development" />
   </url>
   <url>
-    <loc>https://www.liefro.com/google-analytics</loc>
+    <loc>https://www.liefro.com/de/reservation-system</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/reservation-system" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/reservation-system" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/reservation-system" />
   </url>
   <url>
-    <loc>https://www.liefro.com/technical-support</loc>
+    <loc>https://www.liefro.com/en/reservation-system</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/reservation-system" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/reservation-system" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/reservation-system" />
   </url>
   <url>
-    <loc>https://www.liefro.com/privacy-policy</loc>
+    <loc>https://www.liefro.com/de/printer-integration</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/printer-integration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/printer-integration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/printer-integration" />
   </url>
   <url>
-    <loc>https://www.liefro.com/terms-conditions</loc>
+    <loc>https://www.liefro.com/en/printer-integration</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/printer-integration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/printer-integration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/printer-integration" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/website-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/website-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/website-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/website-development" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/website-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/website-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/website-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/website-development" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/mobile-app-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/mobile-app-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/mobile-app-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/mobile-app-development" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/mobile-app-development</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/mobile-app-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/mobile-app-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/mobile-app-development" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/google-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-ads" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-ads" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/google-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-ads" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-ads" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/meta-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/meta-ads" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/meta-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/meta-ads" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/meta-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/meta-ads" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/meta-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/meta-ads" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/google-business-seo</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-business-seo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-business-seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-business-seo" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/google-business-seo</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-business-seo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-business-seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-business-seo" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/google-analytics</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-analytics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-analytics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-analytics" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/google-analytics</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/google-analytics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/google-analytics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/google-analytics" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/technical-support</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/technical-support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/technical-support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/technical-support" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/technical-support</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/technical-support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/technical-support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/technical-support" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/terms-conditions</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/terms-conditions" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/terms-conditions</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/terms-conditions" />
   </url>
 </urlset>

@@ -3,16 +3,20 @@
 import { useRef, useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ProductsMegaMenu from "./ProductsMegaMenu";
 import logo from "../assets/logo.png";
 import { goToSection } from "../utils/scrollToSection";
+import { LocalizedLink } from "./shared";
+import { LOCALES, DEFAULT_LOCALE, megaMenuItems } from "../routesConfig";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const handleContactClick = () => goToSection(navigate, pathname, "contact");
+  const { lng: rawLng } = useParams();
+  const lng = LOCALES.includes(rawLng) ? rawLng : DEFAULT_LOCALE;
+  const handleContactClick = () => goToSection(navigate, pathname, "contact", lng);
   const [productsOpen, setProductsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -48,8 +52,9 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const switchLocale = (nextLng) => {
+    const rest = pathname.replace(/^\/(de|en)/, "") || "";
+    navigate(`/${nextLng}${rest}`);
   };
 
   const openProducts = () => {
@@ -78,7 +83,7 @@ export default function Header() {
         {/* max-w-7xl aur mx-auto lagaya taaki andar ka content center me rahe aur baki sab same hai */}
         <div className="relative flex items-center justify-between max-w-7xl mx-auto w-full">
 
-          <Link to="/" className="flex items-center gap-3">
+          <LocalizedLink to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
               alt="Liefro Logo" 
@@ -86,18 +91,18 @@ export default function Header() {
                 isScrolled ? "h-10" : "h-[60px]"
               }`} 
             />
-          </Link>
+          </LocalizedLink>
 
           <nav className="hidden lg:flex items-center gap-10" onMouseLeave={closeProducts}>
 
-            <Link
+            <LocalizedLink
               to="/"
               className="hover:text-red-600 transition-colors font-medium text-gray-700"
             >
               {t("header.nav.home")}
-            </Link>
+            </LocalizedLink>
 
-            <Link
+            <LocalizedLink
               to="/products"
               className="flex items-center gap-1.5 hover:text-red-600 transition-colors font-medium text-gray-700"
               onMouseEnter={openProducts}
@@ -108,14 +113,14 @@ export default function Header() {
                 size={16}
                 className={`transition-transform ${productsOpen ? "rotate-180" : ""}`}
               />
-            </Link>
+            </LocalizedLink>
 
-            <Link
+            <LocalizedLink
               to="/about"
               className="hover:text-red-600 transition-colors font-medium text-gray-700"
             >
               {t("header.nav.about")}
-            </Link>
+            </LocalizedLink>
 
             <button
               type="button"
@@ -135,7 +140,7 @@ export default function Header() {
           <div className="flex items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 text-xs sm:text-sm font-semibold bg-white/50">
               <button
-                onClick={() => changeLanguage("de")}
+                onClick={() => switchLocale("de")}
                 className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "de"
                     ? "bg-red-600 text-white"
@@ -145,7 +150,7 @@ export default function Header() {
                 DE
               </button>
               <button
-                onClick={() => changeLanguage("en")}
+                onClick={() => switchLocale("en")}
                 className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "en"
                     ? "bg-red-600 text-white"
@@ -190,17 +195,17 @@ export default function Header() {
         >
           {/* Drawer Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-            <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
+            <LocalizedLink to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
               <img 
                 src={logo} 
                 alt="Liefro Logo" 
                 className="h-8 w-auto object-contain" 
               />
-            </Link>
+            </LocalizedLink>
 
             <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 text-xs font-semibold bg-white">
               <button
-                onClick={() => changeLanguage("de")}
+                onClick={() => switchLocale("de")}
                 className={`px-2 py-0.5 rounded-full transition-all ${
                   i18n.resolvedLanguage === "de"
                     ? "bg-red-600 text-white"
@@ -210,7 +215,7 @@ export default function Header() {
                 DE
               </button>
               <button
-                onClick={() => changeLanguage("en")}
+                onClick={() => switchLocale("en")}
                 className={`px-2 py-0.5 rounded-full transition-all ${
                   i18n.resolvedLanguage === "en"
                     ? "bg-red-600 text-white"
@@ -233,21 +238,21 @@ export default function Header() {
           {/* Drawer Content */}
           <div className="flex-1 overflow-y-auto">
             <nav className="flex flex-col divide-y divide-gray-100">
-              <Link
+              <LocalizedLink
                 to="/"
                 onClick={() => setMobileOpen(false)}
                 className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
               >
                 {t("header.nav.home")}
-              </Link>
+              </LocalizedLink>
 
-              <Link
+              <LocalizedLink
                 to="/about"
                 onClick={() => setMobileOpen(false)}
                 className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
               >
                 {t("header.nav.about")}
-              </Link>
+              </LocalizedLink>
 
               {mobileNavLinks.map((link) => (
                 <button
@@ -278,36 +283,23 @@ export default function Header() {
 
                 {mobileProductsOpen && (
                   <div className="px-5 pb-4 flex flex-col gap-1 bg-gray-50/50 pt-2">
-                    {[
-                      { key: "menuManagement", href: "/menu-management" },
-                      { key: "onlineOrdering", href: "/online-ordering" },
-                      { key: "qrOrdering", href: "/qr-ordering" },
-                      { key: "posSystem", href: "/pos-system-development" },
-                      { key: "reservationSystem", href: "/reservation-system" },
-                      { key: "printerIntegration", href: "/printer-integration" },
-                      { key: "websiteDevelopment", href: "/website-development" },
-                      { key: "mobileAppDevelopment", href: "/mobile-app-development" },
-                      { key: "googleAds", href: "/google-ads" },
-                      { key: "metaAds", href: "/meta-ads" },
-                      { key: "googleBusinessSEO", href: "/google-business-seo" },
-                      { key: "googleAnalytics", href: "/google-analytics" },
-                    ].map(({ key, href }) => (
-                      <Link
+                    {[...megaMenuItems("orderingOperations"), ...megaMenuItems("growthMarketing")].map(({ key, path }) => (
+                      <LocalizedLink
                         key={key}
-                        to={href}
+                        to={path}
                         onClick={() => setMobileOpen(false)}
                         className="px-3 py-2 rounded-xl text-sm text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors"
                       >
                         {t(`header.megaMenu.items.${key}.title`)}
-                      </Link>
+                      </LocalizedLink>
                     ))}
-                    <Link
+                    <LocalizedLink
                       to="/technical-support"
                       onClick={() => setMobileOpen(false)}
                       className="px-3 py-2 rounded-xl text-sm font-semibold text-red-600 hover:bg-red-50 transition-colors"
                     >
                       {t("header.megaMenu.items.technicalSupport.title")}
-                    </Link>
+                    </LocalizedLink>
                   </div>
                 )}
               </div>
