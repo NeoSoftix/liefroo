@@ -22,6 +22,8 @@ export default function BackToTopButton() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  if (pathname.endsWith("/qr-smm")) return null;
+
   return (
     <button
       type="button"
