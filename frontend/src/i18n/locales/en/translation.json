@@ -285,6 +285,33 @@
     },
     "cta": "See QR Ordering In Action"
   },
+  "qrSmm": {
+    "seoTitle": "Everything Your Restaurant Needs",
+    "badge": "All-in-One Restaurant Platform",
+    "headingLine1": "Everything Your",
+    "headingLine2": "Restaurant Needs",
+    "description": "Manage orders, menu, POS, reservations, marketing & more — all from one powerful platform.",
+    "shareTitle": "Liefro — Everything Your Restaurant Needs",
+    "features": {
+      "operations": {
+        "title": "Operations",
+        "subtitle": "Menu, Ordering, POS, Reservations"
+      },
+      "email": {
+        "title": "Email",
+        "subtitle": "enquiry@liefro.com"
+      },
+      "callNow": {
+        "title": "Call Now",
+        "subtitle": "8557062045"
+      },
+      "location": {
+        "title": "Location",
+        "subtitle": "A-817, 8th Floor, Bestech Business Tower, Mohali, 160062"
+      }
+    },
+    "stayConnected": "Stay Connected"
+  },
   "faq": {
     "eyebrow": "Food Ordering System",
     "title": "FAQ",
