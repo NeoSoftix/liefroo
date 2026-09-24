@@ -1,14 +1,13 @@
 import { slides } from "../../data/slides";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { useLocation, useNavigate } from "react-router-dom";
 import Button from "./Button";
-import { goToSection } from "../utils/scrollToSection";
+import { useGoToSection, useLocalizedNavigate } from "./shared";
 
 export default function HeroSlider() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const navigate = useLocalizedNavigate();
+  const goToSection = useGoToSection();
   const activeSlide = slides[0];
   const slideText = t(`hero.slides.${activeSlide.id}`, { returnObjects: true });
 
@@ -47,7 +46,7 @@ export default function HeroSlider() {
 
             <div className="flex flex-wrap gap-4 mt-6">
               <Button
-                onClick={() => goToSection(navigate, pathname, "contact")}
+                onClick={() => goToSection("contact")}
                 className="
                   bg-red-600 text-white border border-red-600
                   px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg text-sm sm:text-base
@@ -58,7 +57,7 @@ export default function HeroSlider() {
                 {t("hero.bookDemo")}
               </Button>
               <Button
-                onClick={() => console.log("Learn More")}
+                onClick={() => navigate("/products")}
                 className="
                   bg-white text-black border border-red-600
                   px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold text-sm sm:text-base

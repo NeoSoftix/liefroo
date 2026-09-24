@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Button from "../Button";
+import { scrollToElementId } from "../../utils/scrollToSection";
+import { useGoToSection } from "./localizedRouting";
 
 /**
  * Generic centered or split "service" page hero — badge, two-line heading, description,
@@ -15,6 +17,7 @@ export default function ServiceHero({
   description,
   checklist = [],
   ctaLabel,
+  ctaTarget = "contact",
   onCtaClick,
   secondaryCtaLabel,
   secondaryCtaHref = "#how-it-works",
@@ -23,6 +26,11 @@ export default function ServiceHero({
   image,
 }) {
   const hasImage = !!image;
+  const goToSection = useGoToSection();
+  // Scroll to ctaTarget if it is on this page; otherwise fall back to the
+  // home page contact form.
+  const handleCtaClick =
+    onCtaClick ?? (() => scrollToElementId(ctaTarget) || goToSection("contact"));
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-red-50 via-red-50/40 to-white pt-28 pb-12 lg:pt-36 lg:pb-20 z-10 w-full">
@@ -82,7 +90,7 @@ export default function ServiceHero({
               <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-4">
                 {ctaLabel && (
                   <Button
-                    onClick={onCtaClick}
+                    onClick={handleCtaClick}
                     className="
                       inline-flex items-center gap-2 sm:gap-3
                       bg-red-600 text-white border border-red-600
@@ -151,7 +159,7 @@ export default function ServiceHero({
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-6 lg:mt-8">
               {ctaLabel && (
                 <Button
-                  onClick={onCtaClick}
+                  onClick={handleCtaClick}
                   className="
                     inline-flex items-center gap-2 sm:gap-3
                     bg-red-600 text-white border border-red-600

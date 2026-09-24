@@ -22,7 +22,49 @@ export default function PricingComparison() {
           </h2>
         </div>
 
-        <div className="overflow-x-auto">
+        {/* Mobile: stacked cards (no horizontal scroll / cut-off columns) */}
+        <div className="space-y-3 sm:hidden">
+          {rowKeys.map((key) => (
+            <div
+              key={key}
+              className="rounded-2xl border border-gray-100 bg-white shadow-sm p-4"
+            >
+              <p className="text-sm font-semibold text-gray-900 mb-3">
+                {t(`websiteDevelopment.pricing.rows.${key}.label`)}
+              </p>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="rounded-xl bg-red-600 text-white p-2 text-center">
+                  <p className="text-[9px] uppercase tracking-wide opacity-80 mb-1 truncate">
+                    {t("websiteDevelopment.pricing.columns.us")}
+                  </p>
+                  <p className="text-[11px] font-bold flex items-center justify-center gap-1">
+                    <Check size={12} className="shrink-0" />
+                    <span className="truncate">{t(`websiteDevelopment.pricing.rows.${key}.us`)}</span>
+                  </p>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-2 text-center">
+                  <p className="text-[9px] uppercase tracking-wide text-gray-500 mb-1 truncate">
+                    {t("websiteDevelopment.pricing.columns.diy")}
+                  </p>
+                  <p className="text-[11px] font-medium text-gray-600">
+                    {t(`websiteDevelopment.pricing.rows.${key}.diy`)}
+                  </p>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-2 text-center">
+                  <p className="text-[9px] uppercase tracking-wide text-gray-500 mb-1 truncate">
+                    {t("websiteDevelopment.pricing.columns.agency")}
+                  </p>
+                  <p className="text-[11px] font-medium text-gray-600">
+                    {t(`websiteDevelopment.pricing.rows.${key}.agency`)}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* sm and up: full comparison table */}
+        <div className="hidden sm:block overflow-x-auto">
           <table className="w-full border-separate border-spacing-0 min-w-[600px] text-xs sm:text-sm">
             <thead>
               <tr>

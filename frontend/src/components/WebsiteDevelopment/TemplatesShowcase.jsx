@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import { useGoToSection } from "../shared";
 import imgTandoori from "../../assets/websiteTemplateTandoori.png";
 import imgChaska from "../../assets/websiteTemplateChaska.png";
 import imgGoldeneGerste from "../../assets/websiteTemplateGoldeneGerste.png";
@@ -16,6 +17,7 @@ const templates = [
 
 export default function TemplatesShowcase() {
   const { t } = useTranslation();
+  const goToSection = useGoToSection();
 
   return (
     <section className="relative z-10 py-12 lg:py-20 bg-white w-full">
@@ -63,6 +65,7 @@ export default function TemplatesShowcase() {
 
         <div className="flex justify-center mt-6 lg:mt-8">
           <Button
+            onClick={() => goToSection("contact")}
             className="
               bg-white text-red-600 border border-red-600
               px-6 py-3 rounded-full font-semibold

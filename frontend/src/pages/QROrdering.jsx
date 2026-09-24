@@ -87,8 +87,7 @@ export default function QROrdering() {
             "posIntegration",
           ].map((key) => t(`qrOrdering.hero.checklist.${key}`))}
           ctaLabel={t("qrOrdering.hero.cta")}
-          secondaryCtaLabel={t("qrOrdering.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
+          ctaTarget="how-it-works"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
           image={serviceImage}

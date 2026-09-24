@@ -70,8 +70,6 @@ export default function MetaAds() {
             t(`metaAds.hero.checklist.${key}`)
           )}
           ctaLabel={t("metaAds.hero.cta")}
-          secondaryCtaLabel={t("metaAds.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
           features={heroFeatures}
         />
         <FeatureGridSection

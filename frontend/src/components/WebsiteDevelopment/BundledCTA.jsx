@@ -1,9 +1,11 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import { useGoToSection } from "../shared";
 
 export default function BundledCTA() {
   const { t } = useTranslation();
+  const goToSection = useGoToSection();
 
   const benefits = [
     t("websiteDevelopment.bundled.benefits.noSetup"),
@@ -42,6 +44,7 @@ export default function BundledCTA() {
             </div>
 
             <Button
+              onClick={() => goToSection("contact")}
               className="
                 bg-white text-red-600 px-6 py-3 rounded-full
                 font-semibold flex items-center gap-2 shadow-lg shrink-0

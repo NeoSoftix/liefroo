@@ -1,6 +1,6 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 import Button from "../Button";
+import { useLocalizedNavigate } from "./localizedRouting";
 
 /**
  * Single reusable card used across the Services grid — icon/image, title,
@@ -16,7 +16,7 @@ export default function ServiceCard({
   href,
   exploreLabel = "Explore Now",
 }) {
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
 
   return (
     <div className="border border-gray-100 rounded-2xl p-5 sm:p-6 bg-white flex flex-col hover:shadow-lg hover:-translate-y-1 transition-all duration-300">

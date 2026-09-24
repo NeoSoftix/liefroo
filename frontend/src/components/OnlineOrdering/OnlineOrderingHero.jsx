@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import { scrollToElementId } from "../../utils/scrollToSection";
 import heroImage from "../../assets/online ordering.png";
 
 export default function OnlineOrderingHero() {
@@ -57,6 +58,7 @@ export default function OnlineOrderingHero() {
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 mt-6 lg:mt-8">
               <Button
+                onClick={() => scrollToElementId("how-it-works")}
                 className="
                   inline-flex items-center gap-2 sm:gap-3
                   bg-red-600 text-white border border-red-600
@@ -68,14 +70,6 @@ export default function OnlineOrderingHero() {
                 {t("onlineOrdering.hero.cta")}
                 <ArrowRight size={16} className="sm:size-[18px]" />
               </Button>
-
-              <a
-                href="#success-stories"
-                className="inline-flex items-center gap-2 text-red-600 font-semibold hover:gap-3 transition-all duration-300 text-sm sm:text-base"
-              >
-                {t("onlineOrdering.hero.secondaryCta")}
-                <ArrowRight size={16} />
-              </a>
             </div>
           </motion.div>
 

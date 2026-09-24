@@ -83,8 +83,7 @@ export default function GoogleAnalytics() {
             t(`googleAnalytics.hero.checklist.${key}`)
           )}
           ctaLabel={t("googleAnalytics.hero.cta")}
-          secondaryCtaLabel={t("googleAnalytics.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
+          ctaTarget="how-it-works"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-5"
         />

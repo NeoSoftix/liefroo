@@ -145,6 +145,13 @@ export default function Footer() {
                 else if (key === "onlineOrdering") href = "/online-ordering";
                 else if (key === "kitchenDisplay") href = "/menu-management";
                 else if (key === "qrMenu") href = "/qr-ordering";
+                else if (key === "reservationSystem") href = "/reservation-system";
+                else if (key === "printerIntegration") href = "/printer-integration";
+                else if (key === "websiteDevelopment") href = "/website-development";
+                else if (key === "mobileAppDevelopment") href = "/mobile-app-development";
+                else if (key === "googleAds") href = "/google-ads";
+                else if (key === "metaAds") href = "/meta-ads";
+                else if (key === "googleBusinessSEO") href = "/google-business-seo";
                 else if (key === "analytics") href = "/google-analytics";
 
                 return (
@@ -171,27 +178,33 @@ export default function Footer() {
 
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               {Object.entries(companyItems).map(([key, label]) => {
-                const sectionId =
-                  key === "contact" ? "contact" : key === "about" ? "features" : null;
-
-                return (
-                  <li key={key}>
-                    {sectionId ? (
+                if (key === "contact") {
+                  return (
+                    <li key={key}>
                       <button
                         type="button"
-                        onClick={() => goToSection(navigate, pathname, sectionId, lng)}
+                        onClick={() => goToSection(navigate, pathname, "contact", lng)}
                         className="text-gray-600 hover:text-red-600 transition font-medium"
                       >
                         {label}
                       </button>
-                    ) : (
-                      <LocalizedLink
-                        to="/"
-                        className="text-gray-600 hover:text-red-600 transition font-medium"
-                      >
-                        {label}
-                      </LocalizedLink>
-                    )}
+                    </li>
+                  );
+                }
+
+                let href = "/";
+                if (key === "about") href = "/about";
+                else if (key === "products") href = "/products";
+                else if (key === "technicalSupport") href = "/technical-support";
+
+                return (
+                  <li key={key}>
+                    <LocalizedLink
+                      to={href}
+                      className="text-gray-600 hover:text-red-600 transition font-medium"
+                    >
+                      {label}
+                    </LocalizedLink>
                   </li>
                 );
               })}

@@ -1,6 +1,7 @@
 import { GripVertical, PencilLine, Search, LineChart } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import { useGoToSection } from "../shared";
 
 const benefits = [
   { key: "dragDrop", Icon: GripVertical },
@@ -11,6 +12,7 @@ const benefits = [
 
 export default function DashboardSection() {
   const { t } = useTranslation();
+  const goToSection = useGoToSection();
 
   return (
     <section className="relative z-10 py-12 lg:py-20 w-full">
@@ -31,6 +33,7 @@ export default function DashboardSection() {
             </p>
 
             <Button
+              onClick={() => goToSection("contact")}
               className="
                 mt-4 inline-flex items-center gap-2
                 bg-red-600 text-white border border-red-600

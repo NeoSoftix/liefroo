@@ -11,9 +11,11 @@ import { useTranslation } from "react-i18next";
 import dashboardImage from "../assets/sqpanel.png";
 import FeatureCard from "./FeatureCard";
 import Button from "./Button";
+import { useLocalizedNavigate } from "./shared";
 
 export default function OrderingExperience() {
   const { t } = useTranslation();
+  const navigate = useLocalizedNavigate();
   return (
     <section className="flex flex-col justify-center relative py-10 lg:py-16 bg-[#FCFCFC] overflow-hidden">
 
@@ -124,6 +126,7 @@ export default function OrderingExperience() {
         {/* CTA */}
         <div className="flex justify-center mt-6">
           <Button
+            onClick={() => navigate("/online-ordering")}
             className="
               bg-red-600
               hover:bg-white

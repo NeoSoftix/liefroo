@@ -68,8 +68,6 @@ export default function GoogleAds() {
             t(`googleAds.hero.checklist.${key}`)
           )}
           ctaLabel={t("googleAds.hero.cta")}
-          secondaryCtaLabel={t("googleAds.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
           features={heroFeatures}
         />
         <FeatureGridSection

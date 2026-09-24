@@ -8,9 +8,11 @@ import {
 import { useTranslation } from "react-i18next";
 
 import Button from "./Button";
+import { useLocalizedNavigate } from "./shared";
 
 export default function ReservationSection() {
   const { t } = useTranslation();
+  const navigate = useLocalizedNavigate();
   const benefits = [
     t("reservation.benefits.availability"),
     t("reservation.benefits.googleReserve"),
@@ -96,6 +98,7 @@ export default function ReservationSection() {
             </div>
 
             <Button
+              onClick={() => navigate("/reservation-system")}
               className="
                 mt-6
                 bg-red-600

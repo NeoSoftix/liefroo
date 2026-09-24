@@ -351,12 +351,23 @@
         "onlineOrdering": "Online-Bestellung",
         "kitchenDisplay": "Küchenmonitor",
         "qrMenu": "QR-Speisekarte",
+        "reservationSystem": "Tischreservierung",
+        "printerIntegration": "Druckerintegration",
+        "websiteDevelopment": "Website-Entwicklung",
+        "mobileAppDevelopment": "App-Entwicklung",
+        "googleAds": "Google Ads",
+        "metaAds": "Meta Ads",
+        "googleBusinessSEO": "Google Business SEO",
         "analytics": "Analysen"
       }
     },
     "company": {
       "title": "Unternehmen",
       "items": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "products": "Produkte",
+        "technicalSupport": "Technischer Support",
         "contact": "Kontakt"
       }
     },

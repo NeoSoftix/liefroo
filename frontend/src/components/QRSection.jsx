@@ -7,9 +7,11 @@ import {
   FiArrowRight,
 } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+import { useLocalizedNavigate } from "./shared";
 
 export default function QRSection() {
   const { t } = useTranslation();
+  const navigate = useLocalizedNavigate();
   return (
     <section className="hidden lg:flex flex-col justify-center relative py-6 lg:py-16 overflow-hidden bg-white">
       <div className="max-w-[1600px] mx-auto px-6 w-full h-full flex flex-col justify-center">
@@ -85,7 +87,7 @@ export default function QRSection() {
               </div>
 
               {/* CTA */}
-              <button className="group mt-6 lg:mt-8 bg-red-600 hover:bg-red-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-xs sm:text-sm flex items-center gap-2 transition-all duration-300">
+              <button onClick={() => navigate("/qr-ordering")} className="group mt-6 lg:mt-8 bg-red-600 hover:bg-red-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-xs sm:text-sm flex items-center gap-2 transition-all duration-300">
                 {t("qr.cta")}
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>

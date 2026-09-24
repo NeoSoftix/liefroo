@@ -363,12 +363,23 @@
         "onlineOrdering": "Online Ordering",
         "kitchenDisplay": "Kitchen Display",
         "qrMenu": "QR Menu",
+        "reservationSystem": "Table Reservations",
+        "printerIntegration": "Printer Integration",
+        "websiteDevelopment": "Website Development",
+        "mobileAppDevelopment": "Mobile App Development",
+        "googleAds": "Google Ads",
+        "metaAds": "Meta Ads",
+        "googleBusinessSEO": "Google Business SEO",
         "analytics": "Analytics"
       }
     },
     "company": {
       "title": "Company",
       "items": {
+        "home": "Home",
+        "about": "About",
+        "products": "Products",
+        "technicalSupport": "Technical Support",
         "contact": "Contact"
       }
     },

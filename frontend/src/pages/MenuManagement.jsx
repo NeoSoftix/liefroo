@@ -72,6 +72,7 @@ export default function MenuManagement() {
             t(`menuManagement.hero.checklist.${key}`)
           )}
           ctaLabel={t("menuManagement.hero.cta")}
+          ctaTarget="how-it-works"
           secondaryCtaHref="#how-it-works"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-5"

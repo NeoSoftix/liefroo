@@ -68,8 +68,7 @@ export default function GoogleBusinessSEO() {
             t(`googleBusinessSEO.hero.checklist.${key}`)
           )}
           ctaLabel={t("googleBusinessSEO.hero.cta")}
-          secondaryCtaLabel={t("googleBusinessSEO.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
+          ctaTarget="how-it-works"
           features={heroFeatures}
         />
         <FeatureGridSection

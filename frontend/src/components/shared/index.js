@@ -6,4 +6,4 @@ export { default as ServiceCard } from "./ServiceCard";
 export { default as ServicesGrid } from "./ServicesGrid";
 export { default as Seo } from "./Seo";
 export { default as LocalizedLink } from "./LocalizedLink";
-export { useLocalizedPath, useLocalizedNavigate } from "./localizedRouting";
+export { useLocalizedPath, useLocalizedNavigate, useGoToSection } from "./localizedRouting";

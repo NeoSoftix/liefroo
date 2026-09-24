@@ -1,5 +1,6 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { LOCALES, DEFAULT_LOCALE } from "../../routesConfig";
+import { goToSection } from "../../utils/scrollToSection";
 
 function resolveLocale(lng) {
   return LOCALES.includes(lng) ? lng : DEFAULT_LOCALE;
@@ -24,4 +25,14 @@ export function useLocalizedNavigate() {
   const { lng } = useParams();
   const locale = resolveLocale(lng);
   return (to, options) => navigate(withLocale(locale, to), options);
+}
+
+// Returns a function that scrolls to a home-page section by id (e.g.
+// "contact"), navigating to the current locale's home first if needed.
+export function useGoToSection() {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const { lng } = useParams();
+  const locale = resolveLocale(lng);
+  return (id) => goToSection(navigate, pathname, id, locale);
 }

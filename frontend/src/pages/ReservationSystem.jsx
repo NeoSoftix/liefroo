@@ -88,8 +88,7 @@ export default function ReservationSystem() {
             "reports",
           ].map((key) => t(`reservationSystem.hero.checklist.${key}`))}
           ctaLabel={t("reservationSystem.hero.cta")}
-          secondaryCtaLabel={t("reservationSystem.hero.secondaryCta")}
-          secondaryCtaHref="#success-stories"
+          ctaTarget="how-it-works"
           features={heroFeatures}
           featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
           image={serviceImage}
