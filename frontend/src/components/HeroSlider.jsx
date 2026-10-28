@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, CalendarDays, Percent, Zap } from "lucide-react";
 import Button from "./Button";
 import { useGoToSection, useLocalizedNavigate } from "./shared";
-import HeroDevices from "./HeroDevices";
+import { HeroSideDevices, HeroTablet } from "./HeroDevices";
 
 const ease = [0.22, 1, 0.36, 1];
 const mouseSpring = { stiffness: 90, damping: 20, mass: 0.6 };
@@ -86,9 +86,11 @@ export default function HeroSlider() {
       <motion.div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: spotlight }} />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-28 lg:pt-32 2xl:pt-36 pb-10 2xl:pb-16 w-full">
-        {/* Top row: headline left, copy + CTAs + features right */}
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-end">
-          <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10">
+        {/* Left: headline, then the three small devices right under it.
+            Right: big tablet, then copy + CTAs. The devices span rows 2–3 so
+            they start directly below the headline, not below the tablet. */}
+        <div className="grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-x-10 gap-y-8 lg:gap-y-6 items-start">
+          <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10 lg:col-start-1 lg:row-start-1 lg:pt-4">
             <motion.span
               initial={{ opacity: 0, y: 20, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -121,13 +123,20 @@ export default function HeroSlider() {
             </h1>
           </motion.div>
 
-          <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10">
+          <motion.div style={{ y: visualY }} className="lg:col-start-2 lg:row-start-1 lg:row-span-2">
+            <HeroTablet alt={slideText.title} />
+          </motion.div>
 
+          <motion.div style={{ y: visualY }} className="order-last lg:order-none lg:col-start-1 lg:row-start-2 lg:row-span-2">
+            <HeroSideDevices smx={smx} smy={smy} reduceMotion={reduceMotion} />
+          </motion.div>
+
+          <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10 text-center lg:col-start-2 lg:row-start-3">
             <motion.p
               initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.8, delay: 0.55, ease }}
-              className="text-lg sm:text-xl xl:text-2xl font-light text-white/90 max-w-xl leading-snug"
+              className="text-lg sm:text-xl xl:text-2xl font-light text-white/90 max-w-xl mx-auto leading-snug"
             >
               {slideText.description}
             </motion.p>
@@ -136,7 +145,7 @@ export default function HeroSlider() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7, ease }}
-              className="flex flex-wrap gap-4 mt-8"
+              className="flex flex-wrap justify-center gap-4 mt-8"
             >
               <Button
                 onClick={() => goToSection("contact")}
@@ -166,7 +175,7 @@ export default function HeroSlider() {
             </motion.div>
 
             {/* Feature row */}
-            <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
+            <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4 max-w-xl mx-auto text-left">
               {features.map(({ label, Icon }, i) => (
                 <motion.div
                   key={label}
@@ -191,17 +200,6 @@ export default function HeroSlider() {
             </div>
           </motion.div>
         </div>
-
-        {/* Devices: full container width so the screens are large enough to read */}
-        <motion.div style={{ y: visualY }} className="relative mt-10 lg:mt-14">
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.1, delay: 0.2, ease }}
-          >
-            <HeroDevices smx={smx} smy={smy} reduceMotion={reduceMotion} alt={slideText.title} />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
