@@ -52,7 +52,7 @@ const included = [
 
 // App screenshots (public/ecosystem/) and the cheapest plan that includes them.
 const showcase = [
-  { key: "onlineOrdering", image: "/ecosystem/online-ordering.webp", plan: "start" },
+  { key: "onlineOrdering", image: "/ecosystem/online-ordering-menu.webp", plan: "start" },
   { key: "analytics", image: "/ecosystem/analytics.webp", plan: "start" },
   { key: "reservations", image: "/ecosystem/reservation.webp", plan: "pro" },
   { key: "marketing", image: "/ecosystem/marketing.webp", plan: "pro" },

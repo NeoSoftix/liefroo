@@ -19,7 +19,7 @@ const ease = [0.22, 1, 0.36, 1];
 // Previews live in public/ecosystem/. Screenshots fill the preview box
 // (`cover`); pos-devices is a transparent cut-out, so it is fitted whole.
 const modules = [
-  { key: "onlineOrdering", Icon: ShoppingBag, image: "/ecosystem/online-ordering.webp", to: "/online-ordering" },
+  { key: "onlineOrdering", Icon: ShoppingBag, image: "/ecosystem/online-ordering-menu.webp", to: "/online-ordering" },
   { key: "reservations", Icon: CalendarDays, image: "/ecosystem/reservation.webp", to: "/reservation-system" },
   { key: "posSystem", Icon: CreditCard, image: "/ecosystem/pos-devices.webp", fit: "contain", to: "/pos-system-development" },
   { key: "marketing", Icon: Megaphone, image: "/ecosystem/marketing.webp", to: "/meta-ads" },
