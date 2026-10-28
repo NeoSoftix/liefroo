@@ -90,7 +90,7 @@ export default function TaxCompliance() {
               transition={{ duration: 1, delay: 0.2, ease }}
               className="relative"
             >
-              <img src="/hero/device-tablet.webp" alt="" width={1250} height={1199} className="w-full max-w-[560px] mx-auto h-auto drop-shadow-[0_40px_50px_rgba(60,0,0,0.45)]" />
+              <img src="/hero/device-tablet.webp" alt="" width={1203} height={1007} className="w-full max-w-[560px] mx-auto h-auto drop-shadow-[0_40px_50px_rgba(60,0,0,0.45)]" />
               <div className="absolute bottom-[12%] left-0 sm:-left-4 flex items-center gap-3 rounded-2xl bg-white text-gray-900 px-4 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.25)]">
                 <span className="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center">
                   <ShieldCheck size={20} />

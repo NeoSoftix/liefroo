@@ -16,12 +16,12 @@ const screenSlides = [
   srcSet: widths.map((w) => `/hero/${n}-${w}.webp ${w}w`).join(", "),
 }));
 
-// Rendered width of the tablet screen: the tablet is min(48vw, 600px) wide on
-// desktop and the screen is 85.2% of it.
-const screenSizes = "(min-width: 1280px) 512px, (min-width: 1024px) 41vw, 85vw";
+// Rendered width of the tablet screen: the tablet is min(52vw, 690px) wide on
+// desktop and the screen is 90.2% of it.
+const screenSizes = "(min-width: 1280px) 622px, (min-width: 1024px) 47vw, 90vw";
 
 // Screen area inside device-tablet.webp, in % of the image.
-const tabletScreen = { left: "10%", top: "45.5%", width: "85.2%", height: "47.3%" };
+const tabletScreen = { left: "4.82%", top: "33.07%", width: "90.19%", height: "58.59%" };
 
 // The big POS station. Kept perfectly still: a continuously moving layer gets
 // resampled at sub-pixel offsets in Chrome, which smears the slides' fine text.
@@ -35,8 +35,8 @@ export function HeroTablet({ alt }) {
     >
       <img
         src="/hero/device-tablet.webp"
-        width={1250}
-        height={1199}
+        width={1203}
+        height={1007}
         alt={alt}
         fetchPriority="high"
         className="block w-full h-auto drop-shadow-[0_40px_45px_rgba(60,0,0,0.45)]"
