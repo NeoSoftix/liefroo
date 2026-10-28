@@ -132,13 +132,6 @@ export default function Header({ dark = false }) {
             </LocalizedLink>
 
             <LocalizedLink
-              to="/pricing"
-              className={`transition-colors font-medium ${navLinkClass}`}
-            >
-              {t("header.nav.pricing")}
-            </LocalizedLink>
-
-            <LocalizedLink
               to="/tax-compliant-pos"
               className={`flex items-center gap-1.5 transition-colors font-medium ${navLinkClass}`}
               onMouseEnter={openTax}
@@ -149,6 +142,13 @@ export default function Header({ dark = false }) {
                 size={16}
                 className={`transition-transform ${taxOpen ? "rotate-180" : ""}`}
               />
+            </LocalizedLink>
+
+            <LocalizedLink
+              to="/pricing"
+              className={`transition-colors font-medium ${navLinkClass}`}
+            >
+              {t("header.nav.pricing")}
             </LocalizedLink>
           </nav>
 
@@ -280,43 +280,6 @@ export default function Header({ dark = false }) {
                 {t("header.nav.home")}
               </LocalizedLink>
 
-              <LocalizedLink
-                to="/pricing"
-                onClick={() => setMobileOpen(false)}
-                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-              >
-                {t("header.nav.pricing")}
-              </LocalizedLink>
-
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setMobileTaxOpen((open) => !open)}
-                  className="w-full flex items-center justify-between px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                >
-                  {t("header.nav.taxCompliant")}
-                  <ChevronDown
-                    size={16}
-                    className={`transition-transform ${mobileTaxOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
-
-                {mobileTaxOpen && (
-                  <div className="px-5 pb-4 flex flex-col gap-1 bg-gray-50/50 pt-2">
-                    {taxMenuItems.map(({ key, path }) => (
-                      <LocalizedLink
-                        key={key}
-                        to={path}
-                        onClick={() => setMobileOpen(false)}
-                        className="px-3 py-2 rounded-xl text-sm text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors"
-                      >
-                        {t(`taxPages.menu.${key}.title`)}
-                      </LocalizedLink>
-                    ))}
-                  </div>
-                )}
-              </div>
-
               <div>
                 <button
                   type="button"
@@ -352,6 +315,43 @@ export default function Header({ dark = false }) {
                   </div>
                 )}
               </div>
+
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setMobileTaxOpen((open) => !open)}
+                  className="w-full flex items-center justify-between px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                >
+                  {t("header.nav.taxCompliant")}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform ${mobileTaxOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {mobileTaxOpen && (
+                  <div className="px-5 pb-4 flex flex-col gap-1 bg-gray-50/50 pt-2">
+                    {taxMenuItems.map(({ key, path }) => (
+                      <LocalizedLink
+                        key={key}
+                        to={path}
+                        onClick={() => setMobileOpen(false)}
+                        className="px-3 py-2 rounded-xl text-sm text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors"
+                      >
+                        {t(`taxPages.menu.${key}.title`)}
+                      </LocalizedLink>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <LocalizedLink
+                to="/pricing"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.pricing")}
+              </LocalizedLink>
             </nav>
           </div>
 
