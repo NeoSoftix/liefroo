@@ -86,10 +86,6 @@ export default function Header({ dark = false }) {
     }, 150);
   };
 
-  const mobileNavLinks = [
-    { key: "contact", label: t("header.nav.contact") },
-  ];
-
   return (
     // Header ko full width kiya aur top par stick kiya
     <header className="fixed top-0 left-0 z-50 w-full">
@@ -154,21 +150,6 @@ export default function Header({ dark = false }) {
                 className={`transition-transform ${taxOpen ? "rotate-180" : ""}`}
               />
             </LocalizedLink>
-
-            <LocalizedLink
-              to="/about"
-              className={`transition-colors font-medium ${navLinkClass}`}
-            >
-              {t("header.nav.about")}
-            </LocalizedLink>
-
-            <button
-              type="button"
-              onClick={handleContactClick}
-              className={`transition-colors font-medium ${navLinkClass}`}
-            >
-              {t("header.nav.contact")}
-            </button>
           </nav>
 
           <ProductsMegaMenu
@@ -335,28 +316,6 @@ export default function Header({ dark = false }) {
                   </div>
                 )}
               </div>
-
-              <LocalizedLink
-                to="/about"
-                onClick={() => setMobileOpen(false)}
-                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-              >
-                {t("header.nav.about")}
-              </LocalizedLink>
-
-              {mobileNavLinks.map((link) => (
-                <button
-                  key={link.key}
-                  type="button"
-                  onClick={() => {
-                    setMobileOpen(false);
-                    handleContactClick();
-                  }}
-                  className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                >
-                  {link.label}
-                </button>
-              ))}
 
               <div>
                 <button

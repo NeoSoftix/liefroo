@@ -10,8 +10,8 @@ const devices = [
   { key: "go", image: "/hero/device-handheld.webp", width: 691, height: 1536, imgClass: "max-w-[42%]", to: "/pos-system-development" },
   { key: "waiter", image: "/hero/phone-kellner.webp", width: 720, height: 1409, imgClass: "max-w-[45%]", to: "/mobile-app-development" },
   { key: "printer", image: "/hero/device-printer.webp", width: 1000, height: 1043, imgClass: "max-w-[70%]", to: "/printer-integration" },
-  { key: "kiosk", image: "/hero/kiosk.webp", width: 700, height: 1152, imgClass: "max-w-[55%]", comingSoon: true },
-  { key: "kds", image: "/hero/chef-display.webp", width: 1100, height: 782, imgClass: "max-w-[78%]", comingSoon: true },
+  { key: "kiosk", image: "/hero/kiosk.webp", width: 700, height: 1171, imgClass: "max-w-[55%]", comingSoon: true },
+  { key: "kds", image: "/hero/chef-display.webp", width: 1100, height: 640, imgClass: "max-w-[78%]", comingSoon: true },
 ];
 
 export default function POSDevicesSection() {
