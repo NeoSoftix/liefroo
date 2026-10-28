@@ -16,9 +16,9 @@ const screenSlides = [
   srcSet: widths.map((w) => `/hero/${n}-${w}.webp ${w}w`).join(", "),
 }));
 
-// Rendered width of the tablet screen: the tablet fills the hero's right
-// column (~59% of the container) and the screen is 85.2% of the tablet.
-const screenSizes = "(min-width: 1536px) 720px, (min-width: 1024px) 50vw, 85vw";
+// Rendered width of the tablet screen: the tablet is min(48vw, 600px) wide on
+// desktop and the screen is 85.2% of it.
+const screenSizes = "(min-width: 1280px) 512px, (min-width: 1024px) 41vw, 85vw";
 
 // Screen area inside device-tablet.webp, in % of the image.
 const tabletScreen = { left: "10%", top: "45.5%", width: "85.2%", height: "47.3%" };
@@ -46,12 +46,12 @@ export function HeroTablet({ alt }) {
   );
 }
 
-// The three smaller devices, laid out on a 4:3 stage in percentages. `depth`
+// The three smaller devices, laid out on a 16:10 stage in percentages. `depth`
 // scales how far a layer follows the mouse, so nearer devices move more.
 const smallDevices = [
-  { key: "handheld", src: "/hero/device-handheld.webp", width: 691, height: 1536, box: { left: "2%", bottom: "4%", width: "26%" }, z: 30, depth: 1, float: 5.5, delay: 0.5 },
-  { key: "phone", src: "/hero/device-phone.webp", width: 720, height: 1151, box: { left: "31%", bottom: "8%", width: "24%" }, z: 20, depth: 0.7, float: 5, delay: 0.6 },
-  { key: "printer", src: "/hero/device-printer.webp", width: 1000, height: 1043, box: { left: "58%", bottom: "4%", width: "40%" }, z: 10, depth: 1.2, float: 6, delay: 0.7 },
+  { key: "handheld", src: "/hero/device-handheld.webp", width: 691, height: 1536, box: { left: "4%", bottom: "4%", width: "21%" }, z: 30, depth: 1, float: 5.5, delay: 0.5 },
+  { key: "phone", src: "/hero/device-phone.webp", width: 720, height: 1151, box: { left: "29%", bottom: "8%", width: "20%" }, z: 20, depth: 0.7, float: 5, delay: 0.6 },
+  { key: "printer", src: "/hero/device-printer.webp", width: 1000, height: 1043, box: { left: "54%", bottom: "4%", width: "38%" }, z: 10, depth: 1.2, float: 6, delay: 0.7 },
 ];
 
 function DeviceLayer({ device, smx, smy, reduceMotion }) {
@@ -89,7 +89,7 @@ function DeviceLayer({ device, smx, smy, reduceMotion }) {
 
 export function HeroSideDevices({ smx, smy, reduceMotion }) {
   return (
-    <div className="relative w-full aspect-[4/3]">
+    <div className="relative w-full aspect-[16/10]">
       <div className="absolute left-[5%] right-[5%] bottom-0 h-[16%] rounded-[50%] bg-red-950/30 blur-2xl" />
       {smallDevices.map((device) => (
         <DeviceLayer key={device.key} device={device} smx={smx} smy={smy} reduceMotion={reduceMotion} />

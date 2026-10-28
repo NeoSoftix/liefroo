@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import { slides } from "../../data/slides";
 import {
   motion,
@@ -46,13 +46,11 @@ export default function HeroSlider() {
   const glowX = useTransform(smx, [-0.5, 0.5], [50, -50]);
   const glowY = useTransform(smy, [-0.5, 0.5], [30, -30]);
 
-  // Scroll-out: text drifts up and fades, devices drift down. The device group
-  // only gets 2D translates — 3D rotate/scale makes Chrome rasterise it at low
-  // resolution and the screenshots on the screens turn blurry.
+  // Scroll-out: the headline drifts up and the copy fades. Devices stay put —
+  // moving the tablet would resample its screenshots and blur them.
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start start", "end start"] });
   const textY = useTransform(scrollYProgress, [0, 1], [0, -120]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
-  const visualY = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const handleMove = (e) => {
     if (reduceMotion || e.pointerType !== "mouse" || !sectionRef.current) return;
@@ -85,11 +83,10 @@ export default function HeroSlider() {
       <div className="pointer-events-none absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-red-950/40 blur-[140px]" />
       <motion.div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: spotlight }} />
 
-      <div className="relative max-w-7xl mx-auto px-6 pt-28 lg:pt-32 2xl:pt-36 pb-10 2xl:pb-16 w-full">
-        {/* Left: headline, then the three small devices right under it.
-            Right: big tablet, then copy + CTAs. The devices span rows 2–3 so
-            they start directly below the headline, not below the tablet. */}
-        <div className="grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-x-10 gap-y-8 lg:gap-y-6 items-start">
+      <div className="relative max-w-7xl mx-auto px-6 pt-28 lg:pt-24 2xl:pt-28 pb-8 w-full">
+        {/* Left: headline with the three small devices right under it.
+            Right: the big tablet, spanning both rows. */}
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_auto] gap-x-10 gap-y-8 lg:gap-y-4 items-start">
           <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10 lg:col-start-1 lg:row-start-1 lg:pt-4">
             <motion.span
               initial={{ opacity: 0, y: 20, scale: 0.9 }}
@@ -106,100 +103,108 @@ export default function HeroSlider() {
 
             {/* Word-by-word 3D flip-up headline */}
             <h1
-              className="text-5xl sm:text-6xl lg:text-[60px] xl:text-[72px] 2xl:text-[80px] font-black mt-6 leading-[0.95] tracking-tight"
+              className="text-5xl sm:text-6xl lg:text-[44px] xl:text-[54px] 2xl:text-[60px] font-black mt-5 leading-[0.95] tracking-tight"
               style={{ perspective: 800 }}
             >
               {titleWords.map((word, i) => (
-                <motion.span
-                  key={`${word}-${i}`}
-                  initial={{ opacity: 0, y: 60, rotateX: -90 }}
-                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                  transition={{ duration: 0.9, delay: 0.15 + i * 0.09, ease }}
-                  className="inline-block mr-[0.22em] origin-bottom"
-                >
-                  {word}
-                </motion.span>
+                <Fragment key={`${word}-${i}`}>
+                  {/* Two balanced lines: "The Restaurant / Operating System" */}
+                  {i === Math.ceil(titleWords.length / 2) && <br className="hidden sm:block" />}
+                  <motion.span
+                    initial={{ opacity: 0, y: 60, rotateX: -90 }}
+                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                    transition={{ duration: 0.9, delay: 0.15 + i * 0.09, ease }}
+                    className="inline-block mr-[0.22em] origin-bottom"
+                  >
+                    {word}
+                  </motion.span>
+                </Fragment>
               ))}
             </h1>
           </motion.div>
 
-          <motion.div style={{ y: visualY }} className="lg:col-start-2 lg:row-start-1 lg:row-span-2">
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 w-full lg:w-[min(48vw,600px)] mx-auto">
             <HeroTablet alt={slideText.title} />
-          </motion.div>
+          </div>
 
-          <motion.div style={{ y: visualY }} className="order-last lg:order-none lg:col-start-1 lg:row-start-2 lg:row-span-2">
+          <div className="order-last lg:order-none lg:col-start-1 lg:row-start-2 w-full max-w-[620px] mx-auto lg:mx-0">
             <HeroSideDevices smx={smx} smy={smy} reduceMotion={reduceMotion} />
-          </motion.div>
+          </div>
 
-          <motion.div style={{ y: textY, opacity: textOpacity }} className="relative z-10 text-center lg:col-start-2 lg:row-start-3">
-            <motion.p
-              initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 0.8, delay: 0.55, ease }}
-              className="text-lg sm:text-xl xl:text-2xl font-light text-white/90 max-w-xl mx-auto leading-snug"
-            >
-              {slideText.description}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7, ease }}
-              className="flex flex-wrap justify-center gap-4 mt-8"
-            >
-              <Button
-                onClick={() => goToSection("contact")}
-                className="
-                  group relative overflow-hidden flex items-center gap-3
-                  bg-white text-red-600
-                  px-7 py-3.5 sm:px-9 sm:py-4 rounded-full font-semibold text-base sm:text-lg
-                  shadow-[0_15px_40px_rgba(0,0,0,0.2)]
-                  hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]
-                  transition-shadow duration-300
-                "
-              >
-                {t("hero.bookDemo")}
-                <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-              <Button
-                onClick={() => navigate("/products")}
-                className="
-                  border-2 border-white/80 text-white
-                  px-7 py-3.5 sm:px-9 sm:py-4 rounded-full font-semibold text-base sm:text-lg
-                  transition-colors duration-300
-                  hover:bg-white hover:text-red-600
-                "
-              >
-                {t("hero.learnMore")}
-              </Button>
-            </motion.div>
-
-            {/* Feature row */}
-            <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4 max-w-xl mx-auto text-left">
-              {features.map(({ label, Icon }, i) => (
-                <motion.div
-                  key={label}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.9 + i * 0.1, ease }}
-                  className={`flex flex-col sm:flex-row lg:flex-col xl:flex-row sm:items-center lg:items-start xl:items-center gap-2 sm:gap-3 ${
-                    i === 0 ? "" : "sm:border-l sm:border-white/30 sm:pl-4"
-                  }`}
-                >
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: -6 }}
-                    className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/15 border border-white/20 backdrop-blur flex items-center justify-center shrink-0"
-                  >
-                    <Icon size={22} className="text-white" />
-                  </motion.div>
-                  <span className="text-xs sm:text-sm font-semibold leading-snug">
-                    {label}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
+
+        {/* Copy, CTAs and features: one full-width glass bar at the bottom */}
+        <motion.div
+          style={{ opacity: textOpacity }}
+          className="relative z-10 mt-8 lg:mt-6 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 rounded-3xl bg-white/10 border border-white/20 backdrop-blur px-6 py-6 lg:px-8 lg:py-5 text-center lg:text-left"
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.8, delay: 0.55, ease }}
+            className="text-base sm:text-lg font-light text-white/90 lg:max-w-[340px] leading-snug"
+          >
+            {slideText.description}
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7, ease }}
+            className="flex flex-wrap justify-center gap-3 shrink-0"
+          >
+            <Button
+              onClick={() => goToSection("contact")}
+              className="
+                group relative overflow-hidden flex items-center gap-3
+                bg-white text-red-600
+                px-6 py-3 rounded-full font-semibold text-base whitespace-nowrap
+                shadow-[0_15px_40px_rgba(0,0,0,0.2)]
+                hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]
+                transition-shadow duration-300
+              "
+            >
+              {t("hero.bookDemo")}
+              <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
+            <Button
+              onClick={() => navigate("/products")}
+              className="
+                border-2 border-white/80 text-white
+                px-6 py-3 rounded-full font-semibold text-base whitespace-nowrap
+                transition-colors duration-300
+                hover:bg-white hover:text-red-600
+              "
+            >
+              {t("hero.learnMore")}
+            </Button>
+          </motion.div>
+
+          {/* Feature row */}
+          <div className="grid grid-cols-3 gap-3 lg:gap-2 lg:ml-auto lg:text-center">
+            {features.map(({ label, Icon }, i) => (
+              <motion.div
+                key={label}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.9 + i * 0.1, ease }}
+                className={`flex flex-col sm:flex-row lg:flex-col items-center gap-2 sm:gap-3 lg:gap-1.5 ${
+                  i === 0 ? "" : "sm:border-l sm:border-white/30 sm:pl-4"
+                }`}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: -6 }}
+                  className="w-10 h-10 rounded-full bg-white/15 border border-white/20 backdrop-blur flex items-center justify-center shrink-0"
+                >
+                  <Icon size={20} className="text-white" />
+                </motion.div>
+                <span className="text-xs sm:text-sm font-semibold leading-snug max-w-[120px]">
+                  {label}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
