@@ -12,6 +12,8 @@ export const routes = [
   { key: "home", path: "/", component: "Products" },
   { key: "products", path: "/products", component: "Services" },
   { key: "about", path: "/about", component: "About" },
+  { key: "pricing", path: "/pricing", component: "Pricing" },
+  { key: "taxCompliant", path: "/tax-compliant-pos", component: "TaxCompliance" },
   { key: "technicalSupport", path: "/technical-support", component: "TechnicalSupport" },
   { key: "menuManagement", path: "/menu-management", component: "MenuManagement", megaMenuGroup: "orderingOperations" },
   { key: "onlineOrdering", path: "/online-ordering", component: "OnlineOrdering", megaMenuGroup: "orderingOperations" },

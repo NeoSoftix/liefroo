@@ -8,7 +8,13 @@ import {
 import { useTranslation } from "react-i18next";
 
 import Button from "./Button";
+import { CountUp, TiltCard } from "./motion";
 import { useLocalizedNavigate } from "./shared";
+
+const tablePop = {
+  hidden: { opacity: 0, scale: 0.5, rotateX: -60 },
+  show: { opacity: 1, scale: 1, rotateX: 0, transition: { type: "spring", stiffness: 180, damping: 14 } },
+};
 
 export default function ReservationSection() {
   const { t } = useTranslation();
@@ -79,7 +85,7 @@ export default function ReservationSection() {
 
               <div>
                 <h3 className="text-2xl sm:text-3xl font-black text-red-600">
-                  42%
+                  <CountUp value={42} suffix="%" />
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-500">
                   {t("reservation.stats.fewerNoShows")}
@@ -88,7 +94,7 @@ export default function ReservationSection() {
 
               <div>
                 <h3 className="text-2xl sm:text-3xl font-black text-red-600">
-                  3x
+                  <CountUp value={3} suffix="x" duration={1} />
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-500">
                   {t("reservation.stats.fasterBooking")}
@@ -118,10 +124,11 @@ export default function ReservationSection() {
 
           {/* RIGHT SIDE */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 60, rotateY: -35 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            style={{ transformPerspective: 1400 }}
             className="hidden lg:flex relative justify-center"
           >
 
@@ -129,6 +136,7 @@ export default function ReservationSection() {
             <div className="absolute w-120 h-[min(560px,72vh)] bg-red-200/40 blur-[140px] rounded-full" />
 
             {/* Main Card */}
+            <TiltCard max={8} glareClassName="rounded-[40px]">
             <div className="relative w-120 h-[min(600px,78vh)] rounded-[40px] bg-white border border-gray-200 shadow-[0_50px_120px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col">
 
               {/* Header */}
@@ -180,11 +188,18 @@ export default function ReservationSection() {
 
   </div>
 
-<div className="grid grid-cols-3 gap-3">
+<motion.div
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.4 }}
+  variants={{ hidden: {}, show: { transition: { staggerChildren: 0.07, delayChildren: 0.5 } } }}
+  className="grid grid-cols-3 gap-3"
+>
 
   {/* Row 1 */}
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -201,6 +216,7 @@ export default function ReservationSection() {
   </motion.div>
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -217,6 +233,7 @@ export default function ReservationSection() {
   </motion.div>
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -234,6 +251,7 @@ export default function ReservationSection() {
   {/* Row 2 */}
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[64px]
@@ -263,6 +281,7 @@ export default function ReservationSection() {
       duration: 2,
       repeat: Infinity,
     }}
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[64px]
@@ -286,6 +305,7 @@ export default function ReservationSection() {
   </motion.div>
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[64px]
@@ -304,6 +324,7 @@ export default function ReservationSection() {
   {/* Row 3 */}
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -320,6 +341,7 @@ export default function ReservationSection() {
   </motion.div>
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -335,6 +357,7 @@ export default function ReservationSection() {
   </motion.div>
 
   <motion.div
+    variants={tablePop}
     whileHover={{ scale: 1.05 }}
     className="
       h-[56px]
@@ -350,7 +373,7 @@ export default function ReservationSection() {
     {t("reservation.card.table", { number: 9 })}
   </motion.div>
 
-</div>
+</motion.div>
 
 </div>
 
@@ -433,6 +456,7 @@ export default function ReservationSection() {
 
               </div>
             </div>
+            </TiltCard>
 
           </motion.div>
 

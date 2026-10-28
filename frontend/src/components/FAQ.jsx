@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import faqImage from "../assets/FAQimage.png";
+import { Reveal, Stagger, StaggerItem } from "./motion";
 
 const FAQ = () => {
   const { t } = useTranslation();
@@ -50,7 +51,7 @@ const FAQ = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 w-full">
         {/* Heading */}
-        <div className="max-w-[700px]">
+        <Reveal className="max-w-[700px]">
           <p className="text-red-600 font-semibold tracking-[3px] uppercase text-xs sm:text-sm mb-1 sm:mb-2">
             {t("faq.eyebrow")}
           </p>
@@ -66,12 +67,12 @@ const FAQ = () => {
           <p className="mt-2 text-xs sm:text-sm lg:text-base text-gray-600 max-w-[600px]">
             {t("faq.description")}
           </p>
-        </div>
+        </Reveal>
 
         {/* FAQ LIST */}
-        <div className="mt-6 w-full lg:w-[70%] space-y-3 sm:space-y-4">
+        <Stagger className="mt-6 w-full lg:w-[70%] space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
-            <div
+            <StaggerItem
               key={faq.id}
               className="w-full lg:w-[80%] group bg-white/90 backdrop-blur-md rounded-2xl border border-white/50 shadow-[0_8px_20px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300 hover:shadow-[0_15px_40px_rgba(220,38,38,0.1)]"
             >
@@ -114,9 +115,9 @@ const FAQ = () => {
                   {faq.answer}
                 </div>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </div>
     </section>
   );

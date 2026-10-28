@@ -15,6 +15,8 @@
     "nav": {
       "home": "Home",
       "products": "Products",
+      "pricing": "Pricing",
+      "taxCompliant": "Tax compliant",
       "about": "About",
       "contact": "Contact"
     },
@@ -125,6 +127,346 @@
       "posSystem": "POS System",
       "analytics": "Analytics"
     }
+  },
+  "posDevices": {
+    "badge": "Liefro Hardware",
+    "headingPrefix": "The right",
+    "headingHighlight": "POS hardware",
+    "headingSuffix": "for your restaurant",
+    "station": {
+      "name": "Liefro Station",
+      "tagline": "Command centre at the counter",
+      "description": "Large touch display with a built-in receipt printer and customer screen. Table plan, orders from every channel, payments and TSE-compliant receipts – all in one fixed spot. Ideal for restaurants with many tables and lots of orders.",
+      "cta": "Discover Liefro Station"
+    },
+    "go": {
+      "name": "Liefro Go",
+      "tagline": "Order and take payment right at the table",
+      "description": "The handheld with a built-in printer for your service team. Take orders, print tickets and get paid without walking back to the till – perfect for terraces, delivery and events.",
+      "cta": "Discover Liefro Go"
+    },
+      "waiter": {
+      "name": "Liefro Waiter",
+      "tagline": "The waiter app on your smartphone",
+      "description": "Your service team orders right at the table – on any smartphone. Orders go straight to the kitchen and bar.",
+      "cta": "Discover Liefro Waiter"
+    },
+      "printer": {
+      "name": "Liefro Print",
+      "tagline": "Receipt printer for till, kitchen and bar",
+      "description": "Fast thermal printer for receipts and kitchen tickets – orders print automatically where they're needed.",
+      "cta": "Discover Liefro Print"
+    }
+  },
+  "compliance": {
+    "heading": "KassenSichV & TSE –",
+    "headingHighlight": "sorted, not stressful.",
+    "description": "Liefro comes with a certified TSE built in – ready in minutes and compliant from day one.",
+    "points": {
+      "inspection": {
+        "title": "Ready for any tax inspection",
+        "text": "Mandatory receipts and GoBD-compliant records – handled automatically."
+      },
+      "hardware": {
+        "title": "No hardware hassle",
+        "text": "No USB sticks, no failures – we set up your TSE for you."
+      },
+      "reporting": {
+        "title": "Easy POS registration",
+        "text": "We guide you through registering your till with the tax office."
+      }
+    }
+  },
+  "posFeatures": {
+    "badge": "POS features",
+    "heading": "Features that make your",
+    "headingHighlight": "working day easier",
+    "description": "More than a till – Liefro is the digital back office for your whole restaurant.",
+    "items": {
+      "mobileOrdering": {
+        "title": "Mobile ordering",
+        "text": "Take orders at the table – they go straight to the kitchen and bar."
+      },
+      "qrMenu": {
+        "title": "QR ordering",
+        "text": "Guests order via QR code from your digital menu – always up to date."
+      },
+      "cashbook": {
+        "title": "Digital cashbook",
+        "text": "Cash takings recorded automatically and ready to export – no paperwork."
+      },
+      "reservations": {
+        "title": "Reservations",
+        "text": "Online bookings right in your POS, with confirmations and reminders."
+      },
+      "offers": {
+        "title": "Discounts & offers",
+        "text": "Set up discounts, happy hours and promotions in a few clicks – more guests, more sales."
+      },
+      "reports": {
+        "title": "Live reports",
+        "text": "Sales and trends in real time – from anywhere, on any device."
+      }
+    }
+  },
+  "pricing": {
+    "seo": {
+      "title": "Pricing – POS System for Restaurants",
+      "description": "Transparent packages for your restaurant: POS, TSE, setup and support included. Find the right Liefro package."
+    },
+    "hero": {
+      "badge": "Pricing & packages",
+      "heading": "Fair prices.",
+      "headingHighlight": "Everything included.",
+      "description": "POS, TSE, setup and support in one package – no hidden costs. Pick what fits your business.",
+      "cta": "Request advice",
+      "secondary": "See packages"
+    },
+    "plans": {
+      "heading": "Choose your",
+      "headingHighlight": "package",
+      "perMonth": "/ month",
+      "devices": "{{count}} device",
+      "devices_other": "{{count}} devices",
+      "popular": "Popular",
+      "cta": "Request package",
+      "everythingIn": "Everything in {{plan}}, plus:",
+      "items": {
+        "start": {
+          "name": "Start",
+          "tagline": "For cafés, takeaways and small shops",
+          "features": [
+            "Touch POS with table plan",
+            "Certified TSE",
+            "Online & QR ordering",
+            "Live reports"
+          ]
+        },
+        "plus": {
+          "name": "Plus",
+          "tagline": "For restaurants with table service",
+          "features": [
+            "Mobile ordering at the table",
+            "Digital cashbook",
+            "Discounts & offers"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "tagline": "For large venues and multiple locations",
+          "features": [
+            "Reservation system",
+            "Email marketing",
+            "Multiple locations"
+          ]
+        }
+      }
+    },
+    "included": {
+      "heading": "Included in every package",
+      "items": {
+        "tse": "Certified TSE",
+        "setup": "Setup & training",
+        "support": "Personal support",
+        "updates": "Free updates"
+      }
+    },
+    "save": {
+      "heading": "Plan longer, save more",
+      "text": "Longer terms or prepayment get you better conditions. We're happy to work out the numbers with you.",
+      "cta": "Request an offer"
+    },
+    "benefits": {
+      "heading": "More than",
+      "headingHighlight": "just a till",
+      "items": {
+        "advice": {
+          "title": "Personal advice",
+          "text": "Together we find the package that really fits you."
+        },
+        "setup": {
+          "title": "Delivered ready to go",
+          "text": "We set up your menu, devices and TSE in advance."
+        },
+        "training": {
+          "title": "Team training",
+          "text": "Your team gets confident with Liefro in no time."
+        },
+        "support": {
+          "title": "Always reachable",
+          "text": "Help by phone, WhatsApp and email – in German and more languages."
+        }
+      }
+    },
+    "addons": {
+      "heading": "Add-ons",
+      "headingHighlight": "when you need them",
+      "description": "Extend your package at any time – billed monthly.",
+      "from": "from",
+      "items": {
+        "device": {
+          "title": "Extra device",
+          "text": "Another till or handheld for your team."
+        },
+        "printer": {
+          "title": "Kitchen & bar printer",
+          "text": "Orders print automatically where they're needed."
+        },
+        "reservations": {
+          "title": "Reservations",
+          "text": "Online table booking with confirmations and reminders."
+        },
+        "website": {
+          "title": "Own website",
+          "text": "Your restaurant website with built-in ordering."
+        },
+        "marketing": {
+          "title": "Marketing",
+          "text": "Email campaigns and promotions for regulars."
+        },
+        "app": {
+          "title": "Own app",
+          "text": "Your brand as an iOS and Android app."
+        }
+      }
+    },
+    "cta": {
+      "heading": "Not sure which package fits?",
+      "text": "We'll advise you free of charge and without obligation.",
+      "button": "Get advice now"
+    },
+    "showcase": {
+      "heading": "What Liefro looks like",
+      "headingHighlight": "day to day",
+      "description": "A look at the software that comes with your package.",
+      "includedFrom": "From package {{plan}}",
+      "items": {
+        "onlineOrdering": {
+          "title": "Every order at a glance",
+          "text": "Online, pickup, delivery or dine-in – every order lands in one overview and updates with a single tap."
+        },
+        "analytics": {
+          "title": "Your numbers in real time",
+          "text": "Sales, orders and trends live on your dashboard – so decisions rest on facts."
+        },
+        "reservations": {
+          "title": "Online table booking",
+          "text": "Guests book themselves around the clock. You see every reservation right in your POS."
+        },
+        "marketing": {
+          "title": "Campaigns in minutes",
+          "text": "Create and send email promotions to regulars – for more repeat orders."
+        }
+      }
+    },
+    "note": "All prices exclude VAT. Minimum term 12 months."
+  },
+  "taxCompliant": {
+    "seo": {
+      "title": "Tax-compliant POS – KassenSichV & TSE",
+      "description": "Liefro meets KassenSichV and the TSE requirement. Learn what makes a restaurant POS compliant with German tax rules."
+    },
+    "hero": {
+      "badge": "Tax compliant",
+      "heading": "Your POS.",
+      "headingHighlight": "Always tax compliant.",
+      "description": "KassenSichV, TSE, receipts, POS registration – with Liefro your obligations are handled before you have to think about them.",
+      "cta": "Request advice",
+      "secondary": "FAQ"
+    },
+    "pillars": {
+      "heading": "The three obligations –",
+      "headingHighlight": "made simple",
+      "items": {
+        "tse": {
+          "title": "KassenSichV & TSE",
+          "text": "Since 2020 every electronic till must have a certified technical security system (TSE). It protects your POS data against later manipulation.",
+          "points": [
+            "Every transaction gets a digital signature with a timestamp",
+            "Later changes or deletions become visible immediately",
+            "With Liefro the TSE is already built in and set up"
+          ]
+        },
+        "receipt": {
+          "title": "Receipt obligation",
+          "text": "A receipt must be offered to your guest for every sale – even if they don't take it. The receipt contains the key TSE data.",
+          "points": [
+            "Receipt on paper or digital, e.g. via QR code",
+            "Mandatory details such as date, items, tax and TSE signature",
+            "Liefro creates every receipt correctly and automatically"
+          ]
+        },
+        "reporting": {
+          "title": "POS registration",
+          "text": "Under § 146a AO electronic tills must be registered with the tax office – also when a device is bought or taken out of service.",
+          "points": [
+            "Registration electronically via ELSTER",
+            "Details on the till, TSE, serial number and purchase date",
+            "We provide all the data you need and help with the registration"
+          ]
+        }
+      }
+    },
+    "how": {
+      "badge": "How Liefro helps",
+      "heading": "Compliance that",
+      "headingHighlight": "just runs in the background",
+      "items": [
+        "Certified TSE built into the system – no extra hardware worries",
+        "Receipts stored in a tamper-proof way",
+        "Data export for your tax advisor in a few clicks",
+        "Help with registering your till with the tax office",
+        "Optional digital cashbook for cash income and expenses"
+      ]
+    },
+    "inspection": {
+      "heading": "Tax inspection?",
+      "headingHighlight": "No need to worry.",
+      "text": "The tax office may inspect your till at any time without notice. With Liefro your TSE data, receipts and exports are ready instantly – no frantic searching for paperwork.",
+      "stat1": {
+        "value": "2020",
+        "label": "TSE mandatory since"
+      },
+      "stat2": {
+        "value": "10 years",
+        "label": "Retention period"
+      },
+      "stat3": {
+        "value": "§ 146a AO",
+        "label": "Registration duty"
+      }
+    },
+    "faq": {
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is a TSE?",
+          "a": "The technical security system signs every POS transaction, so nothing can be changed or deleted unnoticed later. It has been mandatory for electronic tills since 2020."
+        },
+        {
+          "q": "Do I need an electronic POS?",
+          "a": "No. But if you use one, it must meet the legal requirements and be registered with the tax office."
+        },
+        {
+          "q": "What happens in a tax inspection?",
+          "a": "Inspectors can visit unannounced and look at POS data, receipts and TSE information. Missing data can lead to a more extensive external audit."
+        },
+        {
+          "q": "How long must I keep POS data?",
+          "a": "Usually 10 years. The data must remain complete and readable throughout that time."
+        },
+        {
+          "q": "How do I register my POS with the tax office?",
+          "a": "Registration is done electronically via ELSTER. We show you which details you need and help you through it."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready for a worry-free till?",
+      "text": "In a free demo we'll show you how Liefro takes care of your obligations.",
+      "button": "Request a demo"
+    },
+    "disclaimer": "This page provides general information and is not a substitute for tax advice."
   },
   "ordering": {
     "badge": "Online Ordering",

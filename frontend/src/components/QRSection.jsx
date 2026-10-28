@@ -6,27 +6,35 @@ import {
   FiShield,
   FiArrowRight,
 } from "react-icons/fi";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useLocalizedNavigate } from "./shared";
+import { Reveal, Stagger, StaggerItem } from "./motion";
 
 export default function QRSection() {
   const { t } = useTranslation();
   const navigate = useLocalizedNavigate();
+  const frameRef = useRef(null);
+  const { scrollYProgress } = useScroll({ target: frameRef, offset: ["start end", "end start"] });
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1.25, 1]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
   return (
     <section className="hidden lg:flex flex-col justify-center relative py-6 lg:py-16 overflow-hidden bg-white">
       <div className="max-w-[1600px] mx-auto px-6 w-full h-full flex flex-col justify-center">
-        <div className="relative min-h-[600px] lg:min-h-0 lg:h-[80vh] rounded-3xl lg:rounded-[40px] overflow-hidden shadow-2xl">
+        <div ref={frameRef} className="relative min-h-[600px] lg:min-h-0 lg:h-[80vh] rounded-3xl lg:rounded-[40px] overflow-hidden shadow-2xl">
 
           {/* Background Image */}
-          <img
+          <motion.img
             src={scanBg}
             alt="QR Ordering"
+            style={{ scale: bgScale, y: bgY }}
             className="absolute inset-0 w-full h-full object-cover"
           />
 
           {/* White Overlay Right Side */}
           <div className="absolute right-0 top-0 h-full w-full lg:w-[48%] flex items-center">
-            <div className="px-6 py-8 sm:p-10 lg:px-36 w-full">
+            <Reveal className="px-6 py-8 sm:p-10 lg:px-36 w-full">
 
               {/* Tag */}
               <div className="inline-flex items-center border border-red-500 rounded-full px-4 py-1.5 sm:px-6 sm:py-2.5 text-red-600 font-semibold tracking-wide text-xs sm:text-sm mb-4 lg:mb-6">
@@ -50,41 +58,41 @@ export default function QRSection() {
               </p>
 
               {/* Features */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-6 lg:mt-8">
+              <Stagger delay={0.3} className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-6 lg:mt-8">
 
-                <div className="text-center">
+                <StaggerItem className="text-center">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full border border-red-200 flex items-center justify-center bg-red-50/50">
                     <FiClock className="text-red-600 text-base sm:text-lg" />
                   </div>
                   <h4 className="mt-2 font-bold text-xs sm:text-sm text-gray-900">{t("qr.features.faster.title")}</h4>
                   <p className="text-gray-500 text-[10px] sm:text-xs leading-tight mt-0.5">{t("qr.features.faster.subtitle")}</p>
-                </div>
+                </StaggerItem>
 
-                <div className="text-center">
+                <StaggerItem className="text-center">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full border border-red-200 flex items-center justify-center bg-red-50/50">
                     <FiTrendingUp className="text-red-600 text-base sm:text-lg" />
                   </div>
                   <h4 className="mt-2 font-bold text-xs sm:text-sm text-gray-900">{t("qr.features.higher.title")}</h4>
                   <p className="text-gray-500 text-[10px] sm:text-xs leading-tight mt-0.5">{t("qr.features.higher.subtitle")}</p>
-                </div>
+                </StaggerItem>
 
-                <div className="text-center">
+                <StaggerItem className="text-center">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full border border-red-200 flex items-center justify-center bg-red-50/50">
                     <FiUsers className="text-red-600 text-base sm:text-lg" />
                   </div>
                   <h4 className="mt-2 font-bold text-xs sm:text-sm text-gray-900">{t("qr.features.lessStaff.title")}</h4>
                   <p className="text-gray-500 text-[10px] sm:text-xs leading-tight mt-0.5">{t("qr.features.lessStaff.subtitle")}</p>
-                </div>
+                </StaggerItem>
 
-                <div className="text-center">
+                <StaggerItem className="text-center">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-full border border-red-200 flex items-center justify-center bg-red-50/50">
                     <FiShield className="text-red-600 text-base sm:text-lg" />
                   </div>
                   <h4 className="mt-2 font-bold text-xs sm:text-sm text-gray-900">{t("qr.features.secure.title")}</h4>
                   <p className="text-gray-500 text-[10px] sm:text-xs leading-tight mt-0.5">{t("qr.features.secure.subtitle")}</p>
-                </div>
+                </StaggerItem>
 
-              </div>
+              </Stagger>
 
               {/* CTA */}
               <button onClick={() => navigate("/qr-ordering")} className="group mt-6 lg:mt-8 bg-red-600 hover:bg-red-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-xs sm:text-sm flex items-center gap-2 transition-all duration-300">
@@ -92,7 +100,7 @@ export default function QRSection() {
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
 
-            </div>
+            </Reveal>
           </div>
 
           {/* Decorative Lines */}

@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import dashboardImage from "../assets/sqpanel.png";
 import FeatureCard from "./FeatureCard";
 import Button from "./Button";
+import { Reveal, Stagger, TiltCard, staggerItemVariants } from "./motion";
 import { useLocalizedNavigate } from "./shared";
 
 export default function OrderingExperience() {
@@ -26,7 +27,7 @@ export default function OrderingExperience() {
       <div className="relative max-w-7xl mx-auto px-6 w-full">
 
         {/* Heading */}
-        <div className="text-center mb-6">
+        <Reveal className="text-center mb-6">
           <Button
             className="
               inline-flex
@@ -52,10 +53,10 @@ export default function OrderingExperience() {
           <p className="max-w-2xl mx-auto text-gray-600 mt-2 text-sm sm:text-base">
             {t("ordering.description")}
           </p>
-        </div>
+        </Reveal>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto lg:auto-rows-[minmax(160px,auto)]">
+        <Stagger stagger={0.12} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto lg:auto-rows-[minmax(160px,auto)]">
 
           {/* Card 1 */}
           <FeatureCard
@@ -63,6 +64,7 @@ export default function OrderingExperience() {
             title={t("ordering.cards.brandedWebsite.title")}
             subtitle={t("ordering.cards.brandedWebsite.subtitle")}
             cardClassName="h-full flex flex-col justify-between p-5"
+            variants={staggerItemVariants}
           />
 
           {/* Card 2 */}
@@ -71,11 +73,12 @@ export default function OrderingExperience() {
             title={t("ordering.cards.zeroCommission.title")}
             subtitle={t("ordering.cards.zeroCommission.subtitle")}
             cardClassName="h-full flex flex-col justify-between p-5"
+            variants={staggerItemVariants}
           />
  
           {/* Main Dashboard */}
           <motion.div
-            whileHover={{ scale: 1.02 }}
+            variants={staggerItemVariants}
             className="
               sm:col-span-2
               lg:col-span-2
@@ -83,7 +86,8 @@ export default function OrderingExperience() {
               relative
          
             "
-          > 
+          >
+            <TiltCard max={8} glareClassName="rounded-2xl" className="w-full max-w-[600px]">
               <motion.img
                 animate={{ y: [0, -8, 0] }}
                 transition={{
@@ -103,6 +107,7 @@ export default function OrderingExperience() {
                   shadow-[0_30px_60px_rgba(0,0,0,0.1)]
                 "
               />
+            </TiltCard>
           </motion.div>
 
           {/* Card 3 */}
@@ -111,6 +116,7 @@ export default function OrderingExperience() {
             title={t("ordering.cards.pickupDelivery.title")}
             subtitle={t("ordering.cards.pickupDelivery.subtitle")}
             cardClassName="h-full flex flex-col justify-between p-5"
+            variants={staggerItemVariants}
           />
 
           {/* Card 4 */}
@@ -119,9 +125,10 @@ export default function OrderingExperience() {
             title={t("ordering.cards.directOrders.title")}
             subtitle={t("ordering.cards.directOrders.subtitle")}
             cardClassName="h-full flex flex-col justify-between p-5"
+            variants={staggerItemVariants}
           />
 
-        </div>
+        </Stagger>
 
         {/* CTA */}
         <div className="flex justify-center mt-6">

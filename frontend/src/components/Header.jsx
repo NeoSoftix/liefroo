@@ -10,7 +10,9 @@ import { goToSection } from "../utils/scrollToSection";
 import { LocalizedLink } from "./shared";
 import { LOCALES, DEFAULT_LOCALE, megaMenuItems } from "../routesConfig";
 
-export default function Header() {
+// `dark`: the page starts on a dark/red hero, so the un-scrolled header
+// renders white-on-transparent until the user scrolls.
+export default function Header({ dark = false }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { pathname } = useLocation();
@@ -22,6 +24,10 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const closeTimeout = useRef(null);
+  const onDark = dark && !isScrolled;
+  const navLinkClass = onDark
+    ? "text-white/90 hover:text-white"
+    : "text-gray-700 hover:text-red-600";
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -81,7 +87,7 @@ export default function Header() {
       }`}>
 
         {/* max-w-7xl aur mx-auto lagaya taaki andar ka content center me rahe aur baki sab same hai */}
-        <div className="relative flex items-center justify-between max-w-7xl mx-auto w-full">
+        <div className="relative flex items-center justify-between gap-4 max-w-7xl mx-auto w-full">
 
           <LocalizedLink to="/" className="flex items-center gap-3">
             <img 
@@ -89,22 +95,22 @@ export default function Header() {
               alt="Liefro Logo" 
               className={`transition-all duration-300 w-auto object-contain ${
                 isScrolled ? "h-10" : "h-[60px]"
-              }`} 
+              } ${onDark ? "brightness-0 invert" : ""}`} 
             />
           </LocalizedLink>
 
-          <nav className="hidden lg:flex items-center gap-10" onMouseLeave={closeProducts}>
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-10 whitespace-nowrap lg:text-[15px] xl:text-base" onMouseLeave={closeProducts}>
 
             <LocalizedLink
               to="/"
-              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+              className={`transition-colors font-medium ${navLinkClass}`}
             >
               {t("header.nav.home")}
             </LocalizedLink>
 
             <LocalizedLink
               to="/products"
-              className="flex items-center gap-1.5 hover:text-red-600 transition-colors font-medium text-gray-700"
+              className={`flex items-center gap-1.5 transition-colors font-medium ${navLinkClass}`}
               onMouseEnter={openProducts}
               onClick={() => setProductsOpen(false)}
             >
@@ -116,8 +122,22 @@ export default function Header() {
             </LocalizedLink>
 
             <LocalizedLink
+              to="/pricing"
+              className={`transition-colors font-medium ${navLinkClass}`}
+            >
+              {t("header.nav.pricing")}
+            </LocalizedLink>
+
+            <LocalizedLink
+              to="/tax-compliant-pos"
+              className={`transition-colors font-medium ${navLinkClass}`}
+            >
+              {t("header.nav.taxCompliant")}
+            </LocalizedLink>
+
+            <LocalizedLink
               to="/about"
-              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+              className={`transition-colors font-medium ${navLinkClass}`}
             >
               {t("header.nav.about")}
             </LocalizedLink>
@@ -125,7 +145,7 @@ export default function Header() {
             <button
               type="button"
               onClick={handleContactClick}
-              className="hover:text-red-600 transition-colors font-medium text-gray-700"
+              className={`transition-colors font-medium ${navLinkClass}`}
             >
               {t("header.nav.contact")}
             </button>
@@ -138,13 +158,15 @@ export default function Header() {
           />
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <div className="flex items-center gap-1 border border-gray-200 rounded-full p-1 text-xs sm:text-sm font-semibold bg-white/50">
+            <div className={`flex items-center gap-1 border rounded-full p-1 text-xs sm:text-sm font-semibold transition-colors ${
+              onDark ? "border-white/40 bg-white/10" : "border-gray-200 bg-white/50"
+            }`}>
               <button
                 onClick={() => switchLocale("de")}
                 className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "de"
-                    ? "bg-red-600 text-white"
-                    : "text-gray-600 hover:text-red-500"
+                    ? onDark ? "bg-white text-red-600" : "bg-red-600 text-white"
+                    : onDark ? "text-white/80 hover:text-white" : "text-gray-600 hover:text-red-500"
                 }`}
               >
                 DE
@@ -153,8 +175,8 @@ export default function Header() {
                 onClick={() => switchLocale("en")}
                 className={`px-2 py-0.5 sm:px-3 sm:py-1 rounded-full transition-all ${
                   i18n.resolvedLanguage === "en"
-                    ? "bg-red-600 text-white"
-                    : "text-gray-600 hover:text-red-500"
+                    ? onDark ? "bg-white text-red-600" : "bg-red-600 text-white"
+                    : onDark ? "text-white/80 hover:text-white" : "text-gray-600 hover:text-red-500"
                 }`}
               >
                 EN
@@ -163,7 +185,9 @@ export default function Header() {
 
             <button
               onClick={handleContactClick}
-              className="hidden sm:flex bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-red-700 transition-all shadow-sm"
+              className={`hidden sm:flex whitespace-nowrap px-4 py-2 sm:px-6 sm:py-3 lg:px-5 xl:px-6 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm ${
+                onDark ? "bg-white text-red-600 hover:bg-red-50" : "bg-red-600 text-white hover:bg-red-700"
+              }`}
             >
               {t("header.bookDemo")}
             </button>
@@ -172,7 +196,9 @@ export default function Header() {
               type="button"
               aria-label="Toggle menu"
               onClick={() => setMobileOpen((open) => !open)}
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 bg-white/70 text-gray-700 shrink-0"
+              className={`lg:hidden flex items-center justify-center w-10 h-10 rounded-full border shrink-0 transition-colors ${
+                onDark ? "border-white/40 bg-white/10 text-white" : "border-gray-200 bg-white/70 text-gray-700"
+              }`}
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -244,6 +270,22 @@ export default function Header() {
                 className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
               >
                 {t("header.nav.home")}
+              </LocalizedLink>
+
+              <LocalizedLink
+                to="/pricing"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.pricing")}
+              </LocalizedLink>
+
+              <LocalizedLink
+                to="/tax-compliant-pos"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.taxCompliant")}
               </LocalizedLink>
 
               <LocalizedLink

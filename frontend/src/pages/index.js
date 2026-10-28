@@ -17,4 +17,6 @@ export { default as PrivacyPolicy } from "./PrivacyPolicy";
 export { default as TermsConditions } from "./TermsConditions";
 export { default as Services } from "./Services";
 export { default as About } from "./About";
+export { default as Pricing } from "./Pricing";
+export { default as TaxCompliance } from "./TaxCompliance";
 export { default as QrSMM } from "./QrSMM";

@@ -15,6 +15,8 @@
     "nav": {
       "home": "Startseite",
       "products": "Produkte",
+      "pricing": "Preise",
+      "taxCompliant": "Finanzamtkonform",
       "about": "Über uns",
       "contact": "Kontakt"
     },
@@ -125,6 +127,346 @@
       "posSystem": "Kassensystem",
       "analytics": "Analysen"
     }
+  },
+  "posDevices": {
+    "badge": "Liefro Hardware",
+    "headingPrefix": "Das passende",
+    "headingHighlight": "Kassensystem",
+    "headingSuffix": "für Ihren Betrieb",
+    "station": {
+      "name": "Liefro Station",
+      "tagline": "Die Kommandozentrale an der Theke",
+      "description": "Großes Touch-Display mit integriertem Bondrucker und Kundendisplay. Tischplan, Bestellungen aus allen Kanälen, Zahlungen und TSE-konforme Belege – alles an einem festen Platz. Ideal für Restaurants mit vielen Tischen und hohem Bestellaufkommen.",
+      "cta": "Liefro Station entdecken"
+    },
+    "go": {
+      "name": "Liefro Go",
+      "tagline": "Bestellen und kassieren direkt am Tisch",
+      "description": "Das Handgerät mit eingebautem Drucker für Ihr Serviceteam. Bestellungen aufnehmen, Bons drucken und bezahlen lassen, ohne zur Kasse zu laufen – perfekt für Terrasse, Lieferung und Events.",
+      "cta": "Liefro Go entdecken"
+    },
+      "waiter": {
+      "name": "Liefro Waiter",
+      "tagline": "Die Kellner-App auf dem Smartphone",
+      "description": "Ihr Serviceteam bestellt direkt am Tisch – auf jedem Smartphone. Bestellungen gehen sofort an Küche und Bar.",
+      "cta": "Liefro Waiter entdecken"
+    },
+      "printer": {
+      "name": "Liefro Print",
+      "tagline": "Bondrucker für Kasse, Küche und Bar",
+      "description": "Schneller Thermodrucker für Kassenbons und Küchenbons – Bestellungen drucken automatisch dort, wo sie gebraucht werden.",
+      "cta": "Liefro Print entdecken"
+    }
+  },
+  "compliance": {
+    "heading": "KassenSichV & TSE –",
+    "headingHighlight": "einfach erledigt.",
+    "description": "Liefro bringt eine zertifizierte TSE direkt mit – in wenigen Minuten startklar und von Anfang an gesetzeskonform.",
+    "points": {
+      "inspection": {
+        "title": "Bereit für jede Kassennachschau",
+        "text": "Belegpflicht und GoBD-konforme Daten – automatisch erfüllt."
+      },
+      "hardware": {
+        "title": "Kein Hardware-Stress",
+        "text": "Keine USB-Sticks, keine Ausfälle – wir richten Ihre TSE für Sie ein."
+      },
+      "reporting": {
+        "title": "Kassenmeldung leicht gemacht",
+        "text": "Wir begleiten Sie bei der Meldung Ihrer Kasse ans Finanzamt."
+      }
+    }
+  },
+  "posFeatures": {
+    "badge": "Kassenfunktionen",
+    "heading": "Funktionen, die Ihren",
+    "headingHighlight": "Arbeitstag leichter machen",
+    "description": "Mehr als eine Kasse – Liefro ist Ihr digitales Büro für den gesamten Betrieb.",
+    "items": {
+      "mobileOrdering": {
+        "title": "Mobiles Bestellen",
+        "text": "Bestellungen direkt am Tisch aufnehmen – sie landen sofort in Küche und Bar."
+      },
+      "qrMenu": {
+        "title": "QR-Bestellung",
+        "text": "Gäste bestellen per QR-Code aus Ihrer digitalen Speisekarte – immer aktuell."
+      },
+      "cashbook": {
+        "title": "Digitales Kassenbuch",
+        "text": "Bareinnahmen automatisch erfasst und jederzeit exportbereit – ohne Papierkram."
+      },
+      "reservations": {
+        "title": "Reservierungen",
+        "text": "Online-Buchungen direkt in der Kasse, inklusive Bestätigung und Erinnerung."
+      },
+      "offers": {
+        "title": "Rabatte & Angebote",
+        "text": "Rabatte, Happy Hours und Aktionen mit wenigen Klicks anlegen – mehr Gäste, mehr Umsatz."
+      },
+      "reports": {
+        "title": "Live-Berichte",
+        "text": "Umsätze und Trends in Echtzeit – von überall, auf jedem Gerät."
+      }
+    }
+  },
+  "pricing": {
+    "seo": {
+      "title": "Preise – Kassensystem für Restaurants",
+      "description": "Transparente Pakete für Ihr Restaurant: Kasse, TSE, Einrichtung und Support inklusive. Finden Sie das passende Liefro-Paket."
+    },
+    "hero": {
+      "badge": "Preise & Pakete",
+      "heading": "Faire Preise.",
+      "headingHighlight": "Alles drin.",
+      "description": "Kasse, TSE, Einrichtung und Support in einem Paket – ohne versteckte Kosten. Wählen Sie, was zu Ihrem Betrieb passt.",
+      "cta": "Beratung anfragen",
+      "secondary": "Pakete ansehen"
+    },
+    "plans": {
+      "heading": "Wählen Sie Ihr",
+      "headingHighlight": "Paket",
+      "perMonth": "/ Monat",
+      "devices": "{{count}} Gerät",
+      "devices_other": "{{count}} Geräte",
+      "popular": "Beliebt",
+      "cta": "Paket anfragen",
+      "everythingIn": "Alles aus {{plan}}, plus:",
+      "items": {
+        "start": {
+          "name": "Start",
+          "tagline": "Für Cafés, Imbisse und kleine Läden",
+          "features": [
+            "Touch-Kasse mit Tischplan",
+            "Zertifizierte TSE",
+            "Online- & QR-Bestellung",
+            "Live-Berichte"
+          ]
+        },
+        "plus": {
+          "name": "Plus",
+          "tagline": "Für Restaurants mit Service am Tisch",
+          "features": [
+            "Mobiles Bestellen am Tisch",
+            "Digitales Kassenbuch",
+            "Rabatte & Angebote"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "tagline": "Für große Betriebe und mehrere Standorte",
+          "features": [
+            "Reservierungssystem",
+            "E-Mail-Marketing",
+            "Mehrere Standorte"
+          ]
+        }
+      }
+    },
+    "included": {
+      "heading": "In jedem Paket enthalten",
+      "items": {
+        "tse": "Zertifizierte TSE",
+        "setup": "Einrichtung & Schulung",
+        "support": "Persönlicher Support",
+        "updates": "Kostenlose Updates"
+      }
+    },
+    "save": {
+      "heading": "Länger planen, mehr sparen",
+      "text": "Bei längerer Laufzeit oder Vorauszahlung erhalten Sie bessere Konditionen. Wir rechnen es Ihnen gerne durch.",
+      "cta": "Angebot anfordern"
+    },
+    "benefits": {
+      "heading": "Mehr als nur",
+      "headingHighlight": "eine Kasse",
+      "items": {
+        "advice": {
+          "title": "Persönliche Beratung",
+          "text": "Wir finden gemeinsam das Paket, das wirklich zu Ihnen passt."
+        },
+        "setup": {
+          "title": "Startklar geliefert",
+          "text": "Speisekarte, Geräte und TSE richten wir vorab für Sie ein."
+        },
+        "training": {
+          "title": "Schulung fürs Team",
+          "text": "Ihr Team ist in kurzer Zeit sicher im Umgang mit Liefro."
+        },
+        "support": {
+          "title": "Immer erreichbar",
+          "text": "Hilfe per Telefon, WhatsApp und E-Mail – auf Deutsch und weiteren Sprachen."
+        }
+      }
+    },
+    "addons": {
+      "heading": "Erweiterungen",
+      "headingHighlight": "nach Bedarf",
+      "description": "Erweitern Sie Ihr Paket jederzeit – monatlich zubuchbar.",
+      "from": "ab",
+      "items": {
+        "device": {
+          "title": "Zusätzliches Gerät",
+          "text": "Weitere Kasse oder Handgerät für Ihr Team."
+        },
+        "printer": {
+          "title": "Küchen- & Bardrucker",
+          "text": "Bestellungen automatisch dort drucken, wo sie gebraucht werden."
+        },
+        "reservations": {
+          "title": "Reservierungen",
+          "text": "Online-Tischbuchung mit Bestätigung und Erinnerung."
+        },
+        "website": {
+          "title": "Eigene Website",
+          "text": "Ihre Restaurant-Website mit integrierter Bestellung."
+        },
+        "marketing": {
+          "title": "Marketing",
+          "text": "E-Mail-Kampagnen und Aktionen für Stammgäste."
+        },
+        "app": {
+          "title": "Eigene App",
+          "text": "Ihre Marke als iOS- und Android-App."
+        }
+      }
+    },
+    "cta": {
+      "heading": "Noch unsicher, welches Paket passt?",
+      "text": "Wir beraten Sie kostenlos und unverbindlich.",
+      "button": "Jetzt beraten lassen"
+    },
+    "showcase": {
+      "heading": "So sieht Liefro",
+      "headingHighlight": "im Alltag aus",
+      "description": "Ein Blick in die Software, die in Ihrem Paket steckt.",
+      "includedFrom": "Ab Paket {{plan}}",
+      "items": {
+        "onlineOrdering": {
+          "title": "Alle Bestellungen auf einen Blick",
+          "text": "Online, Abholung, Lieferung oder vor Ort – jede Bestellung landet in einer Übersicht und lässt sich mit einem Tipp aktualisieren."
+        },
+        "analytics": {
+          "title": "Ihre Zahlen in Echtzeit",
+          "text": "Umsatz, Bestellungen und Trends live im Dashboard – damit Sie Entscheidungen auf Fakten stützen."
+        },
+        "reservations": {
+          "title": "Tischreservierung online",
+          "text": "Gäste buchen rund um die Uhr selbst. Sie sehen alle Reservierungen direkt in der Kasse."
+        },
+        "marketing": {
+          "title": "Kampagnen in Minuten",
+          "text": "E-Mail-Aktionen für Stammgäste erstellen und versenden – für mehr wiederkehrende Bestellungen."
+        }
+      }
+    },
+    "note": "Alle Preise zzgl. MwSt. Mindestlaufzeit 12 Monate."
+  },
+  "taxCompliant": {
+    "seo": {
+      "title": "Finanzamtkonforme Kasse – KassenSichV & TSE",
+      "description": "Liefro erfüllt KassenSichV und TSE-Pflicht. Erfahren Sie, worauf es bei einer finanzamtkonformen Restaurantkasse ankommt."
+    },
+    "hero": {
+      "badge": "Finanzamtkonform",
+      "heading": "Ihre Kasse.",
+      "headingHighlight": "Immer finanzamtkonform.",
+      "description": "KassenSichV, TSE, Belegpflicht, Kassenmeldung – mit Liefro sind die Pflichten erledigt, bevor Sie darüber nachdenken müssen.",
+      "cta": "Beratung anfragen",
+      "secondary": "Häufige Fragen"
+    },
+    "pillars": {
+      "heading": "Die drei Pflichten –",
+      "headingHighlight": "einfach erklärt",
+      "items": {
+        "tse": {
+          "title": "KassenSichV & TSE",
+          "text": "Seit 2020 muss jede elektronische Kasse eine zertifizierte Technische Sicherheitseinrichtung (TSE) haben. Sie schützt Ihre Kassendaten vor nachträglicher Manipulation.",
+          "points": [
+            "Jede Buchung erhält eine digitale Signatur mit Zeitstempel",
+            "Spätere Änderungen oder Löschungen werden sofort erkennbar",
+            "Bei Liefro ist die TSE bereits integriert und eingerichtet"
+          ]
+        },
+        "receipt": {
+          "title": "Belegausgabepflicht",
+          "text": "Zu jedem Verkauf muss Ihrem Gast ein Beleg angeboten werden – auch wenn er ihn nicht mitnimmt. Der Beleg enthält die wichtigsten TSE-Daten.",
+          "points": [
+            "Beleg als Papierbon oder digital, z. B. per QR-Code",
+            "Pflichtangaben wie Datum, Positionen, Steuer und TSE-Signatur",
+            "Liefro erstellt jeden Beleg automatisch korrekt"
+          ]
+        },
+        "reporting": {
+          "title": "Kassenmeldung",
+          "text": "Nach § 146a AO müssen elektronische Kassen beim Finanzamt gemeldet werden – auch bei Anschaffung oder Außerbetriebnahme eines Geräts.",
+          "points": [
+            "Meldung elektronisch über ELSTER",
+            "Angaben zu Kasse, TSE, Seriennummer und Anschaffungsdatum",
+            "Wir stellen Ihnen alle nötigen Daten bereit und helfen bei der Meldung"
+          ]
+        }
+      }
+    },
+    "how": {
+      "badge": "So hilft Liefro",
+      "heading": "Compliance, die",
+      "headingHighlight": "einfach mitläuft",
+      "items": [
+        "Zertifizierte TSE direkt im System – ohne zusätzliche Hardware-Sorgen",
+        "Belege werden manipulationssicher gespeichert",
+        "Daten-Export für Ihren Steuerberater mit wenigen Klicks",
+        "Unterstützung bei der Kassenmeldung ans Finanzamt",
+        "Optionales digitales Kassenbuch für Bareinnahmen und -ausgaben"
+      ]
+    },
+    "inspection": {
+      "heading": "Kassennachschau?",
+      "headingHighlight": "Kein Grund zur Sorge.",
+      "text": "Das Finanzamt darf Ihre Kasse jederzeit und ohne Ankündigung prüfen. Mit Liefro haben Sie TSE-Daten, Belege und Exporte sofort parat – statt hektisch Unterlagen zu suchen.",
+      "stat1": {
+        "value": "2020",
+        "label": "TSE-Pflicht seit"
+      },
+      "stat2": {
+        "value": "10 Jahre",
+        "label": "Aufbewahrungsfrist"
+      },
+      "stat3": {
+        "value": "§ 146a AO",
+        "label": "Meldepflicht"
+      }
+    },
+    "faq": {
+      "heading": "Häufige Fragen",
+      "items": [
+        {
+          "q": "Was ist eine TSE?",
+          "a": "Die Technische Sicherheitseinrichtung signiert jede Kassenbuchung. So lässt sich später nichts unbemerkt ändern oder löschen. Für elektronische Kassen ist sie seit 2020 Pflicht."
+        },
+        {
+          "q": "Muss ich eine elektronische Kasse haben?",
+          "a": "Nein. Wer aber eine elektronische Kasse nutzt, muss sicherstellen, dass sie den gesetzlichen Vorgaben entspricht und beim Finanzamt gemeldet ist."
+        },
+        {
+          "q": "Was passiert bei einer Kassennachschau?",
+          "a": "Prüfer können unangekündigt vorbeikommen und Kassendaten, Belege und TSE-Informationen einsehen. Fehlen Daten, kann eine umfassendere Außenprüfung folgen."
+        },
+        {
+          "q": "Wie lange muss ich Kassendaten aufbewahren?",
+          "a": "In der Regel 10 Jahre. Die Daten müssen in dieser Zeit vollständig und lesbar verfügbar sein."
+        },
+        {
+          "q": "Wie melde ich meine Kasse beim Finanzamt?",
+          "a": "Die Meldung erfolgt elektronisch über ELSTER. Wir zeigen Ihnen, welche Angaben Sie brauchen, und unterstützen Sie dabei."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Bereit für eine sorgenfreie Kasse?",
+      "text": "Wir zeigen Ihnen in einer kostenlosen Demo, wie Liefro Ihre Pflichten erledigt.",
+      "button": "Demo anfragen"
+    },
+    "disclaimer": "Diese Seite bietet allgemeine Informationen und ersetzt keine Steuerberatung."
   },
   "ordering": {
     "badge": "Online-Bestellung",
