@@ -7,114 +7,70 @@ import {
   Settings2,
   BookOpen,
   CheckCircle2,
+  TrendingUp,
+  Timer,
+  Briefcase,
+  Heart,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
-import { SmarterOrderingSection } from "../components/QROrdering";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
+import { ServicePage } from "../components/layout";
+import { HighlightsBand } from "../components/shared";
+import { translateItems } from "../utils/translateItems";
 import serviceImage from "../assets/qrordering.png";
+
+const features = [
+  { key: "scanOrder", Icon: QrCode },
+  { key: "easyOrdering", Icon: ShoppingCart },
+  { key: "securePayments", Icon: CreditCard },
+  { key: "realTimeUpdates", Icon: Bell },
+  { key: "insights", Icon: BarChart3 },
+  { key: "posIntegration", Icon: Settings2 },
+];
+
+const steps = [
+  { key: "scanQr", Icon: QrCode },
+  { key: "browseMenu", Icon: BookOpen },
+  { key: "placeOrder", Icon: ShoppingCart },
+  { key: "makePayment", Icon: CreditCard },
+  { key: "enjoyMeal", Icon: CheckCircle2 },
+];
+
+const highlights = [
+  { key: "orderValue", Icon: TrendingUp },
+  { key: "tableTurnover", Icon: Timer },
+  { key: "costs", Icon: Briefcase },
+  { key: "reviews", Icon: Heart },
+  { key: "decisions", Icon: BarChart3 },
+];
 
 export default function QROrdering() {
   const { t } = useTranslation();
 
-  const heroFeatures = [
-    { Icon: QrCode, key: "scanOrder" },
-    { Icon: ShoppingCart, key: "easyOrdering" },
-    { Icon: CreditCard, key: "securePayments" },
-    { Icon: Bell, key: "realTimeUpdates" },
-    { Icon: BarChart3, key: "insights" },
-    { Icon: Settings2, key: "posIntegration" },
-  ].map(({ Icon, key }) => ({ Icon, label: t(`qrOrdering.hero.features.${key}`) }));
-
-  const featureItems = [
-    { key: "scanOrder", Icon: QrCode },
-    { key: "easyOrdering", Icon: ShoppingCart },
-    { key: "securePayments", Icon: CreditCard },
-    { key: "realTimeUpdates", Icon: Bell },
-    { key: "insights", Icon: BarChart3 },
-    { key: "posIntegration", Icon: Settings2 },
-  ].map(({ key, Icon }) => ({
-    key,
-    Icon,
-    title: t(`qrOrdering.featureGrid.items.${key}.title`),
-    desc: t(`qrOrdering.featureGrid.items.${key}.desc`),
-  }));
-
-  const steps = [
-    { key: "scanQr", Icon: QrCode, number: "01" },
-    { key: "browseMenu", Icon: BookOpen, number: "02" },
-    { key: "placeOrder", Icon: ShoppingCart, number: "03" },
-    { key: "makePayment", Icon: CreditCard, number: "04" },
-    { key: "enjoyMeal", Icon: CheckCircle2, number: "05" },
-  ].map(({ key, Icon, number }) => ({
-    key,
-    Icon,
-    number,
-    title: t(`qrOrdering.process.steps.${key}.title`),
-    desc: t(`qrOrdering.process.steps.${key}.desc`),
-  }));
-
-  const testimonialStats = [
-    { value: t("qrOrdering.testimonial.stats.turnover"), label: t("qrOrdering.testimonial.stats.turnoverLabel") },
-    { value: t("qrOrdering.testimonial.stats.orders"), label: t("qrOrdering.testimonial.stats.ordersLabel") },
-    { value: t("qrOrdering.testimonial.stats.orderValue"), label: t("qrOrdering.testimonial.stats.orderValueLabel") },
-    { value: t("qrOrdering.testimonial.stats.satisfaction"), label: t("qrOrdering.testimonial.stats.satisfactionLabel") },
-    { value: t("qrOrdering.testimonial.stats.contactless"), label: t("qrOrdering.testimonial.stats.contactlessLabel") },
-  ];
-
   return (
-    <div className="w-full overflow-x-hidden bg-white">
-      <Seo
-        title={t("qrOrdering.seo.title")}
-        description={t("qrOrdering.seo.description")}
-        path="/qr-ordering"
-      />
-      <Header />
-      <main>
-        <ServiceHero
-          badge={t("qrOrdering.hero.badge")}
-          headingLine1={t("qrOrdering.hero.headingLine1")}
-          headingLine2={t("qrOrdering.hero.headingLine2")}
-          description={t("qrOrdering.hero.description")}
-          checklist={[
-            "contactless",
-            "securePayments",
-            "fasterService",
-            "reduceWorkload",
-            "realTimeUpdates",
-            "posIntegration",
-          ].map((key) => t(`qrOrdering.hero.checklist.${key}`))}
-          ctaLabel={t("qrOrdering.hero.cta")}
-          ctaTarget="how-it-works"
-          features={heroFeatures}
-          featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
-          image={serviceImage}
+    <ServicePage
+      ns="qrOrdering"
+      path="/qr-ordering"
+      hero={{
+        checklist: ["contactless", "securePayments", "fasterService", "reduceWorkload", "realTimeUpdates", "posIntegration"],
+        features,
+        featuresGridClassName: "grid-cols-2 sm:grid-cols-3 md:grid-cols-6",
+        ctaTarget: "how-it-works",
+        image: serviceImage,
+      }}
+      features={{ items: features, gridClassName: "sm:grid-cols-2 lg:grid-cols-3" }}
+      steps={{ items: steps, gridClassName: "sm:grid-cols-2 md:grid-cols-5" }}
+      highlights={
+        <HighlightsBand
+          eyebrow={t("qrOrdering.smarterOrdering.eyebrow")}
+          heading={t("qrOrdering.smarterOrdering.heading")}
+          items={translateItems(t, "qrOrdering.smarterOrdering.stats", highlights, { title: "" })}
+          gridClassName="grid-cols-2 md:grid-cols-5"
         />
-        <FeatureGridSection
-          items={featureItems}
-          gridClassName="sm:grid-cols-2 lg:grid-cols-3"
-          centered
-        />
-        <ProcessSteps
-          id="how-it-works"
-          eyebrow={t("qrOrdering.process.eyebrow")}
-          heading={t("qrOrdering.process.heading")}
-          steps={steps}
-          gridClassName="sm:grid-cols-2 md:grid-cols-5"
-        />
-        <SmarterOrderingSection />
-        <TestimonialStatsBar
-          quote={t("qrOrdering.testimonial.quote")}
-          name={t("qrOrdering.testimonial.name")}
-          role={t("qrOrdering.testimonial.role")}
-          stats={testimonialStats}
-          statsGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-5"
-        />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+      }
+      testimonial={{
+        stats: ["turnover", "orders", "orderValue", "satisfaction", "contactless"],
+        gridClassName: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5",
+      }}
+    />
   );
 }

@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import Button from "../Button";
+import Button from "./Button";
 import { useLocalizedNavigate } from "./localizedRouting";
 
 /**

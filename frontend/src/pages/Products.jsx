@@ -1,22 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Header from "../components/Header";
-import { Seo } from "../components/shared";
-import HeroSlider from "../components/HeroSlider";
-import RestaurantEcosystem from "../components/RestaurantEcosystem";
-import POSDevicesSection from "../components/POSDevicesSection";
-import ComplianceSection from "../components/ComplianceSection";
-import POSFeaturesSection from "../components/POSFeaturesSection";
-// import OrderingExperience from "../components/OrderingExperience";
-// import PoSSection from "../components/POSSection";
-// import ReservationSection from "../components/ReservationSection";
-import Footer from "../components/Footer";
-import QRSection from "../components/QRSection";
-import FAQ from "../components/FAQ";
-// import WebsiteMarketingSection from "../components/WebsiteMarketingSection";
-import ContactSection from "../components/ContactSection";
-import { scrollToElementId } from "../utils/scrollToSection";
 import {
   ShoppingBag,
   CalendarDays,
@@ -27,7 +11,18 @@ import {
   Zap,
   Percent,
 } from "lucide-react";
+import { PageLayout } from "../components/layout";
+import {
+  HeroSlider,
+  RestaurantEcosystem,
+  POSDevicesSection,
+  ComplianceSection,
+  POSFeaturesSection,
+  QRSection,
+} from "../components/home";
+import { FAQ, ContactSection } from "../components/shared";
 import { Marquee, ScrollProgress, SectionTransition } from "../components/motion";
+import { scrollToElementId } from "../utils/scrollToSection";
 
 export default function Products() {
   const { t } = useTranslation();
@@ -56,14 +51,8 @@ export default function Products() {
   ];
 
   return (
-    <div className="w-full overflow-x-hidden bg-white">
-      <Seo
-        title={t("home.seo.title")}
-        description={t("home.seo.description")}
-        path="/"
-      />
+    <PageLayout title={t("home.seo.title")} description={t("home.seo.description")} path="/" dark>
       <ScrollProgress />
-      <Header dark />
       <HeroSlider />
 
       {/* Tilted feature ticker that breaks up the hero and the first section */}
@@ -85,11 +74,6 @@ export default function Products() {
       <SectionTransition>
         <POSFeaturesSection />
       </SectionTransition>
-      {/* Hidden for now — Ordering, POS and Reservation sections */}
-      {/* <SectionTransition><OrderingExperience /></SectionTransition> */}
-      {/* <WebsiteMarketingSection /> */}
-      {/* <SectionTransition><PoSSection /></SectionTransition> */}
-      {/* <SectionTransition><ReservationSection /></SectionTransition> */}
       <SectionTransition>
         <QRSection />
       </SectionTransition>
@@ -100,8 +84,7 @@ export default function Products() {
       <SectionTransition>
         <ContactSection />
       </SectionTransition>
-      <Footer />
-    </div>
+    </PageLayout>
   );
 }
 

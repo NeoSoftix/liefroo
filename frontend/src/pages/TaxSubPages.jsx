@@ -20,7 +20,7 @@ import {
   CalendarRange,
   Send,
 } from "lucide-react";
-import TaxSubPage from "../components/TaxSubPage";
+import TaxSubPage from "../components/tax/TaxSubPage";
 
 const screen = (src) => ({ src, kind: "screen" });
 const device = (src) => ({ src, kind: "device" });

@@ -7,102 +7,62 @@ import {
   Cloud,
   Route,
   CheckCircle2,
+  Wifi,
+  CloudCog,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
-import { HardwareSection } from "../components/PrinterIntegration";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
+import { ServicePage } from "../components/layout";
+import { HighlightsBand } from "../components/shared";
+import { translateItems } from "../utils/translateItems";
 import serviceImage from "../assets/pos.png";
+
+const features = [
+  { key: "autoPrint", Icon: Printer },
+  { key: "androidDisplay", Icon: MonitorSmartphone },
+  { key: "kitchenBar", Icon: UtensilsCrossed },
+  { key: "noManual", Icon: Zap },
+];
+
+const steps = [
+  { key: "orderReceived", Icon: ShoppingCart },
+  { key: "sentToSystem", Icon: Cloud },
+  { key: "autoRouting", Icon: Route },
+  { key: "printedInstantly", Icon: Printer },
+  { key: "orderInProgress", Icon: CheckCircle2 },
+];
+
+const hardware = [
+  { key: "printers", Icon: Printer },
+  { key: "display", Icon: MonitorSmartphone },
+  { key: "connectivity", Icon: Wifi },
+  { key: "cloud", Icon: CloudCog },
+];
 
 export default function PrinterIntegration() {
   const { t } = useTranslation();
 
-  const heroFeatures = [
-    { Icon: Printer, key: "autoPrint" },
-    { Icon: MonitorSmartphone, key: "androidDisplay" },
-    { Icon: UtensilsCrossed, key: "kitchenBar" },
-    { Icon: Zap, key: "noManual" },
-  ].map(({ Icon, key }) => ({ Icon, label: t(`printerIntegration.hero.features.${key}`) }));
-
-  const featureItems = [
-    { key: "autoPrint", Icon: Printer },
-    { key: "androidDisplay", Icon: MonitorSmartphone },
-    { key: "kitchenBar", Icon: UtensilsCrossed },
-    { key: "noManual", Icon: Zap },
-  ].map(({ key, Icon }) => ({
-    key,
-    Icon,
-    title: t(`printerIntegration.featureGrid.items.${key}.title`),
-    desc: t(`printerIntegration.featureGrid.items.${key}.desc`),
-  }));
-
-  const steps = [
-    { key: "orderReceived", Icon: ShoppingCart, number: "01" },
-    { key: "sentToSystem", Icon: Cloud, number: "02" },
-    { key: "autoRouting", Icon: Route, number: "03" },
-    { key: "printedInstantly", Icon: Printer, number: "04" },
-    { key: "orderInProgress", Icon: CheckCircle2, number: "05" },
-  ].map(({ key, Icon, number }) => ({
-    key,
-    Icon,
-    number,
-    title: t(`printerIntegration.process.steps.${key}.title`),
-    desc: t(`printerIntegration.process.steps.${key}.desc`),
-  }));
-
-  const testimonialStats = [
-    { value: t("printerIntegration.testimonial.stats.printSuccess"), label: t("printerIntegration.testimonial.stats.printSuccessLabel") },
-    { value: t("printerIntegration.testimonial.stats.restaurants"), label: t("printerIntegration.testimonial.stats.restaurantsLabel") },
-    { value: t("printerIntegration.testimonial.stats.manualForwarding"), label: t("printerIntegration.testimonial.stats.manualForwardingLabel") },
-    { value: t("printerIntegration.testimonial.stats.performance"), label: t("printerIntegration.testimonial.stats.performanceLabel") },
-  ];
-
   return (
-    <div className="w-full overflow-x-hidden bg-white">
-      <Seo
-        title={t("printerIntegration.seo.title")}
-        description={t("printerIntegration.seo.description")}
-        path="/printer-integration"
-      />
-      <Header />
-      <main>
-        <ServiceHero
-          badge={t("printerIntegration.hero.badge")}
-          headingLine1={t("printerIntegration.hero.headingLine1")}
-          headingLine2={t("printerIntegration.hero.headingLine2")}
-          description={t("printerIntegration.hero.description")}
-          checklist={["thermalPrint", "androidDisplay", "printerSupport", "zeroForwarding"].map((key) =>
-            t(`printerIntegration.hero.checklist.${key}`)
-          )}
-          ctaLabel={t("printerIntegration.hero.cta")}
-          secondaryCtaLabel={t("printerIntegration.hero.secondaryCta")}
-          features={heroFeatures}
-          image={serviceImage}
-        />
-        <FeatureGridSection
-          items={featureItems}
-          gridClassName="sm:grid-cols-2 lg:grid-cols-4"
+    <ServicePage
+      ns="printerIntegration"
+      path="/printer-integration"
+      hero={{
+        checklist: ["thermalPrint", "androidDisplay", "printerSupport", "zeroForwarding"],
+        features,
+        secondaryCta: true,
+        image: serviceImage,
+      }}
+      features={{ items: features, gridClassName: "sm:grid-cols-2 lg:grid-cols-4" }}
+      steps={{ items: steps, gridClassName: "sm:grid-cols-2 md:grid-cols-5" }}
+      highlights={
+        <HighlightsBand
           centered
+          eyebrow={t("printerIntegration.hardware.eyebrow")}
+          heading={t("printerIntegration.hardware.heading")}
+          description={t("printerIntegration.hardware.description")}
+          items={translateItems(t, "printerIntegration.hardware.items", hardware, { title: "" })}
         />
-        <ProcessSteps
-          id="how-it-works"
-          eyebrow={t("printerIntegration.process.eyebrow")}
-          heading={t("printerIntegration.process.heading")}
-          steps={steps}
-          gridClassName="sm:grid-cols-2 md:grid-cols-5"
-        />
-        <HardwareSection />
-        <TestimonialStatsBar
-          quote={t("printerIntegration.testimonial.quote")}
-          name={t("printerIntegration.testimonial.name")}
-          role={t("printerIntegration.testimonial.role")}
-          stats={testimonialStats}
-        />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+      }
+      testimonial={{ stats: ["printSuccess", "restaurants", "manualForwarding", "performance"] }}
+    />
   );
 }

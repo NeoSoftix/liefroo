@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Button from "../Button";
+import Button from "./Button";
 import { scrollToElementId } from "../../utils/scrollToSection";
 import { useGoToSection } from "./localizedRouting";
 

@@ -8,114 +8,69 @@ import {
   Search,
   CheckCircle2,
   Star,
+  LayoutGrid,
+  XCircle,
+  TrendingUp,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import Header from "../components/Header";
-import { ServiceHero, FeatureGridSection, ProcessSteps, TestimonialStatsBar, Seo } from "../components/shared";
-import { BetterReservationsSection } from "../components/ReservationSystem";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
+import { ServicePage } from "../components/layout";
+import { HighlightsBand } from "../components/shared";
+import { translateItems } from "../utils/translateItems";
 import serviceImage from "../assets/reservation.png";
+
+const features = [
+  { key: "onlineReservations", Icon: CalendarCheck },
+  { key: "guestManagement", Icon: Users },
+  { key: "realTimeAvailability", Icon: Clock },
+  { key: "reminders", Icon: Bell },
+  { key: "reports", Icon: BarChart3 },
+  { key: "integration", Icon: Puzzle },
+];
+
+const steps = [
+  { key: "guestBooks", Icon: CalendarCheck },
+  { key: "checkAvailability", Icon: Search },
+  { key: "confirmBooking", Icon: CheckCircle2 },
+  { key: "manageEfficiently", Icon: Users },
+  { key: "serveBetter", Icon: Star },
+];
+
+const highlights = [
+  { key: "occupancy", Icon: LayoutGrid },
+  { key: "noShows", Icon: XCircle },
+  { key: "satisfaction", Icon: Users },
+  { key: "saveTime", Icon: Clock },
+  { key: "revenue", Icon: TrendingUp },
+];
 
 export default function ReservationSystem() {
   const { t } = useTranslation();
 
-  const heroFeatures = [
-    { Icon: CalendarCheck, key: "onlineReservations" },
-    { Icon: Users, key: "guestManagement" },
-    { Icon: Clock, key: "realTimeAvailability" },
-    { Icon: Bell, key: "reminders" },
-    { Icon: BarChart3, key: "reports" },
-    { Icon: Puzzle, key: "integration" },
-  ].map(({ Icon, key }) => ({ Icon, label: t(`reservationSystem.hero.features.${key}`) }));
-
-  const featureItems = [
-    { key: "onlineReservations", Icon: CalendarCheck },
-    { key: "guestManagement", Icon: Users },
-    { key: "realTimeAvailability", Icon: Clock },
-    { key: "reminders", Icon: Bell },
-    { key: "reports", Icon: BarChart3 },
-    { key: "integration", Icon: Puzzle },
-  ].map(({ key, Icon }) => ({
-    key,
-    Icon,
-    title: t(`reservationSystem.featureGrid.items.${key}.title`),
-    desc: t(`reservationSystem.featureGrid.items.${key}.desc`),
-  }));
-
-  const steps = [
-    { key: "guestBooks", Icon: CalendarCheck, number: "01" },
-    { key: "checkAvailability", Icon: Search, number: "02" },
-    { key: "confirmBooking", Icon: CheckCircle2, number: "03" },
-    { key: "manageEfficiently", Icon: Users, number: "04" },
-    { key: "serveBetter", Icon: Star, number: "05" },
-  ].map(({ key, Icon, number }) => ({
-    key,
-    Icon,
-    number,
-    title: t(`reservationSystem.process.steps.${key}.title`),
-    desc: t(`reservationSystem.process.steps.${key}.desc`),
-  }));
-
-  const testimonialStats = [
-    { value: t("reservationSystem.testimonial.stats.occupancy"), label: t("reservationSystem.testimonial.stats.occupancyLabel") },
-    { value: t("reservationSystem.testimonial.stats.noShows"), label: t("reservationSystem.testimonial.stats.noShowsLabel") },
-    { value: t("reservationSystem.testimonial.stats.repeatBookings"), label: t("reservationSystem.testimonial.stats.repeatBookingsLabel") },
-    { value: t("reservationSystem.testimonial.stats.rating"), label: t("reservationSystem.testimonial.stats.ratingLabel") },
-    { value: t("reservationSystem.testimonial.stats.availability"), label: t("reservationSystem.testimonial.stats.availabilityLabel") },
-  ];
-
   return (
-    <div className="w-full overflow-x-hidden bg-white">
-      <Seo
-        title={t("reservationSystem.seo.title")}
-        description={t("reservationSystem.seo.description")}
-        path="/reservation-system"
-      />
-      <Header />
-      <main>
-        <ServiceHero
-          badge={t("reservationSystem.hero.badge")}
-          headingLine1={t("reservationSystem.hero.headingLine1")}
-          headingLine2={t("reservationSystem.hero.headingLine2")}
-          description={t("reservationSystem.hero.description")}
-          checklist={[
-            "onlineReservations",
-            "realTimeAvailability",
-            "guestManagement",
-            "reminders",
-            "noShows",
-            "reports",
-          ].map((key) => t(`reservationSystem.hero.checklist.${key}`))}
-          ctaLabel={t("reservationSystem.hero.cta")}
-          ctaTarget="how-it-works"
-          features={heroFeatures}
-          featuresGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
-          image={serviceImage}
+    <ServicePage
+      ns="reservationSystem"
+      path="/reservation-system"
+      hero={{
+        checklist: ["onlineReservations", "realTimeAvailability", "guestManagement", "reminders", "noShows", "reports"],
+        features,
+        featuresGridClassName: "grid-cols-2 sm:grid-cols-3 md:grid-cols-6",
+        ctaTarget: "how-it-works",
+        image: serviceImage,
+      }}
+      features={{ items: features, gridClassName: "sm:grid-cols-2 lg:grid-cols-3" }}
+      steps={{ items: steps, gridClassName: "sm:grid-cols-2 md:grid-cols-5" }}
+      highlights={
+        <HighlightsBand
+          eyebrow={t("reservationSystem.betterReservations.eyebrow")}
+          heading={t("reservationSystem.betterReservations.heading")}
+          items={translateItems(t, "reservationSystem.betterReservations.stats", highlights, { title: "" })}
+          gridClassName="grid-cols-2 md:grid-cols-5"
         />
-        <FeatureGridSection
-          items={featureItems}
-          gridClassName="sm:grid-cols-2 lg:grid-cols-3"
-          centered
-        />
-        <ProcessSteps
-          id="how-it-works"
-          eyebrow={t("reservationSystem.process.eyebrow")}
-          heading={t("reservationSystem.process.heading")}
-          steps={steps}
-          gridClassName="sm:grid-cols-2 md:grid-cols-5"
-        />
-        <BetterReservationsSection />
-        <TestimonialStatsBar
-          quote={t("reservationSystem.testimonial.quote")}
-          name={t("reservationSystem.testimonial.name")}
-          role={t("reservationSystem.testimonial.role")}
-          stats={testimonialStats}
-          statsGridClassName="grid-cols-2 sm:grid-cols-3 md:grid-cols-5"
-        />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+      }
+      testimonial={{
+        stats: ["occupancy", "noShows", "repeatBookings", "rating", "availability"],
+        gridClassName: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5",
+      }}
+    />
   );
 }

@@ -35,7 +35,7 @@ export default function ProcessSteps({
             <div className="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-[2px] bg-red-200" />
           )}
 
-          {steps.map(({ key, Icon, number, title, desc }) => (
+          {steps.map(({ key, Icon, number, title, desc }, i) => (
             <motion.div
               key={key ?? title}
               whileHover={{ y: -6 }}
@@ -45,7 +45,7 @@ export default function ProcessSteps({
                 <Icon size={20} />
               </div>
 
-              <span className="block text-red-200 font-black text-2xl lg:text-3xl mt-2">{number}</span>
+              <span className="block text-red-200 font-black text-2xl lg:text-3xl mt-2">{number ?? String(i + 1).padStart(2, "0")}</span>
 
               <h4 className="font-bold text-gray-900 text-base lg:text-lg mt-1">{title}</h4>
 

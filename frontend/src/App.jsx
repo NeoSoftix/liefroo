@@ -11,8 +11,8 @@ import {
 import * as Pages from "./pages";
 import { routes, LOCALES, DEFAULT_LOCALE } from "./routesConfig";
 import i18n from "./i18n";
-import BackToTopButton from "./components/BackToTopButton";
-import PageNotFound from "./components/shared/PageNotFound";
+import BackToTopButton from "./components/layout/BackToTopButton";
+import PageNotFound from "./pages/PageNotFound";
 
 function ScrollToHashElement() {
   const { hash, pathname } = useLocation();
