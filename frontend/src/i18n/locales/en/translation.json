@@ -249,6 +249,13 @@
       "devices_other": "{{count}} devices",
       "popular": "Popular",
       "cta": "Request package",
+      "custom": {
+        "eyebrow": "Need more?",
+        "title": "Tailored for you",
+        "text": "Several restaurants, a franchise or a special setup? Tell us what you need and we'll build a plan around your business.",
+        "cta": "Let's talk",
+        "ctaSub": "Get your personal offer"
+      },
       "everythingIn": "Everything in {{plan}}, plus:",
       "items": {
         "start": {

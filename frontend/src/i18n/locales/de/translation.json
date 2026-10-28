@@ -249,6 +249,13 @@
       "devices_other": "{{count}} Geräte",
       "popular": "Beliebt",
       "cta": "Paket anfragen",
+      "custom": {
+        "eyebrow": "Mehr gebraucht?",
+        "title": "Ihr Wunschpaket",
+        "text": "Mehrere Restaurants, ein Franchise oder ein besonderes Setup? Sagen Sie uns, was Sie brauchen – wir schnüren das passende Paket für Ihren Betrieb.",
+        "cta": "Sprechen wir",
+        "ctaSub": "Persönliches Angebot anfordern"
+      },
       "everythingIn": "Alles aus {{plan}}, plus:",
       "items": {
         "start": {

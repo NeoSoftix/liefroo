@@ -17,6 +17,7 @@ import {
   Megaphone,
   Smartphone,
   PiggyBank,
+  Handshake,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PageLayout } from "../components/layout";
@@ -122,7 +123,7 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading heading={t("pricing.plans.heading")} highlight={t("pricing.plans.headingHighlight")} />
 
-          <div className="grid md:grid-cols-3 gap-6 items-stretch">
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
             {PLANS.map(({ key, price: amount, devices, popular }, i) => {
               const features = t(`pricing.plans.items.${key}.features`, { returnObjects: true });
               const prev = PLANS[i - 1];
@@ -190,6 +191,34 @@ export default function Pricing() {
                 </motion.article>
               );
             })}
+
+            {/* Custom bundles — links to the contact form for now */}
+            <motion.article
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.7, delay: PLANS.length * 0.1, ease }}
+              className="relative flex flex-col rounded-[28px] p-7 lg:p-8 border-2 border-dashed border-gray-300 bg-white/60 text-gray-900"
+            >
+              <span className="w-11 h-11 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center">
+                <Handshake size={20} />
+              </span>
+              <p className="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-gray-500">
+                {t("pricing.plans.custom.eyebrow")}
+              </p>
+              <h3 className="mt-1 text-2xl font-black">{t("pricing.plans.custom.title")}</h3>
+              <p className="mt-3 text-sm lg:text-base text-gray-600 leading-relaxed">{t("pricing.plans.custom.text")}</p>
+
+              <button
+                type="button"
+                onClick={toContact}
+                className="group mt-6 flex-1 min-h-[180px] w-full rounded-3xl bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center text-center px-4 transition-all duration-300 hover:border-red-200 hover:shadow-[0_20px_50px_rgba(220,38,38,0.12)]"
+              >
+                <span className="font-bold text-gray-900">{t("pricing.plans.custom.cta")}</span>
+                <span className="mt-1 text-sm text-gray-500">{t("pricing.plans.custom.ctaSub")}</span>
+                <ArrowRight size={24} className="mt-3 text-red-600 transition-transform duration-300 group-hover:translate-x-1" />
+              </button>
+            </motion.article>
           </div>
 
           {/* Included in every plan */}
