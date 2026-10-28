@@ -8,7 +8,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 // Device cut-outs are shared with the hero (public/hero/).
 const devices = [
-  { key: "station", image: "/hero/device-tablet.webp", width: 1203, height: 1007, imgClass: "max-w-[85%]", to: "/pos-system-development" },
+  { key: "station", image: "/hero/pos-station.webp", width: 1203, height: 1007, imgClass: "max-w-[85%]", to: "/pos-system-development" },
   { key: "go", image: "/hero/device-handheld.webp", width: 691, height: 1536, imgClass: "max-w-[42%]", to: "/pos-system-development" },
   { key: "waiter", image: "/hero/device-phone.webp", width: 720, height: 1151, imgClass: "max-w-[45%]", to: "/mobile-app-development" },
   { key: "printer", image: "/hero/device-printer.webp", width: 1000, height: 1043, imgClass: "max-w-[70%]", to: "/printer-integration" },

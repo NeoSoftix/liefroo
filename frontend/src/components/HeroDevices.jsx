@@ -16,9 +16,9 @@ const screenSlides = [
   srcSet: widths.map((w) => `/hero/${n}-${w}.webp ${w}w`).join(", "),
 }));
 
-// Rendered width of the tablet screen: the tablet is min(52vw, 690px) wide on
+// Rendered width of the tablet screen: the tablet is min(54vw, 780px) wide on
 // desktop and the screen is 90.2% of it.
-const screenSizes = "(min-width: 1280px) 622px, (min-width: 1024px) 47vw, 90vw";
+const screenSizes = "(min-width: 1600px) 704px, (min-width: 1024px) 49vw, 90vw";
 
 // Screen area inside device-tablet.webp, in % of the image.
 const tabletScreen = { left: "4.82%", top: "33.07%", width: "90.19%", height: "58.59%" };
@@ -34,7 +34,7 @@ export function HeroTablet({ alt }) {
       className="relative"
     >
       <img
-        src="/hero/device-tablet.webp"
+        src="/hero/pos-station.webp"
         width={1203}
         height={1007}
         alt={alt}

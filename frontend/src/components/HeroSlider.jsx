@@ -123,7 +123,7 @@ export default function HeroSlider() {
             </h1>
           </motion.div>
 
-          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 w-full lg:w-[min(52vw,690px)] mx-auto">
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 w-full lg:w-[min(54vw,780px,calc((100svh-330px)*1.19))] mx-auto">
             <HeroTablet alt={slideText.title} />
           </div>
 
