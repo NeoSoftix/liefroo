@@ -5,10 +5,11 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ProductsMegaMenu from "./ProductsMegaMenu";
+import TaxMegaMenu from "./TaxMegaMenu";
 import logo from "../assets/logo.png";
 import { goToSection } from "../utils/scrollToSection";
 import { LocalizedLink } from "./shared";
-import { LOCALES, DEFAULT_LOCALE, megaMenuItems } from "../routesConfig";
+import { LOCALES, DEFAULT_LOCALE, megaMenuItems, taxMenuItems } from "../routesConfig";
 
 // `dark`: the page starts on a dark/red hero, so the un-scrolled header
 // renders white-on-transparent until the user scrolls.
@@ -23,6 +24,8 @@ export default function Header({ dark = false }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [taxOpen, setTaxOpen] = useState(false);
+  const [mobileTaxOpen, setMobileTaxOpen] = useState(false);
   const closeTimeout = useRef(null);
   const onDark = dark && !isScrolled;
   const navLinkClass = onDark
@@ -65,11 +68,22 @@ export default function Header({ dark = false }) {
 
   const openProducts = () => {
     clearTimeout(closeTimeout.current);
+    setTaxOpen(false);
     setProductsOpen(true);
   };
 
+  const openTax = () => {
+    clearTimeout(closeTimeout.current);
+    setProductsOpen(false);
+    setTaxOpen(true);
+  };
+
+  // Shared by both dropdowns: whichever is open closes after a short grace period.
   const closeProducts = () => {
-    closeTimeout.current = setTimeout(() => setProductsOpen(false), 150);
+    closeTimeout.current = setTimeout(() => {
+      setProductsOpen(false);
+      setTaxOpen(false);
+    }, 150);
   };
 
   const mobileNavLinks = [
@@ -130,9 +144,15 @@ export default function Header({ dark = false }) {
 
             <LocalizedLink
               to="/tax-compliant-pos"
-              className={`transition-colors font-medium ${navLinkClass}`}
+              className={`flex items-center gap-1.5 transition-colors font-medium ${navLinkClass}`}
+              onMouseEnter={openTax}
+              onClick={() => setTaxOpen(false)}
             >
               {t("header.nav.taxCompliant")}
+              <ChevronDown
+                size={16}
+                className={`transition-transform ${taxOpen ? "rotate-180" : ""}`}
+              />
             </LocalizedLink>
 
             <LocalizedLink
@@ -155,6 +175,13 @@ export default function Header({ dark = false }) {
             isOpen={productsOpen}
             onMouseEnter={openProducts}
             onMouseLeave={closeProducts}
+          />
+
+          <TaxMegaMenu
+            isOpen={taxOpen}
+            onMouseEnter={openTax}
+            onMouseLeave={closeProducts}
+            onNavigate={() => setTaxOpen(false)}
           />
 
           <div className="flex items-center gap-2 sm:gap-4">
@@ -280,13 +307,34 @@ export default function Header({ dark = false }) {
                 {t("header.nav.pricing")}
               </LocalizedLink>
 
-              <LocalizedLink
-                to="/tax-compliant-pos"
-                onClick={() => setMobileOpen(false)}
-                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-              >
-                {t("header.nav.taxCompliant")}
-              </LocalizedLink>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setMobileTaxOpen((open) => !open)}
+                  className="w-full flex items-center justify-between px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                >
+                  {t("header.nav.taxCompliant")}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform ${mobileTaxOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {mobileTaxOpen && (
+                  <div className="px-5 pb-4 flex flex-col gap-1 bg-gray-50/50 pt-2">
+                    {taxMenuItems.map(({ key, path }) => (
+                      <LocalizedLink
+                        key={key}
+                        to={path}
+                        onClick={() => setMobileOpen(false)}
+                        className="px-3 py-2 rounded-xl text-sm text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors"
+                      >
+                        {t(`taxPages.menu.${key}.title`)}
+                      </LocalizedLink>
+                    ))}
+                  </div>
+                )}
+              </div>
 
               <LocalizedLink
                 to="/about"

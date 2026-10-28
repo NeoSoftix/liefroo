@@ -487,6 +487,462 @@
     },
     "disclaimer": "This page provides general information and is not a substitute for tax advice."
   },
+  "taxPages": {
+    "menu": {
+      "heading": "Tax compliant",
+      "overview": {
+        "title": "Overview",
+        "desc": "KassenSichV, TSE and receipts explained"
+      },
+      "onlineTse": {
+        "title": "Online TSE",
+        "desc": "Certified TSE without a hardware stick"
+      },
+      "dataExport": {
+        "title": "Export for tax advisors",
+        "desc": "Hand over POS data in one click"
+      },
+      "guarantee": {
+        "title": "KassenSichV promise",
+        "desc": "What Liefro takes care of – and what you do"
+      }
+    },
+    "onlineTse": {
+      "seo": {
+        "title": "Online TSE for your restaurant POS",
+        "description": "Certified cloud TSE without a USB stick: activated in minutes, always up to date and KassenSichV compliant."
+      },
+      "hero": {
+        "badge": "Online TSE",
+        "heading": "The TSE that just",
+        "headingHighlight": "runs.",
+        "description": "No sticks, no cables, no failures: the online TSE is built into Liefro and signs every transaction automatically.",
+        "cta": "Request advice"
+      },
+      "benefits": {
+        "heading": "Why an",
+        "headingHighlight": "online TSE?",
+        "items": [
+          {
+            "title": "No hardware",
+            "text": "No USB stick to lose or break – the TSE runs in the cloud."
+          },
+          {
+            "title": "Active in minutes",
+            "text": "Activate instead of plugging in – no IT knowledge needed."
+          },
+          {
+            "title": "Tamper-proof",
+            "text": "Every transaction is signed and stored unalterably."
+          },
+          {
+            "title": "Always up to date",
+            "text": "Updates arrive automatically – nothing for you to do."
+          },
+          {
+            "title": "Export included",
+            "text": "TSE data for inspections and your tax advisor in a few clicks."
+          },
+          {
+            "title": "Personal support",
+            "text": "Questions about TSE or KassenSichV? Our team is here to help."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "How the TSE works",
+        "headingHighlight": "in your day-to-day",
+        "items": [
+          {
+            "badge": "Signature",
+            "title": "Every transaction gets sealed",
+            "text": "Your POS sends every tax-relevant transaction to the TSE, where it receives a timestamp, serial number and digital signature.",
+            "points": [
+              "Timestamp and POS serial number",
+              "Unique digital signature per transaction",
+              "Later changes become visible immediately"
+            ]
+          },
+          {
+            "badge": "Receipt",
+            "title": "TSE data right on the receipt",
+            "text": "The signature data is printed on every receipt automatically – on paper or digitally via QR code.",
+            "points": [
+              "Automatically on every receipt",
+              "Paper or digital",
+              "Meets the receipt obligation"
+            ]
+          },
+          {
+            "badge": "Everywhere",
+            "title": "Works on every Liefro device",
+            "text": "POS at the counter, Mini POS or waiter app – all devices use the same online TSE.",
+            "points": [
+              "Liefro POS and Mini POS",
+              "Waiter app at the table",
+              "One system for all devices"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "Ready in",
+        "headingHighlight": "four steps",
+        "items": [
+          {
+            "title": "Get access",
+            "text": "You get in touch, we set up your Liefro account."
+          },
+          {
+            "title": "Activate the TSE",
+            "text": "We activate the online TSE together with you."
+          },
+          {
+            "title": "Connected automatically",
+            "text": "From the first receipt, every transaction is signed."
+          },
+          {
+            "title": "Export & check",
+            "text": "Data always ready for inspections and your tax advisor."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "Mandatory since 2020",
+        "text": "Every electronic POS in Germany needs a certified TSE – regardless of sector or size.",
+        "stats": [
+          {
+            "value": "2020",
+            "label": "TSE mandatory since"
+          },
+          {
+            "value": "§ 146a AO",
+            "label": "Legal basis"
+          },
+          {
+            "value": "0",
+            "label": "USB sticks needed"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "TSE FAQ",
+        "items": [
+          {
+            "q": "What is a TSE?",
+            "a": "The technical security system consists of a security module, storage and a digital interface. It ensures POS transactions can't be changed or deleted unnoticed later."
+          },
+          {
+            "q": "Who needs a TSE?",
+            "a": "Every business that uses an electronic POS – whether restaurant, café or takeaway."
+          },
+          {
+            "q": "How is it different from a hardware TSE?",
+            "a": "A hardware TSE sits in the device as a stick or card and can get lost or fail. The online TSE runs in the cloud and needs no extra hardware."
+          },
+          {
+            "q": "What if my POS isn't compliant?",
+            "a": "Fines of up to €25,000 are possible. The tax office may also reject your bookkeeping and estimate your revenue."
+          },
+          {
+            "q": "Do I have to register my POS with the tax office?",
+            "a": "Yes. Electronic tills must be registered, including when a device is added or taken out of service. We help you with it."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Ready for the online TSE?",
+        "text": "We'll show you how easy it is in a free demo.",
+        "button": "Request a demo"
+      }
+    },
+    "dataExport": {
+      "seo": {
+        "title": "Data export for tax advisors",
+        "description": "Export POS data in one click: DATEV-compatible, complete and with no rework for your tax advisor."
+      },
+      "hero": {
+        "badge": "Export for tax advisors",
+        "heading": "Your POS data.",
+        "headingHighlight": "One click. Done.",
+        "description": "Export sales, payment methods and tax rates straight from Liefro – in a format your tax advisor can import right away.",
+        "cta": "Request advice"
+      },
+      "benefits": {
+        "heading": "Simple, secure",
+        "headingHighlight": "and fast",
+        "items": [
+          {
+            "title": "One click",
+            "text": "Pick a period, export – done."
+          },
+          {
+            "title": "DATEV-compatible",
+            "text": "Data in a format common accounting software imports directly."
+          },
+          {
+            "title": "No rework",
+            "text": "Your tax advisor imports the file without manual typing."
+          },
+          {
+            "title": "Complete",
+            "text": "Sales, payment methods, tax rates and individual bookings."
+          },
+          {
+            "title": "Stored securely",
+            "text": "Encrypted transfer and regular backups."
+          },
+          {
+            "title": "Multiple locations",
+            "text": "Separate settings and exports per branch."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "From receipt to",
+        "headingHighlight": "bookkeeping",
+        "items": [
+          {
+            "badge": "Data",
+            "title": "Everything your tax advisor needs",
+            "text": "Every sale is recorded automatically. The export contains all the details relevant for bookkeeping.",
+            "points": [
+              "Sales by tax rate",
+              "Payment methods: cash, card, online",
+              "Individual bookings with receipt number"
+            ]
+          },
+          {
+            "badge": "Automatic",
+            "title": "No paper, no sorting",
+            "text": "Cash takings and card payments land in the system automatically – no printing, sorting and emailing receipts.",
+            "points": [
+              "Every booking recorded automatically",
+              "Optional digital cashbook",
+              "Fewer questions from your tax advisor"
+            ]
+          },
+          {
+            "badge": "Flexible",
+            "title": "Fits every business",
+            "text": "Save your chart of accounts, payment methods and tax rates once – every export works the same afterwards.",
+            "points": [
+              "Save presets",
+              "Separate exports per location",
+              "Central overview of all branches"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "How the",
+        "headingHighlight": "export works",
+        "items": [
+          {
+            "title": "Choose a period",
+            "text": "Select a month or period in the Liefro back office."
+          },
+          {
+            "title": "Start the export",
+            "text": "The file is created automatically."
+          },
+          {
+            "title": "Send to your tax advisor",
+            "text": "Pass on the file – ready to import."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "More time for your restaurant",
+        "text": "Faster month-end closing, fewer questions and transparent bookkeeping – for you and your tax advisor.",
+        "stats": [
+          {
+            "value": "1 click",
+            "label": "per export"
+          },
+          {
+            "value": "0",
+            "label": "paper receipts to sort"
+          },
+          {
+            "value": "10 years",
+            "label": "data available"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Export FAQ",
+        "items": [
+          {
+            "q": "How does the export work?",
+            "a": "In the Liefro back office you choose a period and start the export. You then pass the finished file to your tax advisor."
+          },
+          {
+            "q": "Which programs is it compatible with?",
+            "a": "The export is designed for import into DATEV-compatible accounting software. Talk to us if your tax advisor needs a different format."
+          },
+          {
+            "q": "Can I export per location?",
+            "a": "Yes. Each branch can have its own settings and exports."
+          },
+          {
+            "q": "Does the export cost extra?",
+            "a": "The export is part of your Liefro package."
+          },
+          {
+            "q": "Is my data secure?",
+            "a": "Data is transferred encrypted, stored securely and backed up regularly."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Month-end without stress?",
+        "text": "We'll show you the export in a free demo.",
+        "button": "Request a demo"
+      }
+    },
+    "guarantee": {
+      "seo": {
+        "title": "KassenSichV promise",
+        "description": "What Liefro takes care of for your tax-compliant POS – and which points are your responsibility."
+      },
+      "hero": {
+        "badge": "KassenSichV promise",
+        "heading": "We take care",
+        "headingHighlight": "of your compliance.",
+        "description": "Liefro is built so your POS meets the KassenSichV requirements – so you can focus on your guests.",
+        "cta": "Request advice"
+      },
+      "benefits": {
+        "heading": "Our",
+        "headingHighlight": "promise",
+        "items": [
+          {
+            "title": "Certified TSE",
+            "text": "Every transaction is signed by a certified TSE."
+          },
+          {
+            "title": "Tamper protection",
+            "text": "Your POS data is protected against later changes."
+          },
+          {
+            "title": "Correct receipts",
+            "text": "Every receipt automatically includes all mandatory details."
+          },
+          {
+            "title": "Automatic updates",
+            "text": "We implement legal changes for you via updates."
+          },
+          {
+            "title": "Data on demand",
+            "text": "Everything ready for inspections and your tax advisor."
+          },
+          {
+            "title": "Help with registration",
+            "text": "We support you with registering your POS with the tax office."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "Together",
+        "headingHighlight": "on the safe side",
+        "items": [
+          {
+            "badge": "Liefro takes care of",
+            "title": "Technology, updates and data",
+            "text": "We make sure software, TSE and data storage meet the legal requirements.",
+            "points": [
+              "TSE built in and set up",
+              "Software continuously updated",
+              "Data stays complete and unaltered"
+            ]
+          },
+          {
+            "badge": "Your part",
+            "title": "Record everything",
+            "text": "For everything to add up, every sale must be recorded in the POS and every guest offered a receipt.",
+            "points": [
+              "Book all sales in Liefro",
+              "Offer every guest a receipt",
+              "Always use the latest app version"
+            ]
+          },
+          {
+            "badge": "Registration",
+            "title": "Register your POS with the tax office",
+            "text": "Every electronic till must be registered – also when a device is added or retired. We provide all the data you need.",
+            "points": [
+              "Registration via ELSTER",
+              "POS and TSE details from us",
+              "Also for new or retired devices"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "KassenSichV",
+        "headingHighlight": "in three points",
+        "items": [
+          {
+            "title": "TSE",
+            "text": "POS data is signed and can be checked digitally by the tax office."
+          },
+          {
+            "title": "Receipt obligation",
+            "text": "Every guest must be offered a receipt – they decide whether to take it."
+          },
+          {
+            "title": "Registration duty",
+            "text": "Every POS in use is registered with the tax office, also when retired."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "Tax inspection? Well prepared.",
+        "text": "Inspectors can arrive unannounced. With Liefro your TSE data, receipts and exports are ready instantly.",
+        "stats": [
+          {
+            "value": "2020",
+            "label": "KassenSichV since"
+          },
+          {
+            "value": "10 years",
+            "label": "Retention"
+          },
+          {
+            "value": "§ 146a AO",
+            "label": "Legal basis"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently asked questions",
+        "items": [
+          {
+            "q": "What does the KassenSichV regulate?",
+            "a": "It implements § 146a AO and covers three obligations: certified TSE, receipt obligation and registration of electronic tills."
+          },
+          {
+            "q": "Am I automatically compliant with Liefro?",
+            "a": "Liefro meets the technical requirements. For your business as a whole to be compliant, all sales must also be recorded, receipts offered and the POS registered."
+          },
+          {
+            "q": "What happens in a tax inspection?",
+            "a": "Inspectors look at POS data, receipts and TSE information. With Liefro you can provide these right away."
+          },
+          {
+            "q": "What are the penalties?",
+            "a": "Fines of up to €25,000 plus estimated additional taxes if the tax office rejects your bookkeeping."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Questions about the KassenSichV?",
+        "text": "We advise you free of charge and without obligation.",
+        "button": "Request advice"
+      }
+    }
+  },
   "ordering": {
     "badge": "Online Ordering",
     "headingLine1": "Ordering Customers",

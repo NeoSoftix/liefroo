@@ -487,6 +487,462 @@
     },
     "disclaimer": "Diese Seite bietet allgemeine Informationen und ersetzt keine Steuerberatung."
   },
+  "taxPages": {
+    "menu": {
+      "heading": "Finanzamtkonform",
+      "overview": {
+        "title": "Überblick",
+        "desc": "KassenSichV, TSE und Belegpflicht einfach erklärt"
+      },
+      "onlineTse": {
+        "title": "Online-TSE",
+        "desc": "Zertifizierte TSE ohne Hardware-Stick"
+      },
+      "dataExport": {
+        "title": "Export für Steuerberater",
+        "desc": "Kassendaten mit einem Klick übergeben"
+      },
+      "guarantee": {
+        "title": "KassenSichV-Versprechen",
+        "desc": "Wofür Liefro sorgt – und was Sie tun"
+      }
+    },
+    "onlineTse": {
+      "seo": {
+        "title": "Online-TSE für Ihre Restaurantkasse",
+        "description": "Zertifizierte Cloud-TSE ohne USB-Stick: in Minuten aktiviert, automatisch aktuell und KassenSichV-konform."
+      },
+      "hero": {
+        "badge": "Online-TSE",
+        "heading": "Die TSE, die einfach",
+        "headingHighlight": "mitläuft.",
+        "description": "Keine Sticks, keine Kabel, keine Ausfälle: Die Online-TSE ist direkt in Liefro integriert und signiert jede Buchung automatisch.",
+        "cta": "Beratung anfragen"
+      },
+      "benefits": {
+        "heading": "Warum eine",
+        "headingHighlight": "Online-TSE?",
+        "items": [
+          {
+            "title": "Keine Hardware",
+            "text": "Kein USB-Stick, der verloren geht oder kaputtgeht – die TSE läuft in der Cloud."
+          },
+          {
+            "title": "In Minuten aktiv",
+            "text": "Aktivieren statt einstecken – ganz ohne IT-Kenntnisse."
+          },
+          {
+            "title": "Manipulationssicher",
+            "text": "Jede Buchung wird signiert und unveränderbar gespeichert."
+          },
+          {
+            "title": "Immer aktuell",
+            "text": "Updates kommen automatisch – Sie müssen sich um nichts kümmern."
+          },
+          {
+            "title": "Export inklusive",
+            "text": "TSE-Daten für Prüfung und Steuerberater mit wenigen Klicks."
+          },
+          {
+            "title": "Persönlicher Support",
+            "text": "Fragen zu TSE und KassenSichV? Unser Team hilft – auch auf Deutsch."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "So arbeitet die",
+        "headingHighlight": "TSE in Ihrem Alltag",
+        "items": [
+          {
+            "badge": "Signatur",
+            "title": "Jede Buchung wird versiegelt",
+            "text": "Ihre Kasse sendet jede steuerlich relevante Buchung an die TSE. Dort erhält sie Zeitstempel, Seriennummer und eine digitale Signatur.",
+            "points": [
+              "Zeitstempel und Kassen-Seriennummer",
+              "Eindeutige digitale Signatur pro Buchung",
+              "Spätere Änderungen sind sofort erkennbar"
+            ]
+          },
+          {
+            "badge": "Beleg",
+            "title": "TSE-Daten direkt auf dem Bon",
+            "text": "Die Signaturdaten landen automatisch auf jedem Beleg – gedruckt oder digital per QR-Code.",
+            "points": [
+              "Automatisch auf jedem Bon",
+              "Papier oder digital",
+              "Erfüllt die Belegausgabepflicht"
+            ]
+          },
+          {
+            "badge": "Überall",
+            "title": "Funktioniert auf allen Liefro-Geräten",
+            "text": "Ob Kasse an der Theke, Mini POS oder Kellner-App – alle Geräte nutzen dieselbe Online-TSE.",
+            "points": [
+              "Liefro Kasse und Mini POS",
+              "Kellner-App am Tisch",
+              "Ein System für alle Geräte"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "In vier Schritten",
+        "headingHighlight": "startklar",
+        "items": [
+          {
+            "title": "Zugang erhalten",
+            "text": "Sie fragen an, wir richten Ihr Liefro-Konto ein."
+          },
+          {
+            "title": "TSE aktivieren",
+            "text": "Wir aktivieren die Online-TSE gemeinsam mit Ihnen."
+          },
+          {
+            "title": "Automatisch verbunden",
+            "text": "Ab dem ersten Bon wird jede Buchung signiert."
+          },
+          {
+            "title": "Exportieren & prüfen",
+            "text": "Daten jederzeit für Prüfung und Steuerberater bereit."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "Seit 2020 Pflicht",
+        "text": "Jede elektronische Kasse in Deutschland braucht eine zertifizierte TSE – unabhängig von Branche oder Größe.",
+        "stats": [
+          {
+            "value": "2020",
+            "label": "TSE-Pflicht seit"
+          },
+          {
+            "value": "§ 146a AO",
+            "label": "Rechtsgrundlage"
+          },
+          {
+            "value": "0",
+            "label": "USB-Sticks nötig"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Häufige Fragen zur TSE",
+        "items": [
+          {
+            "q": "Was ist eine TSE?",
+            "a": "Die Technische Sicherheitseinrichtung besteht aus Sicherheitsmodul, Speicher und digitaler Schnittstelle. Sie sorgt dafür, dass Kassenbuchungen nachträglich nicht unbemerkt geändert oder gelöscht werden können."
+          },
+          {
+            "q": "Für wen gilt die TSE-Pflicht?",
+            "a": "Für alle Betriebe, die eine elektronische Kasse nutzen – egal ob Restaurant, Café oder Imbiss."
+          },
+          {
+            "q": "Was ist der Unterschied zur Hardware-TSE?",
+            "a": "Eine Hardware-TSE steckt als Stick oder Karte im Gerät und kann verloren gehen oder ausfallen. Die Online-TSE läuft in der Cloud und braucht keine zusätzliche Hardware."
+          },
+          {
+            "q": "Was passiert, wenn meine Kasse nicht konform ist?",
+            "a": "Es drohen Bußgelder von bis zu 25.000 €. Zusätzlich kann das Finanzamt die Buchführung verwerfen und Umsätze schätzen."
+          },
+          {
+            "q": "Muss ich meine Kasse beim Finanzamt melden?",
+            "a": "Ja. Elektronische Kassen müssen beim Finanzamt gemeldet werden, auch bei Anschaffung oder Außerbetriebnahme. Wir unterstützen Sie dabei."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Bereit für die Online-TSE?",
+        "text": "Wir zeigen Ihnen in einer kostenlosen Demo, wie einfach es ist.",
+        "button": "Demo anfragen"
+      }
+    },
+    "dataExport": {
+      "seo": {
+        "title": "Datenexport für Steuerberater",
+        "description": "Kassendaten mit einem Klick exportieren: DATEV-kompatibel, vollständig und ohne Nacharbeit für Ihren Steuerberater."
+      },
+      "hero": {
+        "badge": "Export für Steuerberater",
+        "heading": "Ihre Kassendaten.",
+        "headingHighlight": "Ein Klick. Fertig.",
+        "description": "Exportieren Sie Umsätze, Zahlungsarten und Steuersätze direkt aus Liefro – im Format, das Ihr Steuerberater sofort importieren kann.",
+        "cta": "Beratung anfragen"
+      },
+      "benefits": {
+        "heading": "Einfach, sicher",
+        "headingHighlight": "und schnell",
+        "items": [
+          {
+            "title": "Ein Klick",
+            "text": "Zeitraum wählen, exportieren – fertig."
+          },
+          {
+            "title": "DATEV-kompatibel",
+            "text": "Daten im Format, das gängige Buchhaltungsprogramme direkt einlesen."
+          },
+          {
+            "title": "Keine Nacharbeit",
+            "text": "Ihr Steuerberater importiert die Datei ohne manuelles Abtippen."
+          },
+          {
+            "title": "Vollständig",
+            "text": "Umsätze, Zahlungsarten, Steuersätze und Einzelbuchungen."
+          },
+          {
+            "title": "Sicher gespeichert",
+            "text": "Verschlüsselte Übertragung und regelmäßige Backups."
+          },
+          {
+            "title": "Mehrere Standorte",
+            "text": "Eigene Einstellungen und Exporte pro Filiale."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "Vom Bon bis zur",
+        "headingHighlight": "Buchhaltung",
+        "items": [
+          {
+            "badge": "Daten",
+            "title": "Alles, was Ihr Steuerberater braucht",
+            "text": "Jeder Verkauf wird automatisch erfasst. Der Export enthält alle Angaben, die für die Buchhaltung relevant sind.",
+            "points": [
+              "Umsätze nach Steuersatz",
+              "Zahlungsarten: bar, Karte, online",
+              "Einzelbuchungen mit Belegnummer"
+            ]
+          },
+          {
+            "badge": "Automatisch",
+            "title": "Kein Papier, kein Sortieren",
+            "text": "Bareinnahmen und Kartenzahlungen landen automatisch im System – Belege ausdrucken, sortieren und mailen entfällt.",
+            "points": [
+              "Automatische Erfassung jeder Buchung",
+              "Optionales digitales Kassenbuch",
+              "Weniger Rückfragen vom Steuerberater"
+            ]
+          },
+          {
+            "badge": "Flexibel",
+            "title": "Passend für jeden Betrieb",
+            "text": "Kontenrahmen, Zahlungsarten und Steuersätze lassen sich einmal hinterlegen – danach läuft jeder Export gleich.",
+            "points": [
+              "Voreinstellungen speichern",
+              "Getrennte Exporte pro Standort",
+              "Zentrale Übersicht über alle Filialen"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "So funktioniert",
+        "headingHighlight": "der Export",
+        "items": [
+          {
+            "title": "Zeitraum wählen",
+            "text": "Im Liefro-Backoffice Monat oder Zeitraum auswählen."
+          },
+          {
+            "title": "Export starten",
+            "text": "Die Datei wird automatisch erstellt."
+          },
+          {
+            "title": "An Steuerberater senden",
+            "text": "Datei weitergeben – fertig für den Import."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "Mehr Zeit fürs Restaurant",
+        "text": "Schnellere Monatsabschlüsse, weniger Rückfragen und transparente Buchhaltung – für Sie und Ihren Steuerberater.",
+        "stats": [
+          {
+            "value": "1 Klick",
+            "label": "pro Export"
+          },
+          {
+            "value": "0",
+            "label": "Papierbelege sortieren"
+          },
+          {
+            "value": "10 Jahre",
+            "label": "Daten verfügbar"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Häufige Fragen zum Export",
+        "items": [
+          {
+            "q": "Wie funktioniert der Export?",
+            "a": "Im Liefro-Backoffice wählen Sie den Zeitraum und starten den Export. Die fertige Datei geben Sie an Ihren Steuerberater weiter."
+          },
+          {
+            "q": "Mit welchen Programmen ist der Export kompatibel?",
+            "a": "Der Export ist für den Import in DATEV-kompatible Buchhaltungsprogramme gedacht. Sprechen Sie uns gerne an, wenn Ihr Steuerberater ein anderes Format braucht."
+          },
+          {
+            "q": "Kann ich pro Standort exportieren?",
+            "a": "Ja. Jede Filiale kann eigene Einstellungen und Exporte haben."
+          },
+          {
+            "q": "Kostet der Export extra?",
+            "a": "Der Export ist Teil Ihres Liefro-Pakets."
+          },
+          {
+            "q": "Sind meine Daten sicher?",
+            "a": "Die Daten werden verschlüsselt übertragen, sicher gespeichert und regelmäßig gesichert."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Monatsabschluss ohne Stress?",
+        "text": "Wir zeigen Ihnen den Export in einer kostenlosen Demo.",
+        "button": "Demo anfragen"
+      }
+    },
+    "guarantee": {
+      "seo": {
+        "title": "KassenSichV-Versprechen",
+        "description": "Was Liefro für Ihre finanzamtkonforme Kasse übernimmt – und welche Punkte in Ihrer Verantwortung liegen."
+      },
+      "hero": {
+        "badge": "KassenSichV-Versprechen",
+        "heading": "Wir kümmern uns",
+        "headingHighlight": "um Ihre Compliance.",
+        "description": "Liefro ist so gebaut, dass Ihre Kasse die Anforderungen der KassenSichV erfüllt – damit Sie sich auf Ihre Gäste konzentrieren können.",
+        "cta": "Beratung anfragen"
+      },
+      "benefits": {
+        "heading": "Unser",
+        "headingHighlight": "Versprechen",
+        "items": [
+          {
+            "title": "Zertifizierte TSE",
+            "text": "Jede Buchung wird von einer zertifizierten TSE signiert."
+          },
+          {
+            "title": "Manipulationsschutz",
+            "text": "Ihre Kassendaten sind gegen nachträgliche Änderungen geschützt."
+          },
+          {
+            "title": "Korrekte Belege",
+            "text": "Jeder Bon enthält automatisch alle Pflichtangaben."
+          },
+          {
+            "title": "Automatische Updates",
+            "text": "Gesetzesänderungen setzen wir per Update für Sie um."
+          },
+          {
+            "title": "Daten jederzeit abrufbar",
+            "text": "Alles bereit für Kassennachschau und Steuerberater."
+          },
+          {
+            "title": "Hilfe bei der Meldung",
+            "text": "Wir unterstützen Sie bei der Kassenmeldung ans Finanzamt."
+          }
+        ]
+      },
+      "rows": {
+        "heading": "Gemeinsam",
+        "headingHighlight": "auf der sicheren Seite",
+        "items": [
+          {
+            "badge": "Das übernimmt Liefro",
+            "title": "Technik, Updates und Daten",
+            "text": "Wir sorgen dafür, dass Software, TSE und Datenspeicherung den gesetzlichen Vorgaben entsprechen.",
+            "points": [
+              "TSE ist integriert und eingerichtet",
+              "Software wird laufend aktualisiert",
+              "Daten bleiben vollständig und unverändert"
+            ]
+          },
+          {
+            "badge": "Das liegt bei Ihnen",
+            "title": "Vollständig erfassen",
+            "text": "Damit alles stimmt, muss jeder Umsatz in der Kasse erfasst und jedem Gast ein Beleg angeboten werden.",
+            "points": [
+              "Alle Umsätze in Liefro buchen",
+              "Jedem Gast einen Beleg anbieten",
+              "Immer die aktuelle App-Version nutzen"
+            ]
+          },
+          {
+            "badge": "Meldepflicht",
+            "title": "Kasse beim Finanzamt melden",
+            "text": "Jede elektronische Kasse muss gemeldet werden – auch wenn ein Gerät dazukommt oder außer Betrieb geht. Wir stellen Ihnen alle Daten bereit.",
+            "points": [
+              "Meldung über ELSTER",
+              "Angaben zu Kasse und TSE von uns",
+              "Auch bei neuen oder alten Geräten"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "heading": "Die KassenSichV",
+        "headingHighlight": "in drei Punkten",
+        "items": [
+          {
+            "title": "TSE",
+            "text": "Kassendaten werden signiert und sind für das Finanzamt digital prüfbar."
+          },
+          {
+            "title": "Belegausgabepflicht",
+            "text": "Jedem Gast muss ein Beleg angeboten werden – ob er ihn nimmt, entscheidet er."
+          },
+          {
+            "title": "Meldepflicht",
+            "text": "Jede genutzte Kasse wird dem Finanzamt gemeldet, auch bei Außerbetriebnahme."
+          }
+        ]
+      },
+      "banner": {
+        "heading": "Kassennachschau? Gut vorbereitet.",
+        "text": "Prüfer können unangekündigt kommen. Mit Liefro haben Sie TSE-Daten, Belege und Exporte sofort parat.",
+        "stats": [
+          {
+            "value": "2020",
+            "label": "KassenSichV seit"
+          },
+          {
+            "value": "10 Jahre",
+            "label": "Aufbewahrung"
+          },
+          {
+            "value": "§ 146a AO",
+            "label": "Rechtsgrundlage"
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Häufige Fragen",
+        "items": [
+          {
+            "q": "Was regelt die KassenSichV?",
+            "a": "Sie setzt § 146a AO um und umfasst drei Pflichten: zertifizierte TSE, Belegausgabepflicht und Meldepflicht für elektronische Kassen."
+          },
+          {
+            "q": "Bin ich mit Liefro automatisch konform?",
+            "a": "Liefro erfüllt die technischen Anforderungen. Damit Ihr Betrieb insgesamt konform ist, müssen zusätzlich alle Umsätze erfasst, Belege angeboten und die Kasse gemeldet werden."
+          },
+          {
+            "q": "Was passiert bei einer Kassennachschau?",
+            "a": "Prüfer sehen sich Kassendaten, Belege und TSE-Informationen an. Mit Liefro können Sie diese direkt bereitstellen."
+          },
+          {
+            "q": "Was droht bei Verstößen?",
+            "a": "Bußgelder von bis zu 25.000 € sowie Hinzuschätzungen, wenn das Finanzamt die Buchführung verwirft."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "Fragen zur KassenSichV?",
+        "text": "Wir beraten Sie kostenlos und unverbindlich.",
+        "button": "Beratung anfragen"
+      }
+    }
+  },
   "ordering": {
     "badge": "Online-Bestellung",
     "headingLine1": "Bestellungen, die Kunden",

@@ -242,4 +242,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/tax-compliant-pos" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/tax-compliant-pos" />
   </url>
+  <url>
+    <loc>https://www.liefro.com/de/online-tse</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/online-tse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/online-tse" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/online-tse" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/online-tse</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/online-tse" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/online-tse" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/online-tse" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/data-export-tax-advisor</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/data-export-tax-advisor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/data-export-tax-advisor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/data-export-tax-advisor" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/data-export-tax-advisor</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/data-export-tax-advisor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/data-export-tax-advisor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/data-export-tax-advisor" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/de/kassensichv-guarantee</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/kassensichv-guarantee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/kassensichv-guarantee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/kassensichv-guarantee" />
+  </url>
+  <url>
+    <loc>https://www.liefro.com/en/kassensichv-guarantee</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.liefro.com/de/kassensichv-guarantee" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.liefro.com/en/kassensichv-guarantee" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.liefro.com/de/kassensichv-guarantee" />
+  </url>
 </urlset>

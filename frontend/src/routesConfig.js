@@ -14,6 +14,9 @@ export const routes = [
   { key: "about", path: "/about", component: "About" },
   { key: "pricing", path: "/pricing", component: "Pricing" },
   { key: "taxCompliant", path: "/tax-compliant-pos", component: "TaxCompliance" },
+  { key: "onlineTse", path: "/online-tse", component: "OnlineTse" },
+  { key: "dataExport", path: "/data-export-tax-advisor", component: "DataExport" },
+  { key: "kassensichvGuarantee", path: "/kassensichv-guarantee", component: "KassenSichVGuarantee" },
   { key: "technicalSupport", path: "/technical-support", component: "TechnicalSupport" },
   { key: "menuManagement", path: "/menu-management", component: "MenuManagement", megaMenuGroup: "orderingOperations" },
   { key: "onlineOrdering", path: "/online-ordering", component: "OnlineOrdering", megaMenuGroup: "orderingOperations" },
@@ -36,6 +39,14 @@ export const routes = [
 export const prerenderablePaths = routes
   .filter((r) => r.prerender !== false)
   .map((r) => r.path);
+
+// Tax-compliance pages for the header dropdown / mobile drawer.
+export const taxMenuItems = [
+  { key: "overview", path: "/tax-compliant-pos" },
+  { key: "onlineTse", path: "/online-tse" },
+  { key: "dataExport", path: "/data-export-tax-advisor" },
+  { key: "guarantee", path: "/kassensichv-guarantee" },
+];
 
 export function megaMenuItems(group) {
   return routes.filter((r) => r.megaMenuGroup === group);
