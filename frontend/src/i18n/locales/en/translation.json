@@ -134,24 +134,24 @@
     "headingHighlight": "POS hardware",
     "headingSuffix": "for your restaurant",
     "station": {
-      "name": "Liefro Station",
-      "tagline": "Command centre at the counter",
-      "description": "Large touch display with a built-in receipt printer and customer screen. Table plan, orders from every channel, payments and TSE-compliant receipts – all in one fixed spot. Ideal for restaurants with many tables and lots of orders.",
-      "cta": "Discover Liefro Station"
+      "name": "Liefro POS",
+      "tagline": "Your complete POS system",
+      "description": "Orders, tables, payments and receipt printing – all on one device. The POS runs your whole restaurant, from table plan to end-of-day report.",
+      "cta": "Discover Liefro POS"
     },
     "go": {
-      "name": "Liefro Go",
-      "tagline": "Order and take payment right at the table",
-      "description": "The handheld with a built-in printer for your service team. Take orders, print tickets and get paid without walking back to the till – perfect for terraces, delivery and events.",
-      "cta": "Discover Liefro Go"
+      "name": "Liefro Mini POS",
+      "tagline": "Online orders, compact",
+      "description": "Receive online orders, accept or reject them and print the receipt instantly – compact, no full till needed.",
+      "cta": "Discover Liefro Mini POS"
     },
-      "waiter": {
+    "waiter": {
       "name": "Liefro Waiter",
       "tagline": "The waiter app on your smartphone",
       "description": "Your service team orders right at the table – on any smartphone. Orders go straight to the kitchen and bar.",
       "cta": "Discover Liefro Waiter"
     },
-      "printer": {
+    "printer": {
       "name": "Liefro Print",
       "tagline": "Receipt printer for till, kitchen and bar",
       "description": "Fast thermal printer for receipts and kitchen tickets – orders print automatically where they're needed.",
@@ -183,6 +183,14 @@
     "headingHighlight": "working day easier",
     "description": "More than a till – Liefro is the digital back office for your whole restaurant.",
     "items": {
+      "pos": {
+        "title": "POS",
+        "text": "Orders, tables, payments and receipt printing in one system – for your whole restaurant."
+      },
+      "kiosk": {
+        "title": "Self-order kiosk",
+        "text": "Guests order and pay themselves at the terminal – shorter queues, bigger bills."
+      },
       "mobileOrdering": {
         "title": "Mobile ordering",
         "text": "Take orders at the table – they go straight to the kitchen and bar."

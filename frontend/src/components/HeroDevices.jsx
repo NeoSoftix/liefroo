@@ -50,7 +50,7 @@ export function HeroTablet({ alt }) {
 // scales how far a layer follows the mouse, so nearer devices move more.
 const smallDevices = [
   { key: "handheld", src: "/hero/device-handheld.webp", width: 691, height: 1536, box: { left: "4%", bottom: "4%", width: "21%" }, z: 30, depth: 1, float: 5.5, delay: 0.5 },
-  { key: "phone", src: "/hero/device-phone.webp", width: 720, height: 1151, box: { left: "29%", bottom: "8%", width: "20%" }, z: 20, depth: 0.7, float: 5, delay: 0.6 },
+  { key: "phone", src: "/hero/phone-kellner.webp", width: 720, height: 1409, box: { left: "29%", bottom: "8%", width: "20%" }, z: 20, depth: 0.7, float: 5, delay: 0.6 },
   { key: "printer", src: "/hero/device-printer.webp", width: 1000, height: 1043, box: { left: "54%", bottom: "4%", width: "38%" }, z: 10, depth: 1.2, float: 6, delay: 0.7 },
 ];
 

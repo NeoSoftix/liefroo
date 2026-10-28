@@ -134,24 +134,24 @@
     "headingHighlight": "Kassensystem",
     "headingSuffix": "für Ihren Betrieb",
     "station": {
-      "name": "Liefro Station",
-      "tagline": "Die Kommandozentrale an der Theke",
-      "description": "Großes Touch-Display mit integriertem Bondrucker und Kundendisplay. Tischplan, Bestellungen aus allen Kanälen, Zahlungen und TSE-konforme Belege – alles an einem festen Platz. Ideal für Restaurants mit vielen Tischen und hohem Bestellaufkommen.",
-      "cta": "Liefro Station entdecken"
+      "name": "Liefro Kasse",
+      "tagline": "Ihr komplettes Kassensystem",
+      "description": "Bestellungen, Tische, Zahlungen und Bondruck – alles an einem Gerät. Die Kasse steuert Ihren gesamten Betrieb, vom Tischplan bis zum Tagesabschluss.",
+      "cta": "Liefro Kasse entdecken"
     },
     "go": {
-      "name": "Liefro Go",
-      "tagline": "Bestellen und kassieren direkt am Tisch",
-      "description": "Das Handgerät mit eingebautem Drucker für Ihr Serviceteam. Bestellungen aufnehmen, Bons drucken und bezahlen lassen, ohne zur Kasse zu laufen – perfekt für Terrasse, Lieferung und Events.",
-      "cta": "Liefro Go entdecken"
+      "name": "Liefro Mini POS",
+      "tagline": "Online-Bestellungen kompakt",
+      "description": "Online-Bestellungen empfangen, annehmen oder ablehnen und den Bon sofort drucken – kompakt und ohne große Kasse.",
+      "cta": "Liefro Mini POS entdecken"
     },
-      "waiter": {
-      "name": "Liefro Waiter",
+    "waiter": {
+      "name": "Liefro Kellner",
       "tagline": "Die Kellner-App auf dem Smartphone",
       "description": "Ihr Serviceteam bestellt direkt am Tisch – auf jedem Smartphone. Bestellungen gehen sofort an Küche und Bar.",
-      "cta": "Liefro Waiter entdecken"
+      "cta": "Liefro Kellner entdecken"
     },
-      "printer": {
+    "printer": {
       "name": "Liefro Print",
       "tagline": "Bondrucker für Kasse, Küche und Bar",
       "description": "Schneller Thermodrucker für Kassenbons und Küchenbons – Bestellungen drucken automatisch dort, wo sie gebraucht werden.",
@@ -183,6 +183,14 @@
     "headingHighlight": "Arbeitstag leichter machen",
     "description": "Mehr als eine Kasse – Liefro ist Ihr digitales Büro für den gesamten Betrieb.",
     "items": {
+      "pos": {
+        "title": "Kasse",
+        "text": "Bestellungen, Tische, Zahlungen und Bondruck in einem System – für Ihren ganzen Betrieb."
+      },
+      "kiosk": {
+        "title": "Self-Order-Kiosk",
+        "text": "Gäste bestellen und bezahlen selbst am Terminal – kürzere Schlangen, höhere Bons."
+      },
       "mobileOrdering": {
         "title": "Mobiles Bestellen",
         "text": "Bestellungen direkt am Tisch aufnehmen – sie landen sofort in Küche und Bar."

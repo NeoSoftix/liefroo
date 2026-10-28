@@ -71,9 +71,6 @@ export default function Products() {
         <div className="py-5 bg-gradient-to-r from-red-600 to-red-500 shadow-[0_20px_60px_rgba(220,38,38,0.25)]">
           <Marquee items={marqueeItems} />
         </div>
-        <div className="py-4 bg-white/90">
-          <Marquee items={marqueeItems} reverse />
-        </div>
       </div>
 
       <SectionTransition>
