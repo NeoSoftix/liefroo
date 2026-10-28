@@ -156,6 +156,17 @@
       "tagline": "Bondrucker für Kasse, Küche und Bar",
       "description": "Schneller Thermodrucker für Kassenbons und Küchenbons – Bestellungen drucken automatisch dort, wo sie gebraucht werden.",
       "cta": "Liefro Print entdecken"
+    },
+    "comingSoon": "Demnächst",
+    "kiosk": {
+      "name": "Liefro Kiosk",
+      "tagline": "Selbst bestellen und bezahlen",
+      "description": "Gäste bestellen am Touch-Terminal selbst, zahlen direkt per Karte und erhalten ihren Bon – kürzere Schlangen, weniger Arbeit an der Theke."
+    },
+    "kds": {
+      "name": "Liefro Chef Display",
+      "tagline": "Der Bildschirm für Ihre Küche",
+      "description": "Alle Bestellungen erscheinen sofort auf dem Küchenbildschirm – sortiert, mit Zeit und Status. Kein Papierchaos mehr in der Küche."
     }
   },
   "compliance": {

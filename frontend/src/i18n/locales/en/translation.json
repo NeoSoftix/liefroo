@@ -156,6 +156,17 @@
       "tagline": "Receipt printer for till, kitchen and bar",
       "description": "Fast thermal printer for receipts and kitchen tickets – orders print automatically where they're needed.",
       "cta": "Discover Liefro Print"
+    },
+    "comingSoon": "Coming soon",
+    "kiosk": {
+      "name": "Liefro Kiosk",
+      "tagline": "Self-order and pay",
+      "description": "Guests order on a touch terminal, pay by card and get their receipt – shorter queues, less work at the counter."
+    },
+    "kds": {
+      "name": "Liefro Chef Display",
+      "tagline": "The screen for your kitchen",
+      "description": "Every order appears instantly on the kitchen screen – sorted, with time and status. No more paper chaos in the kitchen."
     }
   },
   "compliance": {
