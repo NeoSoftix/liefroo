@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -22,15 +23,12 @@ import {
 import { useTranslation } from "react-i18next";
 import { PageLayout } from "../components/layout";
 import { POSDevicesSection } from "../components/home";
-import { ContactSection, SectionHeading, useGoToSection } from "../components/shared";
+import { ContactSection, CustomPackageModal, SectionHeading, useGoToSection } from "../components/shared";
 import { Reveal, ease } from "../components/motion";
 
-// TODO: placeholder prices (EUR / month, net) — replace with Liefro's real pricing.
-const PLANS = [
-  { key: "start", price: 69, devices: 1 },
-  { key: "plus", price: 99, devices: 2, popular: true },
-  { key: "pro", price: 139, devices: 3 },
-];
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+// TODO: placeholder add-on prices (EUR / month, net) — replace with Liefro's real pricing.
 const ADDONS = [
   { key: "device", Icon: MonitorSmartphone, price: 29 },
   { key: "printer", Icon: Printer, price: 9 },
@@ -62,16 +60,92 @@ const benefits = [
   { key: "support", Icon: LifeBuoy },
 ];
 
+// Plans are managed as products in Stripe (see backend/routes/plans.js).
+function usePlans() {
+  const [state, setState] = useState({ status: "loading", plans: [] });
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`${API_URL}/api/plans`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (!data.success) throw new Error(data.message);
+        if (!cancelled) setState({ status: "ready", plans: data.plans });
+      })
+      .catch(() => !cancelled && setState({ status: "error", plans: [] }));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  return state;
+}
+
+function PlanSkeleton() {
+  return (
+    <div className="rounded-[28px] p-7 lg:p-8 bg-white border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.06)] animate-pulse">
+      <div className="h-7 w-28 rounded-lg bg-gray-100" />
+      <div className="mt-3 h-4 w-40 rounded bg-gray-100" />
+      <div className="mt-8 h-12 w-36 rounded-lg bg-gray-100" />
+      <div className="my-6 h-px bg-gray-100" />
+      <div className="space-y-3">
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} className="h-4 rounded bg-gray-100" style={{ width: `${85 - i * 12}%` }} />
+        ))}
+      </div>
+      <div className="mt-10 h-12 rounded-full bg-gray-100" />
+    </div>
+  );
+}
+
 export default function Pricing() {
   const { t, i18n } = useTranslation();
   const goToSection = useGoToSection();
-  const price = new Intl.NumberFormat(i18n.resolvedLanguage === "de" ? "de-DE" : "en-GB", {
-    style: "currency",
-    currency: "EUR",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 2,
-  });
+  const lang = i18n.resolvedLanguage === "de" ? "de" : "en";
+  const formatPrice = (amount, currency = "EUR") =>
+    new Intl.NumberFormat(lang === "de" ? "de-DE" : "en-GB", {
+      style: "currency",
+      currency,
+      // €59 for whole amounts, €99.50 (never €99.5) otherwise
+      minimumFractionDigits: Number.isInteger(amount) ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(amount);
+  const { status: plansStatus, plans } = usePlans();
+  const [billingChoice, setBillingChoice] = useState("month");
+  // Fall back to the other interval if no plan is sold with the chosen one
+  const intervals = ["month", "year"].filter((iv) => plans.some((p) => p.prices[iv]));
+  const billing = intervals.includes(billingChoice) ? billingChoice : intervals[0] || "month";
+  const visiblePlans = plans.filter((p) => p.prices[billing]);
+  // Biggest saving of yearly over 12 monthly payments, for the toggle badge
+  const yearlySaving = Math.max(
+    0,
+    ...plans
+      .filter((p) => p.prices.month && p.prices.year)
+      .map((p) => Math.round((1 - p.prices.year.amount / (p.prices.month.amount * 12)) * 100))
+  );
+  const [buying, setBuying] = useState(null); // id of the plan being sent to checkout
+  const [buyError, setBuyError] = useState(null); // id of the plan whose checkout failed
+
+  // Opens Stripe's hosted payment page for the plan
+  const buy = async (plan) => {
+    setBuying(plan.id);
+    setBuyError(null);
+    try {
+      const res = await fetch(`${API_URL}/api/checkout`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ planId: plan.id, interval: billing, lang }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.url) throw new Error(data.message);
+      window.location.assign(data.url);
+    } catch {
+      setBuying(null);
+      setBuyError(plan.id);
+    }
+  };
   const toContact = () => goToSection("contact");
+  const [customOpen, setCustomOpen] = useState(false);
 
   return (
     <PageLayout title={t("pricing.seo.title")} description={t("pricing.seo.description")} path="/pricing" dark>
@@ -123,13 +197,73 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading heading={t("pricing.plans.heading")} highlight={t("pricing.plans.headingHighlight")} />
 
+          {intervals.length > 1 && (
+            <div className="-mt-4 mb-10 flex justify-center">
+              <div role="tablist" aria-label={t("pricing.plans.billing.label")} className="inline-flex p-1.5 rounded-full bg-white border border-gray-200 shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+                {intervals.map((iv) => {
+                  const active = billing === iv;
+                  return (
+                    <button
+                      key={iv}
+                      type="button"
+                      role="tab"
+                      aria-selected={active}
+                      onClick={() => setBillingChoice(iv)}
+                      className={`relative px-6 sm:px-8 py-2.5 rounded-full text-sm font-semibold transition-colors ${
+                        active ? "text-white" : "text-gray-600 hover:text-red-600"
+                      }`}
+                    >
+                      {active && (
+                        <motion.span
+                          layoutId="billing-pill"
+                          transition={{ duration: 0.35, ease }}
+                          className="absolute inset-0 rounded-full bg-red-600 shadow-[0_8px_20px_rgba(220,38,38,0.3)]"
+                        />
+                      )}
+                      <span className="relative inline-flex items-center gap-2">
+                        {t(`pricing.plans.billing.${iv}`)}
+                        {iv === "year" && yearlySaving > 0 && (
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[11px] font-bold ${
+                              active ? "bg-white/20 text-white" : "bg-green-100 text-green-700"
+                            }`}
+                          >
+                            {t("pricing.plans.billing.save", { percent: yearlySaving })}
+                          </span>
+                        )}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
-            {PLANS.map(({ key, price: amount, devices, popular }, i) => {
-              const features = t(`pricing.plans.items.${key}.features`, { returnObjects: true });
-              const prev = PLANS[i - 1];
+            {plansStatus === "loading" && [0, 1, 2].map((i) => <PlanSkeleton key={i} />)}
+
+            {plansStatus === "error" && (
+              <div className="md:col-span-2 xl:col-span-3 rounded-[28px] p-8 bg-white border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.06)] flex flex-col items-center justify-center text-center">
+                <p className="text-lg font-bold text-gray-900">{t("pricing.plans.unavailable")}</p>
+                <button
+                  type="button"
+                  onClick={toContact}
+                  className="mt-5 inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-red-700 transition-colors"
+                >
+                  {t("pricing.plans.cta")}
+                  <ArrowRight size={16} />
+                </button>
+              </div>
+            )}
+
+            {visiblePlans.map((plan, i) => {
+              const { popular, devices } = plan;
+              const features = plan.features[lang];
+              const prev = visiblePlans[i - 1];
+              const price = plan.prices[billing];
               return (
                 <motion.article
-                  key={key}
+                  key={plan.id}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
@@ -145,24 +279,35 @@ export default function Pricing() {
                       {t("pricing.plans.popular")}
                     </span>
                   )}
-                  <h3 className="text-2xl font-black">{t(`pricing.plans.items.${key}.name`)}</h3>
-                  <p className={`mt-1 text-sm ${popular ? "text-white/80" : "text-gray-500"}`}>
-                    {t(`pricing.plans.items.${key}.tagline`)}
-                  </p>
+                  <h3 className="text-2xl font-black">{plan.name[lang]}</h3>
+                  {plan.tagline[lang] && (
+                    <p className={`mt-1 text-sm ${popular ? "text-white/80" : "text-gray-500"}`}>{plan.tagline[lang]}</p>
+                  )}
 
                   <div className="mt-6 flex items-end gap-2">
-                    <span className="text-4xl lg:text-5xl font-black leading-none">{price.format(amount)}</span>
-                    <span className={`pb-1 text-sm ${popular ? "text-white/80" : "text-gray-500"}`}>{t("pricing.plans.perMonth")}</span>
+                    <span className="text-4xl lg:text-5xl font-black leading-none">{formatPrice(price.amount, price.currency)}</span>
+                    <span className={`pb-1 text-sm ${popular ? "text-white/80" : "text-gray-500"}`}>
+                      {t(billing === "year" ? "pricing.plans.perYear" : "pricing.plans.perMonth")}
+                    </span>
                   </div>
-                  <p className={`mt-2 text-sm font-semibold ${popular ? "text-white" : "text-red-600"}`}>
-                    {t("pricing.plans.devices", { count: devices })}
-                  </p>
+                  {billing === "year" && (
+                    <p className={`mt-2 text-xs ${popular ? "text-white/80" : "text-gray-500"}`}>
+                      {t("pricing.plans.billedYearly", {
+                        price: formatPrice(Math.round((price.amount / 12) * 100) / 100, price.currency),
+                      })}
+                    </p>
+                  )}
+                  {devices && (
+                    <p className={`mt-2 text-sm font-semibold ${popular ? "text-white" : "text-red-600"}`}>
+                      {t("pricing.plans.devices", { count: devices })}
+                    </p>
+                  )}
 
                   <div className={`my-6 h-px ${popular ? "bg-white/25" : "bg-gray-100"}`} />
 
                   {prev && (
                     <p className={`mb-3 text-sm font-semibold ${popular ? "text-white/90" : "text-gray-700"}`}>
-                      {t("pricing.plans.everythingIn", { plan: t(`pricing.plans.items.${prev.key}.name`) })}
+                      {t("pricing.plans.everythingIn", { plan: prev.name[lang] })}
                     </p>
                   )}
                   <ul className="space-y-3 flex-1">
@@ -178,26 +323,32 @@ export default function Pricing() {
 
                   <button
                     type="button"
-                    onClick={toContact}
-                    className={`mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-sm border transition-colors duration-300 ${
+                    onClick={() => buy(plan)}
+                    disabled={buying !== null}
+                    className={`mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-sm border transition-colors duration-300 disabled:opacity-70 ${
                       popular
                         ? "bg-white text-red-600 border-white hover:bg-red-50"
                         : "bg-red-600 text-white border-red-600 hover:bg-white hover:text-red-600"
                     }`}
                   >
-                    {t("pricing.plans.cta")}
+                    {buying === plan.id ? t("pricing.plans.redirecting") : t("pricing.plans.buy")}
                     <ArrowRight size={16} />
                   </button>
+                  {buyError === plan.id && (
+                    <p className={`mt-3 text-center text-xs font-medium ${popular ? "text-white" : "text-red-600"}`}>
+                      {t("pricing.plans.buyError")}
+                    </p>
+                  )}
                 </motion.article>
               );
             })}
 
-            {/* Custom bundles — links to the contact form for now */}
+            {/* Custom bundles — opens the custom package request form */}
             <motion.article
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.7, delay: PLANS.length * 0.1, ease }}
+              transition={{ duration: 0.7, delay: visiblePlans.length * 0.1, ease }}
               className="relative flex flex-col rounded-[28px] p-7 lg:p-8 border-2 border-dashed border-gray-300 bg-white/60 text-gray-900"
             >
               <span className="w-11 h-11 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center">
@@ -211,7 +362,7 @@ export default function Pricing() {
 
               <button
                 type="button"
-                onClick={toContact}
+                onClick={() => setCustomOpen(true)}
                 className="group mt-6 flex-1 min-h-[180px] w-full rounded-3xl bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center text-center px-4 transition-all duration-300 hover:border-red-200 hover:shadow-[0_20px_50px_rgba(220,38,38,0.12)]"
               >
                 <span className="font-bold text-gray-900">{t("pricing.plans.custom.cta")}</span>
@@ -364,7 +515,7 @@ export default function Pricing() {
                   <div className="flex items-baseline justify-between gap-3">
                     <h3 className="font-bold text-gray-900">{t(`pricing.addons.items.${key}.title`)}</h3>
                     <span className="text-sm font-bold text-red-600 whitespace-nowrap">
-                      {t("pricing.addons.from")} {price.format(amount)}
+                      {t("pricing.addons.from")} {formatPrice(amount)}
                     </span>
                   </div>
                   <p className="mt-1.5 text-sm text-gray-600 leading-relaxed">{t(`pricing.addons.items.${key}.text`)}</p>
@@ -395,6 +546,8 @@ export default function Pricing() {
       </section>
 
       <ContactSection />
+
+      <CustomPackageModal open={customOpen} onClose={() => setCustomOpen(false)} />
     </PageLayout>
   );
 }

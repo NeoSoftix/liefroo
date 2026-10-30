@@ -13,6 +13,7 @@ export { default as GoogleAnalytics } from "./GoogleAnalytics";
 export { default as ReservationSystem } from "./ReservationSystem";
 export { default as QROrdering } from "./QROrdering";
 export { default as ThankYou } from "./ThankYou";
+export { default as PaymentSuccess } from "./PaymentSuccess";
 export { default as PrivacyPolicy } from "./PrivacyPolicy";
 export { default as TermsConditions } from "./TermsConditions";
 export { default as Services } from "./Services";

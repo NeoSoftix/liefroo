@@ -13,6 +13,7 @@ export { default as FAQ } from "./FAQ";
 export { default as AccordionFaq } from "./AccordionFaq";
 export { default as CtaBanner } from "./CtaBanner";
 export { default as ContactSection } from "./ContactSection";
+export { default as CustomPackageModal } from "./CustomPackageModal";
 export { default as Seo } from "./Seo";
 export { default as LocalizedLink } from "./LocalizedLink";
 export { useLocalizedPath, useLocalizedNavigate, useGoToSection } from "./localizedRouting";

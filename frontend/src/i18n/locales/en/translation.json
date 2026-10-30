@@ -11,6 +11,28 @@
       "description": "Thanks for reaching out to Liefro — our team will get back to you shortly."
     }
   },
+  "paymentSuccess": {
+    "seo": {
+      "title": "Payment successful",
+      "description": "Your Liefro package has been booked."
+    },
+    "checking": "Checking your payment…",
+    "title": "Payment successful!",
+    "thanks": "Thank you{{name}}! Your package is booked.",
+    "next": "We've sent a receipt to your email. Our team will contact you shortly to set everything up.",
+    "package": "Package",
+    "amount": "Amount",
+    "nextPayment": "Next payment",
+    "renews": {
+      "month": "Renews automatically every month. {{amount}} will be charged again on {{date}}.",
+      "year": "Renews automatically every year. {{amount}} will be charged again on {{date}}."
+    },
+    "email": "Email",
+    "notPaidTitle": "Payment not completed",
+    "notPaid": "We couldn't confirm this payment. If money was taken, please contact us and we'll sort it out.",
+    "backToPricing": "Back to pricing",
+    "home": "Back to Home"
+  },
   "header": {
     "nav": {
       "home": "Home",
@@ -245,6 +267,18 @@
       "heading": "Choose your",
       "headingHighlight": "package",
       "perMonth": "/ month",
+      "billedYearly": "Just {{price}} / month, billed yearly",
+      "billing": {
+        "label": "Billing period",
+        "month": "Monthly",
+        "year": "Yearly",
+        "save": "Save {{percent}}%"
+      },
+      "buy": "Buy now",
+      "redirecting": "Opening payment…",
+      "buyError": "Payment could not be started. Please try again.",
+      "perYear": "/ year",
+      "unavailable": "Prices can't be loaded right now. Get in touch and we'll send you an offer.",
       "devices": "{{count}} device",
       "devices_other": "{{count}} devices",
       "popular": "Popular",
@@ -385,7 +419,23 @@
         }
       }
     },
-    "note": "All prices exclude VAT. Minimum term 12 months."
+    "note": "All prices exclude VAT. Minimum term 12 months.",
+    "customForm": {
+      "title": "Build your custom package",
+      "subtitle": "Pick the services you need and tell us your budget, we'll send you a personal offer.",
+      "servicesLabel": "Which services do you need?",
+      "servicesHint": "Select one or more.",
+      "servicesRequired": "Please select at least one service.",
+      "budgetLabel": "What's your budget?",
+      "budgetPlaceholder": "Your budget, e.g. 200 € / month",
+      "detailsLabel": "Your contact details",
+      "messagePlaceholder": "Anything else we should know? (number of locations, timeline, …)",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "error": "Something went wrong. Please try again.",
+      "close": "Close",
+      "subject": "Custom package request"
+    }
   },
   "taxCompliant": {
     "seo": {

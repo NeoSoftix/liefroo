@@ -11,6 +11,28 @@
       "description": "Danke, dass Sie Liefro kontaktiert haben — unser Team meldet sich in Kürze bei Ihnen."
     }
   },
+  "paymentSuccess": {
+    "seo": {
+      "title": "Zahlung erfolgreich",
+      "description": "Ihr Liefro-Paket wurde gebucht."
+    },
+    "checking": "Zahlung wird geprüft…",
+    "title": "Zahlung erfolgreich!",
+    "thanks": "Vielen Dank{{name}}! Ihr Paket ist gebucht.",
+    "next": "Die Quittung haben wir Ihnen per E-Mail geschickt. Unser Team meldet sich in Kürze, um alles einzurichten.",
+    "package": "Paket",
+    "amount": "Betrag",
+    "nextPayment": "Nächste Zahlung",
+    "renews": {
+      "month": "Verlängert sich automatisch jeden Monat. Am {{date}} werden erneut {{amount}} abgebucht.",
+      "year": "Verlängert sich automatisch jedes Jahr. Am {{date}} werden erneut {{amount}} abgebucht."
+    },
+    "email": "E-Mail",
+    "notPaidTitle": "Zahlung nicht abgeschlossen",
+    "notPaid": "Wir konnten diese Zahlung nicht bestätigen. Falls Geld abgebucht wurde, kontaktieren Sie uns bitte.",
+    "backToPricing": "Zurück zu den Preisen",
+    "home": "Zur Startseite"
+  },
   "header": {
     "nav": {
       "home": "Startseite",
@@ -245,6 +267,18 @@
       "heading": "Wählen Sie Ihr",
       "headingHighlight": "Paket",
       "perMonth": "/ Monat",
+      "billedYearly": "Nur {{price}} / Monat, jährliche Abrechnung",
+      "billing": {
+        "label": "Abrechnungszeitraum",
+        "month": "Monatlich",
+        "year": "Jährlich",
+        "save": "{{percent}} % sparen"
+      },
+      "buy": "Jetzt kaufen",
+      "redirecting": "Zahlung wird geöffnet…",
+      "buyError": "Die Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es erneut.",
+      "perYear": "/ Jahr",
+      "unavailable": "Die Preise können gerade nicht geladen werden – kontaktieren Sie uns für ein Angebot.",
       "devices": "{{count}} Gerät",
       "devices_other": "{{count}} Geräte",
       "popular": "Beliebt",
@@ -385,7 +419,23 @@
         }
       }
     },
-    "note": "Alle Preise zzgl. MwSt. Mindestlaufzeit 12 Monate."
+    "note": "Alle Preise zzgl. MwSt. Mindestlaufzeit 12 Monate.",
+    "customForm": {
+      "title": "Ihr Wunschpaket zusammenstellen",
+      "subtitle": "Wählen Sie die gewünschten Leistungen und nennen Sie Ihr Budget – wir senden Ihnen ein persönliches Angebot.",
+      "servicesLabel": "Welche Leistungen benötigen Sie?",
+      "servicesHint": "Mehrfachauswahl möglich.",
+      "servicesRequired": "Bitte wählen Sie mindestens eine Leistung aus.",
+      "budgetLabel": "Wie hoch ist Ihr Budget?",
+      "budgetPlaceholder": "Ihr Budget, z. B. 200 € / Monat",
+      "detailsLabel": "Ihre Kontaktdaten",
+      "messagePlaceholder": "Was sollten wir noch wissen? (Anzahl Standorte, Zeitrahmen, …)",
+      "submit": "Anfrage senden",
+      "sending": "Wird gesendet…",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "close": "Schließen",
+      "subject": "Anfrage Wunschpaket"
+    }
   },
   "taxCompliant": {
     "seo": {

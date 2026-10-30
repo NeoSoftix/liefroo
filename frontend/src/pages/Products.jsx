@@ -17,7 +17,7 @@ import {
   RestaurantEcosystem,
   POSDevicesSection,
   ComplianceSection,
-  POSFeaturesSection,
+  POSFeaturesSection, 
   QRSection,
 } from "../components/home";
 import { FAQ, ContactSection } from "../components/shared";

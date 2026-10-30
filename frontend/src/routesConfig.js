@@ -33,6 +33,7 @@ export const routes = [
   { key: "privacyPolicy", path: "/privacy-policy", component: "PrivacyPolicy" },
   { key: "termsConditions", path: "/terms-conditions", component: "TermsConditions" },
   { key: "thankYou", path: "/thank-you", component: "ThankYou", prerender: false, noIndex: true },
+  { key: "paymentSuccess", path: "/payment-success", component: "PaymentSuccess", prerender: false, noIndex: true },
   { key: "qrSmm", path: "/qr-smm", component: "QrSMM", prerender: false, noIndex: true },
 ];
 
