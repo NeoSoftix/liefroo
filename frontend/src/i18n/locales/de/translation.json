@@ -1216,8 +1216,8 @@
       },
       "europe": {
         "title": "Büro Deutschland",
-        "address": "Homburger Landstraße 641,",
-        "city": "60437 Frankfurt am Main Nord-Ost, Deutschland"
+        "address": "Alte Regenstraße 5,",
+        "city": "93128 Regenstauf, Deutschland"
       }
     },
     "form": {
@@ -1287,7 +1287,7 @@
       "locations": {
         "germany": {
           "label": "Deutschland",
-          "address": "Homburger Landstraße 641, 60437 Frankfurt am Main Nord-Ost, Deutschland"
+          "address": "Alte Regenstraße 5, 93128 Regenstauf, Deutschland"
         },
         "india": {
           "label": "Indien",

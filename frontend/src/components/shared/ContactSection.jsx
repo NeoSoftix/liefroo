@@ -17,7 +17,7 @@ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const CONTACT_EMAIL = "enquiry@liefro.com";
 const CONTACT_PHONE = "8557062045";
 const GERMANY_MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Homburger+Landstra%C3%9Fe+641%2C+60437+Frankfurt+am+Main+Nord-Ost%2C+Germany";
+  "https://www.google.com/maps/search/?api=1&query=Alte+Regenstra%C3%9Fe+5%2C+93128+Regenstauf%2C+Germany";
 const INDIA_MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=A-817%2C+8th+Floor%2C+Bestech+Business+Tower%2C+Mohali%2C+160062";
 
