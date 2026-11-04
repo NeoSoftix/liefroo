@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedNavigate } from "./localizedRouting";
 import { ease } from "../motion";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+// Production build calls the API on the same domain (nginx proxies /api); dev uses the local backend.
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:5000" : "");
 
 // Same services as the header's products menu (header.megaMenu.items).
 const SERVICES = [

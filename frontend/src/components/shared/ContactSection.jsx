@@ -12,7 +12,8 @@ import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 import { useLocalizedNavigate } from ".";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+// Production build calls the API on the same domain (nginx proxies /api); dev uses the local backend.
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:5000" : "");
 
 const CONTACT_EMAIL = "enquiry@liefro.com";
 const CONTACT_PHONE = "8557062045";

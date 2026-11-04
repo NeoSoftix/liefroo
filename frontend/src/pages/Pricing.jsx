@@ -26,7 +26,8 @@ import { POSDevicesSection } from "../components/home";
 import { ContactSection, CustomPackageModal, SectionHeading, useGoToSection } from "../components/shared";
 import { Reveal, ease } from "../components/motion";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+// Production build calls the API on the same domain (nginx proxies /api); dev uses the local backend.
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:5000" : "");
 
 // TODO: placeholder add-on prices (EUR / month, net) — replace with Liefro's real pricing.
 const ADDONS = [

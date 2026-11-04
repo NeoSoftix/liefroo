@@ -4,6 +4,7 @@ const contactRoute = require("./routes/contact");
 const customPackageRoute = require("./routes/customPackage");
 const { router: plansRoute } = require("./routes/plans");
 const checkoutRoute = require("./routes/checkout");
+const packagesRoute = require("./routes/packages");
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use("/api/contact", contactRoute);
 app.use("/api/custom-package", customPackageRoute);
 app.use("/api/plans", plansRoute);
 app.use("/api/checkout", checkoutRoute);
+app.use("/api/packages", packagesRoute);
 
 module.exports = app;

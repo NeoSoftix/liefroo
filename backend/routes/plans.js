@@ -107,4 +107,10 @@ router.get("/", async (req, res) => {
   }
 });
 
-module.exports = { router, getPlans, stripeGet };
+// Called after a package is added or removed from the app.liefro.de dashboard,
+// so the pricing page shows the change right away.
+function clearPlansCache() {
+  cache = { at: 0, plans: null };
+}
+
+module.exports = { router, getPlans, stripeGet, clearPlansCache };

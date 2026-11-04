@@ -5,7 +5,8 @@ import { AlertCircle, CalendarClock, CheckCircle2, Home, Loader2, Mail, Package,
 import { useTranslation } from "react-i18next";
 import { Seo, LocalizedLink } from "../components/shared";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+// Production build calls the API on the same domain (nginx proxies /api); dev uses the local backend.
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:5000" : "");
 
 // Stripe Checkout sends the buyer here with ?session_id=… after paying. The
 // session is looked up on the backend, so only real payments are confirmed.
