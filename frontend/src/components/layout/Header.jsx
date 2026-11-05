@@ -150,6 +150,13 @@ export default function Header({ dark = false }) {
             >
               {t("header.nav.pricing")}
             </LocalizedLink>
+
+            <LocalizedLink
+              to="/contact"
+              className={`transition-colors font-medium ${navLinkClass}`}
+            >
+              {t("header.nav.contact")}
+            </LocalizedLink>
           </nav>
 
           <ProductsMegaMenu
@@ -351,6 +358,14 @@ export default function Header({ dark = false }) {
                 className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
               >
                 {t("header.nav.pricing")}
+              </LocalizedLink>
+
+              <LocalizedLink
+                to="/contact"
+                onClick={() => setMobileOpen(false)}
+                className="text-left px-5 py-4 font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+              >
+                {t("header.nav.contact")}
               </LocalizedLink>
             </nav>
           </div>
