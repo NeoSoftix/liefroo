@@ -1215,6 +1215,10 @@
     }
   },
   "contact": {
+    "seo": {
+      "title": "Contact – Liefro",
+      "description": "Get in touch with Liefro: POS system, online ordering, digital marketing, ad campaigns and social media for your restaurant."
+    },
     "badge": "Contact Us",
     "headingLine1": "Let's create",
     "headingLine2": "something",
@@ -1240,6 +1244,14 @@
       "subject": "Subject",
       "message": "Your Message",
       "send": "Send Message",
+      "service": "Select a service",
+      "services": {
+        "pos": "POS System",
+        "onlineOrdering": "Online Ordering",
+        "digitalMarketing": "Digital Marketing",
+        "adCampaign": "Ad Campaign",
+        "socialMedia": "Social Media"
+      },
       "privacy": "We respect your privacy. Your information will never be shared."
     }
   },

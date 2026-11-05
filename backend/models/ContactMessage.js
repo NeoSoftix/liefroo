@@ -7,6 +7,7 @@ const contactMessageSchema = new mongoose.Schema(
     email: { type: String, required: true, trim: true, lowercase: true },
     phone: { type: String, trim: true, default: "" },
     subject: { type: String, trim: true, default: "" },
+    service: { type: String, trim: true, default: "" },
     message: { type: String, required: true },
     mailSent: { type: Boolean, default: false },
   },

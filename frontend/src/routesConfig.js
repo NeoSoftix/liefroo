@@ -13,6 +13,7 @@ export const routes = [
   { key: "products", path: "/products", component: "Services" },
   { key: "about", path: "/about", component: "About" },
   { key: "pricing", path: "/pricing", component: "Pricing" },
+  { key: "contact", path: "/contact", component: "Contact" },
   { key: "taxCompliant", path: "/tax-compliant-pos", component: "TaxCompliance" },
   { key: "onlineTse", path: "/online-tse", component: "OnlineTse" },
   { key: "dataExport", path: "/data-export-tax-advisor", component: "DataExport" },

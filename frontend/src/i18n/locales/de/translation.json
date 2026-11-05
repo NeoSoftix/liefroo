@@ -1203,6 +1203,10 @@
     }
   },
   "contact": {
+    "seo": {
+      "title": "Kontakt – Liefro",
+      "description": "Kontaktieren Sie Liefro: Kassensystem, Online-Bestellung, Digital Marketing, Werbekampagnen und Social Media für Ihr Restaurant."
+    },
     "badge": "Kontaktieren Sie uns",
     "headingLine1": "Lassen Sie uns gemeinsam",
     "headingLine2": "etwas",
@@ -1228,6 +1232,14 @@
       "subject": "Betreff",
       "message": "Ihre Nachricht",
       "send": "Nachricht senden",
+      "service": "Bitte Leistung auswählen",
+      "services": {
+        "pos": "Kasse",
+        "onlineOrdering": "Online-Bestellung",
+        "digitalMarketing": "Digital Marketing",
+        "adCampaign": "Werbekampagne",
+        "socialMedia": "Social Media"
+      },
       "privacy": "Wir respektieren Ihre Privatsphäre. Ihre Daten werden niemals weitergegeben."
     }
   },

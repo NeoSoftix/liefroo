@@ -28,7 +28,7 @@ export default function ServiceHero({
   const hasImage = !!image;
   const goToSection = useGoToSection();
   // Scroll to ctaTarget if it is on this page; otherwise fall back to the
-  // home page contact form.
+  // contact page.
   const handleCtaClick =
     onCtaClick ?? (() => scrollToElementId(ctaTarget) || goToSection("contact"));
 

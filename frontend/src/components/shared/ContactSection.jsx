@@ -7,6 +7,8 @@ import {
   FiTag,
   FiEdit3,
   FiArrowRight,
+  FiLayers,
+  FiChevronDown,
 } from "react-icons/fi";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
@@ -22,7 +24,10 @@ const GERMANY_MAPS_URL =
 const INDIA_MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=A-817%2C+8th+Floor%2C+Bestech+Business+Tower%2C+Mohali%2C+160062";
 
-const initialForm = { name: "", email: "", phone: "", subject: "", message: "" };
+// Service options for the dropdown (labels in contact.form.services.*)
+const SERVICE_KEYS = ["pos", "onlineOrdering", "digitalMarketing", "adCampaign", "socialMedia"];
+
+const initialForm = { name: "", email: "", phone: "", subject: "", service: "", message: "" };
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -45,7 +50,11 @@ export default function ContactSection() {
       const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          // send the readable label, not the key
+          service: form.service ? t(`contact.form.services.${form.service}`) : "",
+        }),
       });
       const data = await res.json();
 
@@ -227,6 +236,29 @@ export default function ContactSection() {
                       className="w-full h-12 sm:h-14 pl-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base"
                     />
                   </div>
+                </div>
+
+                <div className="relative">
+                  <FiLayers className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+                  <select
+                    name="service"
+                    value={form.service}
+                    onChange={handleChange}
+                    required
+                    className={`w-full h-12 sm:h-14 pl-12 pr-12 rounded-xl border border-gray-200 outline-none focus:border-red-500 text-sm sm:text-base bg-white appearance-none cursor-pointer ${
+                      form.service ? "text-gray-900" : "text-gray-400"
+                    }`}
+                  >
+                    <option value="" disabled>
+                      {t("contact.form.service")}
+                    </option>
+                    {SERVICE_KEYS.map((key) => (
+                      <option key={key} value={key} className="text-gray-900">
+                        {t(`contact.form.services.${key}`)}
+                      </option>
+                    ))}
+                  </select>
+                  <FiChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
                 </div>
 
                 <div className="relative">

@@ -12,7 +12,7 @@ const ContactMessage = require("../models/ContactMessage");
 const router = express.Router();
 
 router.post("/", async (req, res) => {
-  const { name, email, phone, subject, message } = req.body || {};
+  const { name, email, phone, subject, service, message } = req.body || {};
 
   if (!name || !email || !message) {
     return res.status(400).json({
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
   }
 
   const sender = getSender();
-  const record = await saveRecord(ContactMessage, { name, email, phone, subject, message });
+  const record = await saveRecord(ContactMessage, { name, email, phone, subject, service, message });
 
   try {
     await sendBrevoEmail({
@@ -40,6 +40,7 @@ router.post("/", async (req, res) => {
       textContent: `Name: ${name}
 Email: ${email}
 Phone: ${phone || "-"}
+Service: ${service || "-"}
 Subject: ${subject || "-"}
 Message:
 ${message}`,

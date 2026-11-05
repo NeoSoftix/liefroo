@@ -23,7 +23,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { PageLayout } from "../components/layout";
 import { POSDevicesSection } from "../components/home";
-import { ContactSection, CustomPackageModal, SectionHeading, useGoToSection } from "../components/shared";
+import { CustomPackageModal, SectionHeading, useGoToSection } from "../components/shared";
 import { Reveal, ease } from "../components/motion";
 
 // Production build calls the API on the same domain (nginx proxies /api); dev uses the local backend.
@@ -545,8 +545,6 @@ export default function Pricing() {
           </Reveal>
         </div>
       </section>
-
-      <ContactSection />
 
       <CustomPackageModal open={customOpen} onClose={() => setCustomOpen(false)} />
     </PageLayout>

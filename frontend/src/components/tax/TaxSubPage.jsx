@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PageLayout } from "../layout";
-import { AccordionFaq, ContactSection, CtaBanner, SectionHeading, useGoToSection } from "../shared";
+import { AccordionFaq, CtaBanner, SectionHeading, useGoToSection } from "../shared";
 import { Reveal, ease } from "../motion";
 
 // A product shot (transparent cut-out) or an app screenshot (framed card).
@@ -231,8 +231,6 @@ export default function TaxSubPage({ config }) {
         buttonLabel={t(k("cta.button"))}
         note={t("taxCompliant.disclaimer")}
       />
-
-      <ContactSection />
     </PageLayout>
   );
 }

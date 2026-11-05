@@ -20,7 +20,7 @@ import {
   POSFeaturesSection, 
   QRSection,
 } from "../components/home";
-import { FAQ, ContactSection } from "../components/shared";
+import { FAQ } from "../components/shared";
 import { Marquee, ScrollProgress, SectionTransition } from "../components/motion";
 import { scrollToElementId } from "../utils/scrollToSection";
 
@@ -80,9 +80,6 @@ export default function Products() {
 
       <SectionTransition>
         <FAQ />
-      </SectionTransition>
-      <SectionTransition>
-        <ContactSection />
       </SectionTransition>
     </PageLayout>
   );

@@ -12,6 +12,14 @@ export function scrollToElementId(id) {
 // locale's home ("/de" or "/en") and asks Products.jsx (via router state) to
 // scroll once it has mounted.
 export function goToSection(navigate, pathname, id, lng) {
+  // The contact form lives on its own page.
+  if (id === "contact") {
+    const contactPath = `/${lng}/contact`;
+    if (pathname === contactPath && scrollToElementId(id)) return;
+    navigate(contactPath);
+    return;
+  }
+
   const homePath = `/${lng}`;
   if (pathname === homePath && scrollToElementId(id)) return;
   navigate(homePath, { state: { scrollTo: id } });

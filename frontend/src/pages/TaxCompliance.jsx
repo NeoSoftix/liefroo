@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check, ShieldCheck, ReceiptText, Landmark } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PageLayout } from "../components/layout";
-import { AccordionFaq, ContactSection, CtaBanner, useGoToSection } from "../components/shared";
+import { AccordionFaq, CtaBanner, useGoToSection } from "../components/shared";
 import { Reveal, ease } from "../components/motion";
 
 const pillars = [
@@ -173,8 +173,6 @@ export default function TaxCompliance() {
         buttonLabel={t("taxCompliant.cta.button")}
         note={t("taxCompliant.disclaimer")}
       />
-
-      <ContactSection />
     </PageLayout>
   );
 }
