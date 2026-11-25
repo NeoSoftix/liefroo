@@ -13,7 +13,6 @@ const screenSlides = [
   src: `/hero/${n}-1280.webp`,
   srcSet: widths.map((w) => `/hero/${n}-${w}.webp ${w}w`).join(", "),
 }));
-
 // Rendered width of the tablet screen: the tablet is min(54vw, 780px) wide on
 // desktop and the screen is 90.2% of it.
 const screenSizes = "(min-width: 1600px) 704px, (min-width: 1024px) 49vw, 90vw";
@@ -47,7 +46,7 @@ export function HeroTablet({ alt }) {
 // The three smaller devices, laid out on a 16:10 stage in percentages. `depth`
 // scales how far a layer follows the mouse, so nearer devices move more.
 const smallDevices = [
-  { key: "handheld", src: "/hero/device-handheld.webp", width: 691, height: 1536, box: { left: "4%", bottom: "4%", width: "21%" }, z: 30, depth: 1, float: 5.5, delay: 0.5 },
+  { key: "handheld", src: "/hero/device-handheld.webp", width: 534, height: 1182, box: { left: "4%", bottom: "4%", width: "21%" }, z: 30, depth: 1, float: 5.5, delay: 0.5 },
   { key: "phone", src: "/hero/phone-kellner.webp", width: 720, height: 1409, box: { left: "29%", bottom: "8%", width: "20%" }, z: 20, depth: 0.7, float: 5, delay: 0.6 },
   { key: "printer", src: "/hero/device-printer.webp", width: 1000, height: 1043, box: { left: "54%", bottom: "4%", width: "38%" }, z: 10, depth: 1.2, float: 6, delay: 0.7 },
 ];
