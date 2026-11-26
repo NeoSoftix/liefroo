@@ -66,7 +66,7 @@ const cafes = {
   hero: device("/hero/pos-station.webp"),
   heroSide: { src: "/hero/phone-kellner.webp" },
   benefitIcons: [Coffee, QrCode, ReceiptText, Users, ShieldCheck, BarChart3],
-  rowImages: [screen("/qr/2-menu-screen.webp"), device("/hero/phone-kellner.webp"), screen("/hero/4-1280.webp")],
+  rowImages: [device("/qr/2-menu.webp"), device("/hero/phone-kellner.webp"), screen("/hero/4-1280.webp")],
   stepIcons: onboardingSteps,
   related: ["restaurants", "doener", "pizzerien", "qrOrdering", "dataExport", "pricing"],
 };
