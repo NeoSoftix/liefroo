@@ -31,6 +31,11 @@ export const routes = [
   { key: "metaAds", path: "/meta-ads", component: "MetaAds", megaMenuGroup: "growthMarketing" },
   { key: "googleBusinessSEO", path: "/google-business-seo", component: "GoogleBusinessSEO", megaMenuGroup: "growthMarketing" },
   { key: "googleAnalytics", path: "/google-analytics", component: "GoogleAnalytics", megaMenuGroup: "growthMarketing" },
+  // SEO landing pages — deliberately no megaMenuGroup, so they stay out of the menus.
+  { key: "kassensystemRestaurants", path: "/kassensystem-fuer-restaurants", component: "KassensystemRestaurants" },
+  { key: "kassensystemDoener", path: "/kassensystem-fuer-doener", component: "KassensystemDoener" },
+  { key: "kassensystemPizzerien", path: "/kassensystem-fuer-pizzerien", component: "KassensystemPizzerien" },
+  { key: "kassensystemCafes", path: "/kassensystem-fuer-cafes", component: "KassensystemCafes" },
   { key: "privacyPolicy", path: "/privacy-policy", component: "PrivacyPolicy" },
   { key: "termsConditions", path: "/terms-conditions", component: "TermsConditions" },
   { key: "thankYou", path: "/thank-you", component: "ThankYou", prerender: false, noIndex: true },

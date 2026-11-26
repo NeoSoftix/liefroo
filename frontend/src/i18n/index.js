@@ -3,13 +3,15 @@ import { initReactI18next } from "react-i18next";
 
 import de from "./locales/de/translation.json";
 import en from "./locales/en/translation.json";
+import deSeoPages from "./locales/de/seoPages.json";
+import enSeoPages from "./locales/en/seoPages.json";
 
 i18n
   .use(initReactI18next)
   .init({
     resources: {
-      de: { translation: de },
-      en: { translation: en },
+      de: { translation: { ...de, seoPages: deSeoPages } },
+      en: { translation: { ...en, seoPages: enSeoPages } },
     },
     fallbackLng: "de",
     supportedLngs: ["de", "en"],

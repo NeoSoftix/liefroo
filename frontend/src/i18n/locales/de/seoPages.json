@@ -1,0 +1,529 @@
+{
+  "common": {
+    "breadcrumbHome": "Startseite",
+    "pricingCta": "Preise ansehen",
+    "disclaimer": "Diese Seite bietet allgemeine Informationen und ersetzt keine Steuerberatung.",
+    "related": {
+      "heading": "Passende",
+      "headingHighlight": "Lösungen von Liefro",
+      "more": "Mehr erfahren"
+    },
+    "links": {
+      "restaurants": { "title": "Kassensystem für Restaurants", "text": "Das Gastronomie Kassensystem mit Cloud-TSE, Tischplan und Kellner-App für Restaurants in ganz Deutschland." },
+      "doener": { "title": "Kassensystem für Döner & Imbiss", "text": "Schnelle Kasse für Dönerläden und Imbisse – mit Extras, Bondruck und Online-Bestellung." },
+      "pizzerien": { "title": "Kassensystem für Pizzerien", "text": "Pizza-Größen, Beläge und Lieferung in einem System – mit eigener Online-Bestellung ohne Provision." },
+      "cafes": { "title": "Kassensystem für Cafés", "text": "Die schnelle Café-Kasse für Theke, To-go und Terrasse – mit QR-Bestellung und TSE." },
+      "posSystem": { "title": "Restaurant POS System", "text": "Touch-Kasse, Tischverwaltung, geteilte Rechnungen und mehrere Standorte in einem System." },
+      "taxCompliant": { "title": "Gesetzeskonforme Kasse", "text": "KassenSichV, TSE und Belegpflicht verständlich erklärt – und wie Liefro sie erfüllt." },
+      "onlineTse": { "title": "Online-TSE", "text": "Zertifizierte Cloud-TSE ohne USB-Stick – in Minuten aktiviert und automatisch aktuell." },
+      "dataExport": { "title": "Export für den Steuerberater", "text": "DATEV-kompatible Exporte und Kassendaten für Prüfung und Steuerberater mit wenigen Klicks." },
+      "qrOrdering": { "title": "QR-Bestellung", "text": "Gäste bestellen per QR-Code am Tisch – die Bestellung landet direkt in Kasse und Küche." },
+      "onlineOrdering": { "title": "Online-Bestellung", "text": "Eigener Bestellshop für Lieferung und Abholung – ohne Provisionsgebühren an Plattformen." },
+      "reservation": { "title": "Tischreservierung", "text": "Online-Reservierungen direkt in der Kasse, inklusive Bestätigung und Erinnerung." },
+      "printer": { "title": "Druckerintegration", "text": "Kassenbons und Küchenbons drucken automatisch dort, wo sie gebraucht werden." },
+      "menuManagement": { "title": "Speisekartenverwaltung", "text": "Artikel, Varianten, Extras und Allergene einmal pflegen – überall aktuell." },
+      "pricing": { "title": "Preise & Pakete", "text": "Kasse, TSE, Einrichtung und Support in einem Paket – ohne versteckte Kosten." }
+    }
+  },
+
+  "restaurants": {
+    "seo": {
+      "title": "Kassensystem für Restaurants – Cloud-Kasse mit TSE",
+      "description": "Gastronomie Kassensystem für Restaurants in Deutschland: Cloud-Kasse mit TSE, Kellner-App, QR- & Online-Bestellung. KassenSichV-konform. Jetzt beraten lassen."
+    },
+    "breadcrumb": "Kassensystem für Restaurants",
+    "hero": {
+      "badge": "Gastronomie Kassensystem",
+      "heading": "Kassensystem für Restaurants",
+      "headingHighlight": "– in der Cloud, mit TSE.",
+      "description": "Liefro ist das Restaurant POS System für Betriebe in Deutschland: Kasse, Tischplan, Kellner-App, QR- und Online-Bestellung in einem System – mit zertifizierter Cloud-TSE und KassenSichV-konform ab dem ersten Bon.",
+      "trust": ["Zertifizierte TSE inklusive", "Einrichtung & Schulung", "Persönlicher Support"],
+      "cta": "Kostenlose Beratung",
+      "imageAlt": "Liefro Kassensystem für Restaurants an der Theke",
+      "sideImageAlt": "Mobiles Kassengerät für den Service am Tisch"
+    },
+    "intro": {
+      "badge": "Restaurant Kasse Deutschland",
+      "heading": "Ein Kassensystem, das Ihren",
+      "headingHighlight": "ganzen Betrieb steuert",
+      "paragraphs": [
+        "Ein modernes Kassensystem für Restaurants ist heute weit mehr als eine Registrierkasse. Es nimmt Bestellungen am Tisch, an der Theke, per QR-Code und online entgegen, schickt sie direkt in Küche und Bar, druckt Bons, rechnet ab und liefert Ihnen jederzeit aktuelle Umsatzzahlen.",
+        "Liefro wurde als Gastronomie Kassensystem für den deutschen Markt entwickelt. Die zertifizierte Online-TSE ist bereits integriert, jede Buchung wird signiert, Belege werden automatisch ausgegeben und Ihre Kassendaten sind GoBD-konform gespeichert. So sind Sie für die Kassennachschau vorbereitet, ohne sich um Technik kümmern zu müssen.",
+        "Weil Liefro ein Cloud Kassensystem ist, sehen Sie Umsätze, Bestellungen und Berichte von überall – im Büro, zu Hause oder unterwegs auf dem Smartphone. Updates kommen automatisch, und mehrere Standorte verwalten Sie aus einem einzigen Konto."
+      ],
+      "glance": {
+        "heading": "Auf einen Blick",
+        "items": [
+          "Cloud Kassensystem mit zertifizierter TSE",
+          "Tischplan, Umbuchungen und geteilte Rechnungen",
+          "Kellner-App für Bestellungen direkt am Tisch",
+          "QR-Bestellung und eigener Online-Shop",
+          "Digitales Kassenbuch und Live-Berichte",
+          "DATEV-kompatibler Export für den Steuerberater"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Warum Restaurants",
+      "headingHighlight": "Liefro wählen",
+      "description": "Alles, was ein Restaurant POS System im Alltag leisten muss – in einer Lösung statt in fünf verschiedenen Programmen.",
+      "items": [
+        { "title": "KassenSichV-konform", "text": "Zertifizierte Cloud-TSE, Belegausgabe und GoBD-konforme Daten – automatisch erfüllt, ohne USB-Stick." },
+        { "title": "Bestellen am Tisch", "text": "Ihr Service nimmt Bestellungen per Kellner-App auf dem Smartphone auf. Sie gehen sofort an Küche und Bar." },
+        { "title": "QR- & Online-Bestellung", "text": "Gäste bestellen per QR-Code am Tisch oder über Ihren eigenen Online-Shop – alles landet in derselben Kasse." },
+        { "title": "Live-Berichte", "text": "Umsätze, Bestseller und Stoßzeiten in Echtzeit – auf jedem Gerät und von überall abrufbar." },
+        { "title": "Mehrere Standorte", "text": "Filialen, Speisekarten und Mitarbeitende zentral verwalten – ideal für wachsende Gastronomiebetriebe." },
+        { "title": "Support auf Deutsch", "text": "Wir richten Ihre Kasse ein, schulen Ihr Team und sind für Sie da, wenn es darauf ankommt." }
+      ]
+    },
+    "rows": {
+      "heading": "So arbeitet das Kassensystem",
+      "headingHighlight": "in Ihrem Restaurant",
+      "items": [
+        {
+          "badge": "Kasse",
+          "title": "Die Touch-Kasse für Theke und Service",
+          "text": "Bestellungen, Tische, Zahlungen und Bondruck an einem Gerät. Die übersichtliche Oberfläche ist in wenigen Minuten erlernt – auch für Aushilfen.",
+          "points": ["Tischplan mit Umbuchen und Rechnung teilen", "Bar- und Kartenzahlung erfasst", "Küchen- und Barbons automatisch"],
+          "alt": "Kassenoberfläche des Liefro Restaurant POS Systems"
+        },
+        {
+          "badge": "Service",
+          "title": "Bestellungen direkt am Tisch aufnehmen",
+          "text": "Mit der Liefro Kellner-App bestellt Ihr Team auf jedem Smartphone. Keine Laufwege zur Kasse, weniger Fehler und schnellere Tischumschläge.",
+          "points": ["Läuft auf jedem Smartphone", "Bestellungen sofort in Küche und Bar", "Gleiche TSE wie die Hauptkasse"],
+          "alt": "Kellner-App auf dem Smartphone für Bestellungen am Tisch"
+        },
+        {
+          "badge": "Cloud",
+          "title": "Alle Zahlen jederzeit im Blick",
+          "text": "Als Cloud Kassensystem speichert Liefro Ihre Daten sicher und macht sie überall verfügbar. Tagesabschluss, Umsatzberichte und Exporte erstellen Sie mit wenigen Klicks.",
+          "points": ["Live-Umsätze auf dem Smartphone", "Digitales Kassenbuch", "Export für Steuerberater und Prüfung"],
+          "alt": "Umsatzberichte und Analysen im Liefro Dashboard"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "In vier Schritten zur",
+      "headingHighlight": "neuen Restaurant-Kasse",
+      "items": [
+        { "title": "Beratung", "text": "Wir besprechen Ihren Betrieb und empfehlen das passende Paket." },
+        { "title": "Einrichtung", "text": "Wir legen Speisekarte, Tische, Drucker und TSE für Sie an." },
+        { "title": "Schulung", "text": "Ihr Team lernt die Kasse in einer kurzen Einweisung kennen." },
+        { "title": "Startklar", "text": "Ab dem ersten Bon kassieren Sie sicher und gesetzeskonform." }
+      ]
+    },
+    "banner": {
+      "heading": "Gastronomie-Kasse ohne Kompromisse",
+      "text": "Kasse, TSE, Einrichtung und Support kommen aus einer Hand. Sie konzentrieren sich auf Ihre Gäste – wir kümmern uns um die Technik.",
+      "stats": [
+        { "value": "TSE", "label": "inklusive" },
+        { "value": "24/7", "label": "Support" },
+        { "value": "1", "label": "System für alles" }
+      ]
+    },
+    "guide": {
+      "heading": "Worauf Sie beim Kassensystem für Restaurants",
+      "headingHighlight": "achten sollten",
+      "description": "Diese Punkte entscheiden, ob eine Restaurant-Kasse Ihnen Arbeit abnimmt oder neue macht.",
+      "items": [
+        { "title": "Zertifizierte TSE und KassenSichV", "text": "In Deutschland müssen elektronische Kassen eine zertifizierte Technische Sicherheitseinrichtung nutzen und beim Finanzamt gemeldet sein. Achten Sie darauf, dass die TSE bereits integriert ist und nicht als Zusatzhardware nachgekauft werden muss." },
+        { "title": "Cloud statt lokaler Insellösung", "text": "Ein Cloud Kassensystem macht Ihre Daten überall verfügbar, spielt Updates automatisch ein und lässt sich einfach um weitere Geräte oder Standorte erweitern." },
+        { "title": "Alle Bestellwege in einer Kasse", "text": "Tischbestellung, Theke, QR-Code, Abholung und Lieferung sollten in derselben Kasse zusammenlaufen. Doppelte Eingaben und separate Tablets kosten Zeit und verursachen Fehler." },
+        { "title": "Einfache Bedienung für das Team", "text": "Gerade in der Gastronomie wechseln Mitarbeitende häufig. Eine klare Touch-Oberfläche, die man in Minuten versteht, spart Schulungsaufwand und Stress im Service." },
+        { "title": "Export für Steuerberater", "text": "Kassendaten müssen in der Regel zehn Jahre aufbewahrt werden. Ein DATEV-kompatibler Export und ein digitales Kassenbuch erleichtern die Zusammenarbeit mit Ihrer Steuerberatung." },
+        { "title": "Persönlicher Support", "text": "Wenn am Freitagabend der Drucker streikt, zählt schnelle Hilfe. Fragen Sie nach Einrichtung, Schulung und erreichbarem Support – am besten auf Deutsch." }
+      ]
+    },
+    "faq": {
+      "heading": "Häufige Fragen zum Kassensystem für Restaurants",
+      "items": [
+        { "q": "Welches Kassensystem ist das beste für Restaurants?", "a": "Das beste Kassensystem für Restaurants ist eines, das zu Ihren Abläufen passt: mit Tischplan, Bestellung am Tisch, Küchenbons und Online-Bestellung in einem System – und mit integrierter, zertifizierter TSE. Liefro vereint genau diese Funktionen in einer Cloud-Lösung." },
+        { "q": "Ist Liefro ein Cloud Kassensystem mit TSE?", "a": "Ja. Liefro läuft in der Cloud und bringt eine zertifizierte Online-TSE direkt mit. Sie brauchen keinen USB-Stick und keine zusätzliche Hardware – jede Buchung wird automatisch signiert." },
+        { "q": "Ist das Kassensystem KassenSichV-konform?", "a": "Liefro erfüllt die Anforderungen der KassenSichV: zertifizierte TSE, Belegausgabe und GoBD-konforme Speicherung der Kassendaten. Bei der Meldung Ihrer Kasse beim Finanzamt über ELSTER unterstützen wir Sie." },
+        { "q": "Was kostet ein Kassensystem für die Gastronomie?", "a": "Die Kosten hängen von der Anzahl der Geräte und den benötigten Funktionen ab. Bei Liefro sind TSE, Einrichtung, Schulung, Support und Updates im Paket enthalten. Die aktuellen Pakete finden Sie auf unserer Preisseite." },
+        { "q": "Kann ich mehrere Restaurants mit einem System verwalten?", "a": "Ja. Mit Liefro verwalten Sie mehrere Standorte zentral – inklusive Speisekarten, Berichten und Mitarbeitenden. Für Franchise-Betriebe erstellen wir gern ein individuelles Paket." },
+        { "q": "Wie schnell ist das Kassensystem einsatzbereit?", "a": "Nach der Beratung richten wir Speisekarte, Tische, Drucker und TSE für Sie ein und schulen Ihr Team. Viele Betriebe sind innerhalb weniger Tage startklar." }
+      ]
+    },
+    "cta": {
+      "heading": "Bereit für Ihr neues Restaurant-Kassensystem?",
+      "text": "Lassen Sie sich kostenlos beraten – wir finden das passende Paket für Ihren Betrieb.",
+      "button": "Jetzt Beratung anfragen"
+    }
+  },
+
+  "doener": {
+    "seo": {
+      "title": "Kassensystem für Döner & Imbiss – schnell mit TSE",
+      "description": "Kassensystem für Dönerläden und Imbisse: blitzschnell kassieren, Extras per Klick, Küchenbon & Online-Bestellung. Mit zertifizierter TSE, KassenSichV-konform."
+    },
+    "breadcrumb": "Kassensystem für Döner",
+    "hero": {
+      "badge": "Döner Kasse",
+      "heading": "Kassensystem für Döner & Imbiss",
+      "headingHighlight": "– schnell wie Ihr Team.",
+      "description": "Wenn mittags die Schlange bis zur Tür reicht, zählt jede Sekunde. Liefro ist die Kasse für Dönerläden und Imbisse: Lieblingsprodukte auf einen Klick, Soßen und Extras ohne Tipparbeit, Küchenbon sofort – mit zertifizierter TSE.",
+      "trust": ["Zertifizierte TSE inklusive", "Online-Bestellung ohne Provision", "Einrichtung vor Ort"],
+      "cta": "Kostenlose Beratung",
+      "imageAlt": "Liefro Kassensystem für Dönerläden an der Theke",
+      "sideImageAlt": "Bondrucker für Küchenbons im Imbiss"
+    },
+    "intro": {
+      "badge": "Imbiss Kassensystem",
+      "heading": "Die Kasse für Döner, Dürüm",
+      "headingHighlight": "und Lahmacun",
+      "paragraphs": [
+        "Im Dönerladen geht es um Tempo. Ein Kassensystem für Döner muss deshalb vor allem eines können: schnell sein. Bei Liefro liegen Ihre meistverkauften Produkte direkt auf dem Startbildschirm, Varianten wie Soße, Schärfe oder „ohne Zwiebeln“ wählen Sie mit einem Fingertipp, und Menüs mit Getränk und Pommes sind als Kombi hinterlegt.",
+        "Jede Bestellung geht sofort als Bon an den Grill oder die Küche – egal ob sie an der Theke, telefonisch oder über Ihren eigenen Online-Shop hereinkommt. Abholung und Lieferung laufen in derselben Kasse zusammen, ohne zusätzliches Tablet einer Lieferplattform.",
+        "Auch im Imbiss gilt die KassenSichV. Liefro bringt die zertifizierte Online-TSE bereits mit, gibt Belege automatisch aus und speichert Ihre Kassendaten GoBD-konform. So sind Sie für eine unangekündigte Kassennachschau vorbereitet."
+      ],
+      "glance": {
+        "heading": "Auf einen Blick",
+        "items": [
+          "Schnellwahl für Ihre Bestseller",
+          "Soßen, Extras und Varianten per Klick",
+          "Menüs und Kombis mit Getränk",
+          "Küchenbon automatisch am Grill",
+          "Abholung, Lieferung und Online-Bestellung",
+          "Zertifizierte TSE und digitales Kassenbuch"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Warum Dönerläden",
+      "headingHighlight": "auf Liefro setzen",
+      "description": "Eine Döner Kasse, die mit dem Mittagsansturm mithält – und abends den Tagesabschluss in Sekunden erledigt.",
+      "items": [
+        { "title": "Kassieren in Sekunden", "text": "Bestseller auf einen Klick, große Touch-Tasten und keine verschachtelten Menüs – auch in der Rush Hour." },
+        { "title": "Küchenbon sofort", "text": "Jede Bestellung druckt automatisch am Grill oder in der Küche. Keine Zettel, keine Zurufe, keine Fehler." },
+        { "title": "Eigene Online-Bestellung", "text": "Ihr eigener Bestellshop für Abholung und Lieferung – ohne Provisionsgebühren an Plattformen." },
+        { "title": "TSE ohne Stress", "text": "Zertifizierte Cloud-TSE, Belegausgabe und GoBD-konforme Daten – automatisch, ohne USB-Stick." },
+        { "title": "Bar und Karte", "text": "Bareinnahmen landen im digitalen Kassenbuch, Kartenzahlungen werden automatisch erfasst." },
+        { "title": "Umsatz im Blick", "text": "Sehen Sie live, welche Produkte laufen und wann Ihre Stoßzeiten sind – auch vom Smartphone aus." }
+      ]
+    },
+    "rows": {
+      "heading": "So läuft das Kassensystem",
+      "headingHighlight": "in Ihrem Imbiss",
+      "items": [
+        {
+          "badge": "Theke",
+          "title": "Bestellen so schnell, wie Sie schneiden",
+          "text": "Döner, Dürüm, Box oder Teller: Produkte, Varianten und Extras sind so angelegt, dass Ihr Team ohne Nachdenken kassiert.",
+          "points": ["Bestseller auf dem Startbildschirm", "Soßen, Schärfe und Extras als Optionen", "Menü-Kombis mit Getränk und Beilage"],
+          "alt": "Schnelle Kassenoberfläche für den Dönerladen"
+        },
+        {
+          "badge": "Küche",
+          "title": "Der Bon liegt schon am Grill",
+          "text": "Mit Liefro Print werden Küchenbons automatisch gedruckt, sobald die Bestellung bestätigt ist – mit allen Extras gut lesbar aufgelistet.",
+          "points": ["Thermodrucker für Kasse und Küche", "Alle Extras klar auf dem Bon", "Bestellnummer für die Abholung"],
+          "alt": "Bondrucker druckt Küchenbon für Döner-Bestellung"
+        },
+        {
+          "badge": "Online",
+          "title": "Online-Bestellungen ohne Provision",
+          "text": "Mit Ihrem eigenen Bestellshop bestellen Stammkunden direkt bei Ihnen. Die Bestellung erscheint in der Kasse und wird sofort gedruckt.",
+          "points": ["Abholung und Lieferung", "Eigene Speisekarte mit Fotos", "Keine Plattform-Provision"],
+          "alt": "Online-Bestellshop mit digitaler Speisekarte für den Imbiss"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "In vier Schritten zur",
+      "headingHighlight": "neuen Döner Kasse",
+      "items": [
+        { "title": "Beratung", "text": "Wir besprechen Ihr Sortiment und Ihre Abläufe an der Theke." },
+        { "title": "Einrichtung", "text": "Wir legen Produkte, Extras, Drucker und TSE für Sie an." },
+        { "title": "Schulung", "text": "Ihr Team lernt die Kasse in wenigen Minuten kennen." },
+        { "title": "Startklar", "text": "Ab dem ersten Bon kassieren Sie schnell und gesetzeskonform." }
+      ]
+    },
+    "banner": {
+      "heading": "Gebaut für die Mittagspause",
+      "text": "Weniger Tippen, weniger Fehler, kürzere Schlangen. Liefro bringt Tempo an Ihre Theke – und Ordnung in Ihre Buchhaltung.",
+      "stats": [
+        { "value": "TSE", "label": "inklusive" },
+        { "value": "0 %", "label": "Provision im eigenen Shop" },
+        { "value": "24/7", "label": "Support" }
+      ]
+    },
+    "guide": {
+      "heading": "Worauf Dönerläden bei der Kasse",
+      "headingHighlight": "achten sollten",
+      "description": "Ein Imbiss Kassensystem muss vor allem schnell, robust und gesetzeskonform sein.",
+      "items": [
+        { "title": "Tempo an der Theke", "text": "Prüfen Sie, wie viele Klicks ein Döner mit Extras braucht. Bestseller sollten direkt auf dem Startbildschirm liegen, Varianten als einfache Optionen auswählbar sein." },
+        { "title": "Extras und Varianten", "text": "Soßen, Schärfe, Käse, „ohne Zwiebeln“ – gute Kassen bilden das als Optionen ab, die automatisch auf dem Küchenbon erscheinen und bei Bedarf einen Aufpreis haben." },
+        { "title": "Zertifizierte TSE", "text": "Auch kleine Imbisse mit elektronischer Kasse brauchen eine zertifizierte TSE und müssen ihre Kasse beim Finanzamt melden. Eine integrierte Cloud-TSE spart Hardware und Ärger." },
+        { "title": "Eigene Online-Bestellung", "text": "Lieferplattformen verlangen oft hohe Provisionen. Ein eigener Bestellshop, der direkt in die Kasse läuft, hält mehr Umsatz in Ihrem Laden." },
+        { "title": "Zuverlässiger Bondruck", "text": "Ein schneller Thermodrucker an Kasse und Grill sorgt dafür, dass keine Bestellung untergeht – auch wenn es voll ist." }
+      ]
+    },
+    "faq": {
+      "heading": "Häufige Fragen zum Kassensystem für Döner",
+      "items": [
+        { "q": "Brauche ich als Dönerladen eine TSE?", "a": "Wenn Sie eine elektronische Kasse nutzen, ja. Seit 2020 müssen elektronische Kassen in Deutschland eine zertifizierte Technische Sicherheitseinrichtung nutzen. Bei Liefro ist die Online-TSE bereits integriert." },
+        { "q": "Kann ich Soßen und Extras als Optionen anlegen?", "a": "Ja. Varianten, Zusatzoptionen und Extras – mit oder ohne Aufpreis – legen Sie einmal an. Sie werden mit einem Klick gewählt und erscheinen automatisch auf dem Küchenbon." },
+        { "q": "Funktioniert die Kasse auch für Lieferung und Abholung?", "a": "Ja. Bestellungen für Abholung, Lieferung und vor Ort laufen in derselben Kasse zusammen – auch Bestellungen aus Ihrem eigenen Online-Shop." },
+        { "q": "Fallen für Online-Bestellungen Provisionen an?", "a": "Über Ihren eigenen Liefro-Bestellshop zahlen Sie keine Provisionsgebühren an Lieferplattformen. Die Kunden bestellen direkt bei Ihnen." },
+        { "q": "Wie schnell kann mein Imbiss mit Liefro starten?", "a": "Nach der Beratung richten wir Produkte, Extras, Drucker und TSE ein und schulen Ihr Team. In der Regel sind Sie innerhalb weniger Tage startklar." }
+      ]
+    },
+    "cta": {
+      "heading": "Mehr Tempo für Ihren Dönerladen?",
+      "text": "Wir zeigen Ihnen in einer kostenlosen Beratung, wie Liefro an Ihrer Theke funktioniert.",
+      "button": "Jetzt Beratung anfragen"
+    }
+  },
+
+  "pizzerien": {
+    "seo": {
+      "title": "Kassensystem für Pizzerien – Lieferung & TSE",
+      "description": "Kassensystem für Pizzerien: Pizza-Größen und Beläge per Klick, Lieferung & Abholung, eigener Online-Shop ohne Provision. Mit zertifizierter TSE, KassenSichV-konform."
+    },
+    "breadcrumb": "Kassensystem für Pizzerien",
+    "hero": {
+      "badge": "Pizzeria Kasse",
+      "heading": "Kassensystem für Pizzerien",
+      "headingHighlight": "– vom Ofen bis zur Haustür.",
+      "description": "Größen, Beläge, halbe-halbe, Lieferung und Abholung: Liefro ist die Pizzeria-Kasse, die Ihre Bestellungen ordnet, Küchenbons sofort druckt und Online-Bestellungen ohne Provision direkt in die Kasse holt – mit zertifizierter TSE.",
+      "trust": ["Zertifizierte TSE inklusive", "Eigener Online-Shop ohne Provision", "Einrichtung & Schulung"],
+      "cta": "Kostenlose Beratung",
+      "imageAlt": "Online-Speisekarte einer Pizzeria im Liefro Bestellshop"
+    },
+    "intro": {
+      "badge": "Pizzeria Kassensystem",
+      "heading": "Eine Kasse für Restaurant,",
+      "headingHighlight": "Abholung und Lieferdienst",
+      "paragraphs": [
+        "Eine Pizzeria hat besondere Anforderungen an ihr Kassensystem. Jede Pizza gibt es in mehreren Größen, mit zusätzlichen Belägen oder ohne bestimmte Zutaten. Dazu kommen Gäste im Restaurant, Telefonbestellungen zur Abholung und ein Lieferdienst am Abend – und alles muss gleichzeitig funktionieren.",
+        "Mit Liefro legen Sie Größen, Beläge und Extras einmal in der Speisekartenverwaltung an. Beim Kassieren wählt Ihr Team sie mit wenigen Klicks, der Preis passt sich automatisch an, und der Küchenbon zeigt dem Pizzabäcker genau, was auf den Teig gehört.",
+        "Online-Bestellungen aus Ihrem eigenen Bestellshop landen direkt in der Kasse – ohne Provisionsgebühren an Lieferplattformen. Und weil Liefro die zertifizierte Online-TSE mitbringt, ist jede Buchung KassenSichV-konform signiert."
+      ],
+      "glance": {
+        "heading": "Auf einen Blick",
+        "items": [
+          "Pizza-Größen, Beläge und Extras als Varianten",
+          "Lieferung, Abholung und vor Ort in einer Kasse",
+          "Eigener Online-Shop ohne Provision",
+          "Küchenbon automatisch am Ofen",
+          "Rabatte und Angebote wie „Pizza-Tag“",
+          "Zertifizierte TSE und DATEV-kompatibler Export"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Warum Pizzerien",
+      "headingHighlight": "mit Liefro arbeiten",
+      "description": "Ein Pizzeria Kassensystem, das Restaurant, Abholung und Lieferdienst unter einen Hut bringt.",
+      "items": [
+        { "title": "Größen & Beläge", "text": "Jede Pizza in mehreren Größen, mit Extras und Aufpreisen – sauber angelegt und mit einem Klick gewählt." },
+        { "title": "Online ohne Provision", "text": "Ihr eigener Bestellshop für Lieferung und Abholung – Bestellungen landen direkt in der Kasse." },
+        { "title": "Küchenbon am Ofen", "text": "Bestellungen drucken automatisch in der Küche – mit allen Belägen klar lesbar für den Pizzabäcker." },
+        { "title": "Geplante Bestellungen", "text": "Vorbestellungen für später erscheinen rechtzeitig in der Kasse, damit die Pizza pünktlich fertig ist." },
+        { "title": "TSE inklusive", "text": "Zertifizierte Cloud-TSE und GoBD-konforme Kassendaten – ohne USB-Stick und ohne Zusatzhardware." },
+        { "title": "Rabatte & Aktionen", "text": "Mittagsangebote, Pizza-Tag oder Happy Hour mit wenigen Klicks anlegen – für mehr Bestellungen." }
+      ]
+    },
+    "rows": {
+      "heading": "So läuft das Kassensystem",
+      "headingHighlight": "in Ihrer Pizzeria",
+      "items": [
+        {
+          "badge": "Bestellung",
+          "title": "Jede Pizza genau so, wie der Gast sie will",
+          "text": "Größe wählen, Beläge hinzufügen, Zutaten weglassen – die Kasse rechnet den Preis automatisch und überträgt alles fehlerfrei an die Küche.",
+          "points": ["Größen und Varianten mit eigenem Preis", "Extras und Zusatzbeläge mit Aufpreis", "Allergene in der Speisekarte hinterlegt"],
+          "alt": "Bestellübersicht im Pizzeria Kassensystem"
+        },
+        {
+          "badge": "Service",
+          "title": "Im Restaurant am Tisch bestellen",
+          "text": "Auch im Gastraum spart Liefro Wege: Ihr Service nimmt Bestellungen mobil auf, die Pizza geht direkt an den Ofen und die Getränke an die Bar.",
+          "points": ["Mobiles Bestellen am Tisch", "Tischplan und geteilte Rechnungen", "Bons automatisch an Küche und Bar"],
+          "alt": "Mobiles Kassengerät für Bestellungen in der Pizzeria"
+        },
+        {
+          "badge": "Marketing",
+          "title": "Mehr Stammkunden, mehr Bestellungen",
+          "text": "Mit Rabatten, Angeboten und Ihrem eigenen Online-Shop bauen Sie direkte Beziehungen zu Ihren Gästen auf – statt sie an Plattformen zu verlieren.",
+          "points": ["Angebote und Rabattaktionen", "Eigener Bestellshop mit Ihrer Marke", "Live-Berichte zu Bestsellern"],
+          "alt": "Marketing und Angebote für Pizzerien im Liefro Dashboard"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "In vier Schritten zur",
+      "headingHighlight": "neuen Pizzeria-Kasse",
+      "items": [
+        { "title": "Beratung", "text": "Wir besprechen Ihre Speisekarte, Ihren Lieferdienst und Ihre Abläufe." },
+        { "title": "Einrichtung", "text": "Wir legen Größen, Beläge, Drucker, Online-Shop und TSE für Sie an." },
+        { "title": "Schulung", "text": "Ihr Team lernt Kasse und Bestellungen in kurzer Zeit kennen." },
+        { "title": "Startklar", "text": "Ab dem ersten Bon kassieren Sie sicher – im Laden und online." }
+      ]
+    },
+    "banner": {
+      "heading": "Mehr Pizza, weniger Papierkram",
+      "text": "Liefro holt alle Bestellwege in eine Kasse und erledigt TSE, Belege und Export im Hintergrund. Sie kümmern sich um den Teig.",
+      "stats": [
+        { "value": "TSE", "label": "inklusive" },
+        { "value": "0 %", "label": "Provision im eigenen Shop" },
+        { "value": "24/7", "label": "Support" }
+      ]
+    },
+    "guide": {
+      "heading": "Worauf Pizzerien beim Kassensystem",
+      "headingHighlight": "achten sollten",
+      "description": "Diese Funktionen machen den Unterschied zwischen einer einfachen Kasse und einem echten Pizzeria Kassensystem.",
+      "items": [
+        { "title": "Größen und Beläge sauber abbilden", "text": "Eine Pizza in drei Größen mit zehn möglichen Extras darf nicht dreißig Artikel bedeuten. Achten Sie auf Varianten und Zusatzoptionen mit automatischen Aufpreisen." },
+        { "title": "Lieferung und Abholung integriert", "text": "Telefon-, Online- und Vor-Ort-Bestellungen sollten in einer Kasse zusammenlaufen. Separate Tablets für jede Plattform führen schnell zu Chaos am Abend." },
+        { "title": "Eigener Online-Shop", "text": "Mit einem eigenen Bestellshop sparen Sie Plattform-Provisionen und behalten den direkten Kontakt zu Ihren Stammkunden." },
+        { "title": "Zertifizierte TSE", "text": "Auch Lieferdienste unterliegen der KassenSichV. Eine integrierte Cloud-TSE signiert jede Buchung, ohne dass Sie zusätzliche Hardware brauchen." },
+        { "title": "Aktionen und Rabatte", "text": "Pizza-Tag, Mittagsmenü oder Rabatt auf die zweite Pizza – eine gute Kasse lässt Sie Aktionen schnell anlegen und auswerten." }
+      ]
+    },
+    "faq": {
+      "heading": "Häufige Fragen zum Kassensystem für Pizzerien",
+      "items": [
+        { "q": "Kann ich Pizza-Größen und Beläge in der Kasse anlegen?", "a": "Ja. Größen legen Sie als Varianten mit eigenem Preis an, Beläge als Extras mit Aufpreis. Beim Kassieren wählt Ihr Team sie mit wenigen Klicks, und alles erscheint auf dem Küchenbon." },
+        { "q": "Unterstützt Liefro Lieferung und Abholung?", "a": "Ja. Bestellungen für Lieferung, Abholung, vor Ort und geplante Bestellungen für später laufen in derselben Kasse zusammen." },
+        { "q": "Brauche ich für den Online-Shop eine Lieferplattform?", "a": "Nein. Mit Liefro erhalten Sie einen eigenen Bestellshop. Ihre Gäste bestellen direkt bei Ihnen, und Sie zahlen keine Provisionsgebühren an Plattformen." },
+        { "q": "Ist das Pizzeria Kassensystem KassenSichV-konform?", "a": "Ja. Liefro bringt eine zertifizierte Online-TSE mit, gibt Belege automatisch aus und speichert die Kassendaten GoBD-konform. Bei der Kassenmeldung unterstützen wir Sie." },
+        { "q": "Kann ich Angebote wie einen Pizza-Tag einrichten?", "a": "Ja. Rabatte, Happy Hours und Aktionen legen Sie mit wenigen Klicks an. In den Live-Berichten sehen Sie, wie gut die Aktion läuft." }
+      ]
+    },
+    "cta": {
+      "heading": "Bereit für die passende Pizzeria-Kasse?",
+      "text": "Lassen Sie sich kostenlos beraten – wir richten Kasse, Online-Shop und TSE für Sie ein.",
+      "button": "Jetzt Beratung anfragen"
+    }
+  },
+
+  "cafes": {
+    "seo": {
+      "title": "Kassensystem für Cafés – Café-Kasse mit TSE",
+      "description": "Kassensystem für Cafés: schnell kassieren an Theke & Terrasse, To-go, QR-Bestellung und Kellner-App. Mit zertifizierter TSE und digitalem Kassenbuch."
+    },
+    "breadcrumb": "Kassensystem für Cafés",
+    "hero": {
+      "badge": "Café Kasse",
+      "heading": "Kassensystem für Cafés",
+      "headingHighlight": "– so schnell wie ein Espresso.",
+      "description": "Cappuccino mit Hafermilch, Croissant to go, Kuchen auf der Terrasse: Liefro ist die Café-Kasse, die mit Ihren Gästen Schritt hält – mit Varianten per Klick, QR-Bestellung am Tisch und zertifizierter TSE.",
+      "trust": ["Zertifizierte TSE inklusive", "QR-Bestellung am Tisch", "Einrichtung & Schulung"],
+      "cta": "Kostenlose Beratung",
+      "imageAlt": "Liefro Kassensystem für Cafés an der Theke",
+      "sideImageAlt": "Kellner-App auf dem Smartphone für die Café-Terrasse"
+    },
+    "intro": {
+      "badge": "Café Kassensystem",
+      "heading": "Die Kasse für Theke,",
+      "headingHighlight": "To-go und Terrasse",
+      "paragraphs": [
+        "Im Café kommen viele kleine Bestellungen in kurzer Zeit. Ein Kassensystem für Cafés muss deshalb schnell sein und Varianten wie Milchsorte, Größe oder Extra-Shot ohne Umwege abbilden. Bei Liefro liegen Ihre Lieblingsgetränke direkt auf dem Startbildschirm, und Optionen wählen Sie mit einem Fingertipp.",
+        "Gäste auf der Terrasse bestellen per QR-Code direkt vom Tisch oder Ihr Service nimmt die Bestellung mit der Kellner-App auf. Die Bestellung erscheint sofort an der Theke – ohne Laufwege und ohne Zettel.",
+        "Auch Cafés mit elektronischer Kasse brauchen eine zertifizierte TSE. Liefro bringt sie bereits mit, gibt Belege auf Papier oder digital aus und führt Ihr Kassenbuch automatisch. Ihre Steuerberatung erhält die Daten mit wenigen Klicks."
+      ],
+      "glance": {
+        "heading": "Auf einen Blick",
+        "items": [
+          "Schnellwahl für Kaffee, Kuchen und Snacks",
+          "Milchsorten, Größen und Extras als Optionen",
+          "QR-Bestellung für Terrasse und Gastraum",
+          "Kellner-App auf dem Smartphone",
+          "Digitales Kassenbuch und Belege per QR-Code",
+          "Zertifizierte TSE und Export für Steuerberater"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Warum Cafés",
+      "headingHighlight": "Liefro lieben",
+      "description": "Eine Café-Kasse, die schnell, schön und gesetzeskonform ist – ohne komplizierte Technik.",
+      "items": [
+        { "title": "Schnell an der Theke", "text": "Kaffeespezialitäten, Gebäck und Snacks auf einen Klick – auch wenn morgens die Schlange wächst." },
+        { "title": "QR-Bestellung", "text": "Gäste bestellen auf der Terrasse per QR-Code aus Ihrer digitalen Karte – die Bestellung landet direkt an der Theke." },
+        { "title": "Belege digital", "text": "Belege auf Papier oder per QR-Code – das erfüllt die Belegausgabepflicht und spart Bonrollen." },
+        { "title": "Service am Tisch", "text": "Mit der Kellner-App nimmt Ihr Team Bestellungen auf jedem Smartphone auf – drinnen und draußen." },
+        { "title": "TSE inklusive", "text": "Zertifizierte Cloud-TSE, ohne USB-Stick – jede Buchung wird automatisch signiert." },
+        { "title": "Zahlen im Blick", "text": "Sehen Sie live, welche Getränke laufen und wann Ihre Stoßzeiten sind – von überall." }
+      ]
+    },
+    "rows": {
+      "heading": "So läuft das Kassensystem",
+      "headingHighlight": "in Ihrem Café",
+      "items": [
+        {
+          "badge": "QR-Code",
+          "title": "Bestellen direkt vom Tisch",
+          "text": "Gäste scannen den QR-Code am Tisch, sehen Ihre digitale Karte mit Fotos und bestellen selbst. Die Bestellung erscheint sofort in der Kasse.",
+          "points": ["Digitale Karte immer aktuell", "Allergene und Ernährungsinfos", "Bestellung direkt an der Theke"],
+          "alt": "Digitale Café-Speisekarte für die QR-Bestellung"
+        },
+        {
+          "badge": "Service",
+          "title": "Terrasse ohne Laufwege",
+          "text": "Mit der Liefro Kellner-App bedient Ihr Team die Terrasse vom Smartphone aus. Bestellungen gehen direkt an die Theke, kassiert wird am Tisch.",
+          "points": ["Läuft auf jedem Smartphone", "Bestellung sofort an der Theke", "Gleiche TSE wie die Kasse"],
+          "alt": "Kellner-App für den Service auf der Café-Terrasse"
+        },
+        {
+          "badge": "Büro",
+          "title": "Kassenbuch und Abschluss automatisch",
+          "text": "Bareinnahmen werden automatisch im digitalen Kassenbuch erfasst. Den Tagesabschluss und den Export für Ihre Steuerberatung erledigen Sie in Minuten.",
+          "points": ["Digitales Kassenbuch", "DATEV-kompatibler Export", "Live-Berichte auf dem Smartphone"],
+          "alt": "Umsatzübersicht und Tagesabschluss für Cafés"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "In vier Schritten zur",
+      "headingHighlight": "neuen Café-Kasse",
+      "items": [
+        { "title": "Beratung", "text": "Wir besprechen Ihr Café, Ihre Karte und Ihre Abläufe." },
+        { "title": "Einrichtung", "text": "Wir legen Produkte, Optionen, QR-Codes und TSE für Sie an." },
+        { "title": "Schulung", "text": "Ihr Team lernt die Kasse in einer kurzen Einweisung kennen." },
+        { "title": "Startklar", "text": "Ab dem ersten Kaffee kassieren Sie sicher und gesetzeskonform." }
+      ]
+    },
+    "banner": {
+      "heading": "Mehr Zeit für Ihre Gäste",
+      "text": "Liefro übernimmt Bestellungen, Belege, TSE und Kassenbuch – damit Sie sich auf guten Kaffee und zufriedene Gäste konzentrieren können.",
+      "stats": [
+        { "value": "TSE", "label": "inklusive" },
+        { "value": "QR", "label": "Bestellung am Tisch" },
+        { "value": "24/7", "label": "Support" }
+      ]
+    },
+    "guide": {
+      "heading": "Worauf Cafés beim Kassensystem",
+      "headingHighlight": "achten sollten",
+      "description": "Diese Punkte machen eine Café-Kasse alltagstauglich.",
+      "items": [
+        { "title": "Varianten ohne Umwege", "text": "Milchsorte, Größe, Extra-Shot oder Sirup sollten als Optionen direkt beim Produkt wählbar sein – nicht als eigene Artikel in langen Listen." },
+        { "title": "Tempo zur Stoßzeit", "text": "Morgens und mittags zählt jede Sekunde. Achten Sie auf eine Schnellwahl für Bestseller und eine Oberfläche, die ohne Schulung verständlich ist." },
+        { "title": "QR-Bestellung für Terrasse und Gastraum", "text": "Gäste, die selbst per QR-Code bestellen, entlasten Ihr Team – besonders an sonnigen Tagen, wenn die Terrasse voll ist." },
+        { "title": "TSE und Belegausgabe", "text": "Auch kleine Cafés mit elektronischer Kasse brauchen eine zertifizierte TSE und müssen Belege ausgeben. Digitale Belege per QR-Code sind erlaubt und sparen Papier." },
+        { "title": "Kassenbuch und Export", "text": "Ein digitales Kassenbuch und ein DATEV-kompatibler Export sparen Ihnen und Ihrer Steuerberatung jeden Monat Zeit." }
+      ]
+    },
+    "faq": {
+      "heading": "Häufige Fragen zum Kassensystem für Cafés",
+      "items": [
+        { "q": "Welches Kassensystem eignet sich für ein kleines Café?", "a": "Für kleine Cafés eignet sich ein Cloud-Kassensystem mit integrierter TSE, schneller Touch-Bedienung und Optionen für Varianten wie Milchsorte oder Größe. Liefro bietet dafür ein Paket speziell für Cafés, Imbisse und kleine Läden." },
+        { "q": "Brauche ich im Café eine TSE?", "a": "Wenn Sie eine elektronische Kasse nutzen, ja. Sie muss eine zertifizierte Technische Sicherheitseinrichtung haben und beim Finanzamt gemeldet sein. Bei Liefro ist die Online-TSE bereits enthalten." },
+        { "q": "Können Gäste per QR-Code bestellen?", "a": "Ja. Gäste scannen den QR-Code am Tisch, bestellen aus Ihrer digitalen Speisekarte, und die Bestellung erscheint direkt in der Kasse." },
+        { "q": "Darf ich Belege digital ausgeben?", "a": "Ja. Die Belegausgabepflicht kann auch digital erfüllt werden, zum Beispiel per QR-Code. Liefro unterstützt sowohl Papierbelege als auch digitale Belege." },
+        { "q": "Wie bekomme ich die Daten zu meinem Steuerberater?", "a": "Über den Export in Liefro erstellen Sie DATEV-kompatible Dateien und Kassendaten mit wenigen Klicks und senden sie direkt an Ihre Steuerberatung." }
+      ]
+    },
+    "cta": {
+      "heading": "Bereit für Ihre neue Café-Kasse?",
+      "text": "Lassen Sie sich kostenlos beraten – wir richten alles für Ihr Café ein.",
+      "button": "Jetzt Beratung anfragen"
+    }
+  }
+}

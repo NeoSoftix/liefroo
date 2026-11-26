@@ -18,9 +18,10 @@ const OG_LOCALE = { de: "de_DE", en: "en_US" };
  * Sets the document title plus Open Graph / Twitter meta tags for a page.
  * `path` should be the unprefixed route (e.g. "/menu-management") — the
  * current locale segment (from the URL's `:lng` param) is prepended here to
- * build the canonical/og:url and the hreflang alternates.
+ * build the canonical/og:url and the hreflang alternates. `jsonLd` is an
+ * optional schema.org object (or array of objects) emitted as structured data.
  */
-export default function Seo({ title, description, path = "", image, noIndex = false }) {
+export default function Seo({ title, description, path = "", image, noIndex = false, jsonLd }) {
   const { lng: rawLng } = useParams();
   const lng = LOCALES.includes(rawLng) ? rawLng : DEFAULT_LOCALE;
   const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
@@ -52,6 +53,10 @@ export default function Seo({ title, description, path = "", image, noIndex = fa
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={ogImage} />
+
+      {(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []).map((data, i) => (
+        <script key={i} type="application/ld+json">{JSON.stringify(data)}</script>
+      ))}
     </Helmet>
   );
 }

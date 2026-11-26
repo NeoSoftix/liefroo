@@ -1,0 +1,529 @@
+{
+  "common": {
+    "breadcrumbHome": "Home",
+    "pricingCta": "View pricing",
+    "disclaimer": "This page provides general information and does not replace tax advice.",
+    "related": {
+      "heading": "Related",
+      "headingHighlight": "Liefro solutions",
+      "more": "Learn more"
+    },
+    "links": {
+      "restaurants": { "title": "POS system for restaurants", "text": "The hospitality POS with cloud TSE, table plan and waiter app for restaurants across Germany." },
+      "doener": { "title": "POS system for kebab shops", "text": "A fast till for kebab shops and snack bars – with extras, receipt printing and online ordering." },
+      "pizzerien": { "title": "POS system for pizzerias", "text": "Pizza sizes, toppings and delivery in one system – with your own commission-free online ordering." },
+      "cafes": { "title": "POS system for cafés", "text": "The fast café till for counter, to-go and terrace – with QR ordering and TSE." },
+      "posSystem": { "title": "Restaurant POS system", "text": "Touch POS, table management, split bills and multiple locations in one system." },
+      "taxCompliant": { "title": "Tax-compliant POS", "text": "KassenSichV, TSE and receipt obligation explained – and how Liefro covers them." },
+      "onlineTse": { "title": "Online TSE", "text": "Certified cloud TSE without a USB stick – activated in minutes and always up to date." },
+      "dataExport": { "title": "Export for your tax advisor", "text": "DATEV-compatible exports and POS data for audits and your tax advisor in a few clicks." },
+      "qrOrdering": { "title": "QR ordering", "text": "Guests order via QR code at the table – the order goes straight to the till and kitchen." },
+      "onlineOrdering": { "title": "Online ordering", "text": "Your own ordering shop for delivery and pickup – without platform commission fees." },
+      "reservation": { "title": "Table reservations", "text": "Online bookings directly in your POS, including confirmation and reminders." },
+      "printer": { "title": "Printer integration", "text": "Customer and kitchen receipts print automatically wherever they are needed." },
+      "menuManagement": { "title": "Menu management", "text": "Maintain items, variants, extras and allergens once – up to date everywhere." },
+      "pricing": { "title": "Pricing & packages", "text": "POS, TSE, setup and support in one package – no hidden costs." }
+    }
+  },
+
+  "restaurants": {
+    "seo": {
+      "title": "POS System for Restaurants – Cloud POS with TSE",
+      "description": "Restaurant POS system for Germany: cloud POS with certified TSE, waiter app, QR and online ordering. KassenSichV-compliant from the first receipt. Get advice now."
+    },
+    "breadcrumb": "POS system for restaurants",
+    "hero": {
+      "badge": "Hospitality POS",
+      "heading": "POS system for restaurants",
+      "headingHighlight": "– in the cloud, with TSE.",
+      "description": "Liefro is the restaurant POS system for businesses in Germany: till, table plan, waiter app, QR and online ordering in one system – with a certified cloud TSE and KassenSichV-compliant from the first receipt.",
+      "trust": ["Certified TSE included", "Setup & training", "Personal support"],
+      "cta": "Free consultation",
+      "imageAlt": "Liefro restaurant POS system at the counter",
+      "sideImageAlt": "Mobile POS device for table service"
+    },
+    "intro": {
+      "badge": "Restaurant POS Germany",
+      "heading": "One POS system that runs",
+      "headingHighlight": "your entire restaurant",
+      "paragraphs": [
+        "A modern restaurant POS system is far more than a cash register. It takes orders at the table, at the counter, via QR code and online, sends them straight to kitchen and bar, prints receipts, handles payments and gives you up-to-date sales figures at any time.",
+        "Liefro was built as a hospitality POS for the German market. The certified online TSE is already integrated, every transaction is signed, receipts are issued automatically and your POS data is stored in a GoBD-compliant way. You are ready for a cash register inspection without worrying about the technology.",
+        "Because Liefro is a cloud POS system, you can see sales, orders and reports from anywhere – in the office, at home or on your phone. Updates install automatically, and you manage multiple locations from a single account."
+      ],
+      "glance": {
+        "heading": "At a glance",
+        "items": [
+          "Cloud POS with certified TSE",
+          "Table plan, table transfers and split bills",
+          "Waiter app for ordering right at the table",
+          "QR ordering and your own online shop",
+          "Digital cash book and live reports",
+          "DATEV-compatible export for your tax advisor"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Why restaurants",
+      "headingHighlight": "choose Liefro",
+      "description": "Everything a restaurant POS system has to do day to day – in one solution instead of five different programs.",
+      "items": [
+        { "title": "KassenSichV-compliant", "text": "Certified cloud TSE, receipt issuing and GoBD-compliant data – handled automatically, no USB stick." },
+        { "title": "Order at the table", "text": "Your staff take orders with the waiter app on any smartphone. They go straight to kitchen and bar." },
+        { "title": "QR & online ordering", "text": "Guests order via QR code at the table or through your own online shop – all in the same POS." },
+        { "title": "Live reports", "text": "Sales, best sellers and peak hours in real time – on any device, from anywhere." },
+        { "title": "Multiple locations", "text": "Manage branches, menus and staff centrally – ideal for growing hospitality businesses." },
+        { "title": "Personal support", "text": "We set up your POS, train your team and are there for you when it matters." }
+      ]
+    },
+    "rows": {
+      "heading": "How the POS system works",
+      "headingHighlight": "in your restaurant",
+      "items": [
+        {
+          "badge": "Till",
+          "title": "The touch POS for counter and service",
+          "text": "Orders, tables, payments and receipt printing on one device. The clear interface is learned in minutes – even by temporary staff.",
+          "points": ["Table plan with transfers and split bills", "Cash and card payments recorded", "Kitchen and bar receipts automatically"],
+          "alt": "Till interface of the Liefro restaurant POS system"
+        },
+        {
+          "badge": "Service",
+          "title": "Take orders right at the table",
+          "text": "With the Liefro waiter app your team orders on any smartphone. No walking back to the till, fewer mistakes and faster table turns.",
+          "points": ["Runs on any smartphone", "Orders sent instantly to kitchen and bar", "Same TSE as the main till"],
+          "alt": "Waiter app on a smartphone for ordering at the table"
+        },
+        {
+          "badge": "Cloud",
+          "title": "All your numbers, always at hand",
+          "text": "As a cloud POS system, Liefro stores your data securely and makes it available anywhere. Daily closing, sales reports and exports take just a few clicks.",
+          "points": ["Live sales on your phone", "Digital cash book", "Export for tax advisor and audits"],
+          "alt": "Sales reports and analytics in the Liefro dashboard"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "Four steps to your",
+      "headingHighlight": "new restaurant POS",
+      "items": [
+        { "title": "Consultation", "text": "We discuss your business and recommend the right package." },
+        { "title": "Setup", "text": "We set up your menu, tables, printers and TSE for you." },
+        { "title": "Training", "text": "Your team gets to know the POS in a short introduction." },
+        { "title": "Ready to go", "text": "From the first receipt you take payments securely and compliantly." }
+      ]
+    },
+    "banner": {
+      "heading": "A hospitality POS without compromises",
+      "text": "POS, TSE, setup and support from a single provider. You focus on your guests – we take care of the technology.",
+      "stats": [
+        { "value": "TSE", "label": "included" },
+        { "value": "24/7", "label": "support" },
+        { "value": "1", "label": "system for everything" }
+      ]
+    },
+    "guide": {
+      "heading": "What to look for in a",
+      "headingHighlight": "restaurant POS system",
+      "description": "These points decide whether a restaurant POS saves you work or creates more of it.",
+      "items": [
+        { "title": "Certified TSE and KassenSichV", "text": "In Germany, electronic tills must use a certified technical security device (TSE) and be registered with the tax office. Make sure the TSE is already integrated rather than extra hardware you have to buy." },
+        { "title": "Cloud instead of an isolated local system", "text": "A cloud POS makes your data available anywhere, installs updates automatically and is easy to extend with more devices or locations." },
+        { "title": "Every order channel in one till", "text": "Table orders, counter, QR code, pickup and delivery should all come together in the same POS. Duplicate entry and separate tablets cost time and cause mistakes." },
+        { "title": "Easy for the team", "text": "Staff change often in hospitality. A clear touch interface that makes sense in minutes saves training effort and stress during service." },
+        { "title": "Export for your tax advisor", "text": "POS data usually has to be kept for ten years. A DATEV-compatible export and a digital cash book make working with your tax advisor easier." },
+        { "title": "Personal support", "text": "When the printer fails on a Friday night, fast help is what counts. Ask about setup, training and reachable support." }
+      ]
+    },
+    "faq": {
+      "heading": "FAQ about POS systems for restaurants",
+      "items": [
+        { "q": "Which POS system is best for restaurants?", "a": "The best POS system for restaurants is one that fits your workflow: table plan, ordering at the table, kitchen receipts and online ordering in one system – with an integrated, certified TSE. Liefro combines exactly these features in one cloud solution." },
+        { "q": "Is Liefro a cloud POS system with TSE?", "a": "Yes. Liefro runs in the cloud and comes with a certified online TSE. You need no USB stick and no extra hardware – every transaction is signed automatically." },
+        { "q": "Is the POS system KassenSichV-compliant?", "a": "Liefro meets the KassenSichV requirements: certified TSE, receipt issuing and GoBD-compliant storage of POS data. We help you register your till with the tax office via ELSTER." },
+        { "q": "How much does a hospitality POS system cost?", "a": "The cost depends on the number of devices and the features you need. With Liefro, TSE, setup, training, support and updates are included in the package. You can find the current packages on our pricing page." },
+        { "q": "Can I manage several restaurants with one system?", "a": "Yes. With Liefro you manage multiple locations centrally – including menus, reports and staff. For franchises we are happy to put together a custom package." },
+        { "q": "How quickly is the POS system ready?", "a": "After the consultation we set up your menu, tables, printers and TSE and train your team. Many businesses are ready to go within a few days." }
+      ]
+    },
+    "cta": {
+      "heading": "Ready for your new restaurant POS?",
+      "text": "Get a free consultation – we will find the right package for your business.",
+      "button": "Request a consultation"
+    }
+  },
+
+  "doener": {
+    "seo": {
+      "title": "POS System for Kebab Shops – Fast, with TSE",
+      "description": "POS system for kebab shops and snack bars: lightning-fast checkout, extras in one tap, kitchen receipts and online ordering. With certified TSE, KassenSichV-compliant."
+    },
+    "breadcrumb": "POS system for kebab shops",
+    "hero": {
+      "badge": "Kebab shop POS",
+      "heading": "POS system for kebab shops",
+      "headingHighlight": "– as fast as your team.",
+      "description": "When the lunch queue reaches the door, every second counts. Liefro is the till for kebab shops and snack bars: best sellers in one tap, sauces and extras without typing, kitchen receipts instantly – with a certified TSE.",
+      "trust": ["Certified TSE included", "Commission-free online ordering", "On-site setup"],
+      "cta": "Free consultation",
+      "imageAlt": "Liefro POS system for kebab shops at the counter",
+      "sideImageAlt": "Receipt printer for kitchen orders in a snack bar"
+    },
+    "intro": {
+      "badge": "Snack bar POS",
+      "heading": "The till for döner, dürüm",
+      "headingHighlight": "and lahmacun",
+      "paragraphs": [
+        "A kebab shop is all about speed, so its POS system has to be fast above all. With Liefro your best-selling items sit right on the home screen, variants like sauce, spice level or no onions are one tap away, and meal deals with a drink and fries are set up as combos.",
+        "Every order goes straight to the grill or kitchen as a receipt – whether it comes in at the counter, by phone or through your own online shop. Pickup and delivery run through the same till, without an extra delivery-platform tablet.",
+        "The KassenSichV applies to snack bars too. Liefro comes with a certified online TSE, issues receipts automatically and stores your POS data in a GoBD-compliant way, so you are prepared for an unannounced cash register inspection."
+      ],
+      "glance": {
+        "heading": "At a glance",
+        "items": [
+          "Quick keys for your best sellers",
+          "Sauces, extras and variants in one tap",
+          "Meal deals and combos with drinks",
+          "Kitchen receipt printed at the grill",
+          "Pickup, delivery and online ordering",
+          "Certified TSE and digital cash book"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Why kebab shops",
+      "headingHighlight": "rely on Liefro",
+      "description": "A kebab shop POS that keeps up with the lunch rush – and handles the daily closing in seconds.",
+      "items": [
+        { "title": "Checkout in seconds", "text": "Best sellers in one tap, large touch keys and no nested menus – even at rush hour." },
+        { "title": "Instant kitchen receipt", "text": "Every order prints automatically at the grill or in the kitchen. No notes, no shouting, no mistakes." },
+        { "title": "Your own online ordering", "text": "Your own ordering shop for pickup and delivery – without platform commission fees." },
+        { "title": "Stress-free TSE", "text": "Certified cloud TSE, receipt issuing and GoBD-compliant data – automatic, no USB stick." },
+        { "title": "Cash and card", "text": "Cash takings go into the digital cash book, card payments are recorded automatically." },
+        { "title": "Sales at a glance", "text": "See live which items sell and when your peak hours are – even from your phone." }
+      ]
+    },
+    "rows": {
+      "heading": "How the POS system works",
+      "headingHighlight": "in your snack bar",
+      "items": [
+        {
+          "badge": "Counter",
+          "title": "Ordering as fast as you carve",
+          "text": "Döner, dürüm, box or plate: items, variants and extras are set up so your team can ring them up without thinking.",
+          "points": ["Best sellers on the home screen", "Sauces, spice level and extras as options", "Meal combos with drink and side"],
+          "alt": "Fast till interface for a kebab shop"
+        },
+        {
+          "badge": "Kitchen",
+          "title": "The receipt is already at the grill",
+          "text": "With Liefro Print, kitchen receipts print automatically as soon as an order is confirmed – with every extra clearly listed.",
+          "points": ["Thermal printer for till and kitchen", "All extras clearly on the receipt", "Order number for pickup"],
+          "alt": "Receipt printer printing a kitchen order for a kebab"
+        },
+        {
+          "badge": "Online",
+          "title": "Online orders without commission",
+          "text": "With your own ordering shop, regulars order directly from you. The order appears in the till and prints immediately.",
+          "points": ["Pickup and delivery", "Your own menu with photos", "No platform commission"],
+          "alt": "Online ordering shop with digital menu for a snack bar"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "Four steps to your",
+      "headingHighlight": "new kebab shop POS",
+      "items": [
+        { "title": "Consultation", "text": "We go through your range and your counter workflow." },
+        { "title": "Setup", "text": "We set up items, extras, printers and TSE for you." },
+        { "title": "Training", "text": "Your team learns the till in a few minutes." },
+        { "title": "Ready to go", "text": "From the first receipt you take payments quickly and compliantly." }
+      ]
+    },
+    "banner": {
+      "heading": "Built for the lunch rush",
+      "text": "Less typing, fewer mistakes, shorter queues. Liefro brings speed to your counter – and order to your bookkeeping.",
+      "stats": [
+        { "value": "TSE", "label": "included" },
+        { "value": "0 %", "label": "commission in your shop" },
+        { "value": "24/7", "label": "support" }
+      ]
+    },
+    "guide": {
+      "heading": "What kebab shops should look for",
+      "headingHighlight": "in a POS system",
+      "description": "A snack bar POS must above all be fast, robust and compliant.",
+      "items": [
+        { "title": "Speed at the counter", "text": "Check how many taps a döner with extras takes. Best sellers should be on the home screen and variants simple to select." },
+        { "title": "Extras and variants", "text": "Sauces, spice level, cheese, no onions – a good POS maps these as options that appear on the kitchen receipt automatically and carry a surcharge where needed." },
+        { "title": "Certified TSE", "text": "Even small snack bars with an electronic till need a certified TSE and must register their till with the tax office. An integrated cloud TSE saves hardware and hassle." },
+        { "title": "Your own online ordering", "text": "Delivery platforms often charge high commissions. Your own ordering shop that feeds straight into the till keeps more revenue in your business." },
+        { "title": "Reliable receipt printing", "text": "A fast thermal printer at the till and the grill makes sure no order gets lost – even when it is busy." }
+      ]
+    },
+    "faq": {
+      "heading": "FAQ about POS systems for kebab shops",
+      "items": [
+        { "q": "Does my kebab shop need a TSE?", "a": "If you use an electronic till, yes. Since 2020, electronic tills in Germany must use a certified technical security device. With Liefro the online TSE is already integrated." },
+        { "q": "Can I set up sauces and extras as options?", "a": "Yes. Variants, add-ons and extras – with or without a surcharge – are set up once. They are selected in one tap and appear automatically on the kitchen receipt." },
+        { "q": "Does the till work for delivery and pickup too?", "a": "Yes. Orders for pickup, delivery and dine-in come together in the same till – including orders from your own online shop." },
+        { "q": "Are there commissions on online orders?", "a": "With your own Liefro ordering shop you pay no commission fees to delivery platforms. Customers order directly from you." },
+        { "q": "How quickly can my snack bar get started?", "a": "After the consultation we set up items, extras, printers and TSE and train your team. You are usually ready within a few days." }
+      ]
+    },
+    "cta": {
+      "heading": "More speed for your kebab shop?",
+      "text": "In a free consultation we show you how Liefro works at your counter.",
+      "button": "Request a consultation"
+    }
+  },
+
+  "pizzerien": {
+    "seo": {
+      "title": "POS System for Pizzerias – Delivery & TSE",
+      "description": "POS system for pizzerias: pizza sizes and toppings in a few taps, delivery and pickup, your own commission-free online shop. With certified TSE, KassenSichV-compliant."
+    },
+    "breadcrumb": "POS system for pizzerias",
+    "hero": {
+      "badge": "Pizzeria POS",
+      "heading": "POS system for pizzerias",
+      "headingHighlight": "– from the oven to the door.",
+      "description": "Sizes, toppings, half-and-half, delivery and pickup: Liefro is the pizzeria POS that organises your orders, prints kitchen receipts instantly and brings commission-free online orders straight into the till – with a certified TSE.",
+      "trust": ["Certified TSE included", "Own online shop, no commission", "Setup & training"],
+      "cta": "Free consultation",
+      "imageAlt": "Pizzeria online menu in the Liefro ordering shop"
+    },
+    "intro": {
+      "badge": "Pizzeria POS system",
+      "heading": "One till for restaurant,",
+      "headingHighlight": "pickup and delivery",
+      "paragraphs": [
+        "A pizzeria has special requirements for its POS system. Every pizza comes in several sizes, with extra toppings or without certain ingredients. On top of that there are dine-in guests, phone orders for pickup and a delivery service in the evening – and it all has to work at the same time.",
+        "With Liefro you set up sizes, toppings and extras once in menu management. At checkout your team selects them in a few taps, the price adjusts automatically, and the kitchen receipt shows the pizza chef exactly what goes on the dough.",
+        "Online orders from your own ordering shop land directly in the till – without commission fees to delivery platforms. And because Liefro comes with a certified online TSE, every transaction is signed in line with the KassenSichV."
+      ],
+      "glance": {
+        "heading": "At a glance",
+        "items": [
+          "Pizza sizes, toppings and extras as variants",
+          "Delivery, pickup and dine-in in one till",
+          "Own online shop without commission",
+          "Kitchen receipt printed at the oven",
+          "Discounts and offers like a pizza day",
+          "Certified TSE and DATEV-compatible export"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Why pizzerias",
+      "headingHighlight": "work with Liefro",
+      "description": "A pizzeria POS system that brings restaurant, pickup and delivery together.",
+      "items": [
+        { "title": "Sizes & toppings", "text": "Every pizza in several sizes, with extras and surcharges – set up cleanly and selected in one tap." },
+        { "title": "Online, no commission", "text": "Your own ordering shop for delivery and pickup – orders land straight in the till." },
+        { "title": "Kitchen receipt at the oven", "text": "Orders print automatically in the kitchen – with every topping clearly readable for the pizza chef." },
+        { "title": "Scheduled orders", "text": "Pre-orders for later appear in the till in good time, so the pizza is ready on schedule." },
+        { "title": "TSE included", "text": "Certified cloud TSE and GoBD-compliant POS data – no USB stick and no extra hardware." },
+        { "title": "Discounts & promotions", "text": "Lunch deals, pizza day or happy hour set up in a few clicks – for more orders." }
+      ]
+    },
+    "rows": {
+      "heading": "How the POS system works",
+      "headingHighlight": "in your pizzeria",
+      "items": [
+        {
+          "badge": "Ordering",
+          "title": "Every pizza exactly the way the guest wants it",
+          "text": "Pick a size, add toppings, leave out ingredients – the till calculates the price automatically and passes everything to the kitchen without errors.",
+          "points": ["Sizes and variants with their own price", "Extras and toppings with surcharge", "Allergens stored in the menu"],
+          "alt": "Order overview in the pizzeria POS system"
+        },
+        {
+          "badge": "Service",
+          "title": "Ordering at the table in the restaurant",
+          "text": "In the dining room, too, Liefro saves steps: your staff take orders on the go, the pizza goes straight to the oven and the drinks to the bar.",
+          "points": ["Mobile ordering at the table", "Table plan and split bills", "Receipts automatically to kitchen and bar"],
+          "alt": "Mobile POS device for orders in a pizzeria"
+        },
+        {
+          "badge": "Marketing",
+          "title": "More regulars, more orders",
+          "text": "With discounts, offers and your own online shop you build direct relationships with your guests – instead of losing them to platforms.",
+          "points": ["Offers and discount campaigns", "Own ordering shop with your brand", "Live reports on best sellers"],
+          "alt": "Marketing and offers for pizzerias in the Liefro dashboard"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "Four steps to your",
+      "headingHighlight": "new pizzeria POS",
+      "items": [
+        { "title": "Consultation", "text": "We go through your menu, delivery service and workflow." },
+        { "title": "Setup", "text": "We set up sizes, toppings, printers, online shop and TSE for you." },
+        { "title": "Training", "text": "Your team gets to know the till and orders in no time." },
+        { "title": "Ready to go", "text": "From the first receipt you take payments securely – in store and online." }
+      ]
+    },
+    "banner": {
+      "heading": "More pizza, less paperwork",
+      "text": "Liefro brings every order channel into one till and handles TSE, receipts and exports in the background. You take care of the dough.",
+      "stats": [
+        { "value": "TSE", "label": "included" },
+        { "value": "0 %", "label": "commission in your shop" },
+        { "value": "24/7", "label": "support" }
+      ]
+    },
+    "guide": {
+      "heading": "What pizzerias should look for",
+      "headingHighlight": "in a POS system",
+      "description": "These features make the difference between a basic till and a real pizzeria POS system.",
+      "items": [
+        { "title": "Sizes and toppings handled cleanly", "text": "A pizza in three sizes with ten possible extras should not mean thirty items. Look for variants and add-ons with automatic surcharges." },
+        { "title": "Delivery and pickup integrated", "text": "Phone, online and dine-in orders should come together in one till. A separate tablet for every platform quickly leads to chaos in the evening." },
+        { "title": "Your own online shop", "text": "Your own ordering shop saves platform commissions and keeps you in direct contact with your regulars." },
+        { "title": "Certified TSE", "text": "Delivery services are subject to the KassenSichV too. An integrated cloud TSE signs every transaction without extra hardware." },
+        { "title": "Promotions and discounts", "text": "Pizza day, lunch menu or a discount on the second pizza – a good POS lets you set up and evaluate promotions quickly." }
+      ]
+    },
+    "faq": {
+      "heading": "FAQ about POS systems for pizzerias",
+      "items": [
+        { "q": "Can I set up pizza sizes and toppings in the till?", "a": "Yes. Sizes are set up as variants with their own price, toppings as extras with a surcharge. Your team selects them in a few taps at checkout, and everything appears on the kitchen receipt." },
+        { "q": "Does Liefro support delivery and pickup?", "a": "Yes. Orders for delivery, pickup, dine-in and scheduled orders for later all come together in the same till." },
+        { "q": "Do I need a delivery platform for the online shop?", "a": "No. With Liefro you get your own ordering shop. Your guests order directly from you, and you pay no commission fees to platforms." },
+        { "q": "Is the pizzeria POS system KassenSichV-compliant?", "a": "Yes. Liefro comes with a certified online TSE, issues receipts automatically and stores POS data in a GoBD-compliant way. We support you with registering your till." },
+        { "q": "Can I set up offers like a pizza day?", "a": "Yes. Discounts, happy hours and promotions are set up in a few clicks. The live reports show you how well the promotion performs." }
+      ]
+    },
+    "cta": {
+      "heading": "Ready for the right pizzeria POS?",
+      "text": "Get a free consultation – we set up till, online shop and TSE for you.",
+      "button": "Request a consultation"
+    }
+  },
+
+  "cafes": {
+    "seo": {
+      "title": "POS System for Cafés – Fast Café Till with TSE",
+      "description": "POS system for cafés: fast checkout at counter and terrace, to-go, QR ordering and waiter app. With certified TSE and a digital cash book. KassenSichV-compliant."
+    },
+    "breadcrumb": "POS system for cafés",
+    "hero": {
+      "badge": "Café POS",
+      "heading": "POS system for cafés",
+      "headingHighlight": "– as quick as an espresso.",
+      "description": "Oat-milk cappuccino, croissant to go, cake on the terrace: Liefro is the café till that keeps pace with your guests – with variants in one tap, QR ordering at the table and a certified TSE.",
+      "trust": ["Certified TSE included", "QR ordering at the table", "Setup & training"],
+      "cta": "Free consultation",
+      "imageAlt": "Liefro POS system for cafés at the counter",
+      "sideImageAlt": "Waiter app on a smartphone for the café terrace"
+    },
+    "intro": {
+      "badge": "Café POS system",
+      "heading": "The till for counter,",
+      "headingHighlight": "to-go and terrace",
+      "paragraphs": [
+        "Cafés get many small orders in a short time. A café POS system therefore has to be fast and handle variants like milk type, size or an extra shot without detours. With Liefro your favourite drinks sit right on the home screen and options are one tap away.",
+        "Guests on the terrace order via QR code straight from the table, or your staff take the order with the waiter app. The order appears at the counter instantly – no walking back and forth, no notes.",
+        "Cafés with an electronic till need a certified TSE too. Liefro comes with one, issues receipts on paper or digitally and keeps your cash book automatically. Your tax advisor gets the data in a few clicks."
+      ],
+      "glance": {
+        "heading": "At a glance",
+        "items": [
+          "Quick keys for coffee, cake and snacks",
+          "Milk types, sizes and extras as options",
+          "QR ordering for terrace and dining room",
+          "Waiter app on any smartphone",
+          "Digital cash book and receipts via QR code",
+          "Certified TSE and export for your tax advisor"
+        ]
+      }
+    },
+    "benefits": {
+      "heading": "Why cafés",
+      "headingHighlight": "love Liefro",
+      "description": "A café till that is fast, good-looking and compliant – without complicated technology.",
+      "items": [
+        { "title": "Fast at the counter", "text": "Coffee specialities, pastries and snacks in one tap – even when the morning queue grows." },
+        { "title": "QR ordering", "text": "Guests on the terrace order via QR code from your digital menu – the order goes straight to the counter." },
+        { "title": "Digital receipts", "text": "Receipts on paper or via QR code – meeting the receipt obligation and saving till rolls." },
+        { "title": "Table service", "text": "With the waiter app your team takes orders on any smartphone – indoors and outdoors." },
+        { "title": "TSE included", "text": "Certified cloud TSE, no USB stick – every transaction is signed automatically." },
+        { "title": "Numbers at a glance", "text": "See live which drinks sell and when your peak hours are – from anywhere." }
+      ]
+    },
+    "rows": {
+      "heading": "How the POS system works",
+      "headingHighlight": "in your café",
+      "items": [
+        {
+          "badge": "QR code",
+          "title": "Ordering straight from the table",
+          "text": "Guests scan the QR code on the table, see your digital menu with photos and order themselves. The order appears in the till immediately.",
+          "points": ["Digital menu always up to date", "Allergens and dietary info", "Order goes straight to the counter"],
+          "alt": "Digital café menu for QR ordering"
+        },
+        {
+          "badge": "Service",
+          "title": "A terrace without the legwork",
+          "text": "With the Liefro waiter app your team serves the terrace from a smartphone. Orders go straight to the counter, payment happens at the table.",
+          "points": ["Runs on any smartphone", "Order instantly at the counter", "Same TSE as the till"],
+          "alt": "Waiter app for service on the café terrace"
+        },
+        {
+          "badge": "Office",
+          "title": "Cash book and closing, automatically",
+          "text": "Cash takings are recorded automatically in the digital cash book. Daily closing and the export for your tax advisor take minutes.",
+          "points": ["Digital cash book", "DATEV-compatible export", "Live reports on your phone"],
+          "alt": "Sales overview and daily closing for cafés"
+        }
+      ]
+    },
+    "steps": {
+      "heading": "Four steps to your",
+      "headingHighlight": "new café POS",
+      "items": [
+        { "title": "Consultation", "text": "We discuss your café, your menu and your workflow." },
+        { "title": "Setup", "text": "We set up items, options, QR codes and TSE for you." },
+        { "title": "Training", "text": "Your team gets to know the till in a short introduction." },
+        { "title": "Ready to go", "text": "From the first coffee you take payments securely and compliantly." }
+      ]
+    },
+    "banner": {
+      "heading": "More time for your guests",
+      "text": "Liefro takes care of orders, receipts, TSE and cash book – so you can focus on great coffee and happy guests.",
+      "stats": [
+        { "value": "TSE", "label": "included" },
+        { "value": "QR", "label": "ordering at the table" },
+        { "value": "24/7", "label": "support" }
+      ]
+    },
+    "guide": {
+      "heading": "What cafés should look for",
+      "headingHighlight": "in a POS system",
+      "description": "These points make a café till fit for everyday use.",
+      "items": [
+        { "title": "Variants without detours", "text": "Milk type, size, extra shot or syrup should be selectable as options right on the item – not as separate items in long lists." },
+        { "title": "Speed at peak times", "text": "Every second counts in the morning and at lunch. Look for quick keys for best sellers and an interface that needs no training." },
+        { "title": "QR ordering for terrace and dining room", "text": "Guests who order themselves via QR code take pressure off your team – especially on sunny days when the terrace is full." },
+        { "title": "TSE and receipt issuing", "text": "Even small cafés with an electronic till need a certified TSE and must issue receipts. Digital receipts via QR code are allowed and save paper." },
+        { "title": "Cash book and export", "text": "A digital cash book and a DATEV-compatible export save you and your tax advisor time every month." }
+      ]
+    },
+    "faq": {
+      "heading": "FAQ about POS systems for cafés",
+      "items": [
+        { "q": "Which POS system suits a small café?", "a": "A small café is best served by a cloud POS with an integrated TSE, fast touch operation and options for variants such as milk type or size. Liefro offers a package made for cafés, snack bars and small shops." },
+        { "q": "Do I need a TSE in my café?", "a": "If you use an electronic till, yes. It must have a certified technical security device and be registered with the tax office. With Liefro the online TSE is already included." },
+        { "q": "Can guests order via QR code?", "a": "Yes. Guests scan the QR code on the table, order from your digital menu, and the order appears directly in the till." },
+        { "q": "Can I issue receipts digitally?", "a": "Yes. The receipt obligation can also be met digitally, for example via QR code. Liefro supports both paper and digital receipts." },
+        { "q": "How do I get the data to my tax advisor?", "a": "With the export in Liefro you create DATEV-compatible files and POS data in a few clicks and send them straight to your tax advisor." }
+      ]
+    },
+    "cta": {
+      "heading": "Ready for your new café POS?",
+      "text": "Get a free consultation – we set everything up for your café.",
+      "button": "Request a consultation"
+    }
+  }
+}

@@ -23,3 +23,4 @@ export { default as TaxCompliance } from "./TaxCompliance";
 export { OnlineTse, DataExport, KassenSichVGuarantee } from "./TaxSubPages";
 export { default as QrSMM } from "./QrSMM";
 export { default as Contact } from "./Contact";
+export { KassensystemRestaurants, KassensystemDoener, KassensystemPizzerien, KassensystemCafes } from "./SeoLandingPages";
